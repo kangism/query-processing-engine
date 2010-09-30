@@ -390,7 +390,7 @@ public class RandomOptimizer{
 
 
 
-	/** AFter finding a choice of method for each operator
+	/** After finding a choice of method for each operator
 		prepare an execution plan by replacing the methods with
 		corresponding join operator implementation
 			**/
@@ -416,7 +416,10 @@ public class RandomOptimizer{
 
 	    case JoinType.BLOCKNESTED:
 
-		NestedJoin bj = new NestedJoin((Join) node);
+		BlockNestedJoin bj = new BlockNestedJoin((Join) node);
+		bj.setLeft(left);
+		bj.setRight(right);
+		bj.setNumBuff(numbuff);
                 /* + other code */
 		return bj;
 
