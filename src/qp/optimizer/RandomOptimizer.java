@@ -3,10 +3,21 @@
 
 package qp.optimizer;
 
-import qp.utils.*;
-import qp.operators.*;
-import java.lang.Math;
 import java.util.Vector;
+
+import qp.operators.BlockNestedJoin;
+import qp.operators.Debug;
+import qp.operators.Join;
+import qp.operators.JoinType;
+import qp.operators.NestedJoin;
+import qp.operators.OpType;
+import qp.operators.Operator;
+import qp.operators.Project;
+import qp.operators.Select;
+import qp.utils.Attribute;
+import qp.utils.Condition;
+import qp.utils.RandNumb;
+import qp.utils.SQLQuery;
 
 public class RandomOptimizer{
 
@@ -415,12 +426,13 @@ public class RandomOptimizer{
 	    	replace with hasjoin, if implemented **/
 
 	    case JoinType.BLOCKNESTED:
-
+		//NestedJoin bj2 = new NestedJoin((Join) node);
 		BlockNestedJoin bj = new BlockNestedJoin((Join) node);
 		bj.setLeft(left);
 		bj.setRight(right);
 		bj.setNumBuff(numbuff);
                 /* + other code */
+		bj.setBlockSize(numbuff-2);
 		return bj;
 
 	    case JoinType.SORTMERGE:

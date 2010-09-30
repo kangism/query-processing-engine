@@ -4,6 +4,8 @@ This is base class for all the operators **/
 
 package qp.operators;
 
+import java.util.Iterator;
+
 import qp.utils.Batch;
 import qp.utils.Schema;
 public class Operator{
@@ -90,7 +92,7 @@ public class Operator{
 	return true;
     }
 
-
+    
     /* (non-Javadoc)
      * @see java.lang.Object#clone()
      */
