@@ -7,7 +7,6 @@
 
 package qp.operators;
 
-import qp.utils.*;
 public class JoinType{
 
 
@@ -18,8 +17,12 @@ public class JoinType{
    public static final int HASHJOIN = 3;
    public static final int INDEXNESTED = 4;
 
+   /**
+    * Return the number of implemented join.
+    * @return
+    */
    public static int numJoinTypes(){
-	return 1;
+	return 2;
 
         // return k for k joins
     }
