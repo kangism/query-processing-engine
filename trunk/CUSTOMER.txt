@@ -1,4 +1,3 @@
-CUSTOMER.cid  CUSTOMER.sex  CUSTOMER.firstname  CUSTOMER.lastname  CUSTOMER.Address  
 30	1	ecwkloksdl	mojurpecbn	ygoqjtmebjfebrlnbszzzwernj	
 53	1	cgpzkbofek	nvmrkbnoze	mnjzcunrvnkfoavvfkjgzfdlvx	
 123	0	mytcumcylu	tvmdkhfloh	njzurvvdftsgyuwpxtmmuxtzur	

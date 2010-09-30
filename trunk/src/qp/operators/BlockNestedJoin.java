@@ -47,7 +47,7 @@ public class BlockNestedJoin extends Join {
     /**
      * The file name where the right table is materialize.
      */
-    String rfname;
+    String rfname = "";
 
     /**
      * To get unique filenum for this operation.
@@ -62,6 +62,10 @@ public class BlockNestedJoin extends Join {
      * Buffer for left input stream.
      */
     List<Batch> leftbatches;
+    /**
+     * all the tuples of all the batch in the current block.
+     */
+    List<Tuple> leftTuplesInCurrentBlock;
     /**
      * Buffer for left input stream.
      * 
@@ -121,9 +125,8 @@ public class BlockNestedJoin extends Join {
      */
     public boolean open() {
 
-	/**
-	 * select number of tuples per batch.
-	 */
+	// select number of tuples per batch.
+
 	int tuplesize = schema.getTupleSize();
 	batchsize = Batch.getPageSize() / tuplesize;
 
@@ -133,28 +136,26 @@ public class BlockNestedJoin extends Join {
 	rightindex = right.getSchema().indexOf(rightattr);
 	Batch rightpage;
 
-	/* initialize the cursors of input buffers */
+	// initialize the cursors of input buffers
 	lcurs = 0;
 	rcurs = 0;
 	eosl = false;
-	/**
-	 * because right stream is to be repetitively scanned if it reached end, we have to start
-	 * new scan
-	 **/
+
+	// because right stream is to be repetitively scanned if it reached end, we have to start
+	// new scan
+
 	eosr = true;
 
-	/*
-	 * Right hand side table is to be materialized for the Nested join to perform
-	 */
+	// Right hand side table is to be materialized for the Nested join to perform
+
 	if (!right.open()) {
 	    return false;
 	} else {
-	    /*
-	     * If the right operator is not a base table then Materialize the intermediate result
-	     * from right into a file
-	     */
 
-	    // if(right.getOpType() != OpType.SCAN){
+	    // If the right operator is not a base table then Materialize the intermediate result
+	    // from right into a file
+
+	    // if (right.getOpType() != OpType.SCAN) {//
 	    filenum++;
 	    rfname = "BNJtemp-" + String.valueOf(filenum);
 	    try {
@@ -167,7 +168,7 @@ public class BlockNestedJoin extends Join {
 		System.out.println("BlockNestedJoin:writing the temporay file error");
 		return false;
 	    }
-	    // }
+	    // }//
 	    if (!right.close())
 		return false;
 	}
@@ -197,6 +198,7 @@ public class BlockNestedJoin extends Join {
 	    return null;
 	}
 	outbatch = new Batch(batchsize);
+	Batch newleft;
 
 	while (!outbatch.isFull()) {
 
@@ -207,7 +209,20 @@ public class BlockNestedJoin extends Join {
 		// new block of left pages is to be fetched
 		leftbatches = new ArrayList<Batch>(blockSize);
 		for (i = 0; i < blockSize; i++) {
-		    leftbatches.add((Batch) left.next());
+		    newleft = (Batch) left.next();
+		    if (newleft != null) {
+			leftbatches.add(newleft);
+		    }
+		}
+
+		// I merge all the page in the buffer of the outer table
+		// in order to make the scan easier
+		// (specially for the management of the cursor)
+		leftTuplesInCurrentBlock = new ArrayList<Tuple>();
+		for (Batch page : leftbatches) {
+		    for (i = 0; i < page.size(); i++) {
+			leftTuplesInCurrentBlock.add(page.elementAt(i));
+		    }
 		}
 
 		// if (leftbatch == null) {
@@ -215,7 +230,7 @@ public class BlockNestedJoin extends Join {
 		// return outbatch;
 		// }
 
-		if (leftbatches.isEmpty()) {
+		if (leftbatches.isEmpty() || leftbatches == null) {
 		    eosl = true;
 		    return outbatch;
 		}
@@ -224,9 +239,10 @@ public class BlockNestedJoin extends Join {
 		// we have to start the scanning of right table
 
 		try {
-
+		    // if (rfname != null) {
 		    in = new ObjectInputStream(new FileInputStream(rfname));
 		    eosr = false;
+		    // }
 		} catch (IOException io) {
 		    System.err.println("BlockNestedJoin:error in reading the file");
 		    System.exit(1);
@@ -239,16 +255,6 @@ public class BlockNestedJoin extends Join {
 		try {
 		    if (rcurs == 0 && lcurs == 0) {
 			rightbatch = (Batch) in.readObject();
-		    }
-
-		    // I merge all the page in the buffer of the outer table
-		    // in order to make the scan easier
-		    // (specially for the management of the cursor)
-		    List<Tuple> leftTuplesInCurrentBlock = new ArrayList<Tuple>();
-		    for (Batch page : leftbatches) {
-			for (i = lcurs; i < page.size(); i++) {
-			    leftTuplesInCurrentBlock.add(page.elementAt(i));
-			}
 		    }
 
 		    // FOR each block of the outer table
@@ -275,10 +281,10 @@ public class BlockNestedJoin extends Join {
 					rcurs = 0;
 				    } else if (i == leftTuplesInCurrentBlock.size() - 1 && j != rightbatch.size() - 1) {// case
 					// 3
-					lcurs = i;
+					lcurs = i; // avant ete a =i
 					rcurs = j + 1;
 				    } else {
-					lcurs = i;
+					lcurs = i ;// avant ete a =i
 					rcurs = j + 1;
 				    }
 				    return outbatch;
@@ -292,7 +298,7 @@ public class BlockNestedJoin extends Join {
 		    try {
 			in.close();
 		    } catch (IOException io) {
-			System.out.println("NestedJoin:Error in temporary file reading");
+			System.out.println("BlockNestedJoin:Error in temporary file reading ");
 		    }
 		    eosr = true;
 		} catch (ClassNotFoundException c) {
@@ -319,6 +325,21 @@ public class BlockNestedJoin extends Join {
 	f.delete();
 	return true;
 
+    }
+
+    /**
+     * @return the blockSize
+     */
+    public int getBlockSize() {
+	return blockSize;
+    }
+
+    /**
+     * @param blockSize
+     *        the blockSize to set
+     */
+    public void setBlockSize(int blockSize) {
+	this.blockSize = blockSize;
     }
 
 }
