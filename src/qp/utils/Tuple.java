@@ -9,6 +9,10 @@ import java.io.Serializable;
      of data */
 
 public class Tuple implements Serializable {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 8738898719856953652L;
     public Vector _data;
 
 

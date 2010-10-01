@@ -7,6 +7,10 @@ import java.io.Serializable;
 
 public class Batch implements Serializable{
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -7643820971936705867L;
     int MAX_SIZE;  // Number of tuples per page
     static int PageSize;  /* Number of bytes per page**/
 
