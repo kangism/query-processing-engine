@@ -6,6 +6,10 @@ import java.io.Serializable;
 
 public class Attribute implements Serializable{
 
+	/**
+     * 
+     */
+    private static final long serialVersionUID = -8745428824512213992L;
 	/** enumerating type of attribute **/
     public static final int INT=1;
     public static final int STRING=2;
