@@ -1,0 +1,4 @@
+﻿2
+200
+eid INTEGER 200 FK 4
+aid INTEGER 200 FK 4
