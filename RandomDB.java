@@ -1,5 +1,10 @@
+import generator.Attribute;
+import generator.RandomDB;
+import generator.Schema;
+
 import java.util.*;
 import java.io.*;
+
 import qp.utils.*;
 
 public class RandomDB {
@@ -53,7 +58,6 @@ public class RandomDB {
 		return s;
 	}
 
-
 	public int randInt(int start, int end) {
 		int range = end - start;
 		int random = (int) (Math.random() * range);
@@ -63,6 +67,9 @@ public class RandomDB {
 	public static void main(String[] args) {
 
 		RandomDB rdb = new RandomDB();
+		args=new String[2];
+		args[0] = "C:\\workspace\\generate_database\\generator\\Aircrafts";
+		args[1] = "1000";
 
 		if (args.length != 2) {
 			System.out.println("Usage: java RandomDB <dbname> <numrecords> ");
@@ -131,8 +138,8 @@ public class RandomDB {
 				} else if (datatype[i].equals("REAL")) {
 					type = Attribute.REAL;
 				} else if (datatype[i].equals("TIME")) {
-                    type = Attribute.TIME;
-                }else {
+					type = Attribute.TIME;
+				} else {
 					type = -1;
 					System.err.println("invalid data type");
 					System.exit(1);
@@ -170,7 +177,7 @@ public class RandomDB {
 			outmd.writeObject(schema);
 			outmd.close();
 
-			Hash<String> time=new HashTable<String>();
+			HashMap time = new HashMap();
 			for (i = 0; i < numtuple; i++) {
 				// System.out.println("in table generation: "+i);
 				int numb = random.nextInt(range[0]);
@@ -193,17 +200,14 @@ public class RandomDB {
 						if (keytype[j].equals("FK")) {
 							fk[value] = true;
 						}
-					}else if (datatype[j].equals("TIME")) {
-                        int hour = (int) (Math.random() * 24);
-                        int minute = (int) (Math.random() * 60);
-                        String times=hour + ":" + minute + "\t";
-                        if(!time.contains(times))
-                        {
-                        	time.add(times);
-                        }
-                        outtbl.print(times);
-                    }
-					
+					} else if (datatype[j].equals("TIME")) {
+						int hour = (int) (Math.random() * 24);
+						int minute = (int) (Math.random() * 60);
+						String times = hour + ":" + minute + "\t";
+						//System.out.println("count="+i);
+						outtbl.print(times);
+					}
+
 				}
 				if (i != numtuple - 1)
 					outtbl.println();
@@ -236,16 +240,14 @@ public class RandomDB {
 							outstat.print(range[i] + "\t");
 					}
 
-				}
-				else if (datatype[i].equals("TIME"))
-				{
-					outstat.print(time.size()+"\t");
+				} else if (datatype[i].equals("TIME")) {
+					outstat.print(time.size() + "\t");
 				}
 			}
 			outstat.close();
 			in.close();
 		} catch (IOException io) {
-			System.out.println("error in IO ");
+			System.out.println("error in IO "+io.getMessage());
 			System.exit(1);
 		}
 
@@ -260,6 +262,5 @@ public class RandomDB {
 		}
 		return count;
 	}
-	
-	
+
 }
