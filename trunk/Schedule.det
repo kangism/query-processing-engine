@@ -1,0 +1,4 @@
+﻿2
+300
+flno INTEGER 200 FK 4
+aid INTEGER 200 FK 4
