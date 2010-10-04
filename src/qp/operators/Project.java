@@ -116,13 +116,11 @@ public class Project extends Operator{
 
     /** Close the operator */
     public boolean close(){
-		return true;
-		/*
-	if(base.close())
-	    return true;
-	else
-	    return false;
-	    **/
+//		return true;
+		if(base.close())
+		    return true;
+		else
+		    return false;
     }
 
 
