@@ -14,6 +14,7 @@ import qp.operators.OpType;
 import qp.operators.Operator;
 import qp.operators.Project;
 import qp.operators.Select;
+import qp.operators.HashJoin;
 import qp.utils.Attribute;
 import qp.utils.Condition;
 import qp.utils.RandNumb;
@@ -443,9 +444,13 @@ public class RandomOptimizer{
 
 	    case JoinType.HASHJOIN:
 
-		NestedJoin hj = new NestedJoin((Join) node);
+		HashJoin hj = new HashJoin((Join) node);
+		hj.setLeft(left);
+		hj.setRight(right);
+		hj.setNumBuff(numbuff);
                 /* + other code */
 		return hj;
+		
 	    default:
 		return node;
 	    }
