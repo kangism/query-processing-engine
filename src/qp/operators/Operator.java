@@ -8,6 +8,11 @@ import java.util.Iterator;
 
 import qp.utils.Batch;
 import qp.utils.Schema;
+
+/**
+ * Should implement {@link Iterator}, but it does not.
+ *
+ */
 public class Operator{
 
     /**

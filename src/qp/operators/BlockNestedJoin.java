@@ -284,7 +284,7 @@ public class BlockNestedJoin extends Join {
 					lcurs = i; // avant ete a =i
 					rcurs = j + 1;
 				    } else {
-					lcurs = i ;// avant ete a =i
+					lcurs = i;// avant ete a =i
 					rcurs = j + 1;
 				    }
 				    return outbatch;
@@ -328,6 +328,8 @@ public class BlockNestedJoin extends Join {
     }
 
     /**
+     * Classic getter for {@link BlockNestedJoinblockSize}'s blockSize.
+     * 
      * @return the blockSize
      */
     public int getBlockSize() {
@@ -335,6 +337,8 @@ public class BlockNestedJoin extends Join {
     }
 
     /**
+     * Classic setter for {@link BlockNestedJoinblockSize}'s blockSize.
+     * 
      * @param blockSize
      *        the blockSize to set
      */

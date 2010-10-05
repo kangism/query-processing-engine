@@ -157,7 +157,8 @@ public class PlanCost{
 	    joincost = leftpages*rightpages;
 	    break;
 	case JoinType.BLOCKNESTED:
-	    joincost = 0;
+	    //Cost: Scan of outer + #outer blocks * scan of inner
+	    joincost = leftpages+ (leftpages*rightpages)/(numbuff-2);
 	    break;
 	case JoinType.SORTMERGE:
 	    joincost = 0;
