@@ -20,13 +20,19 @@ public class SQLQuery {
 
     Vector groupbyList;        //List of attibutes in groupby clause
     boolean isDistinct=false;   // Whether distinct key word appeared in select clause
+    
+    Vector orderbyList;		// List of attributes in orderby clause
+    //TODO deal with DESC option
 
-
+    
+    //TODO constructor with list for orderbyList
+    
     public SQLQuery(Vector list1,Vector list2,Vector list3,Vector list4){
 	projectList=list1;
 	fromList = list2;
 	conditionList = list3;
 	groupbyList = list4;
+	orderbyList = null;
 	splitConditionList(conditionList);
 
     }
@@ -36,6 +42,7 @@ public class SQLQuery {
 	fromList = list2;
 	conditionList = list3;
 	groupbyList = null;
+	orderbyList = null;
 	splitConditionList(conditionList);
     }
 
@@ -46,6 +53,7 @@ public class SQLQuery {
         fromList = list2;
         conditionList = null;
         groupbyList = null;
+        orderbyList = null;
         joinList = new Vector();
         selectionList = new Vector();
     }
@@ -101,6 +109,14 @@ public class SQLQuery {
 
     public Vector getGroupByList(){
 	return groupbyList;
+    }
+    
+    public void setOrderByList(Vector list){
+	orderbyList = list;
+    }
+
+    public Vector getOrderByList(){
+	return orderbyList;
     }
 
     public int getNumJoin(){

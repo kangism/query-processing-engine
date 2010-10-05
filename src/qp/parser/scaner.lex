@@ -48,13 +48,16 @@ STRING_LITERAL=\"{CHAR}*\"
   yybegin(YYINITIAL);
   return new Symbol(sym.WHERE,yyline,yychar,new TokenValue(yytext()));
 }
-   
+
+<YYINITIAL,NEGATE> ORDERBY {
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ORDERBY,yyline,yychar,new TokenValue(yytext()));
+}     
 
 <YYINITIAL,NEGATE> GROUPBY {
   yybegin(YYINITIAL);
   return new Symbol(sym.GROUPBY,yyline,yychar,new TokenValue(yytext()));
-}
-   
+} 
 
 <YYINITIAL,NEGATE> DISTINCT {
   yybegin(YYINITIAL);
