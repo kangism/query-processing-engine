@@ -3,6 +3,8 @@
  */
 package qp.operators;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 
 import qp.utils.Attribute;
@@ -20,7 +22,7 @@ public class Sort extends Operator {
     int batchsize; // number of tuples per outbatch
 
     /**
-     * The following fields are requied during execution of the Project Operator
+     * The following fields are requied during execution of the Sort Operator
      **/
 
     Batch inbatch;
@@ -54,8 +56,6 @@ public class Sort extends Operator {
 	int tuplesize = schema.getTupleSize();
 	batchsize = Batch.getPageSize() / tuplesize;
 
-	// ...
-
 	return base.open();
     }
 
@@ -70,19 +70,44 @@ public class Sort extends Operator {
 	 **/
 
 	inbatch = base.next();
-	// System.out.println("Project:-------------- inside the next---------------");
+	// System.out.println("Sort:-------------- inside the next---------------");
 
 	if (inbatch == null) {
 	    return null;
 	}
-	// System.out.println("Project:---------------base tuples---------");
+	// System.out.println("Sort:---------------base tuples---------");
 	for (int i = 0; i < inbatch.size(); i++) {
-	    Tuple basetuple = inbatch.elementAt(i);
 
+	    // XXX For now I just sort on the first attribute!
+
+
+	    boolean found = false;
 	    
+	    if(outbatch.isEmpty()){
+		outbatch.add(inbatch.elementAt(i));
+		found = true;
+	    }
 	    
-	    Tuple outtuple = basetuple;
-	    outbatch.add(outtuple);
+	    if (!found && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(0), 0) <= 0) {
+		// The tuples is smaller than the first attribute
+		outbatch.insertElementAt(inbatch.elementAt(i), 0);
+		found = true;
+	    }
+	    if (!found && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(outbatch.size() - 1), 0) >= 0) {
+		// The tuples is larger than the last attribute
+		outbatch.add(inbatch.elementAt(i));
+		found = true;
+	    }
+	    int j = 1;
+	    while (!found) {
+		if (Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(j - 1), 0) >= 0 && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(j), 0) <= 0) {
+		    // the tuple is between the element j-1 and j
+		    outbatch.insertElementAt(inbatch.elementAt(i), j);
+		    found = true;
+		}
+		j++;
+	    }
+
 	}
 	return outbatch;
     }
