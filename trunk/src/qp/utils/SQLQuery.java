@@ -20,6 +20,7 @@ public class SQLQuery {
 
     Vector groupbyList;        //List of attibutes in groupby clause
     boolean isDistinct=false;   // Whether distinct key word appeared in select clause
+    boolean desc = false;		//Whether sort by desc or not
     
     Vector orderbyList;		// List of attributes in orderby clause
     //TODO deal with DESC option
@@ -118,6 +119,14 @@ public class SQLQuery {
     public Vector getOrderByList(){
 	return orderbyList;
     }
+    
+	public void setDesc(boolean desc) {
+		this.desc = desc;
+	}
+	
+    public boolean isDesc() {
+		return desc;
+	}
 
     public int getNumJoin(){
       if ( joinList == null)
