@@ -20,6 +20,7 @@ public class RandomInitialPlan{
     Vector selectionlist;     //List of select conditons
     Vector joinlist;          //List of join conditions
     Vector groupbylist;
+    Vector orderbylist;
     int numJoin;    // Number of joins in this query
 
 
@@ -36,6 +37,7 @@ public class RandomInitialPlan{
 	joinlist = sqlquery.getJoinList();
 	groupbylist = sqlquery.getGroupByList();
 	numJoin = joinlist.size();
+	orderbylist = sqlquery.getOrderByList();
 
 
     }
@@ -58,6 +60,7 @@ public class RandomInitialPlan{
 	if(numJoin !=0){
 	    createJoinOp();
 	}
+	createOrderbyOp();
 	createProjectOp();
 	return root;
     }
@@ -191,7 +194,20 @@ public class RandomInitialPlan{
 	    root = jn;
     }
 
-
+    /**
+     * To sort the result with the attributes from orderbylist
+     * @author Yann-Loup
+     */
+    public void createOrderbyOp(){
+	Operator base = root;
+        if ( orderbylist == null ){
+            orderbylist = new Vector();
+        }
+        if(!orderbylist.isEmpty()){
+	    root = new Sort(base,orderbylist,OpType.SORT);
+	    root.setSchema(base.getSchema());
+	}
+    }
 
     public void createProjectOp(){
 	Operator base = root;
