@@ -6,28 +6,28 @@ import java.util.Vector;
 
 public class SQLQuery {
 
-    Vector projectList; // List of project attributes from select clause
-    Vector fromList; // List of tables in from clause
-    Vector conditionList; // List of conditions appeared in where clause
+    Vector<Attribute> projectList; // List of project attributes from select clause
+    Vector<String> fromList; // List of tables in from clause
+    Vector<Condition> conditionList; // List of conditions appeared in where clause
 
     /**
      * represent again the the selection and join conditions in separate lists
      **/
 
-    Vector selectionList; // List of select predicates
-    Vector joinList; // List of join predicates
+    Vector<Condition> selectionList; // List of select predicates
+    Vector<Condition> joinList; // List of join predicates
 
-    Vector groupbyList; // List of attibutes in groupby clause
+    Vector<Attribute> groupbyList; // List of attibutes in groupby clause
     boolean isDistinct = false; // Whether distinct key word appeared in select clause
     boolean desc = false; // Whether sort by desc or not
 
-    Vector orderbyList; // List of attributes in orderby clause
+    Vector<Attribute> orderbyList; // List of attributes in orderby clause
 
     // TODO deal with DESC option
 
     // TODO constructor with list for orderbyList
 
-    public SQLQuery(Vector list1, Vector list2, Vector list3, Vector list4) {
+    public SQLQuery(Vector<Attribute> list1, Vector<String> list2, Vector<Condition> list3, Vector<Attribute> list4) {
 	projectList = list1;
 	fromList = list2;
 	conditionList = list3;
@@ -37,7 +37,7 @@ public class SQLQuery {
 
     }
 
-    public SQLQuery(Vector list1, Vector list2, Vector list3) {
+    public SQLQuery(Vector<Attribute> list1, Vector<String> list2, Vector<Condition> list3) {
 	projectList = list1;
 	fromList = list2;
 	conditionList = list3;
@@ -48,21 +48,22 @@ public class SQLQuery {
 
     // 12 july 2003 (whtok)
     // Constructor to handle no WHERE clause case
-    public SQLQuery(Vector list1, Vector list2) {
+    public SQLQuery(Vector<Attribute> list1, Vector<String> list2) {
 	projectList = list1;
 	fromList = list2;
 	conditionList = null;
 	groupbyList = null;
 	orderbyList = null;
-	joinList = new Vector();
-	selectionList = new Vector();
+	joinList = new Vector<Condition>();
+	selectionList = new Vector<Condition>();
     }
 
-    /** split the condition list into selection, and join list **/
-
-    protected void splitConditionList(Vector tempVector) {
-	selectionList = new Vector();
-	joinList = new Vector();
+    /**
+     * split the condition list into selection, and join list
+     */
+    protected void splitConditionList(Vector<Condition> tempVector) {
+	selectionList = new Vector<Condition>();
+	joinList = new Vector<Condition>();
 	for (int i = 0; i < tempVector.size(); i++) {
 	    Condition cn = (Condition) tempVector.elementAt(i);
 	    if (cn.getOpType() == Condition.SELECT)
@@ -88,39 +89,39 @@ public class SQLQuery {
 	return desc;
     }
 
-    public Vector getProjectList() {
+    public Vector<Attribute> getProjectList() {
 	return projectList;
     }
 
-    public Vector getFromList() {
+    public Vector<String> getFromList() {
 	return fromList;
     }
 
-    public Vector getConditionList() {
+    public Vector<Condition> getConditionList() {
 	return conditionList;
     }
 
-    public Vector getSelectionList() {
+    public Vector<Condition> getSelectionList() {
 	return selectionList;
     }
 
-    public Vector getJoinList() {
+    public Vector<Condition> getJoinList() {
 	return joinList;
     }
 
-    public void setGroupByList(Vector list) {
+    public void setGroupByList(Vector<Attribute> list) {
 	groupbyList = list;
     }
 
-    public Vector getGroupByList() {
+    public Vector<Attribute> getGroupByList() {
 	return groupbyList;
     }
 
-    public void setOrderByList(Vector list) {
+    public void setOrderByList(Vector<Attribute> list) {
 	orderbyList = list;
     }
 
-    public Vector getOrderByList() {
+    public Vector<Attribute> getOrderByList() {
 	return orderbyList;
     }
 

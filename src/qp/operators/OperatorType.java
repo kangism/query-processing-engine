@@ -8,7 +8,7 @@ package qp.operators;
  */
 public enum OperatorType {
 
-    SCAN(0), SELECT(1), PROJECT(2), JOIN(3), SORT(4);
+    SCAN(0), SELECT(1), PROJECT(2), JOIN(3), SORT(4), DISTINCT(5);
 
     /**
      * To be compatible with the constant define in {@link OpType}.
