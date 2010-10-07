@@ -80,6 +80,14 @@ public class SQLQuery {
 	return isDistinct;
     }
 
+    public void setDesc(boolean desc) {
+	this.desc = desc;
+    }
+
+    public boolean isDesc() {
+	return desc;
+    }
+
     public Vector getProjectList() {
 	return projectList;
     }
