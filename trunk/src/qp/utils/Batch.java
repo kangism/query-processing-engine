@@ -89,6 +89,10 @@ public class Batch implements Serializable{
 	else
 	    return false;
     }
+    
+    public Vector<Tuple> getTuples(){
+	return tuples;
+    }
 }
 
 

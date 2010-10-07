@@ -69,7 +69,7 @@ public class QueryMain{
 
 		SQLQuery sqlquery = p.getSQLQuery();
 		int numJoin = sqlquery.getNumJoin();
-
+		int numSort = sqlquery.getNumSort();
 
 		/** If there are joins then assigns buffers to each join operator
 	    while preparing the plan
@@ -79,7 +79,7 @@ public class QueryMain{
 		 **/
 
 
-		if(numJoin !=0){
+		if(numJoin !=0 || numSort!=0){
 			System.out.println("enter the number of buffers available");
 
 			try {
@@ -101,7 +101,10 @@ public class QueryMain{
 			System.out.println("Minimum 3 buffers are required per a join operator ");
 			System.exit(1);
 		}
-
+		if(numSort>0 && BufferManager.getNumBuffer()<3){
+			System.out.println("Minimum 3 buffers are required per a sort operator ");
+			System.exit(1);
+		}
 
 
 		/** This part is used When some random initial plan is required instead of comple optimized plan **/

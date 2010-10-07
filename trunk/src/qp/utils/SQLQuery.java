@@ -1,35 +1,34 @@
 /** the format of the parse SQL quer, also see readme file **/
 
-
 package qp.utils;
+
 import java.util.Vector;
 
 public class SQLQuery {
 
+    Vector projectList; // List of project attributes from select clause
+    Vector fromList; // List of tables in from clause
+    Vector conditionList; // List of conditions appeared in where clause
 
-    Vector projectList;     //List of project attributes from select clause
-    Vector fromList;        // List of tables in from clause
-    Vector conditionList;   // List of conditions appeared in where clause
+    /**
+     * represent again the the selection and join conditions in separate lists
+     **/
 
-    /** represent again the the selection and join conditions
-	in separate lists
-    **/
+    Vector selectionList; // List of select predicates
+    Vector joinList; // List of join predicates
 
-    Vector selectionList;    //List of select predicates
-    Vector joinList;           //List of join predicates
+    Vector groupbyList; // List of attibutes in groupby clause
+    boolean isDistinct = false; // Whether distinct key word appeared in select clause
+    boolean desc = false; // Whether sort by desc or not
 
-    Vector groupbyList;        //List of attibutes in groupby clause
-    boolean isDistinct=false;   // Whether distinct key word appeared in select clause
-    boolean desc = false;		//Whether sort by desc or not
-    
-    Vector orderbyList;		// List of attributes in orderby clause
-    //TODO deal with DESC option
+    Vector orderbyList; // List of attributes in orderby clause
 
-    
-    //TODO constructor with list for orderbyList
-    
-    public SQLQuery(Vector list1,Vector list2,Vector list3,Vector list4){
-	projectList=list1;
+    // TODO deal with DESC option
+
+    // TODO constructor with list for orderbyList
+
+    public SQLQuery(Vector list1, Vector list2, Vector list3, Vector list4) {
+	projectList = list1;
 	fromList = list2;
 	conditionList = list3;
 	groupbyList = list4;
@@ -38,8 +37,8 @@ public class SQLQuery {
 
     }
 
-    public SQLQuery(Vector list1,Vector list2,Vector list3){
-     projectList=list1;
+    public SQLQuery(Vector list1, Vector list2, Vector list3) {
+	projectList = list1;
 	fromList = list2;
 	conditionList = list3;
 	groupbyList = null;
@@ -49,90 +48,86 @@ public class SQLQuery {
 
     // 12 july 2003 (whtok)
     // Constructor to handle no WHERE clause case
-    public SQLQuery(Vector list1,Vector list2){
-        projectList=list1;
-        fromList = list2;
-        conditionList = null;
-        groupbyList = null;
-        orderbyList = null;
-        joinList = new Vector();
-        selectionList = new Vector();
+    public SQLQuery(Vector list1, Vector list2) {
+	projectList = list1;
+	fromList = list2;
+	conditionList = null;
+	groupbyList = null;
+	orderbyList = null;
+	joinList = new Vector();
+	selectionList = new Vector();
     }
 
+    /** split the condition list into selection, and join list **/
 
-	/** split the condition list into selection, and join list **/
-
-    protected void splitConditionList(Vector tempVector){
+    protected void splitConditionList(Vector tempVector) {
 	selectionList = new Vector();
 	joinList = new Vector();
-	for(int i=0;i<tempVector.size();i++){
+	for (int i = 0; i < tempVector.size(); i++) {
 	    Condition cn = (Condition) tempVector.elementAt(i);
-	    if(cn.getOpType() == Condition.SELECT)
+	    if (cn.getOpType() == Condition.SELECT)
 		selectionList.add(cn);
 	    else
 		joinList.add(cn);
 	}
     }
 
-
-    public void setIsDistinct(boolean flag){
+    public void setIsDistinct(boolean flag) {
 	isDistinct = flag;
     }
 
-    public boolean isDistinct(){
+    public boolean isDistinct() {
 	return isDistinct;
     }
 
-
-    public Vector getProjectList(){
+    public Vector getProjectList() {
 	return projectList;
     }
 
-    public Vector getFromList(){
+    public Vector getFromList() {
 	return fromList;
     }
 
-    public Vector getConditionList(){
+    public Vector getConditionList() {
 	return conditionList;
     }
 
-    public Vector getSelectionList(){
+    public Vector getSelectionList() {
 	return selectionList;
     }
 
-    public Vector getJoinList(){
+    public Vector getJoinList() {
 	return joinList;
     }
 
-    public void setGroupByList(Vector list){
+    public void setGroupByList(Vector list) {
 	groupbyList = list;
     }
 
-    public Vector getGroupByList(){
+    public Vector getGroupByList() {
 	return groupbyList;
     }
-    
-    public void setOrderByList(Vector list){
+
+    public void setOrderByList(Vector list) {
 	orderbyList = list;
     }
 
-    public Vector getOrderByList(){
+    public Vector getOrderByList() {
 	return orderbyList;
     }
-    
-	public void setDesc(boolean desc) {
-		this.desc = desc;
-	}
-	
-    public boolean isDesc() {
-		return desc;
-	}
 
-    public int getNumJoin(){
-      if ( joinList == null)
-         return 0;
+    public int getNumJoin() {
+	if (joinList == null)
+	    return 0;
 
 	return joinList.size();
+    }
+
+    public int getNumSort() {
+	if (orderbyList == null)
+	    return 0;
+
+	return orderbyList.size();
     }
 
 }
