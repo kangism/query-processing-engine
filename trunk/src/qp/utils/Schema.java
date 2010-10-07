@@ -12,10 +12,10 @@ public class Schema implements Serializable{
      * 
      */
     private static final long serialVersionUID = -3337675779203165021L;
-    Vector attset;         // the attributes belong to this schema
+    Vector<Attribute> attset;         // the attributes belong to this schema
     int tuplesize; // Number of bytes required for this tuple (size of record)
 
-    public Schema(Vector colset){
+    public Schema(Vector<Attribute> colset){
 
 	attset = colset;
 
@@ -38,7 +38,7 @@ public class Schema implements Serializable{
 	attset.add(attr);
     }
 
-    public Vector getAttList(){
+    public Vector<Attribute> getAttList(){
 	return attset;
     }
 
@@ -93,7 +93,7 @@ public class Schema implements Serializable{
     /**The schema of resultant join operation, Not considered the elimination of duplicate Column **/
 
     public Schema joinWith(Schema right){ //, Attribute leftAttr, Attribute rightAttr){
-	Vector newSchema = new Vector(this.attset);
+	Vector<Attribute> newSchema = new Vector<Attribute>(this.attset);
 	newSchema.addAll(right.getAttList());
 
 	int newtupsize= this.getTupleSize()+right.getTupleSize();
@@ -108,8 +108,8 @@ public class Schema implements Serializable{
 		attrlist is the attirbuted that are projected
 		**/
 
-    public Schema subSchema(Vector attrlist){
-	Vector newVec = new Vector();
+    public Schema subSchema(Vector<Attribute> attrlist){
+	Vector<Attribute> newVec = new Vector<Attribute>();
 	int newtupsize=0;
 	for(int i=0;i<attrlist.size();i++){
 	    Attribute resAttr = (Attribute) attrlist.elementAt(i);
@@ -126,7 +126,7 @@ public class Schema implements Serializable{
 
 
   public Object clone(){
-	Vector newvec = new Vector();
+	Vector<Attribute> newvec = new Vector<Attribute>();
 	for(int i=0;i<attset.size();i++){
 	    Attribute newatt = (Attribute) ((Attribute)attset.elementAt(i)).clone();
 	    newvec.add(newatt);

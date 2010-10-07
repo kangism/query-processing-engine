@@ -86,7 +86,7 @@ public class QueryMain{
 				temp = in.readLine();
 				int numBuff = Integer.parseInt(temp);
 
-				BufferManager bm = new BufferManager(numBuff,numJoin);
+				new BufferManager(numBuff,numJoin); // has static parameters
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -15,24 +15,24 @@ public class RandomInitialPlan{
 
     SQLQuery sqlquery;
 
-    Vector projectlist;
-    Vector fromlist;
-    Vector selectionlist;     //List of select conditons
-    Vector joinlist;          //List of join conditions
-    Vector groupbylist;
-    Vector orderbylist;
+    Vector<Attribute> projectlist;
+    Vector<String> fromlist;
+    Vector<Condition> selectionlist;     //List of select conditons
+    Vector<Condition> joinlist;          //List of join conditions
+    Vector<Attribute> groupbylist;
+    Vector<Attribute> orderbylist;
     int numJoin;    // Number of joins in this query
 
 
-    Hashtable tab_op_hash;          //table name to the Operator
+    Hashtable<String, Operator> tab_op_hash;          //table name to the Operator
     Operator root; // root of the query plan tree
 
 
     public RandomInitialPlan(SQLQuery sqlquery){
 	this.sqlquery=sqlquery;
 
-	projectlist=(Vector) sqlquery.getProjectList();
-	fromlist=(Vector) sqlquery.getFromList();
+	projectlist=(Vector<Attribute>) sqlquery.getProjectList();
+	fromlist=(Vector<String>) sqlquery.getFromList();
 	selectionlist= sqlquery.getSelectionList();
 	joinlist = sqlquery.getJoinList();
 	groupbylist = sqlquery.getGroupByList();
@@ -53,7 +53,7 @@ public class RandomInitialPlan{
 
     public Operator prepareInitialPlan(){
 
-	tab_op_hash = new Hashtable();
+	tab_op_hash = new Hashtable<String, Operator>();
 
 	createScanOp();
 	createSelectOp();
@@ -201,7 +201,7 @@ public class RandomInitialPlan{
     public void createOrderbyOp(){
 	Operator base = root;
         if ( orderbylist == null ){
-            orderbylist = new Vector();
+            orderbylist = new Vector<Attribute>();
         }
         if(!orderbylist.isEmpty()){
 	    root = new Sort(base,orderbylist,OpType.SORT);
@@ -212,7 +212,7 @@ public class RandomInitialPlan{
     public void createProjectOp(){
 	Operator base = root;
         if ( projectlist == null )
-            projectlist = new Vector();
+            projectlist = new Vector<Attribute>();
 
 	if(!projectlist.isEmpty()){
 	    root = new Project(base,projectlist,OpType.PROJECT);
@@ -222,7 +222,7 @@ public class RandomInitialPlan{
     }
 
     private void modifyHashtable(Operator old, Operator newop){
-	Enumeration e=tab_op_hash.keys();
+	Enumeration<String> e=tab_op_hash.keys();
 	while(e.hasMoreElements()){
 	    String key = (String)e.nextElement();
 	    Operator temp = (Operator)tab_op_hash.get(key);

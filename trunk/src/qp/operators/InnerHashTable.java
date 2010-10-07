@@ -7,6 +7,8 @@ import qp.utils.Tuple;
 public class InnerHashTable extends Hashtable<Integer, LinkedList<Tuple>> 
 {
 
+    private static final long serialVersionUID = 7661351968871952953L;
+
 	public InnerHashTable(int InitialCapacity) 
 	{
 		super(InitialCapacity);

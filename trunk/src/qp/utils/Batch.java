@@ -14,7 +14,7 @@ public class Batch implements Serializable{
     int MAX_SIZE;  // Number of tuples per page
     static int PageSize;  /* Number of bytes per page**/
 
-    Vector tuples; // The tuples in the page
+    Vector<Tuple> tuples; // The tuples in the page
 
 
 	/** Set number of bytes per page **/
@@ -31,7 +31,7 @@ public class Batch implements Serializable{
 
     public Batch(int numtuple){
 		MAX_SIZE=numtuple;
-	tuples = new Vector(MAX_SIZE);
+	tuples = new Vector<Tuple>(MAX_SIZE);
     }
 
 
