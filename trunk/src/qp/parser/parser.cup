@@ -1,6 +1,7 @@
 
 import java_cup.runtime.*;
 import java.util.*;
+import qp.utils.*;
 
 //import SMA5503.IR.*;
 
@@ -40,6 +41,7 @@ terminal 	TokenValue ID;
 terminal        COMMA,SEMI,DOT,STAR;
 terminal      	LESSTHAN, GREATERTHAN,LTOE,GTOE,EQUAL,NOTEQUAL,AND,OR;     
 terminal	SELECT,FROM,WHERE,GROUPBY,DISTINCT,ORDERBY;
+terminal	DESC,ASC;
 terminal 	TokenValue STRINGLIT;
 
 /* Non terminals */	
@@ -50,6 +52,8 @@ nonterminal Vector tablelist;
 nonterminal Vector conditionlist;
 nonterminal Condition condition;
 nonterminal Condition op;
+nonterminal Vector attoptionlist;
+nonterminal AttributeOption attributeoption;
 
 
 /* The grammar */
@@ -60,7 +64,7 @@ sqlquery ::= sqlquery:s  GROUPBY attlist:a
 		parser.query=s;
 	
 		:}
-		| sqlquery:s  ORDERBY attlist:a
+		| sqlquery:s  ORDERBY attoptionlist:a
 		{:
 		s.setOrderByList(a);
 		parser.query=s;
@@ -144,6 +148,34 @@ attlist ::= attlist:as COMMA attribute:a
 		RESULT = v;
 		:}
 		;
+		
+attoptionlist ::= attoptionlist:as COMMA attributeoption:a
+	         {:
+		  as.add(a);
+		  RESULT=as;
+		  :}
+	 	|attributeoption:at 
+		{:
+		Vector v = new Vector();
+		v.add(at);
+		RESULT = v;
+		:}
+		;		
+		
+attributeoption::= attribute:at ASC
+		{:
+		RESULT= new AttributeOption(at,OrderByOption.ASC);
+		:}
+		|attribute:at DESC
+		{:
+		RESULT= new AttributeOption(at,OrderByOption.DESC);
+		:}|attribute:at 
+		{:
+		RESULT= new AttributeOption(at,OrderByOption.ASC);
+		:}
+		;		
+		
+		
 
 tablelist ::= tablelist:tlist COMMA ID:i
 	      {:

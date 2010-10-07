@@ -233,7 +233,7 @@ public class Scaner implements java_cup.runtime.Scanner {
 		/* 20 */ YY_NO_ANCHOR,
 		/* 21 */ YY_NO_ANCHOR,
 		/* 22 */ YY_NO_ANCHOR,
-		/* 23 */ YY_NOT_ACCEPT,
+		/* 23 */ YY_NO_ANCHOR,
 		/* 24 */ YY_NO_ANCHOR,
 		/* 25 */ YY_NOT_ACCEPT,
 		/* 26 */ YY_NO_ANCHOR,
@@ -243,7 +243,7 @@ public class Scaner implements java_cup.runtime.Scanner {
 		/* 30 */ YY_NO_ANCHOR,
 		/* 31 */ YY_NOT_ACCEPT,
 		/* 32 */ YY_NO_ANCHOR,
-		/* 33 */ YY_NO_ANCHOR,
+		/* 33 */ YY_NOT_ACCEPT,
 		/* 34 */ YY_NO_ANCHOR,
 		/* 35 */ YY_NO_ANCHOR,
 		/* 36 */ YY_NO_ANCHOR,
@@ -269,37 +269,46 @@ public class Scaner implements java_cup.runtime.Scanner {
 		/* 56 */ YY_NO_ANCHOR,
 		/* 57 */ YY_NO_ANCHOR,
 		/* 58 */ YY_NO_ANCHOR,
-		/* 59 */ YY_NO_ANCHOR
+		/* 59 */ YY_NO_ANCHOR,
+		/* 60 */ YY_NO_ANCHOR,
+		/* 61 */ YY_NO_ANCHOR,
+		/* 62 */ YY_NO_ANCHOR,
+		/* 63 */ YY_NO_ANCHOR,
+		/* 64 */ YY_NO_ANCHOR,
+		/* 65 */ YY_NO_ANCHOR
 	};
 	private int yy_cmap[] = unpackFromString(1,130,
-"0:9,21:2,0,21:2,0:18,25,26,24,27:3,36,29,27:2,20,27,31,27,38,27,23:10,27,33" +
-",34,32,35,27:2,22,13,4,12,2,6,15,11,18,22:2,3,9,19,8,17,22,7,1,5,16,22,10,2" +
-"2,14,22,27,28,27:2,22,27,22:13,30,22:5,30,22:6,27,37,27:2,0,39:2")[0];
+"0:9,22:2,0,22:2,0:18,26,27,25,28:3,37,30,28:2,21,28,32,28,39,28,24:10,28,34" +
+",35,33,36,28:2,15,13,4,12,2,6,16,11,19,23:2,3,9,20,8,18,23,7,1,5,17,23,10,2" +
+"3,14,23,28,29,28:2,23,28,23:13,31,23:5,31,23:6,28,38,28:2,0,40:2")[0];
 
-	private int yy_rmap[] = unpackFromString(1,60,
-"0,1,2,3,2:3,4,5,2:8,6:6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24," +
-"25,26,27,28,29,30,31,6,32,33,34,35,36,37,38,6,39,40,41")[0];
+	private int yy_rmap[] = unpackFromString(1,66,
+"0,1,2,3,2:3,4,5,2:8,6:8,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24," +
+"25,26,27,28,29,30,31,32,33,34,35,36,6,37,38,39,40,41,42,43,6,44,45")[0];
 
-	private int yy_nxt[][] = unpackFromString(42,40,
-"-1,1,56:4,40,56,57,56,46,56,58,56:2,59,56:4,2,3,56,-1,23,3,25,-1:3,56,4,5,6" +
-",7,8,27,29,9,10,-1,56,47,56:17,-1:2,56,48,-1:6,56,-1:70,3,-1:3,3,-1:46,13,-" +
-"1:39,14,-1:8,56:19,-1:2,56,48,-1:6,56,-1:10,23:20,-1,23:2,11,23:3,31,-1,23:" +
-"9,-1:2,56:8,17,56:10,-1:2,56,48,-1:6,56,-1:41,12,-1:8,56,18,56:17,-1:2,56,4" +
-"8,-1:6,56,-1:45,15,-1:4,56:4,19,56:14,-1:2,56,48,-1:6,56,-1:46,16,-1:3,56:1" +
-"3,20,56:5,-1:2,56,48,-1:6,56,-1:33,23,-1:3,23:3,-1:10,56:13,21,56:5,-1:2,56" +
-",48,-1:6,56,-1:10,56:4,22,56:14,-1:2,56,48,-1:6,56,-1:10,56:7,24,56:11,-1:2" +
-",56,48,-1:6,56,-1:10,56:6,26,56:12,-1:2,56,48,-1:6,56,-1:10,56:3,28,56:15,-" +
-"1:2,56,48,-1:6,56,-1:10,56:12,30,56:6,-1:2,56,48,-1:6,56,-1:10,56:12,32,56:" +
-"6,-1:2,56,48,-1:6,56,-1:10,56:3,33,56:15,-1:2,56,48,-1:6,56,-1:10,56:6,34,5" +
-"6:12,-1:2,56,48,-1:6,56,-1:10,56,35,56:17,-1:2,56,48,-1:6,56,-1:10,56,36,56" +
-":17,-1:2,56,48,-1:6,56,-1:10,56:6,37,56:12,-1:2,56,48,-1:6,56,-1:10,56:16,3" +
-"8,56:2,-1:2,56,48,-1:6,56,-1:10,56:18,39,-1:2,56,48,-1:6,56,-1:10,56:10,41," +
-"56:8,-1:2,56,48,-1:6,56,-1:10,56:2,42,56:16,-1:2,56,48,-1:6,56,-1:10,56:11," +
-"52,56:7,-1:2,56,48,-1:6,56,-1:10,53,56:18,-1:2,56,48,-1:6,56,-1:10,56:7,54," +
-"56:11,-1:2,56,48,-1:6,56,-1:10,56,43,56:17,-1:2,56,48,-1:6,56,-1:10,56:4,55" +
-",56:14,-1:2,56,48,-1:6,56,-1:10,56:15,44,56:3,-1:2,56,48,-1:6,56,-1:10,56:1" +
-"7,45,56,-1:2,56,48,-1:6,56,-1:10,56:6,49,56:12,-1:2,56,48,-1:6,56,-1:10,56:" +
-"17,50,56,-1:2,56,48,-1:6,56,-1:10,56:6,51,56:12,-1:2,56,48,-1:6,56,-1:9");
+	private int yy_nxt[][] = unpackFromString(46,41,
+"-1,1,63:4,46,63,64,63,53,63,47,63:2,38,65,63:4,2,3,63,-1,25,3,27,-1:3,63,4," +
+"5,6,7,8,29,31,9,10,-1,63,54,63:18,-1:2,63,55,-1:6,63,-1:72,3,-1:3,3,-1:47,1" +
+"3,-1:40,14,-1:8,63:20,-1:2,63,55,-1:6,63,-1:10,25:21,-1,25:2,11,25:3,33,-1," +
+"25:9,-1:2,63:3,17,63:16,-1:2,63,55,-1:6,63,-1:42,12,-1:8,63:8,18,63:11,-1:2" +
+",63,55,-1:6,63,-1:46,15,-1:4,63:3,19,63:16,-1:2,63,55,-1:6,63,-1:47,16,-1:3" +
+",63,20,63:18,-1:2,63,55,-1:6,63,-1:34,25,-1:3,25:3,-1:10,63:4,21,63:15,-1:2" +
+",63,55,-1:6,63,-1:10,63:13,22,63:6,-1:2,63,55,-1:6,63,-1:10,63:13,23,63:6,-" +
+"1:2,63,55,-1:6,63,-1:10,63:4,24,63:15,-1:2,63,55,-1:6,63,-1:10,26,63:19,-1:" +
+"2,63,55,-1:6,63,-1:10,63:7,28,63:12,-1:2,63,55,-1:6,63,-1:10,30,63:19,-1:2," +
+"63,55,-1:6,63,-1:10,63:6,32,63:13,-1:2,63,55,-1:6,63,-1:10,63:3,34,63:16,-1" +
+":2,63,55,-1:6,63,-1:10,63:12,35,63:7,-1:2,63,55,-1:6,63,-1:10,63:12,36,63:7" +
+",-1:2,63,55,-1:6,63,-1:10,63:3,37,63:16,-1:2,63,55,-1:6,63,-1:10,63:6,39,63" +
+":13,-1:2,63,55,-1:6,63,-1:10,63,40,63:16,57,63,-1:2,63,55,-1:6,63,-1:10,63," +
+"41,63:18,-1:2,63,55,-1:6,63,-1:10,63,42,63:18,-1:2,63,55,-1:6,63,-1:10,63:6" +
+",43,63:13,-1:2,63,55,-1:6,63,-1:10,63:17,44,63:2,-1:2,63,55,-1:6,63,-1:10,6" +
+"3:19,45,-1:2,63,55,-1:6,63,-1:10,63:10,48,63:9,-1:2,63,55,-1:6,63,-1:10,63:" +
+"2,49,63:17,-1:2,63,55,-1:6,63,-1:10,63:11,59,63:8,-1:2,63,55,-1:6,63,-1:10," +
+"60,63:19,-1:2,63,55,-1:6,63,-1:10,63:7,61,63:12,-1:2,63,55,-1:6,63,-1:10,63" +
+",50,63:18,-1:2,63,55,-1:6,63,-1:10,63:4,62,63:15,-1:2,63,55,-1:6,63,-1:10,6" +
+"3:16,51,63:3,-1:2,63,55,-1:6,63,-1:10,63:18,52,63,-1:2,63,55,-1:6,63,-1:10," +
+"63:6,56,63:13,-1:2,63,55,-1:6,63,-1:10,63:6,58,63:13,-1:2,63,55,-1:6,63,-1:" +
+"9");
 
 	public java_cup.runtime.Symbol next_token ()
 		throws java.io.IOException {
@@ -456,81 +465,81 @@ public class Scaner implements java_cup.runtime.Scanner {
 					case 17:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.FROM,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.ASC,yyline,yychar,new TokenValue(yytext()));
 }
 					case -18:
 						break;
 					case 18:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.WHERE,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.FROM,yyline,yychar,new TokenValue(yytext()));
 }
 					case -19:
 						break;
 					case 19:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.SELECT,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.DESC,yyline,yychar,new TokenValue(yytext()));
 }
 					case -20:
 						break;
 					case 20:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.ORDERBY,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.WHERE,yyline,yychar,new TokenValue(yytext()));
 }
 					case -21:
 						break;
 					case 21:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.GROUPBY,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.SELECT,yyline,yychar,new TokenValue(yytext()));
 }
 					case -22:
 						break;
 					case 22:
 						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.DISTINCT,yyline,yychar,new TokenValue(yytext()));
+  return new Symbol(sym.ORDERBY,yyline,yychar,new TokenValue(yytext()));
 }
 					case -23:
 						break;
-					case 24:
-						{ 
+					case 23:
+						{
   yybegin(YYINITIAL);
-  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+  return new Symbol(sym.GROUPBY,yyline,yychar,new TokenValue(yytext()));
 }
 					case -24:
+						break;
+					case 24:
+						{
+  yybegin(YYINITIAL);
+  return new Symbol(sym.DISTINCT,yyline,yychar,new TokenValue(yytext()));
+}
+					case -25:
 						break;
 					case 26:
 						{ 
   yybegin(YYINITIAL);
   return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
 }
-					case -25:
+					case -26:
 						break;
 					case 28:
 						{ 
   yybegin(YYINITIAL);
   return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
 }
-					case -26:
+					case -27:
 						break;
 					case 30:
 						{ 
   yybegin(YYINITIAL);
   return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
 }
-					case -27:
-						break;
-					case 32:
-						{ 
-  yybegin(YYINITIAL);
-  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
-}
 					case -28:
 						break;
-					case 33:
+					case 32:
 						{ 
   yybegin(YYINITIAL);
   return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
@@ -718,6 +727,48 @@ public class Scaner implements java_cup.runtime.Scanner {
   return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
 }
 					case -55:
+						break;
+					case 60:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -56:
+						break;
+					case 61:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -57:
+						break;
+					case 62:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -58:
+						break;
+					case 63:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -59:
+						break;
+					case 64:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -60:
+						break;
+					case 65:
+						{ 
+  yybegin(YYINITIAL);
+  return new Symbol(sym.ID,yyline,yychar,new TokenValue(yytext())); 
+}
+					case -61:
 						break;
 					default:
 						yy_error(YY_E_INTERNAL,false);
