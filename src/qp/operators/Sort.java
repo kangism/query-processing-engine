@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+import qp.optimizer.BufferManager;
 import qp.utils.Attribute;
 import qp.utils.Batch;
 import qp.utils.Schema;
@@ -17,6 +18,11 @@ import qp.utils.Tuple;
  */
 public class Sort extends Operator {
 
+    /**
+     * Number of buffers available.
+     */
+    int numBuff;
+
     Operator base;
     Vector attrSet;
     int batchsize; // number of tuples per outbatch
@@ -25,8 +31,10 @@ public class Sort extends Operator {
      * The following fields are requied during execution of the Sort Operator
      **/
 
-    Batch inbatch;
+    Batch next;
     Batch outbatch;
+
+    List<Tuple> tuplesInMem;
 
     public Sort(Operator base, Vector as, int type) {
 	super(type);
@@ -46,6 +54,14 @@ public class Sort extends Operator {
 	return attrSet;
     }
 
+    public void setNumBuff(int num) {
+	this.numBuff = num;
+    }
+
+    public int getNumBuff() {
+	return numBuff;
+    }
+
     /**
      * Opens the connection to the base operator Also figures out what are the columns to be
      * projected from the base operator
@@ -55,6 +71,7 @@ public class Sort extends Operator {
 	/** setnumber of tuples per batch **/
 	int tuplesize = schema.getTupleSize();
 	batchsize = Batch.getPageSize() / tuplesize;
+	this.numBuff = BufferManager.getNumBuffer();
 
 	return base.open();
     }
@@ -62,47 +79,57 @@ public class Sort extends Operator {
     /** Read next tuple from operator */
 
     public Batch next() {
-	// System.out.println("Project:-----------------in next-----------------");
 	outbatch = new Batch(batchsize);
 
-	/**
-	 * all the tuples in the inbuffer goes to the output buffer
-	 **/
+	tuplesInMem = new ArrayList<Tuple>();
 
-	inbatch = base.next();
-	// System.out.println("Sort:-------------- inside the next---------------");
 
-	if (inbatch == null) {
+	// all the tuples in the different page of the 
+	// memory are in one list to make it easier
+	for (int i = 0; i < numBuff; i++) {
+	    next = base.next();
+	    if (next != null) {
+	    tuplesInMem.addAll(next.getTuples());
+	    }
+	}
+	
+	// the sort is finished
+	if (tuplesInMem.isEmpty()) {
 	    return null;
 	}
-	// System.out.println("Sort:---------------base tuples---------");
-	for (int i = 0; i < inbatch.size(); i++) {
+	
+	for (int i = 0; i < tuplesInMem.size(); i++) {
 
-	    // XXX For now I just sort on the first attribute!
-
+	    // XXX For now I just sort on the first attribute without any OPTION (ASC or DESC)
 
 	    boolean found = false;
+
+	    // We add each tuples one by one and we try to find the good position!
 	    
-	    if(outbatch.isEmpty()){
-		outbatch.add(inbatch.elementAt(i));
+	    //we add the first one
+	    if (outbatch.isEmpty()) {
+		outbatch.add(tuplesInMem.get(i));
 		found = true;
 	    }
-	    
-	    if (!found && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(0), 0) <= 0) {
+
+	    // case: smaller than the first one
+	    if (!found && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(0), 0) <= 0) {
 		// The tuples is smaller than the first attribute
-		outbatch.insertElementAt(inbatch.elementAt(i), 0);
+		outbatch.insertElementAt(tuplesInMem.get(i), 0);
 		found = true;
 	    }
-	    if (!found && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(outbatch.size() - 1), 0) >= 0) {
+	    
+	    // case: larger than the last one
+	    if (!found && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(outbatch.size() - 1), 0) >= 0) {
 		// The tuples is larger than the last attribute
-		outbatch.add(inbatch.elementAt(i));
+		outbatch.add(tuplesInMem.get(i));
 		found = true;
 	    }
 	    int j = 1;
 	    while (!found) {
-		if (Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(j - 1), 0) >= 0 && Tuple.compareTuples(inbatch.elementAt(i), outbatch.elementAt(j), 0) <= 0) {
+		if (Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(j - 1), 0) >= 0 && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(j), 0) <= 0) {
 		    // the tuple is between the element j-1 and j
-		    outbatch.insertElementAt(inbatch.elementAt(i), j);
+		    outbatch.insertElementAt(tuplesInMem.get(i), j);
 		    found = true;
 		}
 		j++;
