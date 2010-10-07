@@ -20,7 +20,7 @@ public class RandomInitialPlan{
     Vector<Condition> selectionlist;     //List of select conditons
     Vector<Condition> joinlist;          //List of join conditions
     Vector<Attribute> groupbylist;
-    Vector<Attribute> orderbylist;
+    Vector<AttributeOption> orderbylist;
     int numJoin;    // Number of joins in this query
 
 
@@ -201,7 +201,7 @@ public class RandomInitialPlan{
     public void createOrderbyOp(){
 	Operator base = root;
         if ( orderbylist == null ){
-            orderbylist = new Vector<Attribute>();
+            orderbylist = new Vector<AttributeOption>();
         }
         if(!orderbylist.isEmpty()){
 	    root = new Sort(base,orderbylist,OpType.SORT);

@@ -21,7 +21,7 @@ public class SQLQuery {
     boolean isDistinct = false; // Whether distinct key word appeared in select clause
     boolean desc = false; // Whether sort by desc or not
 
-    Vector<Attribute> orderbyList; // List of attributes in orderby clause
+    Vector<AttributeOption> orderbyList; // List of attributes in orderby clause
 
     // TODO deal with DESC option
 
@@ -117,11 +117,11 @@ public class SQLQuery {
 	return groupbyList;
     }
 
-    public void setOrderByList(Vector<Attribute> list) {
+    public void setOrderByList(Vector<AttributeOption> list) {
 	orderbyList = list;
     }
 
-    public Vector<Attribute> getOrderByList() {
+    public Vector<AttributeOption> getOrderByList() {
 	return orderbyList;
     }
 

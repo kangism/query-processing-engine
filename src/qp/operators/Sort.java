@@ -9,6 +9,7 @@ import java.util.Vector;
 
 import qp.optimizer.BufferManager;
 import qp.utils.Attribute;
+import qp.utils.AttributeOption;
 import qp.utils.Batch;
 import qp.utils.Schema;
 import qp.utils.Tuple;
@@ -24,7 +25,7 @@ public class Sort extends Operator {
     int numBuff;
 
     Operator base;
-    Vector<Attribute> attrSet;
+    Vector<AttributeOption> attrSet;
     
     
     /**
@@ -47,7 +48,7 @@ public class Sort extends Operator {
      **/
     int[] attrIndex;
     
-    public Sort(Operator base, Vector<Attribute> as, int type) {
+    public Sort(Operator base, Vector<AttributeOption> as, int type) {
 	super(type);
 	this.attrSet = as;
 	this.base = base;
@@ -61,7 +62,7 @@ public class Sort extends Operator {
 	return base;
     }
 
-    public Vector<Attribute> getSortAttr() {
+    public Vector<AttributeOption> getSortAttr() {
 	return attrSet;
     }
 
@@ -87,8 +88,8 @@ public class Sort extends Operator {
 	Schema baseSchema = base.getSchema();
 	attrIndex = new int[attrSet.size()];
 	for (int i = 0; i < attrSet.size(); i++) {
-	    Attribute attr = (Attribute) attrSet.elementAt(i);
-	    int index = baseSchema.indexOf(attr);
+	    AttributeOption attr = attrSet.elementAt(i);
+	    int index = baseSchema.indexOf(attr.getAttribute());
 	    attrIndex[i] = index;
 	}
 	
@@ -165,9 +166,9 @@ public class Sort extends Operator {
 
     public Object clone() {
 	Operator newbase = (Operator) base.clone();
-	Vector<Attribute> newattr = new Vector<Attribute>();
+	Vector<AttributeOption> newattr = new Vector<AttributeOption>();
 	for (int i = 0; i < attrSet.size(); i++)
-	    newattr.add((Attribute) ((Attribute) attrSet.elementAt(i)).clone());
+	    newattr.add(attrSet.elementAt(i).clone());
 	Sort newproj = new Sort(newbase, newattr, optype);
 	newproj.setSchema(newbase.getSchema());
 	return newproj;
