@@ -70,15 +70,15 @@ private static Random random;
 	    /** format is <colname><coltype><keytype><attrsize><range>  **/
 
 		/** for schema generation **/
-		Vector attrlist = new Vector();
+		Vector<Attribute> attrlist = new Vector<Attribute>();
 		Attribute attr;
-	    boolean flag=false;
+/*neverRead*/ //	    boolean flag=false;
 	    int i=0;
 
 
 	    while((line = in.readLine()) != null){
 		StringTokenizer tokenizer = new StringTokenizer(line);
-		int tokenCount = tokenizer.countTokens();
+		/*neverRead*/ //		int tokenCount = tokenizer.countTokens();
 		/** get column name **/
 		String colname = tokenizer.nextToken();
 

@@ -13,16 +13,16 @@ public class Tuple implements Serializable {
      * 
      */
     private static final long serialVersionUID = 8738898719856953652L;
-    public Vector _data;
+    public Vector<Object> _data;
+ 
 
 
-
-    public Tuple(Vector d){
+    public Tuple(Vector<Object> d){
 	_data=d;
     }
 
     /** Accessor for data */
-    public Vector data() {
+    public Vector<Object> data() {
         return _data;
     }
 
@@ -51,7 +51,7 @@ public class Tuple implements Serializable {
 
 
     public Tuple joinWith(Tuple right){ //, Attribute leftAttr, Attribute rightAttr){
-	Vector newData = new Vector(this.data());
+	Vector<Object> newData = new Vector<Object>(this.data());
 	newData.addAll(right.data());
 	return new Tuple(newData);
     }
