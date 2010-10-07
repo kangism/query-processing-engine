@@ -118,7 +118,7 @@ try{
 	System.exit(1);
 }
 
-	boolean flag=false;
+/*neverRead*/ //	boolean flag=false;
 	StringTokenizer tokenizer;
 	while((line = in.readLine()) != null){
 	    linenum++;
@@ -130,7 +130,7 @@ try{
 		//System.exit(1);
 	    //}
 
-	    Vector data = new Vector();
+	    Vector<Object> data = new Vector<Object>();
 	    int attrIndex=0;
 
 	    while(tokenizer.hasMoreElements()){
