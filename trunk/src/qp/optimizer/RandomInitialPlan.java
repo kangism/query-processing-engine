@@ -20,6 +20,7 @@ import qp.operators.Scan;
 import qp.operators.Select;
 import qp.operators.Sort;
 import qp.utils.Attribute;
+import qp.utils.AttributeOption;
 import qp.utils.Condition;
 import qp.utils.RandNumb;
 import qp.utils.SQLQuery;
