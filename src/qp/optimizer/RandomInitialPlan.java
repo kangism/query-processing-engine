@@ -75,10 +75,20 @@ public class RandomInitialPlan {
 		createDistinctOp();
 		return root;
 	}
+	
+	/**
+	 * Create Sort Operator
+	 **/
+	
+	public void createSortOp() {
+		// NOTE: IF THE ORDERBY LIST IS NOT EMPTY, THEN CREATE SORT OPERATOR ACCORDINGLY.
+		//       AND IF ORDERDY LIST IS EMPTY BUT sqlquery.isDistinct() IS TRUE, SORT OP SHOULD BE STILL CREATED FOR DISTINCT OP
+	}
 
 	/**
 	 * Create Distinct Operator
 	 **/
+	
 	public void createDistinctOp() {
 		Operator base = root;
 		// int numOfBufs = BufferManager.getBuffersPerJoin();
