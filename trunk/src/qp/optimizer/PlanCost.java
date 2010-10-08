@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
 
+import qp.operators.Distinct;
+import qp.operators.Sort;
 import qp.operators.Join;
 import qp.operators.JoinType;
 import qp.operators.OpType;
@@ -76,7 +78,8 @@ public class PlanCost {
 	    return getStatistics((Project) node);
 	} else if (node.getOpType() == OpType.SCAN) {
 	    return getStatistics((Scan) node);
-
+	}else if (node.getOpType() == OpType.DISTINCT) {
+		return getStatistics((Distinct) node);
 	}
 	return -1;
     }
@@ -288,5 +291,29 @@ public class PlanCost {
 	// System.out.println("Scan: tablename="+tablename+"pres cost="+numpages+"total cost="+cost);
 	return numtuples;
     }
+    
+    // need to check whether correct or not!!!!!!!!!!!!!!!!!!
+	protected int getStatistics(Sort node) {
+		int numtuples = calculateCost(node.getBase());/// number of tuples from base operator
+//		int numbufs = node.getNumBuffer();
+//		int batchsize = Batch.getPageSize() / node.getSchema().getTupleSize();
+//		int numpages = (int)Math.ceil(numtuples *1.0 / batchsize);
+//		int sortcost = (int) (2 * numpages * (Math.log(numpages/numbufs) / Math.log(numbufs-1) + 1));
+//		if(sortcost < 0)
+//			sortcost = 0;
+//		cost = cost + sortcost;
+		return numtuples;
+	}
+	
+	protected int getStatistics(Distinct node) {
+		int numtuples = calculateCost(node.getBase());/// number of tuples from base operator
+		int batchsize = Batch.getPageSize() / node.getSchema().getTupleSize();
+		int numpages = (int)Math.ceil(numtuples *1.0 / batchsize);
+		int sortcost = numpages * 2;
+		if(sortcost < 0)
+			sortcost = 0;
+		cost = cost + sortcost;
+		return numtuples;
+	}
 
 }
