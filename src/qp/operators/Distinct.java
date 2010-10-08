@@ -19,7 +19,6 @@ public class Distinct extends Operator {
 		super(type);
 		this.base = base;
 		numCol = base.getSchema().getNumCols();
-		schema = base.getSchema();
 	}
 
 	/**
