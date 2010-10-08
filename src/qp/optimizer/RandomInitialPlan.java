@@ -77,15 +77,6 @@ public class RandomInitialPlan {
 	}
 	
 	/**
-	 * Create Sort Operator
-	 **/
-	
-	public void createSortOp() {
-		// NOTE: IF THE ORDERBY LIST IS NOT EMPTY, THEN CREATE SORT OPERATOR ACCORDINGLY.
-		//       AND IF ORDERDY LIST IS EMPTY BUT sqlquery.isDistinct() IS TRUE, SORT OP SHOULD BE STILL CREATED FOR DISTINCT OP
-	}
-
-	/**
 	 * Create Distinct Operator
 	 **/
 	
@@ -238,6 +229,9 @@ public class RandomInitialPlan {
 		if (!orderbylist.isEmpty()) {
 			root = new Sort(base, orderbylist, OpType.SORT);
 			root.setSchema(base.getSchema());
+		} else if (sqlquery.isDistinct()){
+			// NOTE: IF ORDERDY LIST IS EMPTY BUT sqlquery.isDistinct() IS TRUE, SORT OP SHOULD BE STILL CREATED FOR DISTINCT OP
+			
 		}
 	}
 
