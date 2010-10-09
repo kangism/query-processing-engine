@@ -104,7 +104,7 @@ public class BlockNestedJoin extends Join {
      * @param jn
      */
     public BlockNestedJoin(Join jn) {
-	super(jn.getLeft(), jn.getRight(), jn.getCondition(), jn.getOpType());
+	super(jn.getLeft(), jn.getRight(), jn.getCondition(), jn.getOperatorType());
 	schema = jn.getSchema();
 	jointype = jn.getJoinType();
 	numBuff = jn.getNumBuff();

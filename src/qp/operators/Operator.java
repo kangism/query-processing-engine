@@ -37,7 +37,11 @@ public class Operator{
     public Operator(int type){
 	this.optype = type;
     }
-
+   
+/**
+ * remplace Operator(int type)
+ * @param operatorType
+ */
     public Operator(OperatorType operatorType){
 	this.operatorType= operatorType;
     }
@@ -64,10 +68,17 @@ public class Operator{
         this.operatorType = operatorType;
     }
 
+    /**
+     * @deprecated
+     */
     public void setOpType(int type){
 	this.optype = type;
     }
 
+    /**
+     * @deprecated
+     * @return
+     */
     public int  getOpType(){
 	return optype;
     }

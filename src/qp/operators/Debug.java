@@ -4,87 +4,80 @@ package qp.operators;
 
 import qp.utils.*;
 
-public class Debug{
+public class Debug {
 
+    /* print the attribute * */
 
-
-
-	/* print the attribute **/
-
-    public static void PPrint(Attribute attr){
+    public static void PPrint(Attribute attr) {
 	String tabname = attr.getTabName();
 	String colname = attr.getColName();
-	System.out.print(tabname+"."+colname);
+	System.out.print(tabname + "." + colname);
     }
 
+    /** print the condition **/
 
-	/** print the condition **/
-
-    public static void PPrint(Condition con){
+    public static void PPrint(Condition con) {
 	Attribute lhs = con.getLhs();
 	Object rhs = con.getRhs();
 	int exprtype = con.getExprType();
 	PPrint(lhs);
-	switch(exprtype){
-	case Condition.LESSTHAN:
-	    System.out.print("<");
-	    break;
-	case Condition.GREATERTHAN:
-	    System.out.print(">");
-	    break;
-	case Condition.LTOE:
-	    System.out.print("<=");
-	    break;
-	case Condition.GTOE:
-	    System.out.print(">=");
-	    break;
-	case Condition.EQUAL:
-	    System.out.print("==");
-	    break;
-	case Condition.NOTEQUAL:
-	    System.out.print("!=");
-	    break;
+	switch (exprtype) {
+	    case Condition.LESSTHAN:
+		System.out.print("<");
+		break;
+	    case Condition.GREATERTHAN:
+		System.out.print(">");
+		break;
+	    case Condition.LTOE:
+		System.out.print("<=");
+		break;
+	    case Condition.GTOE:
+		System.out.print(">=");
+		break;
+	    case Condition.EQUAL:
+		System.out.print("==");
+		break;
+	    case Condition.NOTEQUAL:
+		System.out.print("!=");
+		break;
 	}
 
-	if(con.getOpType()==Condition.JOIN){
-	    PPrint((Attribute)rhs);
-	}else if(con.getOpType()== Condition.SELECT){
-	    System.out.print((String)rhs);
+	if (con.getOpType() == Condition.JOIN) {
+	    PPrint((Attribute) rhs);
+	} else if (con.getOpType() == Condition.SELECT) {
+	    System.out.print((String) rhs);
 	}
     }
 
+    /** print schema **/
 
-
-	/** print schema **/
-
-    public static void PPrint(Schema schema){
+    public static void PPrint(Schema schema) {
 	System.out.println();
-	for(int i=0;i<schema.getNumCols();i++){
+	for (int i = 0; i < schema.getNumCols(); i++) {
 	    Attribute attr = schema.getAttribute(i);
 	    PPrint(attr);
 	}
 	System.out.println();
     }
 
-
-	/** print a node in plan tree **/
+    /** print a node in plan tree **/
 
     public static void PPrint(Operator node){
-	int optype = node.getOpType();
+OperatorType optype = node.getOperatorType();
 
-	if(optype==OpType.JOIN){
-	    int exprtype = ((Join)node).getJoinType();
+	if(optype==OperatorType.JOIN){
+	    JoinType exprtype = ((Join)node).getJoinType();
 	    switch(exprtype){
-	    case JoinType.NESTEDJOIN:
+	    case NESTEDJOIN:
 		System.out.print("NestedJoin(");
 		break;
-	    case JoinType.BLOCKNESTED:
+	    case BLOCKNESTED:
 		System.out.print("BlockNested(");
 		break;
-	    case JoinType.SORTMERGE:
+	    case SORTMERGE:
 		System.out.print("SortMerge(");
 		break;
-	    case JoinType.HASHJOIN:
+	    case HASHJOIN:
 		System.out.print("HashJoin(");
 		break;
 	    }
@@ -96,7 +89,7 @@ public class Debug{
 	    PPrint(((Join)node).getRight());
 	    System.out.print(")");
 
-	}else if(optype==OpType.SELECT){
+	}else if(optype==OperatorType.SELECT){
 	    System.out.print("Select(");
 	    PPrint(((Select)node).getBase());
 	    System.out.print("  '");
@@ -104,60 +97,44 @@ public class Debug{
 	    System.out.print("'  ");
 	    System.out.print(")");
 
-	}else if(optype==OpType.PROJECT){
+	}else if(optype==OperatorType.PROJECT){
 	    System.out.print("Project(");
 	    PPrint(((Project)node).getBase());
 	    System.out.print(")");
 
-	}else if (optype == OpType.DISTINCT) {
+	}else if (optype == OperatorType.DISTINCT) {
 		System.out.print("Distinct(");
 		PPrint(((Distinct) node).getBase());
 		System.out.print(")");
 
-	}else if(optype==OpType.SCAN){
+	}else if(optype==OperatorType.SCAN){
 	    System.out.print(((Scan)node).getTabName());
 	}
     }
 
+    /** print a tuple **/
 
-	/** print a tuple **/
-
-    public static void PPrint(Tuple t){
-	for(int i=0;i<t.data().size();i++){
+    public static void PPrint(Tuple t) {
+	for (int i = 0; i < t.data().size(); i++) {
 	    Object data = t.dataAt(i);
-	    if(data instanceof Integer){
-		System.out.print(((Integer)data).intValue()+"\t");
-	    }else if(data instanceof Float){
-		System.out.print(((Float)data).floatValue()+"\t");
-	    }else{
-		System.out.print(((String)data)+"\t");
+	    if (data instanceof Integer) {
+		System.out.print(((Integer) data).intValue() + "\t");
+	    } else if (data instanceof Float) {
+		System.out.print(((Float) data).floatValue() + "\t");
+	    } else {
+		System.out.print(((String) data) + "\t");
 	    }
 	}
 	System.out.println();
     }
 
+    /** print a page of tuples **/
 
-
-	/**print a page of tuples **/
-
-    public static void PPrint(Batch b){
-	for(int i=0;i<b.size();i++){
+    public static void PPrint(Batch b) {
+	for (int i = 0; i < b.size(); i++) {
 	    PPrint(b.elementAt(i));
 	    System.out.println();
 	}
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,12 +3,14 @@
  */
 package qp.operators;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
 import qp.optimizer.BufferManager;
-import qp.utils.Attribute;
 import qp.utils.AttributeOption;
 import qp.utils.Batch;
 import qp.utils.Schema;
@@ -26,8 +28,7 @@ public class Sort extends Operator {
 
     Operator base;
     Vector<AttributeOption> attrSet;
-    
-    
+
     /**
      * number of tuples per outbatch
      */
@@ -42,13 +43,21 @@ public class Sort extends Operator {
 
     List<Tuple> tuplesInMem;
 
-    
+    /**
+     * The file num of the temp file.
+     */
+    int filenum = 0;
+    /**
+     * The current temp file name.
+     */
+    String tempFile = "";
+
     /**
      * index of the attributes in the base operator that are to be projected
      **/
     int[] attrIndex;
-    
-    public Sort(Operator base, Vector<AttributeOption> as, int type) {
+
+    public Sort(Operator base, Vector<AttributeOption> as, OperatorType type) {
 	super(type);
 	this.attrSet = as;
 	this.base = base;
@@ -92,8 +101,6 @@ public class Sort extends Operator {
 	    int index = baseSchema.indexOf(attr.getAttribute());
 	    attrIndex[i] = index;
 	}
-	
-	
 	return base.open();
     }
 
@@ -113,7 +120,7 @@ public class Sort extends Operator {
 	    }
 	}
 
-	// the sort is finished
+	// the phase One of sort is finished
 	if (tuplesInMem.isEmpty()) {
 	    return null;
 	}
@@ -156,6 +163,17 @@ public class Sort extends Operator {
 	    }
 
 	}
+
+	filenum++;
+	tempFile = "SortTemp-" + String.valueOf(filenum);
+	try {
+	    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
+	    out.writeObject(outbatch);
+	    out.close();
+	} catch (IOException io) {
+	    System.out.println("Sort:writing the temporay file error");
+	}
+
 	return outbatch;
     }
 
@@ -169,7 +187,7 @@ public class Sort extends Operator {
 	Vector<AttributeOption> newattr = new Vector<AttributeOption>();
 	for (int i = 0; i < attrSet.size(); i++)
 	    newattr.add(attrSet.elementAt(i).clone());
-	Sort newproj = new Sort(newbase, newattr, optype);
+	Sort newproj = new Sort(newbase, newattr, operatorType);
 	newproj.setSchema(newbase.getSchema());
 	return newproj;
     }

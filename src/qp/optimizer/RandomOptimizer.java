@@ -11,8 +11,8 @@ import qp.operators.HashJoin;
 import qp.operators.Join;
 import qp.operators.JoinType;
 import qp.operators.NestedJoin;
-import qp.operators.OpType;
 import qp.operators.Operator;
+import qp.operators.OperatorType;
 import qp.operators.Project;
 import qp.operators.Select;
 import qp.utils.Attribute;
@@ -189,12 +189,12 @@ public class RandomOptimizer {
 		if (numJMeth > 1) {
 			/** find the node that is to be altered **/
 			Join node = (Join) findNodeAt(root, joinNum);
-			int prevJoinMeth = node.getJoinType();
+			int prevJoinMeth = node.getJoinType().getJoinId();
 			int joinMeth = RandNumb.randInt(0, numJMeth - 1);
 			while (joinMeth == prevJoinMeth) {
 				joinMeth = RandNumb.randInt(0, numJMeth - 1);
 			}
-			node.setJoinType(joinMeth);
+			node.setJoinType(JoinType.getJoinTypeById(joinMeth));
 		}
 		return root;
 	}
@@ -237,14 +237,14 @@ public class RandomOptimizer {
 		Operator left = op.getLeft();
 		Operator right = op.getRight();
 
-		if (left.getOpType() == OpType.JOIN && right.getOpType() != OpType.JOIN) {
+		if (left.getOperatorType() == OperatorType.JOIN && right.getOperatorType() != OperatorType.JOIN) {
 			transformLefttoRight(op, (Join) left);
 
-		} else if (left.getOpType() != OpType.JOIN
-				&& right.getOpType() == OpType.JOIN) {
+		} else if (left.getOperatorType() != OperatorType.JOIN
+				&& right.getOperatorType() == OperatorType.JOIN) {
 			transformRighttoLeft(op, (Join) right);
-		} else if (left.getOpType() == OpType.JOIN
-				&& right.getOpType() == OpType.JOIN) {
+		} else if (left.getOperatorType() == OperatorType.JOIN
+				&& right.getOperatorType() == OperatorType.JOIN) {
 			if (RandNumb.flipCoin())
 				transformLefttoRight(op, (Join) left);
 			else
@@ -278,7 +278,7 @@ public class RandomOptimizer {
 		if (leftright.getSchema().contains(leftAttr)) {
 			System.out.println("----------------CASE 1-----------------");
 
-			temp = new Join(leftright, right, op.getCondition(), OpType.JOIN);
+			temp = new Join(leftright, right, op.getCondition(), OperatorType.JOIN);
 			temp.setJoinType(op.getJoinType());
 			temp.setNodeIndex(op.getNodeIndex());
 			op.setLeft(leftleft);
@@ -293,7 +293,7 @@ public class RandomOptimizer {
 			 * CASE 2: ( A X a1b1 B) X a4c4 C = B X b1a1 (A X a4c4 C) a1b1, a4c4
 			 * are the join conditions at that join operator
 			 **/
-			temp = new Join(leftleft, right, op.getCondition(), OpType.JOIN);
+			temp = new Join(leftleft, right, op.getCondition(), OperatorType.JOIN);
 			temp.setJoinType(op.getJoinType());
 			temp.setNodeIndex(op.getNodeIndex());
 			op.setLeft(leftright);
@@ -322,7 +322,7 @@ public class RandomOptimizer {
 		if (rightleft.getSchema().contains(rightAttr)) {
 			System.out
 					.println("----------------------CASE 3-----------------------");
-			temp = new Join(left, rightleft, op.getCondition(), OpType.JOIN);
+			temp = new Join(left, rightleft, op.getCondition(), OperatorType.JOIN);
 			temp.setJoinType(op.getJoinType());
 			temp.setNodeIndex(op.getNodeIndex());
 			op.setLeft(temp);
@@ -337,7 +337,7 @@ public class RandomOptimizer {
 			 **/
 			System.out
 					.println("-----------------------------CASE 4-----------------");
-			temp = new Join(left, rightright, op.getCondition(), OpType.JOIN);
+			temp = new Join(left, rightright, op.getCondition(), OperatorType.JOIN);
 			temp.setJoinType(op.getJoinType());
 			temp.setNodeIndex(op.getNodeIndex());
 
@@ -359,7 +359,7 @@ public class RandomOptimizer {
 	 **/
 
 	protected Operator findNodeAt(Operator node, int joinNum) {
-		if (node.getOpType() == OpType.JOIN) {
+		if (node.getOperatorType() == OperatorType.JOIN) {
 			if (((Join) node).getNodeIndex() == joinNum) {
 				return node;
 			} else {
@@ -369,14 +369,14 @@ public class RandomOptimizer {
 					temp = findNodeAt(((Join) node).getRight(), joinNum);
 				return temp;
 			}
-		} else if (node.getOpType() == OpType.SCAN) {
+		} else if (node.getOperatorType() == OperatorType.SCAN) {
 			return null;
-		} else if (node.getOpType() == OpType.SELECT) {
+		} else if (node.getOperatorType() == OperatorType.SELECT) {
 			// if sort/project/select operator
 			return findNodeAt(((Select) node).getBase(), joinNum);
-		} else if (node.getOpType() == OpType.PROJECT) {
+		} else if (node.getOperatorType() == OperatorType.PROJECT) {
 			return findNodeAt(((Project) node).getBase(), joinNum);
-		} else if (node.getOpType() == OpType.DISTINCT) {
+		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			return findNodeAt(((Distinct) node).getBase(), joinNum);
 		} else {
 			return null;
@@ -389,22 +389,22 @@ public class RandomOptimizer {
 	 **/
 	private void modifySchema(Operator node) {
 
-		if (node.getOpType() == OpType.JOIN) {
+		if (node.getOperatorType() == OperatorType.JOIN) {
 			Operator left = ((Join) node).getLeft();
 			Operator right = ((Join) node).getRight();
 			modifySchema(left);
 			modifySchema(right);
 			node.setSchema(left.getSchema().joinWith(right.getSchema()));
-		} else if (node.getOpType() == OpType.SELECT) {
+		} else if (node.getOperatorType() == OperatorType.SELECT) {
 			Operator base = ((Select) node).getBase();
 			modifySchema(base);
 			node.setSchema(base.getSchema());
-		} else if (node.getOpType() == OpType.PROJECT) {
+		} else if (node.getOperatorType() == OperatorType.PROJECT) {
 			Operator base = ((Project) node).getBase();
 			modifySchema(base);
 			Vector<Attribute> attrlist = ((Project) node).getProjAttr();
 			node.setSchema(base.getSchema().subSchema(attrlist));
-		} else if (node.getOpType() == OpType.DISTINCT) {
+		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			Operator base = ((Distinct) node).getBase();
 			modifySchema(base);
 			node.setSchema(base.getSchema());
@@ -419,13 +419,13 @@ public class RandomOptimizer {
 
 	public static Operator makeExecPlan(Operator node) {
 
-		if (node.getOpType() == OpType.JOIN) {
+		if (node.getOperatorType() == OperatorType.JOIN) {
 			Operator left = makeExecPlan(((Join) node).getLeft());
 			Operator right = makeExecPlan(((Join) node).getRight());
-			int joinType = ((Join) node).getJoinType();
+			JoinType joinType = ((Join) node).getJoinType();
 			int numbuff = BufferManager.getBuffersPerJoin();
 			switch (joinType) {
-			case JoinType.NESTEDJOIN:
+			case NESTEDJOIN:
 
 				NestedJoin nj = new NestedJoin((Join) node);
 				nj.setLeft(left);
@@ -438,7 +438,7 @@ public class RandomOptimizer {
 				 * implemented
 				 **/
 
-			case JoinType.BLOCKNESTED:
+			case BLOCKNESTED:
 				// NestedJoin bj2 = new NestedJoin((Join) node);
 				BlockNestedJoin bj = new BlockNestedJoin((Join) node);
 				bj.setLeft(left);
@@ -448,13 +448,13 @@ public class RandomOptimizer {
 				bj.setBlockSize(numbuff - 2);
 				return bj;
 
-			case JoinType.SORTMERGE:
+			case SORTMERGE:
 
 				NestedJoin sm = new NestedJoin((Join) node);
 				/* + other code */
 				return sm;
 
-			case JoinType.HASHJOIN:
+			case HASHJOIN:
 
 				HashJoin hj = new HashJoin((Join) node);
 				hj.setLeft(left);
@@ -466,15 +466,15 @@ public class RandomOptimizer {
 			default:
 				return node;
 			}
-		} else if (node.getOpType() == OpType.SELECT) {
+		} else if (node.getOperatorType() == OperatorType.SELECT) {
 			Operator base = makeExecPlan(((Select) node).getBase());
 			((Select) node).setBase(base);
 			return node;
-		} else if (node.getOpType() == OpType.PROJECT) {
+		} else if (node.getOperatorType() == OperatorType.PROJECT) {
 			Operator base = makeExecPlan(((Project) node).getBase());
 			((Project) node).setBase(base);
 			return node;
-		} else if (node.getOpType() == OpType.DISTINCT) {
+		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			Operator base = makeExecPlan(((Distinct) node).getBase());
 			((Distinct) node).setBase(base);
 			return node;

@@ -15,7 +15,7 @@ public class Distinct extends Operator {
 							// tuple
 	int numCol = 0; // no. of columns of the base table
 
-	public Distinct(Operator base, int type) {
+	public Distinct(Operator base, OperatorType type) {
 		super(type);
 		this.base = base;
 		numCol = base.getSchema().getNumCols();
@@ -105,7 +105,7 @@ public class Distinct extends Operator {
 
 	public Object clone() {
 		Operator newbase = (Operator) base.clone();
-		Distinct newDis = new Distinct(newbase, optype);
+		Distinct newDis = new Distinct(newbase, operatorType);
 		newDis.setSchema(newbase.getSchema());
 		return newDis;
 	}

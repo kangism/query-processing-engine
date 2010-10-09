@@ -28,7 +28,7 @@ public class Join extends Operator{
     /**
      * JoinType.NestedJoin/SortMerge/HashJoin/BlockNestedJoin
      */
-    int jointype;
+    JoinType jointype;
     /**
      * Each join node is given a number
      */
@@ -40,7 +40,7 @@ public class Join extends Operator{
      * @param cn
      * @param type
      */
-    public Join(Operator left, Operator right, Condition cn, int type){
+    public Join(Operator left, Operator right, Condition cn, OperatorType type){
 	super(type);
 	this.left=left;
 	this.right=right;
@@ -72,13 +72,13 @@ public class Join extends Operator{
     }
 
 
-    public int getJoinType(){
+    public JoinType getJoinType(){
 	return jointype;
     }
 
 	/* type of join */
 
-    public void setJoinType(int type){
+    public void setJoinType(JoinType type){
 	this.jointype=type;
     }
 
@@ -114,7 +114,7 @@ public class Join extends Operator{
 	Operator newright =(Operator) right.clone();
 	Condition newcond = (Condition) con.clone();
 
-	Join jn = new Join(newleft,newright,newcond,optype);
+	Join jn = new Join(newleft,newright,newcond,operatorType);
 	Schema newsche = newleft.getSchema().joinWith(newright.getSchema());
 	jn.setSchema(newsche);
 	jn.setJoinType(jointype);

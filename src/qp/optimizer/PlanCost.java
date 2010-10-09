@@ -10,14 +10,14 @@ import java.util.Hashtable;
 import java.util.StringTokenizer;
 
 import qp.operators.Distinct;
-import qp.operators.Sort;
 import qp.operators.Join;
 import qp.operators.JoinType;
-import qp.operators.OpType;
 import qp.operators.Operator;
+import qp.operators.OperatorType;
 import qp.operators.Project;
 import qp.operators.Scan;
 import qp.operators.Select;
+import qp.operators.Sort;
 import qp.utils.Attribute;
 import qp.utils.Batch;
 import qp.utils.Condition;
@@ -69,16 +69,16 @@ public class PlanCost {
      */
     protected int calculateCost(Operator node) {
 
-	if (node.getOpType() == OpType.JOIN) {
+	if (node.getOperatorType() == OperatorType.JOIN) {
 	    return getStatistics((Join) node);
-	} else if (node.getOpType() == OpType.SELECT) {
+	} else if (node.getOperatorType() == OperatorType.SELECT) {
 	    // System.out.println("PlanCost: line 40");
 	    return getStatistics((Select) node);
-	} else if (node.getOpType() == OpType.PROJECT) {
+	} else if (node.getOperatorType() == OperatorType.PROJECT) {
 	    return getStatistics((Project) node);
-	} else if (node.getOpType() == OpType.SCAN) {
+	} else if (node.getOperatorType() == OperatorType.SCAN) {
 	    return getStatistics((Scan) node);
-	}else if (node.getOpType() == OpType.DISTINCT) {
+	}else if (node.getOperatorType() == OperatorType.DISTINCT) {
 		return getStatistics((Distinct) node);
 	}
 	return -1;
@@ -137,7 +137,7 @@ public class PlanCost {
 	ht.put(leftjoinAttr, new Integer(mindistinct));
 
 	/* now calculate the cost of the operation */
-	int joinType = node.getJoinType();
+	JoinType joinType = node.getJoinType();
 
 	/* number of buffers allotted to this join */
 	int numbuff = BufferManager.getBuffersPerJoin();
@@ -147,17 +147,17 @@ public class PlanCost {
 	// System.out.println("PlanCost: jointype="+joinType);
 
 	switch (joinType) {
-	    case JoinType.NESTEDJOIN:
+	    case NESTEDJOIN:
 		joincost = leftpages * rightpages;
 		break;
-	    case JoinType.BLOCKNESTED:
+	    case BLOCKNESTED:
 		// Cost: Scan of outer + #outer blocks * scan of inner
 		joincost = leftpages + (leftpages * rightpages) / (numbuff - 2);
 		break;
-	    case JoinType.SORTMERGE:
+	    case SORTMERGE:
 		joincost = 0;
 		break;
-	    case JoinType.HASHJOIN:
+	    case HASHJOIN:
 		joincost = 3 * (leftpages + rightpages);
 		break;
 	    default:
