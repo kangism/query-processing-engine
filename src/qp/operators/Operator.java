@@ -1,7 +1,6 @@
-
 /**
-This is base class for all the operators **/
-
+ * This is base class for all the operators
+ **/
 package qp.operators;
 
 import java.util.Iterator;
@@ -11,17 +10,17 @@ import qp.utils.Schema;
 
 /**
  * Should implement {@link Iterator}, but it does not.
- *
  */
-public class Operator{
+public class Operator {
 
     /**
      * Whether it is OperatorType.SELECT/ Optype.PROJECT/OpType.JOIN.
      */
     OperatorType operatorType;
-    
+
     /**
      * Whether it is OpType.SELECT/ Optype.PROJECT/OpType.JOIN.
+     * 
      * @deprecated We should now use OperatorType.
      */
     int optype;
@@ -34,23 +33,24 @@ public class Operator{
      * @deprecated
      * @param type
      */
-    public Operator(int type){
+    public Operator(int type) {
 	this.optype = type;
     }
-   
-/**
- * remplace Operator(int type)
- * @param operatorType
- */
-    public Operator(OperatorType operatorType){
-	this.operatorType= operatorType;
+
+    /**
+     * remplace Operator(int type)
+     * 
+     * @param operatorType
+     */
+    public Operator(OperatorType operatorType) {
+	this.operatorType = operatorType;
     }
 
-    public Schema getSchema(){
+    public Schema getSchema() {
 	return schema;
     }
 
-    public void setSchema(Schema schm){
+    public void setSchema(Schema schm) {
 	this.schema = schm;
     }
 
@@ -58,20 +58,21 @@ public class Operator{
      * @return the operatorType
      */
     public OperatorType getOperatorType() {
-        return operatorType;
+	return operatorType;
     }
 
     /**
-     * @param operatorType the operatorType to set
+     * @param operatorType
+     *        the operatorType to set
      */
     public void setOperatorType(OperatorType operatorType) {
-        this.operatorType = operatorType;
+	this.operatorType = operatorType;
     }
 
     /**
      * @deprecated
      */
-    public void setOpType(int type){
+    public void setOpType(int type) {
 	this.optype = type;
     }
 
@@ -79,15 +80,14 @@ public class Operator{
      * @deprecated
      * @return
      */
-    public int  getOpType(){
+    public int getOpType() {
 	return optype;
     }
-
 
     /**
      * @return
      */
-    public boolean open(){
+    public boolean open() {
 
 	return true;
     }
@@ -95,7 +95,7 @@ public class Operator{
     /**
      * @return
      */
-    public Batch next(){
+    public Batch next() {
 	System.out.println("Operator:  ");
 	return null;
     }
@@ -103,27 +103,17 @@ public class Operator{
     /**
      * @return
      */
-    public boolean close(){
+    public boolean close() {
 
 	return true;
     }
 
-    
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
      * @see java.lang.Object#clone()
      */
-    public Object clone(){
-	return new Operator(optype);
+    public Object clone() {
+	return new Operator(operatorType);
     }
 
 }
-
-
-
-
-
-
-
-
-
-

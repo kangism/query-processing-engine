@@ -3,6 +3,10 @@ package qp.utils;
 public class AttributeOption {
     final Attribute attribute;
     final OrderByOption option;
+    /**
+     * To know the index of the attribute. Used directly in the Sort Algorithm.
+     */
+    int attributeIndexInSchema;
 
     /**
      * ASC by default.
@@ -35,6 +39,20 @@ public class AttributeOption {
      */
     public OrderByOption getOption() {
 	return option;
+    }
+
+    /**
+     * @return the attributeIndexInSchema
+     */
+    public int getAttributeIndexInSchema() {
+        return attributeIndexInSchema;
+    }
+
+    /**
+     * @param attributeIndexInSchema the attributeIndexInSchema to set
+     */
+    public void setAttributeIndexInSchema(int attributeIndexInSchema) {
+        this.attributeIndexInSchema = attributeIndexInSchema;
     }
 
     /* (non-Javadoc)
