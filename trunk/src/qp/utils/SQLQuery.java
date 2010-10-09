@@ -19,13 +19,10 @@ public class SQLQuery {
 
     Vector<Attribute> groupbyList; // List of attibutes in groupby clause
     boolean isDistinct = false; // Whether distinct key word appeared in select clause
-    boolean desc = false; // Whether sort by desc or not
 
     Vector<AttributeOption> orderbyList; // List of attributes in orderby clause
 
-    // TODO deal with DESC option
 
-    // TODO constructor with list for orderbyList
 
     public SQLQuery(Vector<Attribute> list1, Vector<String> list2, Vector<Condition> list3, Vector<Attribute> list4) {
 	projectList = list1;
@@ -81,13 +78,6 @@ public class SQLQuery {
 	return isDistinct;
     }
 
-    public void setDesc(boolean desc) {
-	this.desc = desc;
-    }
-
-    public boolean isDesc() {
-	return desc;
-    }
 
     public Vector<Attribute> getProjectList() {
 	return projectList;

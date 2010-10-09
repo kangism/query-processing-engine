@@ -4,6 +4,10 @@
 package qp.utils;
 import java.io.Serializable;
 
+/**
+ * @author Yann-Loup
+ *
+ */
 public class Attribute implements Serializable{
 
 	/**
@@ -117,6 +121,9 @@ public class Attribute implements Serializable{
 	    return false;
     }
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#clone()
+     */
     public Object clone(){
 	String newtbl =  tblname;
 	String newcol =  colname;
@@ -127,6 +134,55 @@ public class Attribute implements Serializable{
 	return newattr;
     }
 
+    /* (non-Javadoc)
+     * @see java.lang.Object#hashCode()
+     */
+    @Override
+    public int hashCode() {
+	final int prime = 31;
+	int result = 1;
+	result = prime * result + attrsize;
+	result = prime * result + ((colname == null) ? 0 : colname.hashCode());
+	result = prime * result + key;
+	result = prime * result + ((tblname == null) ? 0 : tblname.hashCode());
+	result = prime * result + type;
+	return result;
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
+    @Override
+    public boolean equals(Object obj) {
+	if (this == obj)
+	    return true;
+	if (obj == null)
+	    return false;
+	if (getClass() != obj.getClass())
+	    return false;
+	Attribute other = (Attribute) obj;
+	if (attrsize != other.attrsize)
+	    return false;
+	if (colname == null) {
+	    if (other.colname != null)
+		return false;
+	} else if (!colname.equals(other.colname))
+	    return false;
+	if (key != other.key)
+	    return false;
+	if (tblname == null) {
+	    if (other.tblname != null)
+		return false;
+	} else if (!tblname.equals(other.tblname))
+	    return false;
+	if (type != other.type)
+	    return false;
+	return true;
+    }
+
+    
+    
+    
 }
 
 

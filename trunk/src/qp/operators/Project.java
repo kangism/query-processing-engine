@@ -24,7 +24,7 @@ public class Project extends Operator {
 
     int[] attrIndex;
 
-    public Project(Operator base, Vector<Attribute> as, int type) {
+    public Project(Operator base, Vector<Attribute> as, OperatorType type) {
 	super(type);
 	this.base = base;
 	this.attrSet = as;
@@ -124,7 +124,7 @@ public class Project extends Operator {
 	Vector<Attribute> newattr = new Vector<Attribute>();
 	for (int i = 0; i < attrSet.size(); i++)
 	    newattr.add((Attribute) ((Attribute) attrSet.elementAt(i)).clone());
-	Project newproj = new Project(newbase, newattr, optype);
+	Project newproj = new Project(newbase, newattr, operatorType);
 	Schema newSchema = newbase.getSchema().subSchema(newattr);
 	newproj.setSchema(newSchema);
 	return newproj;

@@ -1,6 +1,10 @@
 /** enumeration of different operator types **/
 
 package qp.operators;
+/**
+ * @deprecated remplace by {@link OperatorType}
+ *
+ */
 public class OpType{
 
 

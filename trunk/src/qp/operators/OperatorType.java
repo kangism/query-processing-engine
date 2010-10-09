@@ -17,6 +17,7 @@ public enum OperatorType {
     private final int opId;
 
     /**
+     *  to be compatible with OpType
      * @param opId
      */
     private OperatorType(int opId) {

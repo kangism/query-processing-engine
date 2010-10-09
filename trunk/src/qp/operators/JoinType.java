@@ -1,33 +1,68 @@
-/** Enumeration of join algorithm types
-	Change this class depending on actual algorithms
-	you have implemented in your query processor 
-
-**/
-
+/**
+ * Enumeration of join algorithm types Change this class depending on actual algorithms you have
+ * implemented in your query processor
+ **/
 
 package qp.operators;
 
-public class JoinType{
+/**
+ * @author Yann-Loup
+ */
+public enum JoinType {
 
+    NESTEDJOIN(0), BLOCKNESTED(1),
+    /* SORTMERGE(2), HASHJOIN(3), */
+    HASHJOIN(2), SORTMERGE(3), INDEXNESTED(4);
 
+    /**
+     * To be compatible with the constant define in the ancien version. <br />
+     * before it was a C-like 'enum': so <i>ugly</i> for Java.
+     */
+    private final int joinId;
 
-   public static final int NESTEDJOIN = 0;
-   public static final int BLOCKNESTED = 1;
-// public static final int SORTMERGE = 2;
-// public static final int HASHJOIN = 3;
-   public static final int HASHJOIN  = 2;
-   public static final int SORTMERGE = 3;
-   public static final int INDEXNESTED = 4;
+    private JoinType(int joinId) {
+	this.joinId = joinId;
+    }
 
-   /**
-    * Return the number of implemented join.
-    * @return
-    */
-   public static int numJoinTypes(){
+    /**
+     * @return
+     */
+    public int getJoinId() {
+	return this.joinId;
+    }
+
+    /**
+     * For the optimizer that use the id to make calculation...
+     * 
+     * @param id
+     * @return the JoinType corresponding with the given id.
+     */
+    public static JoinType getJoinTypeById(int id) {
+	switch (id) {
+	    case 0:
+		return NESTEDJOIN;
+	    case 1:
+		return BLOCKNESTED;
+	    case 2:
+		return HASHJOIN;
+	    case 3:
+		return SORTMERGE;
+	    case 4:
+		return INDEXNESTED;
+	    default:
+		return NESTEDJOIN;
+	}
+    }
+
+    /**
+     * Return the number of implemented join.
+     * 
+     * @return
+     */
+    public static int numJoinTypes() {
 	return 3;
 
-        // return k for k joins
+	// return k for k joins
     }
 
 }
-
