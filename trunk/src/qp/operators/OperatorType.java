@@ -13,6 +13,7 @@ public enum OperatorType {
     /**
      * To be compatible with the constant define in {@link OpType}.
      * <br />{@link OpType} is a C-like 'enum': so <i>ugly</i> for Java.
+     * @deprecated never used
      */
     private final int opId;
 
@@ -26,6 +27,7 @@ public enum OperatorType {
 
     /**
      * @return
+     * @deprecated never used
      */
     public int getOpId() {
 	return this.opId;

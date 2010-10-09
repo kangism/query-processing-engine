@@ -17,6 +17,9 @@ import qp.utils.Schema;
 import qp.utils.Tuple;
 
 /**
+ * Content the Sort Algorithm which is not completed yet. Do only the phase ONE of the external
+ * sort. Can Sort several given attributes. DESC not implemented yet
+ * 
  * @author Yann-Loup
  */
 public class Sort extends Operator {
@@ -51,11 +54,6 @@ public class Sort extends Operator {
      * The current temp file name.
      */
     String tempFile = "";
-
-    /**
-     * index of the attributes in the base operator that are to be projected
-     **/
-    int[] attrIndex;
 
     public Sort(Operator base, Vector<AttributeOption> as, OperatorType type) {
 	super(type);
@@ -95,11 +93,12 @@ public class Sort extends Operator {
 	this.numBuff = BufferManager.getNumBuffer();
 
 	Schema baseSchema = base.getSchema();
-	attrIndex = new int[attrSet.size()];
+	AttributeOption attr;
+	int index;
 	for (int i = 0; i < attrSet.size(); i++) {
-	    AttributeOption attr = attrSet.elementAt(i);
-	    int index = baseSchema.indexOf(attr.getAttribute());
-	    attrIndex[i] = index;
+	    attr = attrSet.elementAt(i);
+	    index = baseSchema.indexOf(attr.getAttribute());
+	    attr.setAttributeIndexInSchema(index);
 	}
 	return base.open();
     }
@@ -126,41 +125,8 @@ public class Sort extends Operator {
 	}
 
 	for (int i = 0; i < tuplesInMem.size(); i++) {
-
 	    // XXX For now I just sort on the first given attribute without any OPTION (ASC or DESC)
-
-	    boolean found = false;
-
-	    // We add each tuples one by one and we try to find the good position!
-
-	    // we add the first one
-	    if (outbatch.isEmpty()) {
-		outbatch.add(tuplesInMem.get(i));
-		found = true;
-	    }
-
-	    // case: smaller than the first one
-	    if (!found && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(0), attrIndex[0]) <= 0) {
-		// The tuples is smaller than the first attribute
-		outbatch.insertElementAt(tuplesInMem.get(i), 0);
-		found = true;
-	    }
-
-	    // case: larger than the last one
-	    if (!found && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(outbatch.size() - 1), attrIndex[0]) >= 0) {
-		// The tuples is larger than the last attribute
-		outbatch.add(tuplesInMem.get(i));
-		found = true;
-	    }
-	    int j = 1;
-	    while (!found) {
-		if (Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(j - 1), attrIndex[0]) >= 0 && Tuple.compareTuples(tuplesInMem.get(i), outbatch.elementAt(j), attrIndex[0]) <= 0) {
-		    // the tuple is between the element j-1 and j
-		    outbatch.insertElementAt(tuplesInMem.get(i), j);
-		    found = true;
-		}
-		j++;
-	    }
+	    findGoodPlaceASC(tuplesInMem.get(i), outbatch, 0);
 
 	}
 
@@ -176,6 +142,78 @@ public class Sort extends Operator {
 
 	return outbatch;
     }
+
+    private void findGoodPlaceASC(Tuple tuple, Batch outbatch, int sortAttributeIndex) {
+	/**
+	 * Flag to know if we have found the right place.
+	 */
+	boolean found = false;
+
+	// We add each tuples one by one and we try to find the good position!
+
+	// we add the first one
+	if (outbatch.isEmpty()) {
+	    outbatch.add(tuple);
+	    found = true;
+	}
+
+	// case: smaller than the first one
+	if (!found && Tuple.compareTuples(tuple, outbatch.elementAt(0), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) < 0) {
+	    // The tuples is smaller than the first attribute
+	    outbatch.insertElementAt(tuple, 0);
+	    found = true;
+	}
+
+	// case: larger than the last one
+	if (!found && Tuple.compareTuples(tuple, outbatch.elementAt(outbatch.size() - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) > 0) {
+	    // The tuples is larger than the last attribute
+	    outbatch.add(tuple);
+	    found = true;
+	}
+	int j = 1;
+	while (!found) {
+	    if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) > 0
+		    && Tuple.compareTuples(tuple, outbatch.elementAt(j), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) < 0) {
+		// the tuple is between the element j-1 and j
+		outbatch.insertElementAt(tuple, j);
+		found = true;
+	    } else if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) == 0) {
+		// the equality case need to check the next attribute of sort.
+		equalityCaseASC(tuple, outbatch, sortAttributeIndex, j);
+		found = true;
+	    }
+	    j++;
+	}
+    }
+
+    private void equalityCaseASC(Tuple tuple, Batch outbatch, int sortAttributeIndex, int j){
+	    if(sortAttributeIndex==attrSet.size()-1){
+		//we are sorting on the last attribute Sort. The position is not important
+		outbatch.insertElementAt(tuple, j);
+	    }else{
+		// there is at least one other sort attribute we should compare with sortAttributeIndex+1
+		
+		boolean found=false;
+		if(Tuple.compareTuples(tuple, outbatch.elementAt(j-1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) < 0){
+		    outbatch.insertElementAt(tuple, j-1);
+		    found=true;
+		}
+		int jj=j-1;
+		while(!found){
+		    if(Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) > 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) < 0){
+			outbatch.insertElementAt(tuple, jj+1);
+			found=true;
+		    }else if(Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) != 0){
+			outbatch.insertElementAt(tuple, jj+1);
+			found=true;
+		    }else if(Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0) {
+			equalityCaseASC(tuple, outbatch, sortAttributeIndex+1, jj+1);
+			found = true;
+		    }
+		    jj++;
+		}
+	    }
+	}
 
     /** Close the operator */
     public boolean close() {
