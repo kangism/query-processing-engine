@@ -3,8 +3,11 @@
  */
 package qp.operators;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +48,12 @@ public class Sort extends Operator {
     Batch outbatch;
 
     List<Tuple> tuplesInMem;
+
+    /**
+     * For the phase TWO. here we read the different temporary files in order to merge the sort
+     * runs.
+     */
+    List<Batch> pagesInMem;
 
     /**
      * The file num of the temp file.
@@ -112,35 +121,119 @@ public class Sort extends Operator {
 
 	// all the tuples in the different page of the
 	// memory are in one list to make it easier
-	for (int i = 0; i < numBuff; i++) {
+	for (int i = 0; i < numBuff - 1; i++) {
 	    next = base.next();
 	    if (next != null) {
 		tuplesInMem.addAll(next.getTuples());
 	    }
 	}
 
-	// the phase One of sort is finished
 	if (tuplesInMem.isEmpty()) {
-	    return null;
+	    if (filenum == 0) {
+		return null;
+	    }
+	    pagesInMem = new ArrayList<Batch>(numBuff - 1);
+	    ObjectInputStream in = null;
+	    Batch input = null;
+
+	    for (int i = 0; i < numBuff - 1; i++) {
+		if (filenum > 0) {
+		    try {
+			in = new ObjectInputStream(new FileInputStream("SortTemp-" + filenum));
+		    } catch (FileNotFoundException e) {
+			e.printStackTrace();
+		    } catch (IOException e) {
+			e.printStackTrace();
+		    }
+		    try {
+			input = (Batch) in.readObject();
+		    } catch (IOException e) {
+			e.printStackTrace();
+		    } catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		    }
+		    pagesInMem.add(input);
+		    System.out.println(filenum);
+		    filenum--;
+		}
+	    }
+
+	    Tuple minTuple = null;
+	    Batch minTupleFromBatch = null;
+	    while (!pagesInMem.isEmpty()) {
+		System.out.println(pagesInMem.size());
+		minTuple = null;
+		minTupleFromBatch = null;
+		// Looking for the minimum
+		for (Batch batch : pagesInMem) {
+		    if (minTuple == null) {
+			minTuple = batch.elementAt(0);
+			minTupleFromBatch = batch;
+		    } else {
+			// case: ASC
+			if (Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(0).getAttributeIndexInSchema()) > 0) {
+			    minTuple = batch.elementAt(0);
+			    minTupleFromBatch = batch;
+			}else if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(0).getAttributeIndexInSchema()) == 0){// case equality...? => look at second sort attribute
+			    int nextAttrSort=1;
+			    boolean goOn=true;
+			    while(goOn && nextAttrSort<attrSet.size()){
+				if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(nextAttrSort).getAttributeIndexInSchema()) > 0){
+				    minTuple = batch.elementAt(0);
+				    minTupleFromBatch = batch;
+				    goOn=false;
+				}else if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(nextAttrSort).getAttributeIndexInSchema()) > 0){
+				    goOn=false;
+				}
+				nextAttrSort++;
+			    }
+			}
+		    }
+		}
+
+		// Inserting the element in the output and removing in from the pile
+		outbatch.add(minTuple);
+		minTupleFromBatch.remove(0);
+		if (minTupleFromBatch.isEmpty()) {
+		    pagesInMem.remove(minTupleFromBatch);
+		}
+	    }
+	    if (filenum == 0) {
+		return outbatch;
+	    } else {
+		filenum++;
+		tempFile = "SortTemp-" + String.valueOf(filenum);
+		try {
+		    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
+		    out.writeObject(outbatch);
+		    out.close();
+		} catch (IOException io) {
+		    System.out.println("Sort:writing the temporay file error");
+		}
+		 return new Batch(batchsize);
+	    }
+
+	} else {
+	    // Phase ONE
+	    for (int i = 0; i < tuplesInMem.size(); i++) {
+		// XXX For now I just sort on the first given attribute
+		// without any OPTION (ASC or DESC)
+		findGoodPlaceASC(tuplesInMem.get(i), outbatch, 0);
+	    }
+
+	    filenum++;
+	    tempFile = "SortTemp-" + String.valueOf(filenum);
+	    try {
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
+		out.writeObject(outbatch);
+		out.close();
+	    } catch (IOException io) {
+		System.out.println("Sort:writing the temporay file error");
+	    }
+
+	    // XXX PROBLEM HERE THE OUTBATCH IS TOO LARGE
+	    return new Batch(batchsize);// outbatch;
 	}
-
-	for (int i = 0; i < tuplesInMem.size(); i++) {
-	    // XXX For now I just sort on the first given attribute without any OPTION (ASC or DESC)
-	    findGoodPlaceASC(tuplesInMem.get(i), outbatch, 0);
-
-	}
-
-	filenum++;
-	tempFile = "SortTemp-" + String.valueOf(filenum);
-	try {
-	    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
-	    out.writeObject(outbatch);
-	    out.close();
-	} catch (IOException io) {
-	    System.out.println("Sort:writing the temporay file error");
-	}
-
-	return outbatch;
     }
 
     private void findGoodPlaceASC(Tuple tuple, Batch outbatch, int sortAttributeIndex) {
@@ -186,34 +279,38 @@ public class Sort extends Operator {
 	}
     }
 
-    private void equalityCaseASC(Tuple tuple, Batch outbatch, int sortAttributeIndex, int j){
-	    if(sortAttributeIndex==attrSet.size()-1){
-		//we are sorting on the last attribute Sort. The position is not important
-		outbatch.insertElementAt(tuple, j);
-	    }else{
-		// there is at least one other sort attribute we should compare with sortAttributeIndex+1
-		
-		boolean found=false;
-		if(Tuple.compareTuples(tuple, outbatch.elementAt(j-1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) < 0){
-		    outbatch.insertElementAt(tuple, j-1);
-		    found=true;
+    private void equalityCaseASC(Tuple tuple, Batch outbatch, int sortAttributeIndex, int j) {
+	if (sortAttributeIndex == attrSet.size() - 1) {
+	    // we are sorting on the last attribute Sort. The position is not important
+	    outbatch.insertElementAt(tuple, j);
+	} else {
+	    // there is at least one other sort attribute we should compare with
+	    // sortAttributeIndex+1
+
+	    boolean found = false;
+	    if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) < 0) {
+		outbatch.insertElementAt(tuple, j - 1);
+		found = true;
+	    }
+	    int jj = j - 1;
+	    while (!found) {
+		if (Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0
+			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0
+			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) > 0
+			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) < 0) {
+		    outbatch.insertElementAt(tuple, jj + 1);
+		    found = true;
+		} else if (Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) != 0) {
+		    outbatch.insertElementAt(tuple, jj + 1);
+		    found = true;
+		} else if (Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0) {
+		    equalityCaseASC(tuple, outbatch, sortAttributeIndex + 1, jj + 1);
+		    found = true;
 		}
-		int jj=j-1;
-		while(!found){
-		    if(Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) > 0 && Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) < 0){
-			outbatch.insertElementAt(tuple, jj+1);
-			found=true;
-		    }else if(Tuple.compareTuples(tuple, outbatch.elementAt(jj+1), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) != 0){
-			outbatch.insertElementAt(tuple, jj+1);
-			found=true;
-		    }else if(Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex+1).getAttributeIndexInSchema()) == 0) {
-			equalityCaseASC(tuple, outbatch, sortAttributeIndex+1, jj+1);
-			found = true;
-		    }
-		    jj++;
-		}
+		jj++;
 	    }
 	}
+    }
 
     /** Close the operator */
     public boolean close() {
