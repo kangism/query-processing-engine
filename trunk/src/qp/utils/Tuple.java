@@ -2,8 +2,8 @@
  Tuple container class
  **********/
 package qp.utils;
-import java.util.Vector;
 import java.io.Serializable;
+import java.util.Vector;
 
 /** Tuple - a simple object which holds a Vector
      of data */
@@ -84,9 +84,44 @@ public class Tuple implements Serializable {
 	    return 0;
 	}
     }
+    
+    
+    /**
+     * Return true is 'left' is suppose to be before 'right' when it is sorted by 'attrOp'.
+     * Return false if the tuples are equal.
+     * @param left
+     * @param right
+     * @param attrOp
+     * @return
+     */
+    private static boolean goodOrder(Tuple left, Tuple right, AttributeOption attrOp){
+	return (attrOp.option==OrderByOption.ASC && compareTuples(left,right,attrOp.getAttributeIndexInSchema())<0)
+	|| (attrOp.option==OrderByOption.DESC && compareTuples(left,right,attrOp.getAttributeIndexInSchema())>0);
+    }
 
-
-
+    /**
+     * Make the comparison on several level of attributeOption.
+     * @param left
+     * @param right
+     * @param attrOps
+     * @return
+     */
+    public static boolean goodOrder(Tuple left, Tuple right, Vector<AttributeOption> attrOps){
+	if(goodOrder(left, right, attrOps.get(0))){
+	    return true;
+	}else if(compareTuples(left,right,  attrOps.get(0).getAttributeIndexInSchema())==0){
+	    int nextAttrSort=1;
+	    while(nextAttrSort<attrOps.size()){
+		if(goodOrder(left, right, attrOps.get(nextAttrSort))){
+		    return true;
+		}
+		nextAttrSort++;
+	    }
+	    return false;
+	}else{
+	    return false;
+	}
+    }
 }
 
 

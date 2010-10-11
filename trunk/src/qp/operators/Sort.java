@@ -10,7 +10,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Vector;
 
 import qp.optimizer.BufferManager;
@@ -18,6 +21,7 @@ import qp.utils.AttributeOption;
 import qp.utils.Batch;
 import qp.utils.Schema;
 import qp.utils.Tuple;
+import qp.utils.TupleComparator;
 
 /**
  * Content the Sort Algorithm which is not completed yet. Do only the phase ONE of the external
@@ -59,6 +63,9 @@ public class Sort extends Operator {
      * The file num of the temp file.
      */
     int filenum = 0;
+
+    Queue<String> tempFiles = new LinkedList<String>();
+
     /**
      * The current temp file name.
      */
@@ -109,6 +116,9 @@ public class Sort extends Operator {
 	    index = baseSchema.indexOf(attr.getAttribute());
 	    attr.setAttributeIndexInSchema(index);
 	}
+
+	// //////// Phase ONE of External Sort \\\\\\\\\
+
 	return base.open();
     }
 
@@ -128,8 +138,8 @@ public class Sort extends Operator {
 	    }
 	}
 
-	if (tuplesInMem.isEmpty()) {
-	    if (filenum == 0) {
+	if (tuplesInMem.isEmpty()) { // ///////PHASE TWO \\\\\\\\\\\\
+	    if (tempFiles.isEmpty()) {
 		return null;
 	    }
 	    pagesInMem = new ArrayList<Batch>(numBuff - 1);
@@ -137,9 +147,10 @@ public class Sort extends Operator {
 	    Batch input = null;
 
 	    for (int i = 0; i < numBuff - 1; i++) {
-		if (filenum > 0) {
+		if (!tempFiles.isEmpty()) {
+		    tempFile = tempFiles.poll();
 		    try {
-			in = new ObjectInputStream(new FileInputStream("SortTemp-" + filenum));
+			in = new ObjectInputStream(new FileInputStream(tempFile));
 		    } catch (FileNotFoundException e) {
 			e.printStackTrace();
 		    } catch (IOException e) {
@@ -153,15 +164,13 @@ public class Sort extends Operator {
 			e.printStackTrace();
 		    }
 		    pagesInMem.add(input);
-		    System.out.println(filenum);
-		    filenum--;
 		}
 	    }
 
 	    Tuple minTuple = null;
 	    Batch minTupleFromBatch = null;
 	    while (!pagesInMem.isEmpty()) {
-		System.out.println(pagesInMem.size());
+		// System.out.println(pagesInMem.size());
 		minTuple = null;
 		minTupleFromBatch = null;
 		// Looking for the minimum
@@ -170,27 +179,12 @@ public class Sort extends Operator {
 			minTuple = batch.elementAt(0);
 			minTupleFromBatch = batch;
 		    } else {
-			// case: ASC
-			if (Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(0).getAttributeIndexInSchema()) > 0) {
+			if (Tuple.goodOrder(batch.elementAt(0),minTuple, attrSet)) {
 			    minTuple = batch.elementAt(0);
 			    minTupleFromBatch = batch;
-			}else if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(0).getAttributeIndexInSchema()) == 0){// case equality...? => look at second sort attribute
-			    int nextAttrSort=1;
-			    boolean goOn=true;
-			    while(goOn && nextAttrSort<attrSet.size()){
-				if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(nextAttrSort).getAttributeIndexInSchema()) > 0){
-				    minTuple = batch.elementAt(0);
-				    minTupleFromBatch = batch;
-				    goOn=false;
-				}else if(Tuple.compareTuples(minTuple, batch.elementAt(0), attrSet.get(nextAttrSort).getAttributeIndexInSchema()) > 0){
-				    goOn=false;
-				}
-				nextAttrSort++;
-			    }
 			}
 		    }
 		}
-
 		// Inserting the element in the output and removing in from the pile
 		outbatch.add(minTuple);
 		minTupleFromBatch.remove(0);
@@ -198,7 +192,8 @@ public class Sort extends Operator {
 		    pagesInMem.remove(minTupleFromBatch);
 		}
 	    }
-	    if (filenum == 0) {
+	    if (tempFiles.isEmpty()) {
+		// System.out.println("RETURN");
 		return outbatch;
 	    } else {
 		filenum++;
@@ -207,25 +202,32 @@ public class Sort extends Operator {
 		    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
 		    out.writeObject(outbatch);
 		    out.close();
+		    tempFiles.add(tempFile);
+		    // System.out.println("P2 :" + tempFile);
 		} catch (IOException io) {
 		    System.out.println("Sort:writing the temporay file error");
 		}
-		 return new Batch(batchsize);
+		return new Batch(batchsize);
 	    }
 
 	} else {
 	    // Phase ONE
+	    Collections.sort(tuplesInMem, new TupleComparator(attrSet));
 	    for (int i = 0; i < tuplesInMem.size(); i++) {
-		// XXX For now I just sort on the first given attribute
-		// without any OPTION (ASC or DESC)
-		findGoodPlaceASC(tuplesInMem.get(i), outbatch, 0);
+		outbatch.add(tuplesInMem.get(i));
 	    }
+
+	    // for(int i = 0; i < tuplesInMem.size(); i++) {
+	    // findGoodPlace(tuplesInMem.get(i), outbatch);
+	    // }
 
 	    filenum++;
 	    tempFile = "SortTemp-" + String.valueOf(filenum);
 	    try {
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
 		out.writeObject(outbatch);
+		tempFiles.add(tempFile);
+		// System.out.println("P1: " + tempFile);
 		out.close();
 	    } catch (IOException io) {
 		System.out.println("Sort:writing the temporay file error");
@@ -236,81 +238,49 @@ public class Sort extends Operator {
 	}
     }
 
-    private void findGoodPlaceASC(Tuple tuple, Batch outbatch, int sortAttributeIndex) {
-	/**
-	 * Flag to know if we have found the right place.
-	 */
-	boolean found = false;
-
-	// We add each tuples one by one and we try to find the good position!
-
-	// we add the first one
-	if (outbatch.isEmpty()) {
-	    outbatch.add(tuple);
-	    found = true;
-	}
-
-	// case: smaller than the first one
-	if (!found && Tuple.compareTuples(tuple, outbatch.elementAt(0), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) < 0) {
-	    // The tuples is smaller than the first attribute
-	    outbatch.insertElementAt(tuple, 0);
-	    found = true;
-	}
-
-	// case: larger than the last one
-	if (!found && Tuple.compareTuples(tuple, outbatch.elementAt(outbatch.size() - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) > 0) {
-	    // The tuples is larger than the last attribute
-	    outbatch.add(tuple);
-	    found = true;
-	}
-	int j = 1;
-	while (!found) {
-	    if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) > 0
-		    && Tuple.compareTuples(tuple, outbatch.elementAt(j), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) < 0) {
-		// the tuple is between the element j-1 and j
-		outbatch.insertElementAt(tuple, j);
-		found = true;
-	    } else if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex).getAttributeIndexInSchema()) == 0) {
-		// the equality case need to check the next attribute of sort.
-		equalityCaseASC(tuple, outbatch, sortAttributeIndex, j);
-		found = true;
-	    }
-	    j++;
-	}
-    }
-
-    private void equalityCaseASC(Tuple tuple, Batch outbatch, int sortAttributeIndex, int j) {
-	if (sortAttributeIndex == attrSet.size() - 1) {
-	    // we are sorting on the last attribute Sort. The position is not important
-	    outbatch.insertElementAt(tuple, j);
-	} else {
-	    // there is at least one other sort attribute we should compare with
-	    // sortAttributeIndex+1
-
-	    boolean found = false;
-	    if (Tuple.compareTuples(tuple, outbatch.elementAt(j - 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) < 0) {
-		outbatch.insertElementAt(tuple, j - 1);
-		found = true;
-	    }
-	    int jj = j - 1;
-	    while (!found) {
-		if (Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0
-			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0
-			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) > 0
-			&& Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) < 0) {
-		    outbatch.insertElementAt(tuple, jj + 1);
-		    found = true;
-		} else if (Tuple.compareTuples(tuple, outbatch.elementAt(jj + 1), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) != 0) {
-		    outbatch.insertElementAt(tuple, jj + 1);
-		    found = true;
-		} else if (Tuple.compareTuples(tuple, outbatch.elementAt(jj), attrSet.get(sortAttributeIndex + 1).getAttributeIndexInSchema()) == 0) {
-		    equalityCaseASC(tuple, outbatch, sortAttributeIndex + 1, jj + 1);
-		    found = true;
-		}
-		jj++;
-	    }
-	}
-    }
+    // private void findGoodPlace(Tuple tuple, Batch outbatch) {
+    // /**
+    // * Flag to know if we have found the right place.
+    // */
+    // boolean found = false;
+    //
+    // // We add each tuples one by one and we try to find the good position!
+    //
+    // // we add the first one
+    // if (outbatch.isEmpty()) {
+    // outbatch.add(tuple);
+    // found = true;
+    // }
+    //
+    // // case: before than the first one
+    // if (!found && Tuple.goodOrder(tuple, outbatch.elementAt(0), attrSet)) {
+    // // The tuples is before than the first attribute
+    // outbatch.insertElementAt(tuple, 0);
+    // found = true;
+    // }
+    //
+    // // case: after than the last one
+    // if (!found && Tuple.goodOrder(outbatch.elementAt(outbatch.size() - 1),tuple, attrSet)) {
+    // // The tuples is after than the last attribute
+    // outbatch.add(tuple);
+    // found = true;
+    // }
+    // int j = 1;
+    // while(!found && j<outbatch.size()){
+    // if (Tuple.goodOrder(outbatch.elementAt(j - 1),tuple, attrSet)
+    // && Tuple.goodOrder(tuple, outbatch.elementAt(j), attrSet)) {
+    // // the tuple is between the element j-1 and j
+    // outbatch.insertElementAt(tuple, j);
+    // found = true;
+    // }
+    // j++;
+    // }
+    // if(!found){ // just in case... but should be never hit
+    // System.err.println("Should Be never hit!!");
+    // outbatch.insertElementAt(tuple, j);
+    // found = true;
+    // }
+    // }
 
     /** Close the operator */
     public boolean close() {
