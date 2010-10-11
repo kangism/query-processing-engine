@@ -3,16 +3,18 @@
  */
 package qp.operators;
 
+import java.io.EOFException;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Vector;
 
@@ -57,7 +59,7 @@ public class Sort extends Operator {
      * For the phase TWO. here we read the different temporary files in order to merge the sort
      * runs.
      */
-    List<Batch> pagesInMem;
+    Map<String, Batch> pagesInMem;
 
     /**
      * The file num of the temp file.
@@ -65,18 +67,21 @@ public class Sort extends Operator {
     int filenum = 0;
 
     Queue<String> tempFiles = new LinkedList<String>();
-    
+
     TupleComparator tupleComparator;
 
     /**
      * The current temp file name.
      */
     String tempFile = "";
+    
+    boolean isDistinct;
 
-    public Sort(Operator base, Vector<AttributeOption> as, OperatorType type) {
+    public Sort(Operator base, Vector<AttributeOption> as,boolean isDistinct, OperatorType type) {
 	super(type);
 	this.attrSet = as;
 	this.base = base;
+	this.isDistinct = isDistinct;
     }
 
     public void setBase(Operator base) {
@@ -128,7 +133,7 @@ public class Sort extends Operator {
     /** Read next tuple from operator */
 
     public Batch next() {
-	outbatch = new Batch(batchsize);
+	List<Tuple> sorted = new ArrayList<Tuple>();
 
 	tuplesInMem = new ArrayList<Tuple>();
 
@@ -145,75 +150,109 @@ public class Sort extends Operator {
 	    if (tempFiles.isEmpty()) {
 		return null;
 	    }
-	    pagesInMem = new ArrayList<Batch>(numBuff - 1);
-	    ObjectInputStream in = null;
-	    Batch input = null;
+	    pagesInMem = new HashMap<String, Batch>(numBuff - 1);
+	    Map<String, ObjectInputStream> ins = new HashMap<String, ObjectInputStream>(numBuff - 1);
 
-	    for (int i = 0; i < numBuff - 1; i++) {
-		if (!tempFiles.isEmpty()) {
-		    tempFile = tempFiles.poll();
-		    try {
-			in = new ObjectInputStream(new FileInputStream(tempFile));
-		    } catch (FileNotFoundException e) {
-			e.printStackTrace();
-		    } catch (IOException e) {
-			e.printStackTrace();
-		    }
-		    try {
-			input = (Batch) in.readObject();
-		    } catch (IOException e) {
-			e.printStackTrace();
-		    } catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		    }
-		    pagesInMem.add(input);
+	    //System.out.println(tempFiles.size()+" "+ins.size()); //XXX
+	    
+	    while (!tempFiles.isEmpty() && ins.size() < numBuff - 1) {
+		tempFile = tempFiles.poll();
+		try {
+		    ins.put(tempFile, new ObjectInputStream(new FileInputStream(tempFile)));
+		} catch (EOFException e) {
+		    e.printStackTrace();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+		try {
+		    pagesInMem.put(tempFile, (Batch) ins.get(tempFile).readObject());
+		} catch (IOException e) {
+		    e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+		    e.printStackTrace();
 		}
 	    }
 
+	    //System.out.println(tempFiles.size()+" "+ins.size()); //XXX
+	    
 	    Tuple minTuple = null;
-	    Batch minTupleFromBatch = null;
+	    String minTupleFromBatch = null;
 	    while (!pagesInMem.isEmpty()) {
-		// System.out.println(pagesInMem.size());
+		// System.out.println("P2: used buffer to sort ->" +pagesInMem.size()); //XXX
 		minTuple = null;
 		minTupleFromBatch = null;
 		// Looking for the minimum
-		for (Batch batch : pagesInMem) {
+		for (String filename : pagesInMem.keySet()) {
 		    if (minTuple == null) {
-			minTuple = batch.elementAt(0);
-			minTupleFromBatch = batch;
+			minTuple = pagesInMem.get(filename).elementAt(0);
+			minTupleFromBatch = filename;
 		    } else {
-			if (Tuple.goodOrder(batch.elementAt(0),minTuple, attrSet)) {
-			    minTuple = batch.elementAt(0);
-			    minTupleFromBatch = batch;
+			if (Tuple.goodOrder(pagesInMem.get(filename).elementAt(0), minTuple, attrSet)) {
+			    minTuple = pagesInMem.get(filename).elementAt(0);
+			    minTupleFromBatch = filename;
 			}
 		    }
 		}
-		
-		
+
 		// HERE WE CAN ADD A TEST IF DISTINCT OPTION IS ON
-		boolean isDistinct=false;
-		if(isDistinct && tupleComparator.compare(minTuple, outbatch.elementAt(outbatch.getTuples().size()-1))!=0){
-		    outbatch.add(minTuple);
+		// Inserting the element in the output
+		if (!isDistinct && (sorted.isEmpty() || tupleComparator.compare(minTuple, sorted.get(sorted.size() - 1)) != 0)) {
+		    sorted.add(minTuple);
+		    //System.out.println(sorted.size());
 		}
-		
-		// Inserting the element in the output and removing in from the pile
-		minTupleFromBatch.remove(0);
-		if (minTupleFromBatch.isEmpty()) {
-		    pagesInMem.remove(minTupleFromBatch);
+
+		// and removing in from the pile
+		pagesInMem.get(minTupleFromBatch).remove(0);
+		if (pagesInMem.get(minTupleFromBatch).isEmpty()) {
+		    Batch next = null;
+		    try {
+			next = (Batch) ins.get(minTupleFromBatch).readObject();
+		    } catch (EOFException e) {
+			try {
+			    ins.get(minTupleFromBatch).close();
+
+			} catch (IOException e1) {
+			    e1.printStackTrace();
+			}
+			ins.remove(minTupleFromBatch);
+			pagesInMem.remove(minTupleFromBatch);
+
+		    } catch (IOException e) {
+		    } catch (ClassNotFoundException e) {
+		    }
+
+		    if (next != null && !next.isEmpty()) {
+			pagesInMem.put(minTupleFromBatch, next);
+		    }
+
 		}
 	    }
-	    if (tempFiles.isEmpty()) {
-		// System.out.println("RETURN");
-		return outbatch;
+	    
+	    //System.out.println(tempFiles.size()+" "+ins.size()); //XXX
+	    if (ins.isEmpty() && tempFiles.isEmpty()) {
+		//System.out.println("RETURN"); // XXX
+		outbatch = new Batch(batchsize);
+		for (int i = 0; i < sorted.size(); i++) {
+		    outbatch.add(sorted.get(i));
+		}
+		return outbatch; // XXX THIS BATCH IS OVER SIZED..
 	    } else {
 		filenum++;
 		tempFile = "SortTemp-" + String.valueOf(filenum);
 		try {
 		    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
-		    out.writeObject(outbatch);
+		    int i = 0;
+		    while (i < sorted.size()) {
+			outbatch = new Batch(batchsize);
+			while (!outbatch.isFull() && i < sorted.size()) {
+			    outbatch.add(sorted.get(i));
+			    i++;
+			}
+			out.writeObject(outbatch);
+		    }
 		    out.close();
 		    tempFiles.add(tempFile);
-		    // System.out.println("P2 :" + tempFile);
+		    //System.out.println("P2 :" + tempFile); // XXX
 		} catch (IOException io) {
 		    System.out.println("Sort:writing the temporay file error");
 		}
@@ -223,9 +262,6 @@ public class Sort extends Operator {
 	} else {
 	    // Phase ONE
 	    Collections.sort(tuplesInMem, tupleComparator);
-	    for (int i = 0; i < tuplesInMem.size(); i++) {
-		outbatch.add(tuplesInMem.get(i));
-	    }
 
 	    // for(int i = 0; i < tuplesInMem.size(); i++) {
 	    // findGoodPlace(tuplesInMem.get(i), outbatch);
@@ -235,16 +271,26 @@ public class Sort extends Operator {
 	    tempFile = "SortTemp-" + String.valueOf(filenum);
 	    try {
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
-		out.writeObject(outbatch);
+
 		tempFiles.add(tempFile);
-		// System.out.println("P1: " + tempFile);
+		//System.out.println("P1: " + tempFile); // XXX
+
+		int i = 0;
+		while (i < tuplesInMem.size()) {
+		    outbatch = new Batch(batchsize);
+		    while (!outbatch.isFull() && i < tuplesInMem.size()) {
+			outbatch.add(tuplesInMem.get(i));
+			i++;
+		    }
+		    out.writeObject(outbatch);
+		}
+
 		out.close();
 	    } catch (IOException io) {
 		System.out.println("Sort:writing the temporay file error");
 	    }
 
-	    // XXX PROBLEM HERE THE OUTBATCH IS TOO LARGE
-	    return new Batch(batchsize);// outbatch;
+	    return new Batch(batchsize);
 	}
     }
 
@@ -302,7 +348,7 @@ public class Sort extends Operator {
 	Vector<AttributeOption> newattr = new Vector<AttributeOption>();
 	for (int i = 0; i < attrSet.size(); i++)
 	    newattr.add(attrSet.elementAt(i).clone());
-	Sort newproj = new Sort(newbase, newattr, operatorType);
+	Sort newproj = new Sort(newbase, newattr,isDistinct, operatorType);
 	newproj.setSchema(newbase.getSchema());
 	return newproj;
     }
