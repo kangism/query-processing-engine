@@ -65,6 +65,8 @@ public class Sort extends Operator {
     int filenum = 0;
 
     Queue<String> tempFiles = new LinkedList<String>();
+    
+    TupleComparator tupleComparator;
 
     /**
      * The current temp file name.
@@ -116,6 +118,7 @@ public class Sort extends Operator {
 	    index = baseSchema.indexOf(attr.getAttribute());
 	    attr.setAttributeIndexInSchema(index);
 	}
+	tupleComparator = new TupleComparator(attrSet);
 
 	// //////// Phase ONE of External Sort \\\\\\\\\
 
@@ -185,8 +188,15 @@ public class Sort extends Operator {
 			}
 		    }
 		}
+		
+		
+		// HERE WE CAN ADD A TEST IF DISTINCT OPTION IS ON
+		boolean isDistinct=false;
+		if(isDistinct && tupleComparator.compare(minTuple, outbatch.elementAt(outbatch.getTuples().size()-1))!=0){
+		    outbatch.add(minTuple);
+		}
+		
 		// Inserting the element in the output and removing in from the pile
-		outbatch.add(minTuple);
 		minTupleFromBatch.remove(0);
 		if (minTupleFromBatch.isEmpty()) {
 		    pagesInMem.remove(minTupleFromBatch);
@@ -212,7 +222,7 @@ public class Sort extends Operator {
 
 	} else {
 	    // Phase ONE
-	    Collections.sort(tuplesInMem, new TupleComparator(attrSet));
+	    Collections.sort(tuplesInMem, tupleComparator);
 	    for (int i = 0; i < tuplesInMem.size(); i++) {
 		outbatch.add(tuplesInMem.get(i));
 	    }
