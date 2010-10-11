@@ -74,7 +74,7 @@ public class RandomInitialPlan {
 	}
 	createOrderbyOp();
 	createProjectOp();
-	createDistinctOp();
+	//createDistinctOp();
 	return root;
     }
 
@@ -222,7 +222,7 @@ public class RandomInitialPlan {
 	if (orderbylist == null) {
 	    orderbylist = new Vector<AttributeOption>();
 	}
-
+	boolean isDistinct;
 	if (sqlquery.isDistinct()) {
 	    // we add all the attribute use for the project in the sort
 	    // if there are not yet in.
@@ -231,10 +231,13 @@ public class RandomInitialPlan {
 		    orderbylist.add(new AttributeOption(att));
 		}
 	    }
+	    isDistinct=true;
+	}else{
+	    isDistinct=false;
 	}
 
 	if (!orderbylist.isEmpty()) {
-	    root = new Sort(base, orderbylist, OperatorType.SORT);
+	    root = new Sort(base, orderbylist,isDistinct, OperatorType.SORT);
 	    root.setSchema(base.getSchema());
 	}
     }
