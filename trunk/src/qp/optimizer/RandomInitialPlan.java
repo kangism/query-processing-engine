@@ -22,7 +22,6 @@ import qp.operators.Sort;
 import qp.utils.Attribute;
 import qp.utils.AttributeOption;
 import qp.utils.Condition;
-import qp.utils.OrderByOption;
 import qp.utils.RandNumb;
 import qp.utils.SQLQuery;
 import qp.utils.Schema;
@@ -74,7 +73,7 @@ public class RandomInitialPlan {
 	}
 	createOrderbyOp();
 	createProjectOp();
-	//createDistinctOp();
+	createDistinctOp();
 	return root;
     }
 
@@ -222,8 +221,8 @@ public class RandomInitialPlan {
 	if (orderbylist == null) {
 	    orderbylist = new Vector<AttributeOption>();
 	}
-	boolean isDistinct;
-	if (sqlquery.isDistinct()) {
+	boolean isDistinct=false; //DESACTIVATION OF THE DISTINCT IN THE SORT ALGO!!
+/*	if (sqlquery.isDistinct()) {
 	    // we add all the attribute use for the project in the sort
 	    // if there are not yet in.
 	    for (Attribute att : projectlist) {
@@ -234,7 +233,7 @@ public class RandomInitialPlan {
 	    isDistinct=true;
 	}else{
 	    isDistinct=false;
-	}
+	}*/
 
 	if (!orderbylist.isEmpty()) {
 	    root = new Sort(base, orderbylist,isDistinct, OperatorType.SORT);

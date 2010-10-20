@@ -15,6 +15,7 @@ import qp.operators.Operator;
 import qp.operators.OperatorType;
 import qp.operators.Project;
 import qp.operators.Select;
+import qp.operators.Sort;
 import qp.utils.Attribute;
 import qp.utils.Condition;
 import qp.utils.RandNumb;
@@ -378,6 +379,8 @@ public class RandomOptimizer {
 			return findNodeAt(((Project) node).getBase(), joinNum);
 		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			return findNodeAt(((Distinct) node).getBase(), joinNum);
+		} else if (node.getOperatorType() == OperatorType.SORT) {
+			return findNodeAt(((Sort) node).getBase(), joinNum);
 		} else {
 			return null;
 		}
@@ -406,6 +409,10 @@ public class RandomOptimizer {
 			node.setSchema(base.getSchema().subSchema(attrlist));
 		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			Operator base = ((Distinct) node).getBase();
+			modifySchema(base);
+			node.setSchema(base.getSchema());
+		} else if (node.getOperatorType() == OperatorType.SORT) {
+			Operator base = ((Sort) node).getBase();
 			modifySchema(base);
 			node.setSchema(base.getSchema());
 		}
@@ -477,6 +484,10 @@ public class RandomOptimizer {
 		} else if (node.getOperatorType() == OperatorType.DISTINCT) {
 			Operator base = makeExecPlan(((Distinct) node).getBase());
 			((Distinct) node).setBase(base);
+			return node;
+		} else if (node.getOperatorType() == OperatorType.SORT) {
+			Operator base = makeExecPlan(((Sort) node).getBase());
+			((Sort) node).setBase(base);
 			return node;
 		} else {
 			return node;
