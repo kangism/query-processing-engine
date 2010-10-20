@@ -78,6 +78,8 @@ public class PlanCost {
 	    return getStatistics((Project) node);
 	} else if (node.getOperatorType() == OperatorType.SCAN) {
 	    return getStatistics((Scan) node);
+	} else if (node.getOperatorType() == OperatorType.SORT) {
+	    return getStatistics((Sort) node);
 	}else if (node.getOperatorType() == OperatorType.DISTINCT) {
 		return getStatistics((Distinct) node);
 	}
@@ -292,16 +294,17 @@ public class PlanCost {
 	return numtuples;
     }
     
-    // need to check whether correct or not!!!!!!!!!!!!!!!!!!
+
 	protected int getStatistics(Sort node) {
 		int numtuples = calculateCost(node.getBase());/// number of tuples from base operator
-//		int numbufs = node.getNumBuffer();
-//		int batchsize = Batch.getPageSize() / node.getSchema().getTupleSize();
-//		int numpages = (int)Math.ceil(numtuples *1.0 / batchsize);
-//		int sortcost = (int) (2 * numpages * (Math.log(numpages/numbufs) / Math.log(numbufs-1) + 1));
-//		if(sortcost < 0)
-//			sortcost = 0;
-//		cost = cost + sortcost;
+		int numbufs = BufferManager.getNumBuffer();
+		int batchsize = Batch.getPageSize() / node.getSchema().getTupleSize();
+		int numpages = (int)Math.ceil(numtuples *1.0 / batchsize); // number of runs after phase one
+		int numPasses= (int) ((Math.log(numpages/numbufs) / Math.log(numbufs-1)) + 1);
+		int sortcost = (int) (2 * numpages * numPasses);
+		if(sortcost < 0)
+			sortcost = 0;
+		cost = cost + sortcost;
 		return numtuples;
 	}
 	
