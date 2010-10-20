@@ -101,6 +101,11 @@ OperatorType optype = node.getOperatorType();
 	    System.out.print("Project(");
 	    PPrint(((Project)node).getBase());
 	    System.out.print(")");
+	    
+	}else if(optype==OperatorType.SORT){
+	    System.out.print("Sort(");
+	    PPrint(((Sort)node).getBase());
+	    System.out.print(")");  
 
 	}else if (optype == OperatorType.DISTINCT) {
 		System.out.print("Distinct(");
