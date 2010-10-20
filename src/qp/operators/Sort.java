@@ -263,10 +263,6 @@ public class Sort extends Operator {
 	    // Phase ONE
 	    Collections.sort(tuplesInMem, tupleComparator);
 
-	    // for(int i = 0; i < tuplesInMem.size(); i++) {
-	    // findGoodPlace(tuplesInMem.get(i), outbatch);
-	    // }
-
 	    filenum++;
 	    tempFile = "SortTemp-" + String.valueOf(filenum);
 	    try {
@@ -293,50 +289,6 @@ public class Sort extends Operator {
 	    return new Batch(batchsize);
 	}
     }
-
-    // private void findGoodPlace(Tuple tuple, Batch outbatch) {
-    // /**
-    // * Flag to know if we have found the right place.
-    // */
-    // boolean found = false;
-    //
-    // // We add each tuples one by one and we try to find the good position!
-    //
-    // // we add the first one
-    // if (outbatch.isEmpty()) {
-    // outbatch.add(tuple);
-    // found = true;
-    // }
-    //
-    // // case: before than the first one
-    // if (!found && Tuple.goodOrder(tuple, outbatch.elementAt(0), attrSet)) {
-    // // The tuples is before than the first attribute
-    // outbatch.insertElementAt(tuple, 0);
-    // found = true;
-    // }
-    //
-    // // case: after than the last one
-    // if (!found && Tuple.goodOrder(outbatch.elementAt(outbatch.size() - 1),tuple, attrSet)) {
-    // // The tuples is after than the last attribute
-    // outbatch.add(tuple);
-    // found = true;
-    // }
-    // int j = 1;
-    // while(!found && j<outbatch.size()){
-    // if (Tuple.goodOrder(outbatch.elementAt(j - 1),tuple, attrSet)
-    // && Tuple.goodOrder(tuple, outbatch.elementAt(j), attrSet)) {
-    // // the tuple is between the element j-1 and j
-    // outbatch.insertElementAt(tuple, j);
-    // found = true;
-    // }
-    // j++;
-    // }
-    // if(!found){ // just in case... but should be never hit
-    // System.err.println("Should Be never hit!!");
-    // outbatch.insertElementAt(tuple, j);
-    // found = true;
-    // }
-    // }
 
     /** Close the operator */
     public boolean close() {
