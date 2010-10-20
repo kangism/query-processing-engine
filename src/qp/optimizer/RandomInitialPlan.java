@@ -22,6 +22,7 @@ import qp.operators.Sort;
 import qp.utils.Attribute;
 import qp.utils.AttributeOption;
 import qp.utils.Condition;
+import qp.utils.OrderByOption;
 import qp.utils.RandNumb;
 import qp.utils.SQLQuery;
 import qp.utils.Schema;
@@ -234,6 +235,16 @@ public class RandomInitialPlan {
 	}else{
 	    isDistinct=false;
 	}*/
+	
+	// anyway, we need to create a SORT operator to sort over all the attributes
+	// in the project list so that the DISTINCT operator can work properly 
+	if (sqlquery.isDistinct()) {
+	    for (Attribute att : projectlist) {
+		if (!orderbylist.contains(new AttributeOption(att)) && !orderbylist.contains(new AttributeOption(att, OrderByOption.DESC))) {
+		    orderbylist.add(new AttributeOption(att));
+		}
+	    }
+	}
 
 	if (!orderbylist.isEmpty()) {
 	    root = new Sort(base, orderbylist,isDistinct, OperatorType.SORT);
