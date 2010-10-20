@@ -197,10 +197,10 @@ public class Sort extends Operator {
 
 			// HERE WE CAN ADD A TEST IF DISTINCT OPTION IS ON
 			// Inserting the element in the output
-			if (!isDistinct && (sorted.isEmpty() || tupleComparator.compare(minTuple, sorted.get(sorted.size() - 1)) != 0)) {
+			if (!isDistinct || (sorted.isEmpty() || tupleComparator.compare(minTuple, sorted.get(sorted.size() - 1)) != 0)) {
 			    sorted.add(minTuple);
 			    // System.out.println(sorted.size());
-			}
+		    	}
 
 			// and removing in from the pile
 			pagesInMem.get(minTupleFromBatch).remove(0);
