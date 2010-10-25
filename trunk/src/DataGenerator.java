@@ -27,7 +27,7 @@ public class DataGenerator {
 		for(int i=0;i<len;i++)
 		{
 			
-			table_schema[i]=dir+"\\"+table_schema[i];
+			//table_schema[i]=dir+"\\"+table_schema[i];
 			System.out.println("Start generating table "+table_schema[i]+" ...");
 			rand.randomGenerator(table_schema[i], numtuples[i]);
 			try {
@@ -46,6 +46,7 @@ public class DataGenerator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String dir="C:\\workspace\\sql";
+		dir="";
 		DataGenerator datag=new DataGenerator();
 		datag.generator(dir);
 		
