@@ -1,0 +1,2500 @@
+59938	Waltham_Forest 	Norfolk 	13886	22:32	13:10	
+35889	Connecticut 	Kütahya 	2591	6:7	11:57	
+58458	Bartin 	Puebla 	34729	9:3	14:45	
+25101	Aust-Agder 	Dorset 	5244	3:34	18:24	
+49328	Guanajuato 	Vienne _Metropolitan	17848	11:5	10:28	
+8545	Uppsala_län 	Virginia 	17358	21:54	8:40	
+51088	Gwynedd 	Hounslow 	31017	3:11	5:26	
+6423	Durango 	Kyoto 	32780	0:7	10:16	
+27852	Bitlis 	Aguascalientes 	40399	20:47	22:57	
+46419	Acre 	Cookstown 	44027	5:59	22:31	
+13829	Portsmouth 	Sutton 	32350	9:44	13:13	
+49449	Guizhou 	Cambridgeshire 	35202	3:59	0:18	
+57272	Hokkaido 	Prince_Edward_Island 	40291	18:3	4:7	
+47961	Moyle 	South_Ayrshire 	23017	9:40	18:21	
+200	Antofagasta 	Buskerud 	14225	16:47	9:56	
+38824	Florida 	Rajasthan 	20720	4:12	20:33	
+34628	Manche _Metropolitan	Corse-du-Sud _Metropolitan	47702	16:7	10:22	
+53532	Jönköpings_län 	Brighton_and_Hove 	20028	16:14	8:7	
+13268	Cantal _Metropolitan	Chandigarh _Union	27740	12:11	2:30	
+3923	Van 	Bragança 	21596	7:59	7:7	
+26565	Sefton 	Ballymoney 	39419	10:31	14:52	
+56673	Allier _Metropolitan	Distrito_Federal _Federal	18762	21:41	4:38	
+28527	Norfolk 	Indre-et-Loire _Metropolitan	18139	20:32	16:57	
+51972	Eskisehir 	Swindon 	34268	18:47	10:35	
+17952	Hainan 	Dungannon 	37912	7:22	8:38	
+901	Järvamaa 	Kingman_Reef _Islands/Groups_of	24970	3:26	20:36	
+12903	Saskatchewan 	Trabzon 	3470	10:30	5:16	
+2574	Yukon_Territory 	Hidalgo 	44347	4:25	17:23	
+47422	Alpes-Maritimes _Metropolitan	Santarém 	29604	5:12	8:10	
+2114	Prince_Edward_Island 	Misiones 	40456	0:51	17:54	
+5813	Clackmannanshire 	Rajasthan 	44293	14:6	15:46	
+50013	Chhattisgarh 	Finnmark 	17986	2:2	21:23	
+2551	Merthyr_Tydfil_[Merthyr_Tudful_GB-MTU] 	New_Mexico 	2937	13:34	8:50	
+47722	Kensington_and_Chelsea 	Devon 	45727	6:3	0:40	
+7451	Warwickshire 	Kagosima_[Kagoshima] 	11458	18:33	5:10	
+32411	Omagh 	Omagh 	26223	23:40	8:13	
+21162	Merton 	Bouches-du-Rhône _Metropolitan	3506	14:41	9:38	
+5896	Anjouan 	Northland 	22413	2:13	21:36	
+8903	Barnet 	Nebraska 	13530	9:56	2:11	
+35015	Kansas 	Flintshire_[Sir_y_Fflint_GB-FFL] 	25040	10:28	11:19	
+11232	York 	Hawkes's_Bay 	35677	5:11	14:9	
+34116	Southend-on-Sea 	Bahia 	34914	9:24	8:47	
+42864	Aube _Metropolitan	Valais_(fr) 	43332	19:53	20:48	
+55037	Denizli 	Xianggang _Special_Administrative	360	1:1	2:20	
+4782	Dundee_City 	Doncaster 	17402	3:18	3:59	
+27325	North_Ayrshire 	Blackpool 	10320	3:27	14:52	
+38901	Kingman_Reef _Islands/Groups_of	Goiás 	27895	5:42	18:5	
+819	Pembrokeshire_[Sir_Benfro_GB-BNF] 	Nidwalden_(de) 	41897	2:17	15:46	
+6705	Brighton_and_Hove 	Ards 	28138	8:18	16:49	
+35886	Aargau_(de) 	Bournemouth 	28092	16:48	9:8	
+11171	Pärnumaa 	Massachusetts 	3424	17:2	15:19	
+23479	Goiás 	Oklahoma 	456	15:15	16:42	
+10641	St._Helens 	Northern_Mariana_Islands_(see_also_separate_entry_MP) _Outlying	545	2:55	5:43	
+28555	Oppland 	East_Renfrewshire 	28971	0:0	15:13	
+49261	Dorset 	Birmingham 	43241	9:44	18:8	
+53364	Newham 	Burdur 	21116	10:55	9:6	
+59584	Stockport 	Coquimbo 	31124	14:11	16:47	
+56355	Tlaxcala 	Chubut 	46549	2:17	18:14	
+24467	Aust-Agder 	Maule 	28995	12:35	23:34	
+3563	Ardèche _Metropolitan	Nunavut 	35823	16:33	18:11	
+33914	Indre _Metropolitan	Mardin 	49627	13:47	16:56	
+10173	Leiria 	Vosges _Metropolitan	12389	5:44	15:34	
+15390	Côte-d'Or _Metropolitan	Manchester 	19404	16:6	12:11	
+53276	Maine 	Fribourg_(fr) 	20859	13:21	3:27	
+34533	Camden 	Gansu 	26767	7:52	7:19	
+25276	Armagh 	Islington 	36583	4:30	18:48	
+43167	Suffolk 	Nord _Metropolitan	25401	8:32	7:58	
+11164	Hukusima_[Fukushima] 	Quinara 	2653	15:40	11:52	
+15440	Haute-Marne _Metropolitan	Renfrewshire 	43164	9:8	7:4	
+20829	Coquimbo 	Poole 	37752	1:28	18:15	
+23445	Bath_and_North_East_Somerset 	Val-de-Marne _Metropolitan	43261	10:44	19:35	
+7326	North_Lincolnshire 	Sizuoka_[Shizuoka] 	17764	3:42	16:51	
+48245	Shropshire 	Stockport 	44848	21:11	8:1	
+47350	Nordland 	Cardiff_[Caerdydd_GB-CRD] 	1689	5:9	21:19	
+9861	Limavady 	Drôme _Metropolitan	11439	11:33	6:57	
+1901	Balikesir 	Ariège _Metropolitan	4690	14:13	18:21	
+34200	Angus 	Dalarnes_län 	13290	1:58	10:44	
+57206	Kensington_and_Chelsea 	Michigan 	46172	10:45	16:29	
+1794	Bexley 	Luton 	2520	2:5	23:23	
+6509	Moray 	Sakarya 	41178	15:35	14:6	
+38471	Kastamonu 	Indre-et-Loire _Metropolitan	47739	7:34	1:0	
+24841	Rheinland-Pfalz 	Alaska 	47445	16:40	5:46	
+16804	Jura_(fr) 	Haute-Saône _Metropolitan	27490	0:30	16:58	
+2783	Ohio 	Anjouan 	6352	6:27	2:39	
+42649	Schaffhausen_(de) 	Maranhão 	30520	3:30	5:28	
+33971	Quinara 	West_Coast 	20041	21:44	5:48	
+19922	Troms 	Sarthe _Metropolitan	46441	15:53	15:29	
+24443	Croydon 	Coleraine 	14252	20:37	11:4	
+26897	Renfrewshire 	Bremen_(Hansestadt) 	43237	8:36	11:26	
+45842	Bradford 	Blaenau_Gwent 	25682	17:25	11:3	
+18170	Rochdale 	Obwalden_(de) 	3261	1:45	16:22	
+36917	Seine-Saint-Denis _Metropolitan	Jõgevamaa 	20742	7:0	7:9	
+19195	Nottinghamshire 	Oppland 	13515	17:52	21:34	
+56413	Río_Negro 	Diyarbakir 	18872	9:12	12:47	
+11157	Hiiumaa 	Bingol 	1278	10:28	6:30	
+32154	Paris _Metropolitan	Jämtlands_län 	42667	23:49	1:42	
+24075	Alpes-de-Haute-Provence _Metropolitan	Antalya 	23698	23:10	5:13	
+8137	Sarthe _Metropolitan	South_Ayrshire 	4969	22:10	19:36	
+22470	South_Australia 	Västernorrlands_län 	28638	2:50	21:35	
+52594	Hertfordshire 	West_Coast 	26358	11:12	11:9	
+18146	East_Renfrewshire 	Guizhou 	34183	13:22	17:48	
+43040	Valparaíso 	Punjab 	24465	7:38	16:57	
+43929	North_Lincolnshire 	Territoire_de_Belfort _Metropolitan	37634	20:9	5:43	
+53821	Uttar_Pradesh 	Kingston_upon_Hull,_City_of 	31159	16:9	23:27	
+3383	Chihuahua 	Blackburn_with_Darwen 	20282	22:21	1:2	
+37458	Drôme _Metropolitan	Blackpool 	8214	16:1	13:43	
+41921	Bury 	Massachusetts 	21576	18:0	2:11	
+54047	Antofagasta 	Akita 	1639	0:17	6:24	
+59009	Ballymoney 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	7670	19:9	4:20	
+21741	Xinjiang _Autonomous	Icel 	27868	2:34	6:56	
+3827	Mayenne _Metropolitan	Solothurn_(de) 	24887	14:12	20:41	
+23937	Zürich_(de) 	Västra_Götalands_län 	261	23:54	0:23	
+23432	Bas-Rhin _Metropolitan	Mohéli 	28031	4:2	16:28	
+22135	Punjab 	Nordrhein-Westfalen 	5192	23:33	13:3	
+20658	Hunan 	Bissau _Autonomous	35962	12:55	14:26	
+4562	Westminster 	Uppsala_län 	29998	8:17	2:22	
+53374	North_Lincolnshire 	West_Bengal 	33897	22:19	10:23	
+26133	Liège_(WAL) 	San_Luis_Potosí 	3182	6:55	15:35	
+34268	Kocaeli 	Daman_and_Diu _Union	5546	18:46	23:59	
+28298	Halton 	Acre 	3459	23:17	16:46	
+27386	Bay_of_Plenty 	Caerphilly_[Caerffili_GB-CAF] 	44946	10:5	17:41	
+47039	Tombali_ 	Paraná 	20188	4:41	10:46	
+58350	Guarda 	Durham 	29450	21:20	21:36	
+55249	Limavady 	Saitama 	17952	8:42	14:21	
+754	Blekinge_län 	Fife 	37075	1:25	6:12	
+9344	Yukon_Territory 	Ticino_(it) 	5067	22:33	13:40	
+30666	Västmanlands_län 	Oregon 	31640	2:34	13:32	
+22050	Nagasaki 	Osmaniye 	7130	8:45	1:19	
+7297	Northern_Territory 	Zürich_(de) 	45279	14:26	14:56	
+2323	Westminster 	Redbridge 	4831	17:26	16:59	
+4177	Istanbul 	Coahuila 	8667	22:59	20:39	
+50986	Guangxi _Autonomous	Maule 	29441	8:52	6:19	
+4322	Córdoba 	Inverclyde 	145	8:33	5:43	
+32423	Liège_(WAL) 	Hokkaido 	25204	0:52	22:21	
+21354	Belfast 	Isparta 	16164	15:30	11:6	
+48713	Hertfordshire 	Shaanxi 	17776	20:36	7:54	
+21778	Territoire_de_Belfort _Metropolitan	Schwyz_(de) 	831	15:36	16:50	
+23260	Valgamaa 	Indiana 	48945	22:35	8:51	
+22745	Côtes-d'Armor _Metropolitan	Hartlepool 	16927	16:23	6:59	
+50575	Arkansas 	Diyarbakir 	26618	15:13	6:47	
+28433	Indre-et-Loire _Metropolitan	Hawaii 	15803	20:40	5:28	
+41795	Vest-Agder 	Mus 	31062	7:41	5:12	
+4711	Länsi-Suomen_lääni_(fi) _Province	Évora 	28752	10:48	14:24	
+18208	Shanxi 	Marlborough 	493	12:25	11:57	
+45025	Illinois 	Cheshire 	25245	22:7	9:22	
+41218	Cambridgeshire 	Ain _Metropolitan	19855	5:13	14:45	
+42560	Punjab 	Hautes-Alpes _Metropolitan	3064	22:47	4:15	
+912	Erzincan 	Vojvodina _Autonomous	1248	12:8	9:14	
+1925	Stockport 	Bern_(de) 	3996	15:35	12:22	
+15245	Distrito_Federal _Federal	Libertador_General_Bernardo_O'Higgins 	26336	20:0	6:7	
+54768	Loir-et-Cher _Metropolitan	New_Brunswick 	11008	1:26	2:23	
+37063	Delaware 	Rhondda,_Cynon,_Taff_[Rhondda,_Cynon,Taf] 	48405	21:33	16:15	
+53635	Neimenggu _Autonomous	Gujarat 	34660	2:30	13:35	
+17197	Strabane 	Limavady 	8	11:5	4:20	
+14085	Jiangsu 	Daman_and_Diu _Union	45194	18:9	6:24	
+1150	Aveyron _Metropolitan	Savoie _Metropolitan	24169	3:37	2:33	
+49954	Peterborough 	Brandenburg 	18239	3:7	20:32	
+11677	Kerala 	Alpes-de-Haute-Provence _Metropolitan	15504	0:13	20:40	
+46768	Corum 	Aberdeenshire 	27685	3:49	23:1	
+44160	Zacatecas 	Connecticut 	48449	19:36	15:30	
+4780	Southampton 	Kirklareli 	18366	16:3	15:13	
+50727	Saarland 	West_Berkshire 	18155	14:2	11:36	
+32355	Saaremaa 	Porto 	14807	7:18	1:46	
+50889	Ballymena 	Montana 	43549	17:46	19:10	
+32589	Northumberland 	Dordogne _Metropolitan	42495	19:2	2:8	
+16298	Sunderland 	Sachsen 	16133	17:6	13:27	
+11667	Diyarbakir 	Kingston_upon_Hull,_City_of 	49762	21:50	21:23	
+48554	Stirling 	Jõgevamaa 	43655	9:59	22:16	
+18033	Aomen _Special_Administrative	Aisén_del_General_Carlos_Ibáñez_del_Campo 	21734	19:11	12:50	
+2039	Carrickfergus 	Querétaro 	44358	10:56	11:48	
+43191	Derry 	North_Ayrshire 	18977	18:56	10:20	
+12898	South_Tyneside 	Oslo 	594	16:57	8:6	
+34121	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	Puy-de-Dôme _Metropolitan	28293	0:7	6:14	
+58511	Newham 	Connecticut 	15518	9:18	7:46	
+51878	Auckland 	Swindon 	7721	0:14	21:15	
+8294	Lisburn 	Harjumaa 	28444	12:17	4:40	
+10822	North_Dakota 	West_Dunbartonshire 	774	2:37	15:59	
+54982	Istanbul 	La_Pampa 	37800	15:59	12:27	
+39005	Ain _Metropolitan	Van 	7355	2:58	13:9	
+11641	Haute-Loire _Metropolitan	West_Berkshire 	47870	19:41	11:43	
+50428	Karnataka 	Hatay 	3069	9:51	20:33	
+50691	Milton_Keynes 	Portalegre 	36969	7:31	12:25	
+50934	Plymouth 	Bolton 	46286	14:17	21:51	
+17652	Indre _Metropolitan	Colima 	30568	13:58	1:23	
+23264	Antwerpen_(VLG) 	Sutton 	25128	8:3	1:49	
+541	Otago 	Acre 	12303	4:26	17:2	
+6674	Istanbul 	Landes _Metropolitan	30455	0:37	12:46	
+14399	Schaffhausen_(de) 	Aksaray 	42344	16:29	18:27	
+7466	Stockholms_län 	Charente-Maritime _Metropolitan	25808	5:28	6:24	
+12383	Bursa 	New_Mexico 	8883	8:20	13:44	
+25680	Rize 	West_Dunbartonshire 	1954	9:44	21:15	
+56085	Canakkale 	Amasya 	42593	10:39	13:35	
+13491	Istanbul 	Buckinghamshire 	39480	10:49	22:49	
+48228	Côte-d'Or _Metropolitan	Vienne _Metropolitan	31177	12:34	8:55	
+44498	Massachusetts 	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	17991	7:57	3:57	
+19972	Harjumaa 	Bouches-du-Rhône _Metropolitan	502	5:5	8:7	
+43704	Bilecik 	Västmanlands_län 	8090	7:34	3:26	
+29787	South_Dakota 	East_Sussex 	5373	8:38	20:44	
+40894	Havering 	Ealing 	3448	20:7	15:54	
+24778	Wokingham 	Siga_[Shiga] 	46510	1:51	15:1	
+8212	Limburg_(VLG) 	Hertfordshire 	45087	4:54	13:50	
+59875	Santarém 	Loir-et-Cher _Metropolitan	36246	14:12	19:2	
+45371	Länsi-Suomen_lääni_(fi) _Province	Tasmania 	2767	18:4	13:22	
+38168	Missouri 	Sivas 	38287	2:51	2:20	
+13161	Tucumán 	Yamanasi_[Yamanashi] 	38565	1:56	9:38	
+17007	Nordrhein-Westfalen 	Oise _Metropolitan	13525	18:38	16:33	
+29743	Tunceli 	Tower_Hamlets 	10130	21:28	12:44	
+56595	Banbridge 	Tasmania 	38085	7:16	4:4	
+45912	Flintshire_[Sir_y_Fflint_GB-FFL] 	Allier _Metropolitan	48536	6:54	5:23	
+56676	Rotherham 	Miyazaki 	33668	15:25	14:34	
+10279	Dundee_City 	Osaka 	17041	6:46	23:38	
+1229	Dalarnes_län 	São_Paulo 	41385	12:34	18:28	
+45443	Hukui_[Fukui] 	Santa_Fe 	17003	18:3	3:57	
+39830	Bay_of_Plenty 	Eure _Metropolitan	35064	0:39	4:59	
+3279	Bremen_(Hansestadt) 	Delhi _Union	14916	7:6	16:30	
+52656	Vestfold 	Vestfold 	4588	20:32	17:0	
+8434	Vest-Agder 	Reading 	28414	5:35	6:13	
+3118	Balikesir 	Dumfries_and_Galloway 	17824	7:51	20:31	
+36501	Oxfordshire 	Xizang _Autonomous	27758	13:53	4:7	
+47059	Southland 	Plymouth 	2443	20:19	9:37	
+52330	Siga_[Shiga] 	Norrbottens_län 	16151	12:55	14:22	
+41126	Scottish_Borders,_The 	Évora 	39462	4:20	6:20	
+59754	Greenwich 	Michigan 	14782	10:1	5:36	
+55074	Sandwell 	Sivas 	47738	0:31	4:6	
+31127	Nordrhein-Westfalen 	Kronoborgs_län 	47178	7:8	9:0	
+44138	Xizang _Autonomous	Cumbria 	42059	1:12	19:23	
+35744	Río_Negro 	Tokat 	48587	2:6	6:18	
+46041	Kalmar_län 	Larne 	7851	15:44	22:18	
+28067	Tamaulipas 	Corrèze _Metropolitan	15572	17:19	14:38	
+41560	Corum 	Nuevo_León 	31580	22:40	17:16	
+15404	East_Lothian 	Ceredigion_[Sir_Ceredigion] 	5605	11:19	18:11	
+1577	Yamagata 	Nottinghamshire 	38518	6:3	5:6	
+50748	Ningxia _Autonomous	Tokyo 	15225	16:3	16:34	
+11776	Colima 	Middlesbrough 	47713	19:11	3:28	
+35589	Indre-et-Loire _Metropolitan	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	35065	17:23	1:56	
+15026	Lewisham 	Australian_Capital_Territory 	35200	10:27	20:59	
+9329	Atacama 	Distrito_Federal _Federal	33883	18:32	2:12	
+49093	Mohéli 	Goa 	22602	15:31	0:5	
+16195	East_Ayrshire 	Adiyaman 	7867	4:14	7:46	
+15399	Nara 	Poole 	14566	16:16	23:29	
+21493	Kentucky 	Bay_of_Plenty 	24355	7:54	2:0	
+50554	Larne 	Tamaulipas 	16546	17:52	15:32	
+50240	Shanxi 	Batman 	8042	9:57	19:33	
+14092	Warwickshire 	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	23296	21:52	1:22	
+9370	Merton 	North_Lincolnshire 	29991	3:38	14:59	
+47366	Reading 	Liège_(WAL) 	36846	23:51	18:57	
+57786	Oxfordshire 	Sachsen 	23681	8:16	22:1	
+34330	North_Somerset 	Nièvre _Metropolitan	17808	6:20	5:57	
+38295	Võrumaa 	Suffolk 	421	3:29	21:20	
+26719	Adiyaman 	East_Riding_of_Yorkshire 	48860	5:26	10:1	
+39534	Alpes-Maritimes _Metropolitan	Virginia 	22738	10:50	14:52	
+33018	Nayarit 	Oregon 	46594	20:0	22:44	
+53890	Aude _Metropolitan	Nordrhein-Westfalen 	6020	14:53	7:22	
+36402	Shropshire 	Howland_Island _Islands/Groups_of	6406	22:35	10:35	
+38814	Kentucky 	Karabuk 	6219	3:42	8:12	
+28485	Rogaland 	Qinghai 	8508	1:48	20:53	
+23094	Van 	La_Pampa 	36999	5:0	2:16	
+50777	Durango 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	43422	8:8	4:26	
+36876	Delaware 	Prince_Edward_Island 	17570	7:57	0:37	
+48650	Hyogo 	Bexley 	16940	17:55	10:41	
+40750	Haute-Loire _Metropolitan	Landes _Metropolitan	12714	22:59	23:59	
+28610	Oost-Vlaanderen_(VLG) 	South_Gloucestershire 	30881	13:2	20:47	
+18076	Tripura 	Thurrock 	2970	15:25	0:44	
+16392	North_Tyneside 	Leicester 	25087	1:18	20:3	
+38823	Gers _Metropolitan	Bafatá 	46037	20:41	8:22	
+25679	Hawkes's_Bay 	Bromley 	20502	2:55	13:35	
+41205	Cookstown 	Allier _Metropolitan	21102	13:52	7:12	
+56526	New_Brunswick 	Yozgat 	2662	15:58	13:7	
+19938	Erzincan 	Portalegre 	41606	12:26	3:37	
+7920	Ards 	Basel-Landschaft_(de) 	37150	21:57	0:36	
+30080	Västmanlands_län 	Pembrokeshire_[Sir_Benfro_GB-BNF] 	24691	16:8	21:18	
+37826	New_York 	Aberdeenshire 	7040	4:58	16:2	
+28638	Aveyron _Metropolitan	Sogn_og_Fjordane 	32921	17:15	9:13	
+57194	Santiago_del_Estero 	Falkirk 	4995	6:7	11:52	
+24551	Sakarya 	Hackney 	6599	14:57	2:45	
+48823	Ankara 	Braga 	24996	2:45	19:44	
+59490	North_Carolina 	Haute-Saône _Metropolitan	33009	20:36	13:7	
+2259	East_Riding_of_Yorkshire 	Ticino_(it) 	28714	10:24	18:11	
+38551	Cumbria 	Hiiumaa 	10582	16:44	6:15	
+27668	Ardennes _Metropolitan	Corum 	18213	19:7	2:12	
+54129	Araucanía 	Bingol 	23725	7:53	1:7	
+31858	Ille-et-Vilaine _Metropolitan	Walsall 	7491	10:49	22:17	
+43294	Acre 	Nelson 	33553	5:16	15:4	
+27316	Crna_Gora 	Coquimbo 	37630	8:57	20:34	
+39507	Magherafelt 	Yamanasi_[Yamanashi] 	27846	16:55	20:14	
+37411	Antrim 	Solothurn_(de) 	10837	4:54	14:19	
+4044	Kyoto 	West_Coast 	4454	15:12	0:28	
+29248	Tasmania 	Staffordshire 	17958	9:39	5:11	
+33805	Ohio 	São_Paulo 	1537	21:13	2:48	
+38309	Coahuila 	Bissau _Autonomous	38022	19:20	17:38	
+28301	Acre 	Amapá 	38102	6:53	7:54	
+23739	México 	Landes _Metropolitan	43289	0:40	5:7	
+38543	Neuchâtel_(fr) 	Hainan 	34970	22:55	22:32	
+39981	Tasmania 	Saaremaa 	26398	3:37	4:47	
+38583	Tokyo 	Bissau _Autonomous	43973	12:38	12:24	
+30072	Slough 	Creuse _Metropolitan	16503	20:46	5:2	
+16482	Aberdeen_City 	Santa_Fe 	1822	3:35	11:41	
+41350	Banbridge 	Mugla 	48412	2:17	20:30	
+45055	Camden 	Raplamaa 	42222	5:54	19:12	
+10816	Gävleborgs_län 	Pas-de-Calais _Metropolitan	47930	0:51	13:30	
+16231	Enfield 	Hakkari 	42608	11:15	8:19	
+4529	Leiria 	Porto 	37031	1:45	17:5	
+40058	Goiás 	Indre-et-Loire _Metropolitan	13204	8:39	16:53	
+51570	Burdur 	Rhode_Island 	17556	13:24	8:51	
+32824	Catamarca 	Tekirdag 	47955	3:22	2:58	
+16631	Coventry 	Graubünden_(de) 	30780	13:53	0:13	
+23864	Yucatán 	Erzurum 	12524	7:51	16:36	
+2229	Jõgevamaa 	Salford 	1561	3:6	15:16	
+54152	East_Sussex 	Pas-de-Calais _Metropolitan	36493	18:38	8:26	
+25614	Derry 	London,_City_of 	6614	3:0	4:18	
+58178	Bracknell_Forest 	Dundee_City 	26397	2:10	4:49	
+49499	Bexley 	Manchester 	22686	19:52	4:56	
+15784	Castelo_Branco 	Doncaster 	41782	0:46	9:26	
+42868	Isikawa_[Ishikawa] 	Edinburgh,_City_of 	46435	8:46	13:48	
+35004	Jammu_and_Kashmir 	Trafford 	17201	3:57	11:56	
+52191	Bolton 	Craigavon 	43995	4:37	13:8	
+5950	Sakarya 	Lambeth 	1434	0:47	18:20	
+52019	Neuchâtel_(fr) 	St._Helens 	7381	13:14	18:14	
+5986	Rochdale 	Ardèche _Metropolitan	2226	1:26	22:42	
+35880	Kagawa 	Dalarnes_län 	4234	7:23	15:44	
+58701	Kalmar_län 	Bafatá 	41618	8:22	8:10	
+48798	Lääne-Virumaa 	Región_Metropolitana_de_Santiago 	19614	4:58	3:49	
+19212	Newfoundland_and_Labrador 	Gansu 	10525	13:31	1:4	
+29638	Aargau_(de) 	Aveyron _Metropolitan	853	20:35	8:29	
+37297	Leicestershire 	Bolu 	5935	11:10	22:47	
+32624	Kirklareli 	Antrim 	23106	4:6	7:35	
+29707	Bafatá 	Schleswig-Holstein 	49602	22:23	21:11	
+43537	Oldham 	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	16587	7:41	4:2	
+15265	Anjouan 	Samsun 	8575	6:22	7:43	
+10193	Sefton 	Namur_(WAL) 	31864	20:35	18:4	
+38603	Kumamoto 	Isikawa_[Ishikawa] 	4673	3:23	19:31	
+56303	Dudley 	Finistère _Metropolitan	30554	22:28	15:41	
+5710	Ain _Metropolitan	Goa 	19317	2:52	9:59	
+59474	Punjab 	Vila_Real 	15129	23:6	18:26	
+14801	Morelos 	Nebraska 	4429	16:22	14:16	
+29421	Seine-et-Marne _Metropolitan	Isles_of_Scilly 	16822	21:33	9:2	
+50752	Hainan 	Havering 	38469	9:35	0:20	
+54029	Osmaniye 	Var _Metropolitan	49279	10:30	20:32	
+50333	Warwickshire 	Monmouthshire_[Sir_Fynwy_GB-FYN] 	15117	22:35	23:38	
+32226	Schaffhausen_(de) 	Fribourg_(fr) 	2449	11:3	8:15	
+17053	Bremen_(Hansestadt) 	Idaho 	26516	11:12	3:14	
+26792	Tameside 	Lambeth 	8887	17:25	16:53	
+18790	Dundee_City 	Hauts-de-Seine _Metropolitan	12470	19:3	23:40	
+32593	Viseu 	Faro 	47744	17:28	23:40	
+36292	Bracknell_Forest 	Saskatchewan 	21868	1:58	17:45	
+44816	Montana 	Nottinghamshire 	26543	9:46	15:51	
+21666	Connecticut 	Yunnan 	18817	13:43	16:32	
+48388	Essex 	Yamaguti_[Yamaguchi] 	5516	5:10	14:47	
+43659	Bouches-du-Rhône _Metropolitan	Arunachal_Pradesh 	33061	5:31	9:9	
+19872	Punjab 	Creuse _Metropolitan	26280	10:9	20:57	
+6685	Lot-et-Garonne _Metropolitan	Blaenau_Gwent 	24203	14:52	23:45	
+44371	Santa_Catarina 	Assam 	32685	2:4	11:50	
+32262	Perth_and_Kinross 	Derbyshire 	5213	22:0	10:52	
+26489	Georgia 	Lisboa 	20612	4:8	23:2	
+44702	Lot-et-Garonne _Metropolitan	Ain _Metropolitan	463	0:48	5:25	
+26813	Siga_[Shiga] 	Greenwich 	15856	21:16	21:44	
+58721	Mato_Grosso_do_Sul 	Gironde _Metropolitan	17665	2:38	9:16	
+13577	Vendée _Metropolitan	Oise _Metropolitan	16104	19:28	14:28	
+28423	Meuse _Metropolitan	Alabama 	41325	19:30	18:39	
+55148	New_Jersey 	West_Berkshire 	13970	6:56	20:53	
+43586	Nordland 	Dordogne _Metropolitan	34577	14:40	4:0	
+12934	Rutland 	Gironde _Metropolitan	13339	15:9	10:0	
+47700	Gotlands_län 	Dungannon 	20647	11:53	5:48	
+26259	Georgia 	Northamptonshire 	14227	16:40	12:5	
+46666	British_Columbia 	St._Helens 	399	4:30	16:16	
+5650	Westminster 	Southend-on-Sea 	49717	18:11	18:29	
+3128	Angus 	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	17870	23:58	1:59	
+40848	Warrington 	Wigan 	11764	8:58	22:53	
+3984	Hokkaido 	Sakarya 	42486	4:12	12:7	
+48752	Kirkkale 	Tiba_[Chiba] 	14965	3:28	10:7	
+54552	Sichuan 	Waikato 	48236	19:55	14:8	
+28248	Sarthe _Metropolitan	Islington 	13984	1:36	14:37	
+6537	Yucatán 	Val-d'Oise _Metropolitan	13288	17:38	22:39	
+38938	Strabane 	Buskerud 	20610	22:2	2:27	
+53757	Afyon 	Newtownabbey 	34439	15:48	12:41	
+54326	Rutland 	Knowsley 	32753	5:10	2:19	
+5458	Manitoba 	Coleraine 	22119	22:22	21:35	
+47889	Assam 	Alabama 	28292	11:40	1:34	
+9141	Bío-Bío 	Bartin 	1551	9:34	18:17	
+3188	Buckinghamshire 	North_Lanarkshire 	7694	6:0	3:15	
+55158	California 	Chiapas 	47451	13:33	19:51	
+9524	Eure-et-Loir _Metropolitan	Texas 	40264	19:33	20:3	
+54779	Kronoborgs_län 	Neuquén 	38903	23:40	17:30	
+17965	Neuquén 	Jura _Metropolitan	16921	4:6	9:30	
+23600	Miyagi 	Hammersmith_and_Fulham 	17543	2:42	10:56	
+57640	Chongqing 	Birmingham 	8708	9:25	18:49	
+7900	Moselle _Metropolitan	Tasman 	24498	11:9	14:20	
+16956	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	Hirosima_[Hiroshima] 	6558	6:0	9:3	
+40528	Pärnumaa 	Blackpool 	10697	18:6	6:5	
+43632	West_Sussex 	Washington 	23259	11:39	20:48	
+40408	Bexley 	Bremen_(Hansestadt) 	48343	5:12	23:39	
+35326	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	Basel-Landschaft_(de) 	4341	12:36	23:19	
+48148	Lot-et-Garonne _Metropolitan	Highland 	7830	10:7	10:2	
+28596	Kirkkale 	Limburg_(VLG) 	49431	21:58	12:54	
+39456	Bingol 	Santiago_del_Estero 	28635	13:36	12:25	
+44084	Oaxaca 	Haute-Vienne _Metropolitan	44300	12:20	1:4	
+39054	Stoke-on-Trent 	Rhode_Island 	14592	14:50	8:19	
+53723	Okinawa 	Deux-Sèvres _Metropolitan	31887	15:42	20:10	
+27958	Amasya 	Ida-Virumaa 	22509	16:22	13:57	
+59166	Essex 	Beja 	10142	21:19	1:52	
+8324	Liaoning 	Southland 	5985	1:33	10:29	
+37200	Pyrénées-Atlantiques _Metropolitan	Haute-Loire _Metropolitan	45088	8:3	12:41	
+47535	Distrito_Federal _Federal	Zug_(de) 	7538	20:39	14:43	
+30624	Eilean_Siar 	Alaska 	14336	2:14	2:1	
+50026	Crna_Gora 	Dalarnes_län 	927	15:12	5:10	
+58559	Misiones 	Milton_Keynes 	43782	3:26	14:40	
+25491	Leicestershire 	Waikato 	23103	10:47	3:17	
+38432	British_Columbia 	Plymouth 	38720	15:20	9:17	
+44137	Newcastle_upon_Tyne 	Hillingdon 	31592	6:54	18:16	
+37400	Yvelines _Metropolitan	Hatay 	22066	2:13	14:4	
+43547	Istanbul 	Mardin 	31005	6:45	6:35	
+21157	Brent 	Puerto_Rico_(see_also_separate_entry_under_PR) _Outlying	34407	19:24	5:50	
+57212	Glarus_(de) 	Western_Australia 	20821	9:47	11:57	
+40171	Catamarca 	Delhi _Union	49282	6:10	9:18	
+42770	Illinois 	Saône-et-Loire _Metropolitan	23012	19:45	10:34	
+31289	Hukuoka_[Fukuoka] 	Västmanlands_län 	12022	15:50	19:29	
+57677	Cankiri 	Chongqing 	14984	8:7	21:30	
+35979	Gävleborgs_län 	Saga 	21070	2:26	11:11	
+51605	New_South_Wales 	Appenzell_Ausser-Rhoden_(de) 	30754	17:29	11:50	
+53544	Sachsen 	Calvados _Metropolitan	24313	5:22	1:51	
+10524	Sizuoka_[Shizuoka] 	Basel-Landschaft_(de) 	36015	23:22	23:32	
+56011	Balikesir 	Moselle _Metropolitan	7958	20:3	7:1	
+9042	Jiangsu 	Saga 	1907	3:18	2:51	
+55231	Alpes-Maritimes _Metropolitan	Antalya 	11289	14:40	10:12	
+22200	Haut-Rhin _Metropolitan	Derbyshire 	14545	7:31	7:49	
+25155	Chandigarh _Union	Mato_Grosso 	34135	22:12	21:25	
+19628	Western_Australia 	Durango 	12616	6:37	11:58	
+7021	Genève_(fr) 	Tottori 	21315	3:2	19:4	
+52195	Haut-Rhin _Metropolitan	Bihar 	9085	7:3	18:21	
+651	Misiones 	Telford_and_Wrekin 	18037	16:35	15:34	
+27156	Vaud_(fr) 	Tameside 	17537	20:46	19:6	
+28292	Hawaii 	British_Columbia 	11108	9:59	8:50	
+51057	Tamil_Nadu 	Maine-et-Loire _Metropolitan	43952	3:10	20:30	
+20125	Nara 	Halton 	33696	19:53	10:32	
+47377	Quebec 	Inverclyde 	33206	18:37	22:55	
+18520	Denizli 	Derry 	9422	21:30	23:58	
+2953	Essex 	Los_Lagos 	29629	5:16	19:19	
+375	Slough 	Manitoba 	1041	13:2	4:20	
+20601	Amazonas 	Marne _Metropolitan	45671	11:28	10:4	
+40382	Nordland 	Manisa 	26593	4:55	12:34	
+11746	Bartin 	Lisboa 	11716	4:45	19:22	
+20598	Portalegre 	Pyrénées-Orientales _Metropolitan	48475	5:39	4:32	
+37813	México 	Siga_[Shiga] 	28593	23:54	11:27	
+32622	Karaman 	Hakkari 	39637	21:5	4:23	
+34471	New_Hampshire 	Baja_California 	22413	11:44	7:51	
+14940	Viana_do_Castelo 	Haute-Loire _Metropolitan	13548	16:13	21:38	
+59745	Gers _Metropolitan	Paraíba 	22953	18:56	21:49	
+1634	La_Rioja 	Louisiana 	27084	11:7	3:25	
+12467	Assam 	Miyagi 	33676	18:10	12:29	
+29579	Dungannon 	Delaware 	49275	7:28	22:42	
+29864	East_Sussex 	Gunma 	47744	5:22	17:7	
+23860	Kentucky 	Conwy 	7330	2:46	4:57	
+3509	Castelo_Branco 	Jönköpings_län 	1516	7:19	7:46	
+29927	Bas-Rhin _Metropolitan	Hounslow 	345	16:14	6:48	
+7211	Caerphilly_[Caerffili_GB-CAF] 	Nièvre _Metropolitan	34079	9:14	12:21	
+6723	Kütahya 	Ards 	15486	16:29	10:28	
+8173	Stockholms_län 	Gümüshane 	41542	13:52	15:27	
+55576	Atacama 	Puerto_Rico_(see_also_separate_entry_under_PR) _Outlying	45026	21:49	16:18	
+11771	Torfaen_[Tor-faen] 	Bracknell_Forest 	48058	4:51	2:58	
+5774	Araucanía 	Marne _Metropolitan	47760	21:33	4:40	
+48684	Haut-Rhin _Metropolitan	Var _Metropolitan	29337	20:57	19:21	
+44837	Cher _Metropolitan	Cher _Metropolitan	20683	17:29	21:58	
+14138	Vest-Agder 	Manche _Metropolitan	3967	7:50	9:54	
+2006	Møre_og_Romsdal 	Mohéli 	31987	5:44	23:59	
+44631	Haryana 	Northamptonshire 	39984	2:52	2:45	
+7897	Kerala 	Liverpool 	42115	6:35	12:36	
+51134	Bern_(de) 	Taiwan 	15829	9:52	13:48	
+18080	Wyoming 	Aberdeen_City 	31018	17:33	0:52	
+27109	Sizuoka_[Shizuoka] 	Norrbottens_län 	39169	15:17	20:12	
+22176	Blekinge_län 	Shanxi 	40211	16:39	23:33	
+270	Vienne _Metropolitan	Morelos 	37887	14:31	5:17	
+25424	Liaoning 	Kingston_upon_Thames 	7684	13:7	2:52	
+31068	Zürich_(de) 	Nottinghamshire 	45418	16:18	4:26	
+3979	Sarthe _Metropolitan	Södermanlands_län 	20800	20:20	5:20	
+19266	Kirsehir 	Diyarbakir 	13624	19:3	7:2	
+46543	Gwynedd 	Oaxaca 	31241	0:52	19:28	
+4471	Magherafelt 	Georgia 	48132	6:33	10:24	
+40871	Tasmania 	Uppsala_län 	46725	4:57	23:16	
+16486	Loire _Metropolitan	Haringey 	3271	4:57	4:59	
+20550	Inverclyde 	Cher _Metropolitan	35980	23:57	5:55	
+34178	Deux-Sèvres _Metropolitan	Saaremaa 	18098	8:3	0:3	
+32938	Dalarnes_län 	Tamil_Nadu 	49356	7:3	23:39	
+36599	Miyazaki 	Ordu 	19914	2:4	14:15	
+17664	East_Dunbartonshire 	Antofagasta 	25912	2:2	12:40	
+43035	Argyll_and_Bute 	Sunderland 	15696	12:5	5:15	
+33766	Guizhou 	Icel 	33859	15:25	6:12	
+26692	Jura _Metropolitan	South_Tyneside 	540	7:8	2:16	
+21963	Sakarya 	North_Ayrshire 	26277	11:28	22:18	
+11827	Aberdeenshire 	Palmyra_Atoll _Islands/Groups_of	26021	7:33	19:47	
+17875	Essex 	Banbridge 	40377	12:14	18:32	
+51534	Rajasthan 	Guizhou 	8544	3:16	10:24	
+52023	Haute-Loire _Metropolitan	Dungannon 	5427	10:33	20:42	
+1323	Solihull 	Lot _Metropolitan	33715	18:5	7:29	
+3561	Brandenburg 	Hainan 	45776	8:24	18:5	
+23815	Niedersachsen 	Baja_California 	22037	3:40	15:0	
+20565	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	Berlin 	17883	4:12	3:3	
+33367	Havering 	Xianggang _Special_Administrative	28676	21:45	7:55	
+4834	Manipur 	Blackburn_with_Darwen 	46297	9:16	7:31	
+26582	Arizona 	Durham 	42514	4:41	3:32	
+29016	Kahramanmaras 	Territoire_de_Belfort _Metropolitan	11635	16:50	6:9	
+49758	Western_Australia 	Rio_de_Janeiro 	5724	11:59	13:8	
+49468	Lapin_lääni_(fi) _Province	Deux-Sèvres _Metropolitan	26670	10:5	12:45	
+49746	Trabzon 	Anjouan 	43880	18:53	6:32	
+42551	Lozère _Metropolitan	Portalegre 	27784	20:55	5:39	
+50487	Merton 	Jharkhand 	30123	18:24	12:31	
+4533	Biombo 	Hidalgo 	28752	4:21	2:4	
+36962	Alberta 	Shropshire 	34981	22:48	2:15	
+34440	Allier _Metropolitan	Møre_og_Romsdal 	39010	22:8	0:28	
+1644	Izmir 	Indre-et-Loire _Metropolitan	17130	7:8	22:35	
+41005	Wake_Island_(ISO_reserved_code_=_WK) _Islands/Groups_of	Distrito_Federal _Federal	46431	18:17	20:51	
+35651	Poole 	East_Lothian 	6109	7:36	15:17	
+26822	Auckland 	Haute-Garonne _Metropolitan	18373	22:4	13:36	
+3834	Dumfries_and_Galloway 	Bahia 	7387	10:23	2:18	
+23879	Aguascalientes 	Giresun 	400	16:37	1:6	
+15681	Charente _Metropolitan	Mus 	11089	17:40	10:41	
+59820	Uttar_Pradesh 	Saitama 	31932	3:5	14:51	
+45455	Vila_Real 	Kagawa 	23866	3:0	15:29	
+45607	Río_Negro 	Yalova 	7302	0:9	11:36	
+59739	Mugla 	North_Lincolnshire 	31289	19:0	3:20	
+1912	Quinara 	Texas 	29550	0:36	22:15	
+14538	Highland 	Luzern_(de) 	31248	4:21	13:58	
+47924	Gloucestershire 	Montana 	17547	1:49	1:23	
+51715	Limavady 	Northern_Territory 	33595	10:52	7:18	
+50408	Aydin 	Charente _Metropolitan	10459	14:8	3:20	
+59615	Beja 	Jura _Metropolitan	37564	16:46	3:54	
+22775	Newcastle_upon_Tyne 	Essex 	6325	11:19	0:0	
+39100	Sachsen-Anhalt 	Brent 	33492	23:2	13:50	
+56319	Landes _Metropolitan	Morelos 	44286	11:33	14:24	
+18768	Isikawa_[Ishikawa] 	Troms 	20634	16:26	15:26	
+22042	Taiwan 	British_Columbia 	33203	10:14	1:48	
+35642	North_Somerset 	Bury 	427	6:43	22:3	
+5408	Derry 	Totigi_[Tochigi] 	43001	11:36	1:24	
+46900	Mississippi 	Libertador_General_Bernardo_O'Higgins 	45806	4:26	2:10	
+33514	Raplamaa 	Essonne _Metropolitan	18479	21:47	7:52	
+16132	Afyon 	Shetland	21266	9:51	1:21	
+23281	Finnmark 	Braga 	49053	10:45	15:16	
+18035	Hartlepool 	Conwy 	38583	2:18	14:45	
+36661	Mie 	Halton 	12492	5:2	9:40	
+59253	Rhône _Metropolitan	South_Ayrshire 	15190	16:22	14:25	
+39866	Aydin 	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	19025	11:34	20:38	
+27430	Konya 	Haut-Rhin _Metropolitan	29790	13:17	21:2	
+57452	Espírito_Santo 	Vermont 	3607	13:22	13:28	
+47222	Libertador_General_Bernardo_O'Higgins 	Doubs _Metropolitan	25772	11:50	15:59	
+10275	Aargau_(de) 	Rogaland 	4776	7:27	20:18	
+8859	Bas-Rhin _Metropolitan	Wolverhampton 	3046	19:14	5:52	
+33601	Iowa 	Artvin 	42680	4:57	7:0	
+14278	Igdir 	Rogaland 	37188	1:10	14:55	
+2905	Oise _Metropolitan	Pará 	27294	16:26	0:1	
+27696	Scottish_Borders,_The 	Madhya_Pradesh 	19243	16:51	8:32	
+53898	Cheshire 	Shandong 	5487	20:53	2:58	
+46802	Sør-Trøndelag 	Siirt 	30327	22:44	5:29	
+8808	Sandwell 	Gujarat 	30553	11:9	19:15	
+51731	Tamaulipas 	Tripura 	37493	9:32	20:1	
+23580	Shandong 	Ille-et-Vilaine _Metropolitan	33465	1:34	20:29	
+13276	Henan 	Telemark 	48138	5:51	11:21	
+10754	Orkney_Islands 	La_Pampa 	27689	4:26	6:11	
+37224	Río_Negro 	Pyrénées-Atlantiques _Metropolitan	356	23:15	23:10	
+37392	South_Gloucestershire 	Yvelines _Metropolitan	39866	7:42	15:22	
+38167	Xianggang _Special_Administrative	Aiti_[Aichi] 	8011	7:21	13:9	
+9334	Isle_of_Wight 	Yunnan 	5753	7:4	17:2	
+39393	Deux-Sèvres _Metropolitan	Hukui_[Fukui] 	47475	12:2	18:59	
+59264	Manipur 	Belfast 	32561	6:31	0:50	
+37768	Tasman 	District_of_Columbia 	16672	0:4	15:31	
+18361	Artvin 	Edinburgh,_City_of 	23694	7:34	14:20	
+15687	Meuse _Metropolitan	Essex 	5574	10:7	8:46	
+47466	Grande_Comore 	Los_Lagos 	16217	2:19	18:24	
+53319	Camden 	Wallonne,_Région_(fr) 	18109	12:11	22:44	
+15008	Vendée _Metropolitan	Hukuoka_[Fukuoka] 	35525	19:2	5:1	
+15280	Marlborough 	Sikkim 	39933	3:51	12:58	
+55404	East_Lothian 	Harjumaa 	25796	18:37	6:34	
+34843	Mohéli 	Alberta 	27996	20:43	12:46	
+2435	Minnesota 	Victoria 	46214	12:39	1:11	
+2246	Bolu 	Amasya 	46625	19:44	1:41	
+8902	West_Coast 	Connecticut 	29040	4:12	10:51	
+11233	Arunachal_Pradesh 	Nidwalden_(de) 	43508	15:49	9:0	
+15548	Corum 	Santiago_del_Estero 	10757	3:4	1:2	
+56646	Creuse _Metropolitan	Jharkhand 	25812	5:18	7:27	
+51291	North_Yorkshire 	Merton 	3988	10:58	2:13	
+14534	Arkansas 	Cacheu 	32436	17:33	8:1	
+30853	Adiyaman 	North_Somerset 	22493	15:52	21:26	
+37021	Maine 	Río_Negro 	45075	23:51	20:38	
+36463	Assam 	Norrbottens_län 	39873	12:30	15:50	
+31495	Rotherham 	Down 	14486	5:15	0:27	
+16733	Kingston_upon_Thames 	Bursa 	325	0:7	17:45	
+25997	Torbay 	Ticino_(it) 	19301	4:2	16:30	
+45129	Montana 	Porto 	43186	6:36	5:1	
+3863	Gujarat 	Nunavut 	1007	20:42	2:30	
+47555	Assam 	Järvamaa 	26013	22:11	17:22	
+35622	Hubei 	Västra_Götalands_län 	12682	20:47	2:55	
+27890	Torbay 	Cookstown 	13198	6:12	21:26	
+30873	Nevada 	Akita 	34331	22:49	10:41	
+30265	Coquimbo 	Etelä-Suomen_lääni_(fi) _Province	10111	23:43	0:47	
+36236	Pyrénées-Orientales _Metropolitan	Kronoborgs_län 	13262	12:19	22:10	
+6708	Iowa 	Osaka 	3187	0:28	17:2	
+55202	Midlothian 	Lapin_lääni_(fi) _Province	38259	11:24	6:2	
+36865	Oita 	Neimenggu _Autonomous	7552	17:26	6:3	
+12215	Hedmark 	Eilean_Siar 	22005	8:2	19:20	
+22588	Angus 	San_Luis_Potosí 	28986	1:5	23:26	
+37944	Dungannon 	Lisboa 	37144	6:13	14:47	
+8899	Guerrero 	Karnataka 	10462	8:49	6:18	
+29550	Derby 	Entre_Ríos 	18702	11:33	4:18	
+46936	Wakefield 	Koti_[Kochi] 	2839	4:52	17:41	
+37589	Nidwalden_(de) 	Rochdale 	614	4:36	19:6	
+18181	Uttar_Pradesh 	Valgamaa 	13361	15:19	6:26	
+35530	Leicestershire 	Lincolnshire 	37139	20:14	19:17	
+49977	Jarvis_Island _Islands/Groups_of	Tasmania 	776	22:12	8:21	
+58691	Okinawa 	Creuse _Metropolitan	29428	18:5	21:30	
+25969	Oldham 	Surrey 	40171	9:19	0:11	
+31737	Bahia 	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	42484	19:57	20:25	
+5042	Santiago_del_Estero 	Amazonas 	30531	21:8	6:43	
+1441	Val-de-Marne _Metropolitan	Alpes-de-Haute-Provence _Metropolitan	5664	19:55	15:15	
+29746	Barking_and_Dagenham 	Aguascalientes 	45962	3:57	2:13	
+6040	Deux-Sèvres _Metropolitan	Tamaulipas 	32145	14:49	3:46	
+19350	Yunnan 	Guizhou 	11034	16:1	5:26	
+53788	Neuchâtel_(fr) 	Wiltshire 	35750	18:33	1:23	
+22262	Zonguldak 	Hartlepool 	9395	17:55	23:49	
+5591	Zhejiang 	Guanajuato 	28255	3:28	22:2	
+3133	Berlin 	Magallanes 	27607	8:53	7:43	
+37942	Milton_Keynes 	Istanbul 	26231	5:15	20:32	
+59437	South_Lanarkshire 	Newham 	17254	7:22	18:39	
+57017	Derry 	Obwalden_(de) 	6991	20:41	10:29	
+26079	Zug_(de) 	Charente-Maritime _Metropolitan	47090	16:10	21:13	
+29603	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	Moselle _Metropolitan	32147	3:32	0:41	
+5096	Omagh 	Prince_Edward_Island 	42606	12:47	8:22	
+59824	Nelson 	East_Riding_of_Yorkshire 	46732	6:46	18:5	
+26967	East_Renfrewshire 	Western_Australia 	7512	3:22	9:55	
+43590	Meurthe-et-Moselle _Metropolitan	Sirnak 	46497	8:0	23:13	
+48634	Punjab 	Caerphilly_[Caerffili_GB-CAF] 	9487	11:33	18:58	
+45765	Meghalaya 	Tameside 	21323	0:47	13:51	
+4448	Middlesbrough 	Oxfordshire 	48771	7:50	19:53	
+59800	Himachal_Pradesh 	Colorado 	38212	5:57	4:20	
+35066	Bern_(de) 	Agri 	19224	5:18	19:37	
+20589	Jalisco 	Pennsylvania 	35802	8:38	9:47	
+2683	Vaucluse _Metropolitan	West_Berkshire 	28598	5:33	3:34	
+54913	Moray 	Middlesbrough 	15829	14:44	0:20	
+47295	Berlin 	Isère _Metropolitan	14545	0:29	13:50	
+12244	Cornwall 	Castelo_Branco 	16899	23:44	20:7	
+19751	Totigi_[Tochigi] 	Torbay 	19888	11:48	4:5	
+1532	Chaco 	Ningxia _Autonomous	15341	21:33	14:30	
+47266	Hatay 	Torbay 	26603	15:43	14:34	
+31094	Inverclyde 	Buckinghamshire 	13672	3:19	13:27	
+55591	Islington 	Kars 	4150	15:12	11:37	
+54455	Baden-Württemberg 	Hartlepool 	32938	16:31	23:40	
+2334	Hainan 	Northwest_Territories 	26212	11:42	15:26	
+26048	Aisén_del_General_Carlos_Ibáñez_del_Campo 	Ceredigion_[Sir_Ceredigion] 	23542	2:12	17:18	
+28479	Barking_and_Dagenham 	Aust-Agder 	24762	3:6	0:48	
+34096	Wakefield 	Baja_California_Sur 	45558	22:51	17:23	
+15091	Caerphilly_[Caerffili_GB-CAF] 	Maine-et-Loire _Metropolitan	34274	9:0	5:14	
+57491	Bursa 	Yozgat 	45716	15:13	7:55	
+15287	Finnmark 	Moyle 	7496	21:43	16:0	
+4312	Meuse _Metropolitan	Oslo 	41605	4:49	14:41	
+46814	Moray 	South_Australia 	37013	6:47	12:29	
+20769	Loire-Atlantique _Metropolitan	West_Berkshire 	38290	3:29	0:26	
+28118	Tunceli 	Fribourg_(fr) 	13781	20:16	17:31	
+9267	Manitoba 	Jura_(fr) 	35877	6:33	5:34	
+52547	Buckinghamshire 	Reading 	18279	15:26	11:26	
+10126	Aiti_[Aichi] 	Denbighshire_[Sir_Ddinbych_GB-DDB] 	28204	2:42	1:54	
+5959	Oslo 	Alaska 	6081	2:3	5:14	
+50006	Obwalden_(de) 	Nova_Scotia 	11501	16:53	18:44	
+2787	Quintana_Roo 	Hammersmith_and_Fulham 	13965	5:29	17:3	
+2063	Ardennes _Metropolitan	Kagawa 	4695	13:44	19:27	
+5431	Kirkkale 	Oost-Vlaanderen_(VLG) 	41923	1:17	7:26	
+37736	Simane_[Shimane] 	Los_Lagos 	9712	18:4	0:27	
+34053	Bío-Bío 	Oslo 	41972	6:30	1:47	
+25422	Castlereagh 	Southwark 	7600	17:13	14:54	
+49876	Barnet 	Oio 	14753	23:8	8:32	
+45249	Ehime 	Agri 	5129	13:46	13:8	
+50768	Trafford 	Guizhou 	16790	10:43	12:9	
+22979	Ille-et-Vilaine _Metropolitan	Itä-Suomen_lääni_(fi) _Province	22817	7:21	7:27	
+24687	Denizli 	Shaanxi 	46887	18:4	23:4	
+42668	Oost-Vlaanderen_(VLG) 	Jharkhand 	23086	20:42	11:26	
+22319	Solothurn_(de) 	Telford_and_Wrekin 	30309	3:29	3:29	
+26748	Hiiumaa 	East_Sussex 	12446	22:24	6:7	
+31770	Bas-Rhin _Metropolitan	Antofagasta 	46796	6:41	13:16	
+11784	Loire _Metropolitan	Stockport 	21087	20:54	5:44	
+7947	Ards 	Connecticut 	43948	18:7	2:10	
+25749	Islington 	Bolu 	38577	11:14	3:32	
+32203	Corrientes 	Sachsen-Anhalt 	29074	15:41	13:50	
+57347	Howland_Island _Islands/Groups_of	Alpes-de-Haute-Provence _Metropolitan	9894	9:41	0:11	
+48628	Canterbury 	Tokat 	32035	7:19	22:33	
+22304	Cheshire 	Maryland 	41059	0:36	22:44	
+15959	Hunan 	Redbridge 	13029	3:23	16:2	
+4542	Florida 	South_Lanarkshire 	17207	15:15	7:13	
+11416	Canterbury 	Raplamaa 	25353	6:38	10:9	
+8958	Baden-Württemberg 	Atacama 	35764	19:59	8:10	
+56567	Missouri 	Roraima 	20808	13:7	1:1	
+1867	Mississippi 	Merton 	33918	19:0	17:27	
+26986	Pyrénées-Orientales _Metropolitan	Aveyron _Metropolitan	37001	14:17	5:46	
+3716	Nigde 	Genève_(fr) 	927	12:21	15:26	
+14789	Gunma 	Vest-Agder 	40253	7:24	19:58	
+30801	Ontario 	East_Dunbartonshire 	32053	2:54	15:56	
+45212	Norfolk 	Haute-Vienne _Metropolitan	20743	15:36	23:48	
+24759	Anjouan 	Nebraska 	4841	20:58	0:1	
+2751	Hertfordshire 	Sergipe 	31691	21:45	1:43	
+21062	Nevada 	Stockholms_län 	12861	7:10	11:6	
+28420	Minnesota 	Bexley 	15650	17:48	14:54	
+12367	Kosovo-Metohija _Autonomous	Punjab 	41441	22:20	18:14	
+195	Nordrhein-Westfalen 	Västmanlands_län 	28263	14:21	7:40	
+42867	Nordrhein-Westfalen 	Northern_Territory 	45457	10:32	6:31	
+50906	East_Sussex 	Kahramanmaras 	21810	21:44	20:27	
+4983	Alabama 	Gujarat 	6511	1:34	5:13	
+25329	Paris _Metropolitan	Santiago_del_Estero 	49310	21:16	11:15	
+53172	Oxfordshire 	Agri 	47432	6:35	17:47	
+25880	Telford_and_Wrekin 	Vlaamse_Gewest_(nl) 	2296	16:5	18:53	
+37482	Xizang _Autonomous	Araucanía 	31206	2:12	18:26	
+6060	Aube _Metropolitan	Länsi-Suomen_lääni_(fi) _Province	15110	15:32	23:23	
+47477	Nagano 	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	9458	20:1	13:51	
+44248	Mardin 	Bradford 	22386	1:48	18:40	
+28184	Bremen_(Hansestadt) 	Región_Metropolitana_de_Santiago 	5731	10:58	3:20	
+18424	Derbyshire 	Bournemouth 	39426	18:34	2:27	
+11605	Carrickfergus 	Samsun 	47176	15:55	9:39	
+12441	Isparta 	Leeds 	36742	3:6	17:15	
+14558	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	Southampton 	14349	1:55	11:57	
+16765	Queensland 	Ardèche _Metropolitan	39645	22:43	18:54	
+422	Beja 	Sakarya 	48493	6:2	23:59	
+4826	Colorado 	South_Lanarkshire 	47587	21:7	15:50	
+22865	Cher _Metropolitan	Jalisco 	24357	7:19	16:34	
+7938	Kingman_Reef _Islands/Groups_of	Marlborough 	32091	6:49	6:27	
+27370	Siga_[Shiga] 	Valais_(fr) 	10593	22:10	23:48	
+21309	Ain _Metropolitan	Lot _Metropolitan	11317	23:5	20:15	
+26323	Nottinghamshire 	Mato_Grosso 	4277	12:57	5:48	
+6162	Burdur 	Jura_(fr) 	17581	21:5	11:33	
+38743	Bremen_(Hansestadt) 	Nordrhein-Westfalen 	47338	1:51	2:28	
+59429	Gloucestershire 	Maryland 	45184	0:39	17:26	
+24156	Utah 	South_Lanarkshire 	48147	14:34	16:46	
+21978	Puy-de-Dôme _Metropolitan	Maule 	32475	13:39	11:25	
+18100	Blekinge_län 	Eure _Metropolitan	45914	18:44	18:45	
+12407	Northern_Mariana_Islands_(see_also_separate_entry_MP) _Outlying	Lozère _Metropolitan	23106	5:34	20:32	
+4082	Corrientes 	Cornwall 	22892	19:2	4:1	
+51208	Nagasaki 	Rondônia 	41801	6:48	2:59	
+17145	Sivas 	Sivas 	7694	21:0	9:24	
+57084	Pärnumaa 	Gansu 	27586	15:7	10:17	
+59504	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	Pembrokeshire_[Sir_Benfro_GB-BNF] 	2347	22:16	18:37	
+28365	Bayburt 	Alaska 	48196	17:30	7:37	
+11442	New_Hampshire 	Delhi _Union	40699	2:58	15:38	
+42909	Stockton-on-Tees 	Alpes-de-Haute-Provence _Metropolitan	40389	2:54	18:27	
+38722	Cantal _Metropolitan	New_Brunswick 	41217	5:43	16:29	
+11868	Midlothian 	Ardèche _Metropolitan	29428	21:44	0:5	
+19292	Strabane 	Aberdeenshire 	25265	22:15	4:1	
+39909	Itä-Suomen_lääni_(fi) _Province	Guizhou 	37541	21:36	5:21	
+25863	Kanagawa 	Vlaamse_Gewest_(nl) 	34748	17:24	8:40	
+53448	Chandigarh _Union	Utah 	49306	17:58	20:35	
+32198	Nottingham 	Indiana 	18809	8:56	14:27	
+8323	Indiana 	Shanxi 	12330	21:15	15:44	
+12142	Raplamaa 	Sinaloa 	14642	5:31	22:28	
+25225	Dalarnes_län 	La_Pampa 	25760	11:42	20:34	
+26929	Craigavon 	Aksaray 	33000	11:26	8:7	
+11588	Antofagasta 	Shaanxi 	18675	21:1	8:41	
+19417	Vestfold 	Powys 	2804	16:10	9:31	
+42103	Kingston_upon_Thames 	Hainaut_(WAL) 	43581	16:33	21:38	
+2800	Liaoning 	Catamarca 	9932	17:36	19:59	
+20732	Ain _Metropolitan	Mato_Grosso 	30603	14:13	10:4	
+3708	Morelos 	Knowsley 	45166	21:50	7:59	
+5357	Distrito_Federal _Federal	Sinaloa 	38224	12:0	13:52	
+46344	Gujarat 	Rio_de_Janeiro 	20523	8:30	5:49	
+51070	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	Uri_(de) 	40406	4:24	2:55	
+4158	Nunavut 	Neuchâtel_(fr) 	33907	15:30	0:51	
+391	Manipur 	Thüringen 	4994	21:12	7:18	
+26705	Basel-Landschaft_(de) 	Cumbria 	28361	18:18	22:54	
+10751	Redcar_and_Cleveland 	Bayburt 	21363	11:44	9:47	
+11510	Morbihan _Metropolitan	Pyrénées-Atlantiques _Metropolitan	43090	1:31	7:44	
+4131	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	Basel-Landschaft_(de) 	20503	21:31	11:32	
+20978	Querétaro 	Howland_Island _Islands/Groups_of	28880	2:26	8:12	
+15255	North_Lincolnshire 	Jura _Metropolitan	14649	20:49	1:43	
+1934	Raplamaa 	San_Juan 	47222	11:51	18:40	
+16899	Derry 	Strabane 	38315	1:13	11:19	
+53160	Bolama 	East_Renfrewshire 	21127	22:28	11:17	
+50527	Totigi_[Tochigi] 	Bournemouth 	47019	12:44	20:36	
+32388	Siga_[Shiga] 	Plymouth 	7647	21:8	6:2	
+49961	Saaremaa 	Pondicherry _Union	41942	1:48	1:3	
+38559	Bayern 	Southend-on-Sea 	42573	4:34	4:24	
+54547	Atacama 	Hawaii 	16726	9:5	12:0	
+17635	Sanliurfa 	Antofagasta 	41403	11:36	2:16	
+51866	Flintshire_[Sir_y_Fflint_GB-FFL] 	Viseu 	48217	4:13	12:23	
+40279	Lapin_lääni_(fi) _Province	Poole 	42556	13:40	12:34	
+44560	San_Juan 	Nevsehir 	21680	12:7	14:33	
+302	Corrèze _Metropolitan	Piauí 	23537	2:57	5:17	
+14331	Tiba_[Chiba] 	Sefton 	33152	2:3	16:8	
+12448	Sachsen 	Entre_Ríos 	19848	2:32	17:32	
+14167	Bafatá 	Sutton 	48536	23:21	2:59	
+20437	Bingol 	Okayama 	38802	1:41	10:33	
+28022	Uttaranchal 	Inverclyde 	46175	18:14	20:33	
+25885	Wakefield 	Leicestershire 	1199	15:11	12:54	
+2088	Blackburn_with_Darwen 	Magallanes 	46138	4:20	4:44	
+25086	Rio_Grande_do_Norte 	Saône-et-Loire _Metropolitan	22121	14:33	20:24	
+17526	Tocantins 	Flintshire_[Sir_y_Fflint_GB-FFL] 	3912	9:0	19:22	
+43877	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	Deux-Sèvres _Metropolitan	24073	6:45	10:57	
+19623	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	Mato_Grosso_do_Sul 	21178	9:11	11:4	
+32829	Crna_Gora 	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	22857	13:53	23:58	
+8677	Hiiumaa 	Puerto_Rico_(see_also_separate_entry_under_PR) _Outlying	1553	16:55	17:23	
+11933	Diyarbakir 	Mississippi 	8856	4:30	11:42	
+44762	West_Berkshire 	Haute-Vienne _Metropolitan	40805	6:23	5:21	
+16987	Bolton 	Cantal _Metropolitan	44163	17:12	17:44	
+19797	North_East_Lincolnshire 	Moyle 	48816	0:33	6:25	
+30110	Tartumaa 	Hautes-Pyrénées _Metropolitan	37110	5:31	16:28	
+48361	Redbridge 	Haryana 	1365	15:44	9:29	
+57330	Coleraine 	Minas_Gerais 	36655	9:20	20:48	
+54704	Sunderland 	East_Dunbartonshire 	15797	6:54	12:43	
+45675	Canterbury 	Zonguldak 	39116	9:31	5:51	
+30636	Utah 	Territoire_de_Belfort _Metropolitan	19550	23:29	15:43	
+34575	Colima 	Stoke-on-Trent 	39461	1:53	7:4	
+42123	West_Virginia 	Western_Australia 	18925	2:30	6:33	
+30421	Campeche 	Kirkkale 	49568	0:33	11:55	
+47957	Ariège _Metropolitan	Var _Metropolitan	19293	21:16	12:46	
+5073	Stoke-on-Trent 	Kagawa 	48174	16:45	11:12	
+57743	Tower_Hamlets 	Gansu 	6070	5:13	10:13	
+3967	Down 	Kars 	20178	3:46	2:1	
+44023	Chubut 	Herefordshire,_County_of 	47376	23:57	15:23	
+8011	Guanajuato 	Illinois 	8564	17:1	9:0	
+6491	Jönköpings_län 	Bury 	28961	7:51	3:47	
+18269	Wandsworth 	Tarn _Metropolitan	11521	10:20	0:32	
+44627	Lambeth 	Bayern 	39975	13:52	0:10	
+36159	Tarapacá 	Knowsley 	22144	20:45	7:26	
+56833	Lewisham 	Orne _Metropolitan	28674	13:3	0:28	
+12748	Aomori 	Rogaland 	3904	16:15	14:32	
+13443	Sheffield 	Buskerud 	18536	12:57	21:13	
+5814	Kingston_upon_Hull,_City_of 	Kagosima_[Kagoshima] 	20493	2:55	8:31	
+48882	Gaziantep 	Pyrénées-Orientales _Metropolitan	17228	22:23	14:11	
+47860	Santa_Fe 	Kilis 	28385	3:43	8:53	
+31547	Belfast 	Jönköpings_län 	12921	4:34	15:40	
+1895	Saaremaa 	Etelä-Suomen_lääni_(fi) _Province	32598	18:0	1:55	
+10200	Barnsley 	Totigi_[Tochigi] 	3800	11:19	20:57	
+52999	Värmlands_län 	Jharkhand 	18378	7:12	9:37	
+37034	Haute-Savoie _Metropolitan	Lakshadweep _Union	15425	2:24	6:42	
+21102	Batman 	Rochdale 	11884	9:48	19:50	
+18132	Istanbul 	Amazonas 	15133	19:39	12:57	
+20993	Norrbottens_län 	Ida-Virumaa 	42131	15:22	18:28	
+56503	Bath_and_North_East_Somerset 	Tocantins 	9674	18:24	10:0	
+6519	Windsor_and_maidenhead 	Oise _Metropolitan	14990	23:26	22:29	
+26872	Hukusima_[Fukushima] 	Shanxi 	27511	6:36	1:33	
+13398	Oregon 	Peterborough 	6261	7:35	14:52	
+27521	Jammu_and_Kashmir 	Aberdeen_City 	4562	6:41	18:9	
+3263	Sarthe _Metropolitan	Arkansas 	15763	8:43	20:26	
+38038	Savoie _Metropolitan	Vaud_(fr) 	36330	14:22	13:37	
+35341	Hukui_[Fukui] 	Sinop 	2033	11:36	14:49	
+6852	Armagh 	Oita 	17086	0:6	9:20	
+2948	Monmouthshire_[Sir_Fynwy_GB-FYN] 	Isère _Metropolitan	22174	9:13	19:25	
+2901	Caerphilly_[Caerffili_GB-CAF] 	Liège_(WAL) 	28867	2:10	1:51	
+11032	Hawaii 	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	38672	5:36	3:17	
+31554	Tombali_ 	Zürich_(de) 	31328	22:35	6:12	
+44338	Iowa 	Manisa 	46497	20:55	5:31	
+2342	Vest-Agder 	Quintana_Roo 	36102	12:8	12:59	
+58132	Tunceli 	Wyoming 	4430	19:52	9:28	
+39082	Derry 	Westminster 	27843	16:44	11:58	
+56018	Gunma 	Fermanagh 	8413	4:56	0:44	
+16657	Bayburt 	Karabuk 	28467	23:5	8:4	
+57414	San_Juan 	Itä-Suomen_lääni_(fi) _Province	40844	23:39	15:35	
+33874	Pondicherry _Union	Hukusima_[Fukushima] 	41617	1:2	1:1	
+31391	East_Sussex 	Viana_do_Castelo 	44539	18:10	13:28	
+50730	Idaho 	Dalarnes_län 	10554	16:32	13:14	
+28850	Nottinghamshire 	Tekirdag 	29834	11:47	13:18	
+12730	Ceredigion_[Sir_Ceredigion] 	Berlin 	43702	1:49	9:34	
+44066	Beijing 	Derbyshire 	25799	23:23	1:15	
+13358	Wirral 	Mecklenburg-Vorpommern 	112	9:22	1:43	
+6536	Assam 	South_Tyneside 	9956	6:33	22:53	
+14714	Bremen_(Hansestadt) 	Leicestershire 	43573	8:57	13:3	
+26288	Mugla 	Ariège _Metropolitan	12720	14:28	15:52	
+21910	Yvelines _Metropolitan	New_Jersey 	29998	14:45	22:45	
+14632	Staffordshire 	Savoie _Metropolitan	46365	9:42	19:44	
+14531	Sirnak 	Falkirk 	12651	13:29	1:34	
+8403	Maine-et-Loire _Metropolitan	Alaska 	36988	5:38	10:49	
+14412	Blekinge_län 	Guam_(see_also_separate_entry_under_GU) _Outlying	49673	2:34	0:54	
+34334	British_Columbia 	Okayama 	6424	6:13	15:51	
+29095	Sirnak 	Tokat 	42223	22:7	13:20	
+16362	Blackpool 	Vienne _Metropolitan	25308	9:49	5:26	
+25755	Goa 	Kahramanmaras 	12011	20:17	3:2	
+744	Gard _Metropolitan	Puy-de-Dôme _Metropolitan	37409	11:54	12:19	
+43580	East_Sussex 	Namur_(WAL) 	5572	6:8	19:59	
+4035	Jalisco 	Sheffield 	6615	0:45	20:25	
+51281	Salta 	Blekinge_län 	27771	0:4	7:27	
+28438	Tokat 	Uttar_Pradesh 	271	7:22	0:4	
+34199	Liaoning 	Jharkhand 	36707	18:1	21:17	
+12478	Chongqing 	Oost-Vlaanderen_(VLG) 	42036	9:14	2:31	
+19294	Devon 	Zonguldak 	25658	19:24	2:30	
+49002	Buenos_Aires 	Saarland 	8324	20:18	3:13	
+49297	Torfaen_[Tor-faen] 	Kirklareli 	31587	22:3	0:27	
+1232	Antalya 	California 	8878	4:42	17:27	
+21971	Alaska 	Ordu 	18242	15:51	6:27	
+11897	Guam_(see_also_separate_entry_under_GU) _Outlying	Mizoram 	33034	19:52	23:2	
+57349	Bournemouth 	Orkney_Islands 	43955	16:35	12:18	
+21084	Blackburn_with_Darwen 	Manitoba 	11247	3:57	4:36	
+9188	Nevada 	Northland 	14391	5:33	14:16	
+28105	Dumfries_and_Galloway 	Lisboa 	1253	12:44	14:5	
+26191	Magherafelt 	Ankara 	41884	14:38	14:45	
+38523	Nuevo_León 	Mississippi 	43160	12:58	2:47	
+13510	Siga_[Shiga] 	Rhode_Island 	46359	23:15	7:52	
+30544	Finnmark 	Ards 	46933	8:9	11:14	
+46414	Angus 	Bremen_(Hansestadt) 	36273	17:13	15:35	
+18229	Bolu 	Florida 	10292	4:50	0:18	
+50987	District_of_Columbia 	Redcar_and_Cleveland 	26986	0:37	6:47	
+43794	Kirkkale 	Canterbury 	9170	11:53	11:42	
+32848	Sunderland 	Fujian 	19686	16:28	1:21	
+41470	Västerbottens_län 	Worcestershire 	4246	10:21	20:4	
+11299	Bursa 	Sinop 	32032	5:48	23:27	
+6766	Kentucky 	Michigan 	46239	18:9	20:53	
+30553	Seine-Saint-Denis _Metropolitan	Västmanlands_län 	40714	22:26	2:52	
+36265	Birmingham 	Southend-on-Sea 	36162	3:54	17:22	
+24569	Down 	Lot _Metropolitan	2123	7:11	20:32	
+15926	Morelos 	Berlin 	39633	6:35	11:11	
+55823	Cher _Metropolitan	Indiana 	35228	1:5	8:39	
+2255	South_Carolina 	Michoacán 	2792	20:28	11:47	
+31387	Guangxi _Autonomous	Poole 	20713	1:19	18:45	
+29090	Milton_Keynes 	Indre _Metropolitan	7505	19:17	18:46	
+2681	Swansea_[Abertawe_GB-ATA] 	Vosges _Metropolitan	29574	5:56	2:25	
+26289	Lewisham 	Toyama 	13606	15:10	23:8	
+26940	Vosges _Metropolitan	Ankara 	20124	23:19	4:32	
+17209	Corrèze _Metropolitan	Landes _Metropolitan	5220	17:58	16:56	
+3897	Arizona 	Marne _Metropolitan	42996	2:32	2:12	
+8271	Itä-Suomen_lääni_(fi) _Province	Colima 	3784	8:24	18:34	
+36479	Southend-on-Sea 	Staffordshire 	27263	17:1	2:19	
+3366	Renfrewshire 	Loiret _Metropolitan	20057	8:9	20:46	
+41477	Haute-Saône _Metropolitan	Loir-et-Cher _Metropolitan	44096	22:16	10:53	
+52590	Kosovo-Metohija _Autonomous	Läänemaa 	7585	5:34	2:6	
+17340	Isikawa_[Ishikawa] 	Wellington 	16774	20:45	10:58	
+55510	Sinop 	Tarapacá 	34185	9:51	16:59	
+21956	Bath_and_North_East_Somerset 	Daman_and_Diu _Union	10633	0:39	21:25	
+27122	Faro 	Vest-Agder 	19424	16:7	5:17	
+14938	Luton 	Bío-Bío 	33008	4:47	12:11	
+50423	Landes _Metropolitan	Nottingham 	43752	9:3	7:26	
+51118	Camden 	Baja_California_Sur 	17821	12:51	22:25	
+33667	Morelos 	Birmingham 	398	13:8	22:51	
+33458	Lapin_lääni_(fi) _Province	Highland 	43382	15:28	15:30	
+9275	Kingston_upon_Hull,_City_of 	Burdur 	33364	5:2	22:17	
+54511	Aveiro 	Aisén_del_General_Carlos_Ibáñez_del_Campo 	39889	3:9	17:34	
+29612	Niigata 	Maharashtra 	28844	12:58	17:21	
+32018	Tamil_Nadu 	Sefton 	12267	20:41	14:27	
+8210	Vaucluse _Metropolitan	Flintshire_[Sir_y_Fflint_GB-FFL] 	1459	18:19	20:17	
+9636	Devon 	Glasgow_City 	32261	13:41	14:38	
+45687	Nevada 	Ain _Metropolitan	44679	9:18	13:12	
+13815	Moray 	Piauí 	20987	21:28	7:49	
+10515	Appenzell_Inner-Rhoden_(de) 	Ningxia _Autonomous	12583	19:51	21:17	
+37307	Kentucky 	Cumbria 	39298	12:24	19:7	
+9394	Rogaland 	Worcestershire 	15462	7:1	11:49	
+16433	Denizli 	Lisboa 	20318	4:22	4:6	
+37075	Los_Lagos 	Moyle 	23899	5:34	15:8	
+55287	Aberdeen_City 	Antofagasta 	20157	7:25	0:55	
+10156	Barking_and_Dagenham 	West_Berkshire 	1687	18:32	3:34	
+36866	Alpes-de-Haute-Provence _Metropolitan	Västerbottens_län 	15939	5:16	17:50	
+36395	Northern_Territory 	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	37316	16:33	3:28	
+38378	Virginia 	Loire _Metropolitan	18547	4:0	3:18	
+39095	Tierra_del_Fuego 	Ibaraki 	13783	23:27	8:41	
+17663	Tower_Hamlets 	Jura_(fr) 	32359	23:49	8:1	
+48182	Rogaland 	Évora 	5586	13:30	0:7	
+9689	Shanxi 	Ballymena 	27101	10:58	0:29	
+40616	Hartlepool 	Sør-Trøndelag 	26985	0:56	19:34	
+38317	Jõgevamaa 	Fermanagh 	38734	12:21	22:7	
+59344	Tarn-et-Garonne _Metropolitan	Haute-Saône _Metropolitan	34766	13:59	15:11	
+52251	Bissau _Autonomous	Nebraska 	34027	4:3	14:7	
+54898	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	Caerphilly_[Caerffili_GB-CAF] 	8491	2:44	11:59	
+10244	Skåne_län 	Gers _Metropolitan	262	22:9	19:8	
+6839	Espírito_Santo 	California 	46732	1:54	12:50	
+24506	Aydin 	Tabasco 	9578	0:41	2:49	
+4942	Belfast 	Auckland 	3510	3:17	19:3	
+36431	California 	Fujian 	23689	23:28	20:58	
+47822	Uttar_Pradesh 	South_Australia 	16216	13:9	16:30	
+18479	Brighton_and_Hove 	Hautes-Pyrénées _Metropolitan	34016	21:19	1:30	
+57974	Cardiff_[Caerdydd_GB-CRD] 	Finistère _Metropolitan	21900	2:54	10:9	
+14058	Paraíba 	Sivas 	12936	5:33	20:52	
+7637	Bedfordshire 	Vaud_(fr) 	41370	20:7	5:6	
+36553	Assam 	Fujian 	9644	7:59	23:54	
+47013	Eure _Metropolitan	Loir-et-Cher _Metropolitan	2698	21:4	13:6	
+26434	Vlaams_Brabant_(VLG) 	Schaffhausen_(de) 	49442	10:46	16:43	
+30481	Clackmannanshire 	Michigan 	41555	21:0	4:15	
+39655	Hedmark 	Alpes-de-Haute-Provence _Metropolitan	26936	5:55	14:0	
+1048	Örebro_län 	North_East_Lincolnshire 	36085	6:37	12:6	
+1624	Yvelines _Metropolitan	Craigavon 	15805	15:15	18:37	
+2026	Tierra_del_Fuego 	Pärnumaa 	48544	18:33	7:48	
+43705	Trafford 	Brandenburg 	28009	6:24	13:44	
+37231	Barking_and_Dagenham 	Jura _Metropolitan	16414	1:52	22:34	
+26558	Leicestershire 	Wirral 	46857	22:55	11:44	
+56039	North_Ayrshire 	Tower_Hamlets 	31604	5:7	11:5	
+33666	Izmir 	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	30251	5:4	1:33	
+59628	Mato_Grosso 	Lisburn 	27584	7:23	11:34	
+10423	Devon 	Läänemaa 	24882	4:50	2:40	
+53683	Alabama 	Meghalaya 	27551	23:51	14:31	
+45798	Moray 	Salta 	22770	22:23	13:41	
+27470	Oklahoma 	Hukusima_[Fukushima] 	31227	17:44	12:38	
+32348	Solothurn_(de) 	Karnataka 	2347	19:2	9:34	
+16891	Northland 	Wrexham_[Wrecsam_GB-WRC] 	30834	5:39	15:54	
+23630	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	Koti_[Kochi] 	35974	11:12	11:51	
+36584	Bragança 	Simane_[Shimane] 	6720	23:25	14:13	
+13718	Eure-et-Loir _Metropolitan	Territoire_de_Belfort _Metropolitan	21150	6:26	23:58	
+41322	Sunderland 	Shropshire 	28488	5:3	20:3	
+39420	Dorset 	Taranaki 	11553	18:15	7:14	
+37076	Slough 	London,_City_of 	25889	17:0	2:49	
+10714	Val-d'Oise _Metropolitan	Chubut 	10699	3:26	16:49	
+6699	Bremen_(Hansestadt) 	Ards 	5335	9:7	6:2	
+32008	Tierra_del_Fuego 	Indre _Metropolitan	33532	21:16	2:40	
+48843	Wiltshire 	Gümüshane 	46200	4:48	2:57	
+9621	Isparta 	Graubünden_(de) 	22901	5:19	8:26	
+28874	Durham 	Limavady 	29664	14:20	10:46	
+27379	Aisén_del_General_Carlos_Ibáñez_del_Campo 	Dalarnes_län 	47882	17:2	20:23	
+10682	Paraíba 	East_Sussex 	11648	20:4	6:2	
+34194	Niigata 	Jura_(fr) 	19672	17:27	11:12	
+4881	Kirkkale 	Saskatchewan 	29391	19:31	12:1	
+15490	Viana_do_Castelo 	Herefordshire,_County_of 	3590	4:25	0:52	
+18352	Schwyz_(de) 	Nevada 	46663	9:12	22:8	
+45927	Kingman_Reef _Islands/Groups_of	Nevsehir 	22288	8:15	11:12	
+59965	Goiás 	Kronoborgs_län 	6025	7:52	7:0	
+44474	Northumberland 	Manchester 	27259	7:26	23:33	
+5742	Mohéli 	Hertfordshire 	47854	6:34	20:10	
+30861	Highland 	Neimenggu _Autonomous	45379	19:52	9:18	
+37569	Alpes-Maritimes _Metropolitan	Jämtlands_län 	4507	13:12	2:3	
+26892	Corrientes 	North_East_Lincolnshire 	33827	0:40	10:27	
+48745	Deux-Sèvres _Metropolitan	Eilean_Siar 	29935	1:54	20:50	
+47423	Bay_of_Plenty 	East_Sussex 	13423	11:27	5:11	
+34114	Derry 	Baja_California_Sur 	18941	17:11	3:5	
+26508	Jarvis_Island _Islands/Groups_of	Barnsley 	20465	4:39	1:6	
+37990	Rutland 	Magallanes 	15089	2:30	21:33	
+46777	Møre_og_Romsdal 	Durham 	32559	11:29	20:28	
+52248	Loir-et-Cher _Metropolitan	Minnesota 	29345	10:8	4:55	
+34031	Ardennes _Metropolitan	Vermont 	20598	12:11	19:6	
+21949	Lot-et-Garonne _Metropolitan	Karnataka 	48689	12:28	22:0	
+1050	Kars 	Limburg_(VLG) 	28613	23:13	19:46	
+40234	Haute-Garonne _Metropolitan	Shandong 	12067	6:36	12:31	
+54381	Nuevo_León 	Massachusetts 	48296	2:26	14:21	
+22265	Dorset 	Sogn_og_Fjordane 	14969	15:50	4:8	
+34274	North_East_Lincolnshire 	Bartin 	3486	23:24	9:32	
+24213	Nottingham 	Larne 	32312	1:56	5:47	
+22239	Kastamonu 	Gwynedd 	42122	20:29	10:52	
+15157	Tocantins 	Ningxia _Autonomous	32779	8:32	7:49	
+4724	Jõgevamaa 	Nelson 	26339	3:59	21:50	
+48518	Tottori 	North_Down 	7089	2:19	16:43	
+705	Aveiro 	Nebraska 	38920	4:47	5:21	
+43872	North_Down 	Bitlis 	25252	3:1	11:25	
+8661	Orissa 	Valparaíso 	48484	8:14	9:33	
+19002	Harjumaa 	Bissau _Autonomous	31703	9:16	21:25	
+40593	Xizang _Autonomous	Santa_Fe 	13785	16:11	15:25	
+53466	Waikato 	Södermanlands_län 	11531	13:29	11:52	
+42090	Clackmannanshire 	Staffordshire 	42669	5:23	9:40	
+9412	Chubut 	Nièvre _Metropolitan	8798	2:24	5:1	
+35373	Howland_Island _Islands/Groups_of	Norrbottens_län 	43854	9:6	1:53	
+11700	Vlaamse_Gewest_(nl) 	Wandsworth 	19440	1:55	5:9	
+37789	Ballymoney 	Eskisehir 	3362	8:11	0:21	
+33063	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	Ain _Metropolitan	34099	21:57	20:7	
+47161	Shandong 	Cardiff_[Caerdydd_GB-CRD] 	31871	1:41	0:21	
+54579	Thurrock 	Liège_(WAL) 	15375	16:6	12:25	
+55449	Akita 	Hiiumaa 	19284	18:30	21:27	
+30712	Highland 	Nordrhein-Westfalen 	2048	23:30	3:10	
+39926	Edirne 	Alberta 	32418	16:55	5:25	
+25518	Tunceli 	Viljandimaa 	41437	19:44	22:46	
+19593	Igdir 	Daman_and_Diu _Union	41419	13:5	13:15	
+10877	North_Down 	Tiba_[Chiba] 	13093	16:34	19:16	
+8779	Louisiana 	Formosa 	4133	2:26	19:57	
+16651	Sivas 	Kronoborgs_län 	36199	7:1	5:39	
+59708	Hawaii 	Basel-Stadt_(de) 	37739	13:8	8:38	
+46959	Prince_Edward_Island 	Birmingham 	41646	12:33	1:2	
+10720	Jõgevamaa 	Hyogo 	45521	3:58	6:17	
+9253	Mohéli 	Kastamonu 	32167	8:22	6:32	
+12931	Vestfold 	Delhi _Union	18945	12:9	20:23	
+46043	Dorset 	Portsmouth 	1361	11:40	20:35	
+34589	Omagh 	Suffolk 	27207	0:10	6:16	
+47208	Kerala 	Merton 	39792	23:21	4:0	
+4945	West_Coast 	Manche _Metropolitan	28997	20:23	14:41	
+636	East_Renfrewshire 	Zonguldak 	43598	23:4	15:53	
+42191	Vestfold 	Akita 	6692	18:59	14:42	
+47443	Região_Autónoma_dos_Açores _Autonomous	Kagosima_[Kagoshima] 	47071	19:41	6:39	
+43034	Oita 	Powys 	7688	11:46	7:25	
+45155	West_Dunbartonshire 	Erzurum 	38735	13:27	14:49	
+35363	Basel-Stadt_(de) 	Pyrénées-Orientales _Metropolitan	45822	23:41	17:28	
+29588	Coahuila 	Guangxi _Autonomous	39962	3:4	8:20	
+41172	Libertador_General_Bernardo_O'Higgins 	Bitlis 	34388	12:7	3:51	
+32783	Orkney_Islands 	Maranhão 	30327	20:29	7:51	
+6633	Denbighshire_[Sir_Ddinbych_GB-DDB] 	Tameside 	46677	5:45	10:10	
+43887	Viljandimaa 	Victoria 	30226	3:14	0:44	
+25304	Liaoning 	Dalarnes_län 	46929	0:3	18:41	
+56500	Erzincan 	Leeds 	14629	18:12	19:16	
+11569	West_Sussex 	Calvados _Metropolitan	20485	9:32	1:32	
+12311	Nova_Scotia 	Leicester 	3154	17:25	21:15	
+48875	Sinop 	Jura_(fr) 	2712	20:53	18:24	
+27280	Seine-Saint-Denis _Metropolitan	Hammersmith_and_Fulham 	20769	8:2	5:59	
+21489	New_South_Wales 	Ahvenanmaan_Maakunta_(fi) _Province	47187	14:56	3:33	
+3135	Gunma 	Dumfries_and_Galloway 	30475	18:57	20:30	
+10462	Nagaland 	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	49649	2:26	4:46	
+28473	Oita 	Viseu 	27548	3:5	23:49	
+47591	Durango 	Orkney_Islands 	47754	23:18	0:15	
+34855	Bern_(de) 	Orne _Metropolitan	46293	15:9	12:20	
+32701	Aisén_del_General_Carlos_Ibáñez_del_Campo 	Cankiri 	36168	22:35	6:41	
+4798	Gujarat 	Nigde 	203	11:50	5:28	
+50000	Bitlis 	Staffordshire 	24838	14:9	6:34	
+33060	Västerbottens_län 	Miyagi 	3871	13:12	3:48	
+57412	Waikato 	Doncaster 	41672	4:52	2:37	
+13763	Loiret _Metropolitan	Ticino_(it) 	23992	14:39	3:41	
+55854	Val-de-Marne _Metropolitan	Nunavut 	7253	3:51	3:32	
+49384	Jharkhand 	Distrito_Federal _Federal	7388	18:57	22:31	
+23307	Bury 	Mardin 	46110	7:36	7:43	
+24120	Ards 	Florida 	26430	3:20	9:25	
+29181	Basel-Landschaft_(de) 	Northamptonshire 	17538	2:46	9:7	
+55217	Guizhou 	Oost-Vlaanderen_(VLG) 	47489	7:54	22:42	
+53987	Chubut 	Yvelines _Metropolitan	47754	17:14	19:53	
+44824	Bexley 	Chihuahua 	42394	13:49	12:40	
+4980	Barking_and_Dagenham 	Jönköpings_län 	24592	7:6	10:5	
+47108	Charente-Maritime _Metropolitan	Enfield 	41619	8:31	22:15	
+25176	Côte-d'Or _Metropolitan	Var _Metropolitan	24605	3:52	3:43	
+54277	Oulun_lääni_(fi) _Province	San_Luis_Potosí 	48604	6:58	10:49	
+58787	Rio_Grande_do_Norte 	New_Mexico 	10415	0:59	0:52	
+41202	Henan 	Västernorrlands_län 	25581	19:59	20:7	
+59791	Orne _Metropolitan	Cookstown 	4841	20:19	7:0	
+39279	Solihull 	Otago 	22646	10:32	0:11	
+9332	Ballymena 	Sutton 	35892	10:47	11:18	
+26167	Lot-et-Garonne _Metropolitan	West_Bengal 	12951	3:47	14:50	
+42631	Lincolnshire 	Genève_(fr) 	29236	4:6	10:5	
+43404	Ealing 	Pará 	3643	4:20	14:12	
+24205	Kensington_and_Chelsea 	Southland 	29813	12:39	11:41	
+10360	Cardiff_[Caerdydd_GB-CRD] 	Darlington 	19807	14:49	18:25	
+31930	Hordaland 	Porto 	44116	0:57	7:25	
+43230	Durango 	Barnet 	1297	1:48	23:46	
+17290	Lakshadweep _Union	Finnmark 	46842	19:41	12:36	
+15394	Carrickfergus 	Jönköpings_län 	14579	18:56	23:42	
+12794	Connecticut 	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	12211	11:11	7:11	
+30098	Torfaen_[Tor-faen] 	Côte-d'Or _Metropolitan	47855	7:29	16:14	
+7460	Hakkari 	Newham 	28637	16:22	7:19	
+26768	Kastamonu 	Bahia 	1061	16:6	1:27	
+44502	Bilecik 	Pembrokeshire_[Sir_Benfro_GB-BNF] 	29148	10:44	14:29	
+24221	Hakkari 	Nagasaki 	38751	21:31	14:23	
+20750	Jõgevamaa 	Westminster 	7242	6:58	20:54	
+4611	Guangxi _Autonomous	Vlaamse_Gewest_(nl) 	725	3:34	22:45	
+30420	York 	Igdir 	47660	13:44	23:48	
+53951	Kosovo-Metohija _Autonomous	North_Ayrshire 	36428	18:40	5:9	
+31764	Beijing 	Xizang _Autonomous	40143	6:19	6:4	
+32009	Solothurn_(de) 	Newfoundland_and_Labrador 	23018	21:41	12:46	
+36278	Chaco 	Lapin_lääni_(fi) _Province	33793	1:58	10:39	
+39873	Berlin 	México 	277	9:43	14:8	
+50012	Oklahoma 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	9149	14:54	4:42	
+42712	Cacheu 	Doncaster 	20217	13:28	15:35	
+53495	Kagosima_[Kagoshima] 	Rochdale 	16158	1:37	23:23	
+14456	Eskisehir 	Mohéli 	24744	4:17	21:8	
+22918	Seine-et-Marne _Metropolitan	Kingston_upon_Thames 	35444	8:21	9:32	
+31889	Genève_(fr) 	Taranaki 	40123	7:47	14:6	
+2701	Illinois 	Lakshadweep _Union	31092	9:7	22:9	
+39777	Veracruz 	Vest-Agder 	42695	5:24	13:56	
+2190	Adana 	Kalmar_län 	36890	20:40	11:6	
+11423	Seine-Saint-Denis _Metropolitan	Luton 	5435	18:47	5:50	
+15846	Deux-Sèvres _Metropolitan	Corrientes 	48154	14:53	20:44	
+3845	Neuchâtel_(fr) 	Manche _Metropolitan	854	21:16	8:32	
+25734	Tarn _Metropolitan	Gümüshane 	4117	8:49	17:23	
+23799	Simane_[Shimane] 	Maine 	42165	16:14	18:8	
+47660	Shanxi 	Tasmania 	42854	23:30	14:11	
+56148	Chongqing 	Banbridge 	20730	21:0	17:21	
+11038	Aydin 	Ordu 	44235	18:36	12:30	
+17080	North_Ayrshire 	Santa_Fe 	49896	6:37	16:27	
+19363	Sogn_og_Fjordane 	Manipur 	17409	18:27	12:39	
+22987	Haute-Savoie _Metropolitan	Mugla 	21835	0:38	2:59	
+24382	Artvin 	Querétaro 	46633	17:41	13:20	
+44330	Sirnak 	Liège_(WAL) 	1860	6:7	16:27	
+39	Thüringen 	Tokyo 	9207	15:30	10:25	
+22256	Montana 	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	41314	7:20	0:36	
+41000	Charente _Metropolitan	Manipur 	27865	14:31	3:17	
+6368	Manisa 	Obwalden_(de) 	17037	7:3	9:3	
+15665	Sankt_Gallen_(de) 	Florida 	41460	14:19	0:8	
+5970	Solihull 	Inverclyde 	43547	18:35	12:18	
+1112	Meghalaya 	Querétaro 	37945	13:22	12:59	
+53336	Corse-du-Sud _Metropolitan	Kanagawa 	22261	20:19	23:48	
+58097	Örebro_län 	Lisburn 	21527	12:0	4:1	
+56235	South_Lanarkshire 	Sichuan 	17876	2:7	20:40	
+45989	Oita 	Baja_California 	730	10:32	3:11	
+30327	Charente _Metropolitan	Mississippi 	38005	18:43	17:11	
+35282	Blekinge_län 	St._Helens 	21106	14:34	17:18	
+56895	Mardin 	New_Mexico 	43868	3:36	6:29	
+22207	Gateshead 	Eure-et-Loir _Metropolitan	12894	22:52	23:55	
+46575	Calderdale 	Buenos_Aires 	31972	22:33	13:39	
+31898	Obwalden_(de) 	Yamagata 	18903	13:28	18:8	
+9340	Cambridgeshire 	Bío-Bío 	46612	17:14	6:29	
+19312	Ticino_(it) 	Maharashtra 	7097	6:47	14:35	
+36954	Västerbottens_län 	Blaenau_Gwent 	1085	9:36	3:41	
+23177	Liverpool 	Chiapas 	33164	9:48	10:57	
+22938	La_Rioja 	Canakkale 	31441	8:12	22:19	
+40253	North_East_Lincolnshire 	Aveyron _Metropolitan	20817	6:35	19:43	
+25757	Daman_and_Diu _Union	Brent 	28830	21:24	12:50	
+6935	Amasya 	Cankiri 	17960	2:57	6:44	
+46746	Oise _Metropolitan	Ceredigion_[Sir_Ceredigion] 	1431	1:13	14:24	
+50020	Cantal _Metropolitan	Marne _Metropolitan	41022	18:45	10:27	
+44072	South_Carolina 	Tombali_ 	47795	12:35	15:56	
+11704	Highland 	Hartlepool 	21379	7:22	15:58	
+34313	West_Virginia 	West_Lothian 	33727	20:42	16:6	
+3294	Sichuan 	Himachal_Pradesh 	32106	8:27	14:8	
+47507	Kent 	Solothurn_(de) 	11854	1:35	17:41	
+51897	Bursa 	New_South_Wales 	48841	22:3	22:1	
+31355	Formosa 	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	38433	0:38	9:32	
+39067	Darlington 	Bolton 	22016	6:35	21:20	
+56512	Haute-Marne _Metropolitan	Bath_and_North_East_Somerset 	35506	21:2	10:18	
+43969	South_Dakota 	Colima 	4135	2:4	12:12	
+40530	Yukon_Territory 	Jämtlands_län 	1994	6:34	13:0	
+45546	Stoke-on-Trent 	Berlin 	41888	8:51	9:19	
+52573	Strabane 	Rhode_Island 	39235	0:27	18:10	
+48275	Haute-Loire _Metropolitan	Kosovo-Metohija _Autonomous	9948	2:43	13:4	
+31222	Haute-Garonne _Metropolitan	Newry_and_Mourne 	18567	0:52	5:35	
+21584	Gabú 	Espírito_Santo 	41225	19:55	8:55	
+39072	Hakkari 	Gloucestershire 	42647	18:19	5:19	
+37128	Stockport 	Baker_Island _Islands/Groups_of	37577	19:40	7:15	
+53915	Setúbal 	Edinburgh,_City_of 	30488	12:50	6:39	
+28302	Tombali_ 	Richmond_upon_Thames 	35662	14:37	11:6	
+53099	Libertador_General_Bernardo_O'Higgins 	Bradford 	30455	14:39	23:31	
+46455	New_South_Wales 	Saga 	41585	11:49	6:13	
+31808	Évora 	Rize 	16685	9:30	12:21	
+50717	Saône-et-Loire _Metropolitan	Nevsehir 	12050	7:37	7:41	
+42215	Värmlands_län 	Ningxia _Autonomous	33566	10:17	11:8	
+58639	Ontario 	Araucanía 	24473	23:51	13:42	
+18636	Var _Metropolitan	Caerphilly_[Caerffili_GB-CAF] 	3835	3:4	2:8	
+32107	Okayama 	San_Juan 	28650	8:3	3:16	
+36744	Hautes-Alpes _Metropolitan	Aveyron _Metropolitan	14409	15:56	9:56	
+37272	Bury 	Colorado 	35889	2:49	10:34	
+54504	Querétaro 	Southampton 	48892	20:17	5:52	
+1313	Vestfold 	North_Carolina 	17299	21:10	7:2	
+56340	Baja_California 	Armagh 	11992	22:33	7:46	
+27624	Omagh 	Goiás 	38843	13:0	8:24	
+48106	Siirt 	Oise _Metropolitan	18979	18:26	8:23	
+7600	Sefton 	Beja 	42266	1:56	3:5	
+46002	Västerbottens_län 	Baja_California_Sur 	46154	17:20	23:39	
+31314	Jönköpings_län 	Isikawa_[Ishikawa] 	10111	3:6	19:13	
+58588	Santiago_del_Estero 	Gwynedd 	5801	12:36	18:11	
+13777	Croydon 	Ankara 	48371	6:57	9:34	
+22437	Victoria 	Edirne 	37014	1:57	15:33	
+36198	Karabuk 	Worcestershire 	7198	10:23	17:59	
+39641	Caerphilly_[Caerffili_GB-CAF] 	Siirt 	762	18:16	8:56	
+48917	Região_Autónoma_da_Madeira _Autonomous	Larne 	36233	22:28	10:38	
+2802	Texas 	Newcastle_upon_Tyne 	35213	23:13	23:9	
+55648	Hidalgo 	Antofagasta 	7569	17:22	6:42	
+42686	Araucanía 	Jönköpings_län 	18333	6:35	8:41	
+38170	Cankiri 	Zacatecas 	20084	23:4	6:57	
+15231	Castelo_Branco 	Enfield 	49434	14:41	17:19	
+5619	Istanbul 	South_Australia 	43564	18:11	22:32	
+51596	Kosovo-Metohija _Autonomous	Isles_of_Scilly 	35666	1:50	13:5	
+45746	Vale_of_Glamorgan,_The_[Bro_Morgannwg_GB-BMG] 	Clackmannanshire 	17269	2:25	8:32	
+58740	Zonguldak 	Marlborough 	13140	4:52	1:49	
+27586	New_Jersey 	Dungannon 	26413	6:42	13:1	
+22131	Halton 	Nevada 	46403	16:50	4:12	
+23175	San_Juan 	Newham 	38909	7:10	4:47	
+17337	Dadra_and_Nagar_Haveli _Union	Mecklenburg-Vorpommern 	18513	1:42	21:54	
+28699	Mohéli 	Utah 	13079	17:59	22:30	
+56197	Merton 	Kansas 	18498	0:29	20:24	
+31582	Wisconsin 	Bradford 	25557	13:56	3:21	
+49906	Dungannon 	Bradford 	20344	6:0	23:33	
+42713	Osmaniye 	Morbihan _Metropolitan	33533	17:47	7:2	
+1254	Finistère _Metropolitan	Madhya_Pradesh 	17046	0:28	13:34	
+15352	Buskerud 	Indre _Metropolitan	47547	14:48	7:0	
+26660	Surrey 	North_Ayrshire 	6448	7:38	20:24	
+17522	Raplamaa 	Quintana_Roo 	29247	18:2	21:47	
+55598	Haute-Saône _Metropolitan	São_Paulo 	35915	13:0	6:35	
+19408	Dundee_City 	Västmanlands_län 	42592	4:50	2:29	
+32762	Xianggang _Special_Administrative	Gunma 	3443	20:42	1:0	
+55900	Savoie _Metropolitan	Guarda 	18564	10:39	13:25	
+16495	Shanxi 	Michoacán 	24651	2:4	0:59	
+33576	Ballymoney 	Sheffield 	5015	6:43	20:28	
+16957	Bissau _Autonomous	New_Jersey 	38159	1:8	3:35	
+3767	Gisborne 	Côte-d'Or _Metropolitan	7992	7:59	9:1	
+14711	Gabú 	Zug_(de) 	21702	13:31	14:52	
+26060	Himachal_Pradesh 	Maine 	25652	10:19	17:41	
+56654	Fujian 	Hillingdon 	28707	13:17	19:40	
+37773	Trabzon 	Essex 	13594	22:44	7:47	
+42443	Okinawa 	Newham 	15947	4:57	12:51	
+10099	Southland 	Chhattisgarh 	12701	10:44	1:2	
+15880	Hubei 	Lapin_lääni_(fi) _Province	27457	22:39	5:9	
+42673	Nova_Scotia 	Hautes-Pyrénées _Metropolitan	32472	22:24	6:0	
+41515	Conwy 	Louisiana 	23404	2:24	15:30	
+35359	Jura _Metropolitan	Blackpool 	16891	19:16	20:7	
+46528	Toyama 	Córdoba 	9578	15:36	18:38	
+39682	San_Luis_Potosí 	Yalova 	43812	23:19	15:40	
+30099	Caerphilly_[Caerffili_GB-CAF] 	Mie 	26446	12:5	8:22	
+40889	Jilin 	Limavady 	31081	4:32	8:43	
+6343	Shaanxi 	Havering 	31396	13:41	8:16	
+45222	Kirkkale 	Länsi-Suomen_lääni_(fi) _Province	41650	23:49	21:24	
+59029	Ain _Metropolitan	Ida-Virumaa 	24006	3:46	5:55	
+2424	Oppland 	Länsi-Suomen_lääni_(fi) _Province	24755	13:7	13:59	
+54247	Qinghai 	Beijing 	47057	13:19	5:13	
+59751	Quintana_Roo 	Møre_og_Romsdal 	9809	22:21	18:30	
+3820	Gümüshane 	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	20889	2:33	8:36	
+8792	Ahvenanmaan_Maakunta_(fi) _Province	Isikawa_[Ishikawa] 	15851	4:4	20:22	
+57962	Indre-et-Loire _Metropolitan	Etelä-Suomen_lääni_(fi) _Province	35918	4:27	14:43	
+24267	Cornwall 	Reading 	24718	16:27	23:32	
+17547	New_Jersey 	Saarland 	10821	10:7	21:4	
+49865	Taranaki 	Ealing 	4826	17:56	0:40	
+56491	Icel 	Corse-du-Sud _Metropolitan	44194	11:40	6:9	
+48103	Giresun 	Setúbal 	448	9:43	19:26	
+24366	Agri 	Montana 	751	2:43	18:23	
+8551	Oklahoma 	Michoacán 	4473	8:52	15:31	
+41204	Milton_Keynes 	Iwate 	17933	9:57	8:31	
+24823	Madhya_Pradesh 	Lisburn 	5154	18:28	23:28	
+25508	Thurrock 	York 	21093	0:26	8:20	
+57543	East_Renfrewshire 	Corrèze _Metropolitan	5846	11:26	11:34	
+18265	Hessen 	Wellington 	41945	23:59	19:44	
+27643	Herefordshire,_County_of 	Tlaxcala 	41677	17:41	9:11	
+29725	Haute-Corse _Metropolitan	Neuchâtel_(fr) 	24593	7:38	9:38	
+55697	Meurthe-et-Moselle _Metropolitan	Lot _Metropolitan	7713	11:54	18:43	
+52715	Sefton 	Kingston_upon_Thames 	29884	7:37	23:2	
+32891	Manitoba 	San_Luis 	32747	15:7	20:13	
+7511	Anjouan 	Quinara 	33005	20:23	15:30	
+15564	Neuchâtel_(fr) 	Hauts-de-Seine _Metropolitan	28105	18:8	16:24	
+59199	Pernambuco 	Portsmouth 	17217	16:55	17:37	
+29756	Bern_(de) 	Roraima 	25537	8:5	19:48	
+23006	Sivas 	Västerbottens_län 	45636	12:27	9:33	
+44728	Zürich_(de) 	Haute-Savoie _Metropolitan	31395	6:28	19:55	
+25359	Rio_Grande_do_Sul 	Ceará 	15805	17:9	3:35	
+18307	Blaenau_Gwent 	Bern_(de) 	25767	16:7	17:12	
+56216	Kentucky 	Sachsen 	20772	13:7	2:31	
+21901	Zacatecas 	Calderdale 	41365	13:12	17:4	
+48218	Kumamoto 	Creuse _Metropolitan	29060	21:20	0:24	
+3661	Idaho 	Miyagi 	25763	15:25	12:24	
+14291	Banbridge 	Okayama 	5132	17:56	8:4	
+22974	Zacatecas 	Ealing 	35881	2:28	1:32	
+48302	Rhône _Metropolitan	Bradford 	35311	3:11	3:39	
+17908	Haute-Marne _Metropolitan	Newcastle_upon_Tyne 	34320	10:1	14:47	
+21928	Lancashire 	Var _Metropolitan	30843	1:7	17:18	
+48794	Monmouthshire_[Sir_Fynwy_GB-FYN] 	Durango 	47977	5:41	12:5	
+31360	Doubs _Metropolitan	Hukusima_[Fukushima] 	13719	10:53	9:51	
+14250	Västra_Götalands_län 	Monmouthshire_[Sir_Fynwy_GB-FYN] 	48939	16:47	17:44	
+59578	Grande_Comore 	Rochdale 	20181	7:2	3:24	
+2408	Jiangxi 	Leeds 	42420	2:52	16:24	
+5423	Dorset 	Artvin 	48679	5:54	17:24	
+19067	Aisne _Metropolitan	Delhi _Union	18800	0:58	4:13	
+37941	Nottinghamshire 	Craigavon 	39486	3:33	23:6	
+38920	Viseu 	Tianjin 	2727	6:27	2:46	
+41799	Kumamoto 	Wrexham_[Wrecsam_GB-WRC] 	48989	9:24	8:9	
+50700	Meurthe-et-Moselle _Metropolitan	Ningxia _Autonomous	32705	14:48	7:54	
+10737	West_Bengal 	Goiás 	39996	2:30	20:49	
+18614	Isles_of_Scilly 	Wrexham_[Wrecsam_GB-WRC] 	12661	9:31	22:29	
+58330	Sogn_og_Fjordane 	Southampton 	5128	11:34	7:59	
+6528	Midlothian 	Kastamonu 	19071	3:17	12:25	
+56653	Yukon_Territory 	Illinois 	19848	0:52	4:7	
+8328	Yozgat 	Appenzell_Inner-Rhoden_(de) 	20607	9:22	2:33	
+12870	Sutton 	Stockport 	19803	18:39	22:33	
+39055	Harrow 	Côte-d'Or _Metropolitan	24798	17:16	2:42	
+32278	Bolton 	Manipur 	5213	10:33	11:18	
+47085	Viljandimaa 	Rio_de_Janeiro 	25036	5:3	16:32	
+54963	Herefordshire,_County_of 	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	13640	7:10	13:58	
+21294	Manisa 	Jharkhand 	26453	10:28	23:25	
+10015	Erzurum 	Tierra_del_Fuego 	13111	8:41	23:40	
+44013	Formosa 	Charente _Metropolitan	32562	2:11	1:25	
+41907	Plymouth 	Hirosima_[Hiroshima] 	3494	15:16	8:5	
+38412	Appenzell_Inner-Rhoden_(de) 	Mecklenburg-Vorpommern 	7659	11:53	12:18	
+10953	Redcar_and_Cleveland 	Fribourg_(fr) 	12533	21:43	22:37	
+26925	Cornwall 	Wirral 	11402	6:12	5:19	
+8867	Atacama 	Gisborne 	30876	7:41	1:42	
+29296	Jiangxi 	La_Pampa 	20539	11:59	0:31	
+17882	Southwark 	Lapin_lääni_(fi) _Province	38136	7:0	7:33	
+59210	Okinawa 	Tekirdag 	27103	11:47	10:27	
+3910	Vale_of_Glamorgan,_The_[Bro_Morgannwg_GB-BMG] 	Santa_Fe 	47058	13:54	17:49	
+57758	Hawkes's_Bay 	Coahuila 	5056	22:32	4:29	
+7655	Doubs _Metropolitan	Cheshire 	41713	5:33	18:20	
+8474	Oise _Metropolitan	Mus 	27295	4:16	18:58	
+14446	Jura_(fr) 	Derry 	6982	19:37	20:49	
+42961	Bern_(de) 	Blekinge_län 	46521	2:38	2:0	
+12780	Tarn-et-Garonne _Metropolitan	West_Dunbartonshire 	18566	13:53	23:55	
+27600	Bihar 	Ille-et-Vilaine _Metropolitan	7992	5:8	16:13	
+36276	Valgamaa 	Mie 	30900	0:24	17:2	
+8799	Møre_og_Romsdal 	Oise _Metropolitan	7957	1:55	5:8	
+5103	Tombali_ 	Maharashtra 	16236	1:40	23:4	
+1655	Poole 	Ballymena 	37804	0:56	18:50	
+49869	Otago 	Corrèze _Metropolitan	41402	20:16	13:27	
+54520	Karabuk 	Hainan 	7378	5:34	15:47	
+33358	Sør-Trøndelag 	Cankiri 	36771	18:8	6:27	
+14189	Côtes-d'Armor _Metropolitan	Gers _Metropolitan	34501	9:24	11:30	
+3889	Luxembourg_(WAL) 	Wrexham_[Wrecsam_GB-WRC] 	33771	19:29	18:57	
+6724	Schwyz_(de) 	Baker_Island _Islands/Groups_of	3536	18:35	10:25	
+45956	Wake_Island_(ISO_reserved_code_=_WK) _Islands/Groups_of	Somerset 	44437	11:34	17:43	
+26001	Kalmar_län 	Alpes-de-Haute-Provence _Metropolitan	42084	18:12	18:28	
+23252	Bihar 	Skåne_län 	39703	1:2	18:51	
+17472	Idaho 	Highland 	9469	3:48	22:31	
+37868	New_South_Wales 	Corse-du-Sud _Metropolitan	11221	4:36	2:59	
+13966	Bexley 	Goiás 	34478	0:1	6:56	
+36412	Entre_Ríos 	Southampton 	3516	13:14	19:27	
+46228	Burdur 	Kirkkale 	33112	17:11	5:5	
+59317	Orne _Metropolitan	Moselle _Metropolitan	8871	11:47	23:4	
+47070	Wolverhampton 	Santarém 	39388	10:44	18:9	
+29808	Mugla 	Isère _Metropolitan	36338	9:35	21:40	
+1146	Tamaulipas 	Scottish_Borders,_The 	6075	9:38	6:34	
+590	Madhya_Pradesh 	Plymouth 	19785	5:40	18:23	
+29324	South_Ayrshire 	Aydin 	47717	11:49	8:44	
+20538	Limburg_(VLG) 	Vendée _Metropolitan	11915	6:5	15:20	
+1854	St._Helens 	Uttaranchal 	7334	16:22	7:38	
+15019	Tombali_ 	Manchester 	27905	14:50	9:14	
+15829	Nevsehir 	Drôme _Metropolitan	7402	9:18	20:25	
+8710	Rajasthan 	Gard _Metropolitan	12229	17:6	1:25	
+53343	Territoire_de_Belfort _Metropolitan	Yamaguti_[Yamaguchi] 	8041	1:22	17:28	
+36384	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	Haringey 	5952	3:2	19:59	
+24680	Campeche 	Saskatchewan 	38019	0:59	10:29	
+29312	Arizona 	Koti_[Kochi] 	35940	16:52	22:29	
+57259	Waltham_Forest 	Barnsley 	36936	20:47	2:27	
+42947	Tasmania 	Gironde _Metropolitan	25907	4:35	18:28	
+11653	Bristol,_City_of 	Bas-Rhin _Metropolitan	2820	16:38	11:18	
+42073	Stockton-on-Tees 	Loir-et-Cher _Metropolitan	25018	17:16	20:53	
+38054	Lääne-Virumaa 	Tower_Hamlets 	45734	8:59	12:23	
+30157	Tameside 	Colorado 	45070	10:51	1:15	
+44705	Charente-Maritime _Metropolitan	Tunceli 	43004	14:20	9:5	
+30147	Wakayama 	Kensington_and_Chelsea 	23553	5:6	17:43	
+37699	Vale_of_Glamorgan,_The_[Bro_Morgannwg_GB-BMG] 	Jura_(fr) 	18621	13:46	4:48	
+2137	North_Lanarkshire 	Genève_(fr) 	27825	14:15	20:59	
+26688	Ain _Metropolitan	Bilecik 	9602	16:22	13:28	
+36272	Iowa 	Allier _Metropolitan	44558	10:24	18:35	
+52393	British_Columbia 	Trafford 	3602	23:5	21:53	
+2980	Karabuk 	Kanagawa 	40485	12:13	21:54	
+48313	Kumamoto 	North_Down 	14408	4:12	17:36	
+14966	Jarvis_Island _Islands/Groups_of	Pennsylvania 	32317	3:19	16:24	
+7727	North_Down 	Buckinghamshire 	29907	3:59	4:57	
+32971	Antalya 	Gävleborgs_län 	42653	9:54	19:57	
+47894	New_Brunswick 	Indre-et-Loire _Metropolitan	13210	14:26	1:1	
+8109	Aguascalientes 	Miyagi 	21497	11:24	18:5	
+6463	Vienne _Metropolitan	Indiana 	19562	15:51	11:47	
+52679	Dordogne _Metropolitan	Hebei 	10896	12:50	23:21	
+9085	North_East_Lincolnshire 	Região_Autónoma_da_Madeira _Autonomous	31054	8:45	20:19	
+6546	Trabzon 	Afyon 	28886	14:52	17:45	
+50761	Ningxia _Autonomous	Piauí 	17651	3:59	17:58	
+6202	Mayenne _Metropolitan	Puy-de-Dôme _Metropolitan	10502	12:37	22:31	
+54450	Misiones 	Länsi-Suomen_lääni_(fi) _Province	47030	9:27	12:23	
+11526	Nara 	Maharashtra 	37010	5:42	9:38	
+9885	Meghalaya 	Aguascalientes 	28	10:19	4:19	
+57048	New_Jersey 	Ohio 	12439	7:16	18:37	
+15122	Córdoba 	Ille-et-Vilaine _Metropolitan	20176	5:52	19:48	
+52139	Seine-Maritime _Metropolitan	Allier _Metropolitan	33570	2:39	12:7	
+59692	Värmlands_län 	Kayseri 	20816	11:36	0:44	
+15147	Burdur 	Cantal _Metropolitan	20546	5:7	0:10	
+22817	Warwickshire 	Braga 	47198	3:43	19:42	
+19536	Guarda 	Monmouthshire_[Sir_Fynwy_GB-FYN] 	42937	20:1	20:23	
+49929	Distrito_Federal _Federal	Taiwan 	36935	7:27	16:21	
+8889	Himachal_Pradesh 	Gunma 	25821	12:8	17:30	
+29804	Gateshead 	East_Riding_of_Yorkshire 	21361	18:27	6:3	
+26049	Wirral 	Kastamonu 	2491	8:10	7:39	
+16157	Nelson 	Yamanasi_[Yamanashi] 	21041	2:8	7:40	
+47995	Luxembourg_(WAL) 	Santiago_del_Estero 	5133	22:5	3:58	
+54203	Västmanlands_län 	Antwerpen_(VLG) 	30082	11:0	22:17	
+40078	Nuevo_León 	Chubut 	27805	15:22	1:59	
+41677	Kingston_upon_Thames 	Bradford 	20508	4:47	11:59	
+42740	Loiret _Metropolitan	Doubs _Metropolitan	42948	23:0	4:15	
+20644	Cher _Metropolitan	Etelä-Suomen_lääni_(fi) _Province	19472	9:21	19:39	
+9162	Newtownabbey 	Østfold 	6440	20:41	15:8	
+39767	Darlington 	Hainaut_(WAL) 	4335	18:42	0:35	
+20672	South_Carolina 	Kalmar_län 	31085	2:50	23:9	
+52866	Chihuahua 	Warwickshire 	27541	3:4	11:44	
+1353	Middlesbrough 	Scottish_Borders,_The 	8695	19:36	10:57	
+22954	Dadra_and_Nagar_Haveli _Union	Jammu_and_Kashmir 	10582	12:45	5:5	
+2443	Kronoborgs_län 	Oppland 	4846	0:16	5:31	
+33918	Sikkim 	Västra_Götalands_län 	3	0:38	20:7	
+6071	Gümüshane 	Põlvamaa 	11229	21:46	7:13	
+23706	Afyon 	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	49032	23:2	20:18	
+33267	Akershus 	Nottinghamshire 	29751	23:53	4:38	
+13797	Srbija 	Haut-Rhin _Metropolitan	8645	12:6	4:0	
+39762	Oaxaca 	Medway 	8471	15:14	8:9	
+13850	Fujian 	Louisiana 	49911	9:27	4:18	
+42533	Carmarthenshire_[Sir_Gaerfyrddin_GB-GFY] 	Kalmar_län 	28898	7:37	20:47	
+44356	Vojvodina _Autonomous	Amazonas 	6243	7:35	23:11	
+52362	Chandigarh _Union	Telemark 	9003	3:43	6:39	
+59363	Oppland 	Miyazaki 	43486	5:37	8:26	
+28835	Oslo 	Nagaland 	14066	2:42	4:55	
+39595	Guam_(see_also_separate_entry_under_GU) _Outlying	Yvelines _Metropolitan	32588	6:34	1:3	
+31362	Glasgow_City 	East_Riding_of_Yorkshire 	48298	8:1	18:12	
+10731	Brent 	Utah 	18387	2:26	7:56	
+29920	Gansu 	Jõgevamaa 	4453	8:38	7:59	
+38987	Torfaen_[Tor-faen] 	Peterborough 	187	11:56	10:12	
+3181	Arizona 	Bradford 	14799	22:31	19:4	
+31342	Derby 	Campeche 	44148	12:18	18:49	
+5409	Argyll_and_Bute 	Midlothian 	9140	2:20	5:47	
+24727	Igdir 	Osaka 	38628	6:14	8:43	
+55039	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	New_York 	21448	3:31	16:2	
+28731	Islington 	Ardennes _Metropolitan	30061	22:37	21:26	
+25536	Indiana 	Corrèze _Metropolitan	8150	17:49	19:50	
+42805	Camden 	Toyama 	48663	4:49	7:38	
+58937	West_Virginia 	Leicestershire 	49836	13:40	17:50	
+6942	Võrumaa 	Cher _Metropolitan	3332	19:7	1:10	
+26415	Igdir 	Wolverhampton 	40104	19:27	23:27	
+32600	Shropshire 	Bristol,_City_of 	35428	11:31	16:54	
+39711	Canakkale 	Chihuahua 	27684	17:39	23:13	
+9918	Ankara 	Ballymoney 	12551	21:15	20:37	
+10155	Southland 	Oita 	1485	19:47	23:6	
+25377	Chubut 	Kütahya 	20053	1:8	1:38	
+40318	Sogn_og_Fjordane 	Viana_do_Castelo 	10441	18:27	14:10	
+6282	Taranaki 	Bafatá 	13208	6:41	8:30	
+11317	Yamagata 	Batman 	22130	23:0	19:36	
+19855	Wakefield 	Alpes-Maritimes _Metropolitan	8200	16:2	13:58	
+11995	Oxfordshire 	Bradford 	6494	15:8	19:33	
+21058	Karnataka 	Usak 	32706	8:18	4:24	
+3725	Walsall 	Oise _Metropolitan	17772	12:0	11:45	
+37443	Oldham 	Anjouan 	48996	8:28	3:29	
+14684	Põlvamaa 	Eure _Metropolitan	35821	7:17	6:33	
+54582	Doubs _Metropolitan	Fife 	3367	22:48	10:34	
+25520	Região_Autónoma_da_Madeira _Autonomous	Kosovo-Metohija _Autonomous	7117	5:22	4:44	
+12687	Val-de-Marne _Metropolitan	Carmarthenshire_[Sir_Gaerfyrddin_GB-GFY] 	11834	1:27	18:49	
+25545	Kahramanmaras 	Nagano 	12828	12:48	4:24	
+49930	Barking_and_Dagenham 	Gotlands_län 	23863	17:29	12:39	
+6718	Rio_Grande_do_Sul 	Kanagawa 	17239	5:39	16:58	
+48164	Tombali_ 	Tocantins 	12014	21:20	15:30	
+58987	Glarus_(de) 	Croydon 	18850	7:15	4:27	
+49368	Skåne_län 	Valgamaa 	20675	12:37	0:11	
+32739	Thurgau_(de) 	Corrientes 	4177	11:13	20:29	
+20519	Lapin_lääni_(fi) _Province	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	36486	20:28	2:43	
+32882	Missouri 	Erzurum 	23798	0:7	20:21	
+4268	Sakarya 	Sinop 	35068	5:58	13:8	
+36076	Limburg_(VLG) 	Lozère _Metropolitan	37572	18:54	12:0	
+51938	Sandwell 	Kocaeli 	28577	17:18	18:32	
+33605	Usak 	Haringey 	32239	21:50	0:8	
+29264	Viljandimaa 	Rio_Grande_do_Sul 	11156	11:56	15:35	
+9391	Illinois 	Torfaen_[Tor-faen] 	34492	22:45	8:13	
+54063	Corum 	Hebei 	27726	23:18	7:1	
+15473	Kronoborgs_län 	Bursa 	44583	12:15	20:27	
+20505	Erzincan 	Bayburt 	17667	4:42	19:44	
+1569	Konya 	Nebraska 	26116	17:24	1:1	
+26095	Oaxaca 	Cookstown 	27649	18:9	2:1	
+24574	Karnataka 	Nevada 	11677	19:55	9:57	
+29478	Hedmark 	Aude _Metropolitan	18661	6:9	9:35	
+35212	Brent 	Ida-Virumaa 	31161	3:45	23:35	
+58864	Buenos_Aires 	Nuevo_León 	7374	8:8	23:46	
+39564	Buskerud 	British_Columbia 	42942	17:29	22:55	
+59811	Rotherham 	Bitlis 	42633	22:21	23:56	
+56151	Gard _Metropolitan	Lot-et-Garonne _Metropolitan	22158	22:17	11:40	
+45064	Entre_Ríos 	Manche _Metropolitan	29051	23:56	21:33	
+35544	Sankt_Gallen_(de) 	East_Riding_of_Yorkshire 	5228	20:50	17:35	
+36546	Stoke-on-Trent 	Halton 	49069	22:19	15:51	
+12131	Misiones 	Aargau_(de) 	12722	19:53	5:26	
+57624	Denizli 	Porto 	41745	7:1	18:52	
+39062	Wirral 	Ardèche _Metropolitan	34763	22:11	17:28	
+34209	Seine-et-Marne _Metropolitan	Moray 	26132	4:51	16:16	
+7786	Van 	Évora 	42875	20:12	2:43	
+47211	Ohio 	Sandwell 	27164	16:18	8:6	
+5462	Roraima 	Blaenau_Gwent 	45054	17:46	23:56	
+9832	Oulun_lääni_(fi) _Province	Hackney 	15456	14:53	2:55	
+37312	Oita 	Newport_[Casnewydd_GB-CNW] 	33934	16:52	21:33	
+36630	Adiyaman 	Heilongjiang 	23062	3:55	18:27	
+4384	Rheinland-Pfalz 	East_Riding_of_Yorkshire 	23166	3:6	23:52	
+22089	Howland_Island _Islands/Groups_of	Misiones 	43383	13:37	4:15	
+45492	Mayenne _Metropolitan	Põlvamaa 	10883	8:1	22:20	
+43992	Harjumaa 	Baden-Württemberg 	11647	14:25	16:49	
+34426	Rochdale 	Amapá 	16403	13:9	15:50	
+4000	Shanghai 	Sutton 	6353	20:29	6:24	
+47077	Wokingham 	Malatya 	13737	9:1	7:54	
+16663	Vest-Agder 	Isles_of_Scilly 	11886	21:10	21:40	
+16616	Mato_Grosso 	Vosges _Metropolitan	21667	0:17	11:25	
+44590	Lisburn 	Toyama 	46688	2:26	1:12	
+4460	Hyogo 	Nagano 	48962	16:26	2:31	
+8422	Lakshadweep _Union	Saga 	33978	18:23	1:13	
+56945	Akershus 	Qinghai 	26070	17:32	21:26	
+33364	Sakarya 	Chandigarh _Union	25569	8:24	1:49	
+25006	Montana 	Ida-Virumaa 	36835	22:27	9:33	
+10690	East_Lothian 	Piauí 	37929	2:53	14:35	
+10260	Luzern_(de) 	Stirling 	13130	8:7	19:27	
+51668	Neuchâtel_(fr) 	Moselle _Metropolitan	33385	20:48	19:33	
+37542	Hebei 	Queensland 	12368	8:21	20:8	
+44926	Sikkim 	Thüringen 	44166	6:11	14:15	
+41472	Nova_Scotia 	Van 	22547	11:17	16:27	
+47072	Møre_og_Romsdal 	Lapin_lääni_(fi) _Province	2842	16:12	17:44	
+52261	Gansu 	Hounslow 	14500	5:48	19:14	
+27135	Angus 	Clackmannanshire 	38371	13:1	18:42	
+29283	Schleswig-Holstein 	Jiangsu 	37810	18:10	2:49	
+37537	Osmaniye 	Hamburg_(Hansestadt) 	40695	2:6	20:3	
+37957	Slough 	Karabuk 	1399	13:7	8:5	
+12388	Região_Autónoma_da_Madeira _Autonomous	Sutton 	19237	22:0	3:31	
+18965	Merthyr_Tydfil_[Merthyr_Tudful_GB-MTU] 	Sergipe 	29388	22:53	1:0	
+30779	San_Luis 	Salford 	44296	17:51	3:27	
+26732	Indiana 	Wolverhampton 	9336	19:34	2:33	
+10790	Bournemouth 	Glarus_(de) 	42629	8:17	13:29	
+42487	Appenzell_Inner-Rhoden_(de) 	Lincolnshire 	26501	18:15	10:24	
+7949	Torbay 	Quinara 	22915	22:19	4:30	
+31079	Savoie _Metropolitan	Angus 	24643	5:29	4:7	
+11322	Distrito_Federal _Federal	Jujuy 	17370	16:16	1:32	
+4182	Schwyz_(de) 	Gansu 	32198	15:59	13:26	
+41648	Aisne _Metropolitan	Shetland	26275	15:10	4:1	
+16401	Texas 	Maine-et-Loire _Metropolitan	17739	21:52	17:38	
+683	Oregon 	Distrito_Federal _Federal	41504	1:42	12:30	
+1862	Savoie _Metropolitan	Nordrhein-Westfalen 	43400	22:58	5:37	
+27349	Hertfordshire 	Liège_(WAL) 	25349	13:23	6:16	
+35147	Oulun_lääni_(fi) _Province	Setúbal 	17025	20:32	15:44	
+6306	Creuse _Metropolitan	New_South_Wales 	29939	20:58	19:6	
+8552	Hyogo 	Haute-Savoie _Metropolitan	12278	15:5	13:37	
+48297	Aisén_del_General_Carlos_Ibáñez_del_Campo 	Deux-Sèvres _Metropolitan	26294	16:42	16:51	
+37955	Aiti_[Aichi] 	Down 	20201	21:5	1:48	
+49952	Örebro_län 	Gujarat 	996	15:2	0:32	
+3398	Ariège _Metropolitan	Østfold 	32846	12:44	12:58	
+47347	Stoke-on-Trent 	Kanagawa 	35509	16:3	20:26	
+54415	Yonne _Metropolitan	Dordogne _Metropolitan	5356	21:17	15:47	
+27360	Ballymena 	Pennsylvania 	19170	9:41	15:38	
+43892	Guerrero 	Kerala 	34096	7:1	20:20	
+23570	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	Swansea_[Abertawe_GB-ATA] 	151	21:56	11:36	
+752	Hatay 	Haute-Corse _Metropolitan	17712	11:38	8:24	
+9527	Burdur 	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	45250	21:48	14:25	
+16111	Manitoba 	Loire _Metropolitan	25949	6:13	20:28	
+33504	Tamaulipas 	Vosges _Metropolitan	4525	19:42	1:44	
+32658	Saskatchewan 	Santiago_del_Estero 	46801	20:10	9:9	
+4790	Calvados _Metropolitan	Fermanagh 	25784	19:54	21:42	
+44895	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	Sør-Trøndelag 	36824	4:57	12:2	
+31795	Chubut 	Vendée _Metropolitan	46719	1:54	16:37	
+5416	Västerbottens_län 	Islington 	37836	19:44	22:40	
+68	Carmarthenshire_[Sir_Gaerfyrddin_GB-GFY] 	Kingston_upon_Thames 	14123	18:15	14:46	
+46454	Creuse _Metropolitan	Northumberland 	24360	15:13	8:14	
+16537	Shanghai 	Alpes-Maritimes _Metropolitan	48628	17:20	1:2	
+58546	Aust-Agder 	Newry_and_Mourne 	7182	2:21	20:0	
+6725	Pernambuco 	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	5060	0:6	12:29	
+19311	Vendée _Metropolitan	Landes _Metropolitan	24660	23:16	9:41	
+15847	Lakshadweep _Union	Nelson 	29368	2:9	12:46	
+27576	Andhra_Pradesh 	Kahramanmaras 	20664	9:25	20:54	
+31822	Eure _Metropolitan	Ards 	39970	19:57	0:23	
+29493	Distrito_Federal _Federal	Howland_Island _Islands/Groups_of	15078	2:59	6:59	
+9187	Gaziantep 	South_Australia 	24381	9:39	8:40	
+49662	Akershus 	Tokusima_[Tokushima] 	15266	5:51	20:20	
+20087	Santa_Catarina 	Waltham_Forest 	16252	1:2	5:27	
+16151	Querétaro 	Dordogne _Metropolitan	29101	17:59	0:9	
+46567	Marlborough 	Arunachal_Pradesh 	14302	6:11	1:44	
+57266	South_Australia 	Angus 	12917	4:19	1:35	
+53678	Essex 	Loir-et-Cher _Metropolitan	12921	16:10	6:44	
+52855	Magherafelt 	Minas_Gerais 	30915	21:0	19:37	
+45299	Bradford 	Baker_Island _Islands/Groups_of	24115	15:23	13:18	
+18237	Tokusima_[Tokushima] 	Haute-Vienne _Metropolitan	30510	2:21	17:58	
+26210	Chubut 	Thüringen 	8748	15:48	20:58	
+7189	Vest-Agder 	Beja 	32457	12:1	17:31	
+9369	Meghalaya 	Leicestershire 	18107	2:2	14:45	
+26983	Icel 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	45072	6:50	4:45	
+24025	Santiago_del_Estero 	Artvin 	4995	21:57	9:56	
+3156	Bath_and_North_East_Somerset 	Gisborne 	14458	0:14	6:36	
+4892	Gotlands_län 	Cornwall 	30305	1:33	14:38	
+31225	Aisén_del_General_Carlos_Ibáñez_del_Campo 	Sheffield 	5627	13:8	8:49	
+27013	Punjab 	Kingston_upon_Thames 	41765	11:13	8:5	
+15253	Kirsehir 	Vojvodina _Autonomous	49545	20:55	11:53	
+24115	Manche _Metropolitan	Leeds 	14267	1:36	0:45	
+22626	Brent 	Hallands_län 	5801	18:6	9:22	
+23024	Icel 	Minnesota 	43061	11:10	9:47	
+49567	Dundee_City 	Denizli 	27894	11:39	14:43	
+33958	Belfast 	Heilongjiang 	37895	7:2	17:41	
+19790	Balikesir 	New_South_Wales 	12317	22:27	23:38	
+54289	Maranhão 	Victoria 	1182	13:50	20:12	
+3257	Gers _Metropolitan	Kingman_Reef _Islands/Groups_of	27575	14:34	4:17	
+7440	Denizli 	Somme _Metropolitan	525	21:58	20:59	
+400	Lääne-Virumaa 	Iowa 	15924	7:18	6:5	
+10868	Paris _Metropolitan	Val-de-Marne _Metropolitan	27142	20:57	9:30	
+50253	Seine-Maritime _Metropolitan	Bas-Rhin _Metropolitan	12912	21:29	10:23	
+46715	Siga_[Shiga] 	Tokat 	34274	9:8	17:51	
+54197	Leicestershire 	Amazonas 	43078	22:2	9:5	
+30013	Aisne _Metropolitan	Stirling 	22183	6:18	14:8	
+11709	Aberdeenshire 	Bingol 	29366	2:17	21:0	
+56113	Magherafelt 	Newtownabbey 	36766	16:26	0:6	
+50418	Essex 	Dorset 	48198	19:40	14:43	
+12973	Gloucestershire 	Blekinge_län 	24676	17:16	12:20	
+26613	Meuse _Metropolitan	Río_Negro 	3106	7:37	0:22	
+50049	Zhejiang 	Lambeth 	1285	14:29	21:35	
+47671	Bolu 	Kerala 	19701	14:11	20:14	
+11353	Aveyron _Metropolitan	Birmingham 	21971	4:26	18:53	
+7351	Havering 	Maine 	7520	10:58	0:57	
+12771	Anhui 	Beijing 	9960	17:38	10:35	
+59064	Isère _Metropolitan	Bahia 	26534	15:58	7:20	
+38847	Val-d'Oise _Metropolitan	Pernambuco 	14374	7:55	7:57	
+16317	North_Lanarkshire 	Afyon 	35316	5:41	1:12	
+28035	Biombo 	Tower_Hamlets 	15504	17:40	12:48	
+47620	Midlothian 	Usak 	27582	6:53	6:20	
+46024	Manitoba 	Hainan 	46129	0:35	6:42	
+17797	Fujian 	Samsun 	34756	15:28	23:30	
+11850	Orissa 	Igdir 	22358	3:15	12:46	
+27604	Catamarca 	Conwy 	18245	10:44	22:59	
+50682	Bedfordshire 	Redbridge 	484	5:35	23:39	
+11530	Glarus_(de) 	Leeds 	44006	6:20	12:52	
+31669	Malatya 	Baker_Island _Islands/Groups_of	49424	4:33	20:59	
+24130	Konya 	Carrickfergus 	27857	3:28	12:9	
+40439	Hirosima_[Hiroshima] 	Sergipe 	9451	3:42	7:8	
+57085	Sheffield 	Diyarbakir 	6353	20:10	12:23	
+36418	Bouches-du-Rhône _Metropolitan	Milton_Keynes 	33247	20:2	8:7	
+24498	Jiangxi 	Río_Negro 	49635	1:47	14:1	
+38466	Guarda 	Neuchâtel_(fr) 	32740	22:23	2:23	
+52315	Andhra_Pradesh 	Cankiri 	42329	14:17	21:14	
+43346	New_York 	Baden-Württemberg 	22828	23:8	12:59	
+41777	Vest-Agder 	Zug_(de) 	46794	10:28	9:25	
+54904	Hakkari 	Ballymoney 	35516	3:42	1:10	
+626	Suffolk 	Veracruz 	29337	13:47	14:1	
+50731	Coleraine 	Acre 	18295	21:11	13:10	
+54270	Oklahoma 	Tierra_del_Fuego 	15969	21:33	15:10	
+30901	Karnataka 	Aude _Metropolitan	11688	20:21	2:40	
+35106	New_South_Wales 	Gard _Metropolitan	14282	0:25	22:39	
+7091	Ida-Virumaa 	Portsmouth 	44508	19:2	18:27	
+46379	Xizang _Autonomous	Sefton 	28778	2:51	3:58	
+18329	Wandsworth 	Tianjin 	34425	22:33	3:24	
+27644	Meuse _Metropolitan	Sanliurfa 	40987	3:16	21:55	
+57119	Uri_(de) 	Haute-Savoie _Metropolitan	41483	19:6	2:38	
+52356	Gironde _Metropolitan	Karabuk 	9829	1:49	6:58	
+20058	Rondônia 	Bilecik 	27621	0:30	11:9	
+7911	Hillingdon 	North_Dakota 	35460	7:42	10:33	
+47745	Paraná 	Newham 	39666	0:46	19:4	
+38087	Bihar 	Kerala 	35678	17:30	21:59	
+51886	Orissa 	Stockholms_län 	14387	5:37	20:20	
+25828	Northamptonshire 	British_Columbia 	22948	23:2	17:34	
+6506	New_Brunswick 	West-Vlaanderen_(VLG) 	40472	12:35	23:15	
+13557	Oio 	Stockton-on-Tees 	1945	8:11	6:14	
+47428	Eskisehir 	Essonne _Metropolitan	45646	11:53	10:13	
+53392	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	Tabasco 	17602	16:12	17:58	
+45870	Sakarya 	Vojvodina _Autonomous	48997	14:21	4:17	
+6809	Croydon 	Hounslow 	19293	4:5	14:50	
+50965	Meuse _Metropolitan	Northwest_Territories 	8960	6:49	19:41	
+41668	Rize 	Moyle 	33006	22:10	23:15	
+4187	Lapin_lääni_(fi) _Province	Hidalgo 	41990	21:17	5:50	
+24724	Piauí 	Ards 	43794	3:53	13:40	
+7013	Torfaen_[Tor-faen] 	Finistère _Metropolitan	32803	0:9	9:8	
+15530	Magherafelt 	Hainan 	40791	14:53	6:7	
+32134	Aksaray 	Kirkkale 	25028	3:52	5:5	
+43369	Genève_(fr) 	Länsi-Suomen_lääni_(fi) _Province	41016	22:13	2:4	
+52555	North_Somerset 	Adana 	18681	0:57	18:49	
+18810	Wakefield 	Rize 	39811	18:7	4:32	
+19509	Viana_do_Castelo 	Burdur 	45925	2:47	8:54	
+42138	Oxfordshire 	Nigde 	35565	7:24	19:36	
+31731	Distrito_Federal _Federal	Hallands_län 	31181	15:3	3:20	
+6583	Vlaams_Brabant_(VLG) 	Shandong 	34940	2:28	13:0	
+14548	Australian_Capital_Territory 	Isles_of_Scilly 	5552	18:24	8:58	
+11767	Newham 	New_Brunswick 	43234	2:54	6:1	
+58013	Aomen _Special_Administrative	Shanxi 	2049	9:48	23:5	
+16407	Derbyshire 	Genève_(fr) 	29942	14:16	12:33	
+31703	North_Tyneside 	Connecticut 	36658	21:37	0:40	
+5105	Sakarya 	Alberta 	22160	0:24	1:54	
+20863	East_Renfrewshire 	Liaoning 	31103	19:32	14:15	
+19991	Gümüshane 	Ontario 	5345	20:11	18:55	
+52705	Saarland 	Hainaut_(WAL) 	1396	22:47	20:8	
+29435	Salta 	San_Juan 	8397	1:20	15:37	
+10943	Telford_and_Wrekin 	North_Tyneside 	29563	8:31	4:32	
+28913	North_Yorkshire 	Somme _Metropolitan	39814	7:59	2:57	
+39850	Norfolk 	Pembrokeshire_[Sir_Benfro_GB-BNF] 	23126	4:14	22:33	
+47564	Örebro_län 	Waikato 	41062	7:31	5:54	
+48884	Formosa 	Indiana 	44181	23:49	2:5	
+35653	Queensland 	South_Ayrshire 	17257	5:28	3:8	
+16188	Massachusetts 	West_Virginia 	39781	11:47	22:52	
+54875	Armagh 	Bedfordshire 	24532	18:2	3:44	
+51816	Møre_og_Romsdal 	Loiret _Metropolitan	49462	22:48	12:22	
+45044	Yamanasi_[Yamanashi] 	Aisne _Metropolitan	7926	6:37	7:47	
+49713	Hackney 	Tucumán 	21238	20:48	23:2	
+40385	West_Sussex 	Torbay 	1321	15:26	14:39	
+14744	Rize 	Pondicherry _Union	41807	18:55	16:20	
+54623	Rajasthan 	Indiana 	1253	23:34	4:23	
+5686	Cankiri 	Hukuoka_[Fukuoka] 	5418	5:9	16:4	
+3866	Oregon 	Moselle _Metropolitan	43650	19:12	18:39	
+51506	Nayarit 	North_Yorkshire 	29599	15:9	9:41	
+47276	Newcastle_upon_Tyne 	Monmouthshire_[Sir_Fynwy_GB-FYN] 	31815	14:52	6:56	
+39947	Meuse _Metropolitan	Sirnak 	6347	16:50	22:5	
+14051	Giresun 	Stockport 	12628	15:44	7:2	
+57141	Himachal_Pradesh 	Wigan 	21979	1:11	15:17	
+45825	Newport_[Casnewydd_GB-CNW] 	Blekinge_län 	34296	17:10	2:32	
+14369	Norfolk 	Malatya 	33227	1:6	12:8	
+1949	Brandenburg 	Rio_de_Janeiro 	2896	20:32	2:15	
+11316	Massachusetts 	New_South_Wales 	45302	12:8	7:7	
+34918	Hérault _Metropolitan	Darlington 	6173	2:12	2:26	
+55033	Lapin_lääni_(fi) _Province	Aust-Agder 	5865	17:47	0:49	
+30504	Kastamonu 	Louisiana 	26096	2:8	21:16	
+17651	Arizona 	Osaka 	42840	7:30	4:4	
+17607	Hessen 	Wellington 	33989	7:52	13:6	
+15947	Tokat 	Waikato 	44140	9:31	16:41	
+21224	Mugla 	Blaenau_Gwent 	48826	2:10	11:16	
+40040	Argyll_and_Bute 	Cambridgeshire 	9640	4:41	8:44	
+50202	Baja_California 	Warrington 	9196	12:39	21:27	
+5027	South_Tyneside 	Lisburn 	41242	14:27	1:55	
+27962	Yucatán 	Kirkkale 	42549	15:30	13:23	
+20494	Isikawa_[Ishikawa] 	Hakkari 	27390	16:12	2:49	
+11494	Tartumaa 	Mus 	6806	20:44	14:56	
+23617	Pennsylvania 	Tokat 	20457	7:42	1:57	
+38213	Tokyo 	Essex 	2470	5:13	15:11	
+49684	Gujarat 	Lincolnshire 	37888	10:17	23:48	
+10164	Nuevo_León 	Rondônia 	47021	14:32	3:12	
+54026	Northumberland 	Oxfordshire 	18058	7:21	23:6	
+10356	Val-de-Marne _Metropolitan	Pärnumaa 	15902	16:13	20:52	
+14259	Guarda 	Bayern 	870	14:47	22:20	
+49314	Värmlands_län 	Gotlands_län 	32653	14:33	8:42	
+14347	Northland 	Trafford 	14217	21:58	18:55	
+37573	Flintshire_[Sir_y_Fflint_GB-FFL] 	Uppsala_län 	10396	20:17	14:15	
+24224	Kirklees 	Karnataka 	15331	3:21	10:50	
+27681	Pärnumaa 	Southampton 	3488	11:39	17:17	
+58833	Guangdong 	Midlothian 	40508	1:50	4:25	
+4072	Rutland 	Bern_(de) 	30244	20:18	15:24	
+23857	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	Loire _Metropolitan	3376	3:24	1:55	
+46224	Yucatán 	Aargau_(de) 	25194	14:19	15:39	
+56747	Schleswig-Holstein 	Karabuk 	29204	5:29	22:58	
+18400	Cookstown 	Sanliurfa 	49113	0:36	15:8	
+48640	Antwerpen_(VLG) 	Tokyo 	13571	11:21	2:23	
+707	Santiago_del_Estero 	Namur_(WAL) 	10856	13:25	14:14	
+19307	Icel 	Knowsley 	22842	9:11	19:40	
+37599	Leicestershire 	Antofagasta 	11125	14:54	23:53	
+44582	Coquimbo 	Gotlands_län 	16813	18:0	21:40	
+19072	Hérault _Metropolitan	Burdur 	30018	4:27	3:4	
+4933	Clackmannanshire 	Conwy 	42292	22:14	11:30	
+29422	Ehime 	Hackney 	31532	23:13	13:42	
+46688	Uttar_Pradesh 	Heilongjiang 	19941	13:15	22:22	
+3005	Afyon 	Santarém 	17162	4:27	3:19	
+9327	Bouches-du-Rhône _Metropolitan	Virginia 	22671	15:36	12:30	
+3106	Clackmannanshire 	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	13583	16:36	19:18	
+39277	Leicestershire 	Newham 	42336	19:24	10:55	
+18563	Baker_Island _Islands/Groups_of	Kirklees 	3835	2:3	22:58	
+27423	East_Riding_of_Yorkshire 	Cher _Metropolitan	49556	21:6	16:56	
+56423	Canterbury 	Ordu 	8484	18:47	7:27	
+3918	Tarapacá 	Luxembourg_(WAL) 	2778	7:40	12:55	
+44749	Loire _Metropolitan	Connecticut 	21757	15:4	19:30	
+28373	Newry_and_Mourne 	Coquimbo 	38649	9:0	10:48	
+13488	Gümüshane 	Wyoming 	45204	12:59	22:5	
+40652	Guerrero 	Itä-Suomen_lääni_(fi) _Province	42265	14:51	21:11	
+19917	Jujuy 	Siirt 	18956	14:1	7:42	
+8190	Devon 	Oaxaca 	43349	17:0	11:42	
+46991	Islington 	La_Rioja 	4869	16:22	13:1	
+49894	Ariège _Metropolitan	Évora 	22261	17:12	9:50	
+9719	Évora 	Distrito_Federal _Federal	33122	18:13	16:56	
+10102	Western_Australia 	Kensington_and_Chelsea 	1485	5:42	15:34	
+16504	Graubünden_(de) 	Santa_Catarina 	34967	8:5	15:10	
+42483	East_Ayrshire 	Cumbria 	27299	1:43	9:9	
+56190	East_Riding_of_Yorkshire 	Charente _Metropolitan	49905	5:15	0:35	
+37229	Diyarbakir 	Beijing 	40224	14:19	17:41	
+29691	Coquimbo 	Región_Metropolitana_de_Santiago 	39363	20:50	18:22	
+53689	Santarém 	Delaware 	8405	15:45	22:36	
+31151	Oklahoma 	Nièvre _Metropolitan	30715	22:23	17:19	
+23245	Hubei 	Rio_de_Janeiro 	33589	21:2	9:16	
+34452	Södermanlands_län 	Manisa 	30483	15:9	12:38	
+42904	Aust-Agder 	Roraima 	42912	19:30	23:26	
+30020	Manisa 	Finnmark 	13555	8:38	15:28	
+57531	Blaenau_Gwent 	Tasmania 	3505	13:16	16:29	
+17383	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	Maule 	32307	2:19	5:6	
+19848	Erzincan 	Erzurum 	49197	13:46	8:55	
+52636	Luxembourg_(WAL) 	Newtownabbey 	8222	23:59	23:51	
+51381	Middlesbrough 	Giresun 	4795	10:49	6:34	
+53187	Devon 	Gunma 	9491	22:8	4:6	
+49021	Campeche 	Saarland 	3635	8:59	14:3	
+28581	Guanajuato 	Östergötlands_län 	29493	12:2	13:29	
+3860	Pondicherry _Union	Kensington_and_Chelsea 	4191	6:38	10:20	
+49153	Kensington_and_Chelsea 	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	43058	0:15	12:19	
+35012	Võrumaa 	Bartin 	27358	3:31	17:57	
+11189	Doncaster 	Corrientes 	31345	3:33	3:15	
+36969	Rio_Grande_do_Sul 	Newham 	5143	16:44	3:32	
+14404	Wakayama 	Victoria 	28116	23:37	19:32	
+34085	Crna_Gora 	Goa 	2331	1:48	13:50	
+50537	Liaoning 	Hallands_län 	40637	18:14	6:30	
+39712	Havering 	Kentucky 	30883	8:19	8:43	
+14137	Maharashtra 	Seine-Saint-Denis _Metropolitan	21405	23:27	2:47	
+55968	Georgia 	Kirklareli 	45704	15:31	9:53	
+16846	Jarvis_Island _Islands/Groups_of	Nunavut 	18600	0:31	8:3	
+17569	Dungannon 	Ohio 	3938	0:24	18:22	
+2710	Solihull 	Michigan 	31060	15:30	2:53	
+10962	Isparta 	Bromley 	26360	16:9	19:36	
+20822	La_Rioja 	North_Down 	19615	7:55	19:57	
+41196	Setúbal 	Haute-Loire _Metropolitan	8838	2:18	13:41	
+54588	Vestfold 	Karaman 	10736	13:47	6:29	
+50287	Bristol,_City_of 	Somerset 	42813	6:39	2:20	
+25120	Ballymoney 	North_Tyneside 	24518	12:49	13:14	
+46714	Yalova 	Vosges _Metropolitan	46228	2:43	6:21	
+54102	Vojvodina _Autonomous	Neuquén 	974	17:58	12:13	
+18119	Tiba_[Chiba] 	Iowa 	11900	12:49	11:7	
+15954	Isère _Metropolitan	East_Sussex 	28192	11:16	19:20	
+23233	West_Berkshire 	Kensington_and_Chelsea 	41201	14:33	12:50	
+20728	Østfold 	Nottingham 	25528	19:55	20:34	
+4515	Nord-Trøndelag 	Orne _Metropolitan	45804	3:40	5:6	
+21984	Thurgau_(de) 	West_Virginia 	35458	0:6	12:1	
+238	Kars 	Seine-Maritime _Metropolitan	18597	2:34	8:28	
+51110	Leicestershire 	Drôme _Metropolitan	13078	13:21	7:37	
+18084	Haute-Loire _Metropolitan	Ballymoney 	47412	2:17	16:0	
+53769	Hérault _Metropolitan	Telford_and_Wrekin 	38811	1:57	13:55	
+44413	Telford_and_Wrekin 	Mohéli 	38241	11:16	16:59	
+57230	Yukon_Territory 	Powys 	44374	4:31	23:41	
+37029	Hordaland 	Ningxia _Autonomous	21711	9:19	12:38	
+30390	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	Yonne _Metropolitan	30463	11:37	13:57	
+2203	Guizhou 	Baker_Island _Islands/Groups_of	9090	3:59	10:23	
+34417	Lewisham 	Dordogne _Metropolitan	40104	22:14	16:30	
+27026	Canakkale 	Wakayama 	21135	15:29	11:11	
+13681	Stockholms_län 	Hukusima_[Fukushima] 	40366	17:41	22:23	
+27417	Moray 	Australian_Capital_Territory 	20935	3:55	20:35	
+20163	Lambeth 	Colorado 	40171	0:44	4:35	
+2118	Srbija 	Etelä-Suomen_lääni_(fi) _Province	35377	0:50	8:55	
+37935	West_Coast 	Kahramanmaras 	37417	10:50	16:16	
+33278	Miyazaki 	Northumberland 	39398	17:34	7:48	
+39404	Charente _Metropolitan	East_Riding_of_Yorkshire 	35809	8:25	17:49	
+46659	Durham 	Plymouth 	7062	16:17	18:33	
+38784	Río_Negro 	Plymouth 	13857	0:56	1:27	
+42395	Yamanasi_[Yamanashi] 	Australian_Capital_Territory 	34872	3:46	3:45	
+43124	Harjumaa 	Plymouth 	41804	16:3	9:23	
+5561	Calderdale 	Ceará 	22222	10:4	4:12	
+59057	Seine-et-Marne _Metropolitan	Amazonas 	26396	5:47	13:25	
+34634	Mardin 	Chongqing 	5991	14:23	20:20	
+6937	Bartin 	Haute-Marne _Metropolitan	2962	18:13	13:40	
+2174	Sonora 	Kütahya 	5278	1:43	16:2	
+31044	Blaenau_Gwent 	Rutland 	30062	7:26	19:35	
+51312	Atacama 	Orissa 	20639	14:17	7:6	
+7509	Tucumán 	Nagano 	20586	13:15	15:47	
+50164	Hukuoka_[Fukuoka] 	New_Brunswick 	45146	22:2	15:49	
+31704	Otago 	South_Ayrshire 	12800	3:1	15:1	
+21213	Roraima 	Corum 	24000	17:15	9:51	
+29434	Valgamaa 	Jilin 	9005	14:31	5:41	
+44616	Ibaraki 	Bartin 	25386	13:4	20:50	
+22469	Kahramanmaras 	Nelson 	42717	5:51	9:35	
+19464	Ningxia _Autonomous	Ardennes _Metropolitan	26730	12:50	23:5	
+27959	Mato_Grosso_do_Sul 	Aube _Metropolitan	25605	11:5	10:6	
+1582	New_York 	Ealing 	43785	6:0	20:10	
+22014	Bromley 	Aberdeen_City 	44815	19:16	14:50	
+57333	Kütahya 	Magallanes 	20591	16:18	20:8	
+34610	New_York 	Devon 	6032	10:11	17:55	
+33736	Morbihan _Metropolitan	Kyoto 	48128	0:32	23:10	
+622	Aude _Metropolitan	Nayarit 	9862	9:3	9:19	
+58993	Värmlands_län 	Vaucluse _Metropolitan	18100	23:20	17:17	
+17709	Stoke-on-Trent 	Roraima 	42093	18:46	0:22	
+9726	Mohéli 	Buenos_Aires 	7119	15:4	8:41	
+35261	Santiago_del_Estero 	California 	7824	3:51	12:15	
+27730	Medway 	Rio_Grande_do_Sul 	45855	21:1	18:7	
+54659	Aargau_(de) 	Gironde _Metropolitan	20045	20:16	23:33	
+31877	Maine-et-Loire _Metropolitan	Texas 	27765	7:54	11:7	
+12011	Blackburn_with_Darwen 	Inverclyde 	27153	10:43	2:22	
+21721	Valais_(fr) 	California 	29050	11:15	10:3	
+40905	Aomori 	Cacheu 	38227	11:15	1:58	
+51610	Zonguldak 	Xinjiang _Autonomous	6242	20:14	3:50	
+39345	Jura _Metropolitan	Rhode_Island 	1533	1:46	10:44	
+34353	Islington 	Waikato 	25310	12:36	20:27	
+21455	Norrbottens_län 	Basel-Landschaft_(de) 	33444	20:36	15:58	
+14566	Bío-Bío 	Braga 	13755	14:37	11:3	
+34084	Oaxaca 	Drôme _Metropolitan	37817	0:32	3:39	
+815	Aomen _Special_Administrative	Cornwall 	8248	4:29	19:16	
+36542	Oslo 	Montana 	6023	7:27	11:33	
+3737	Hokkaido 	York 	3158	7:1	10:24	
+1651	California 	Valparaíso 	49661	8:24	0:52	
+41009	Tierra_del_Fuego 	Zacatecas 	24696	4:48	19:39	
+2394	Kilis 	Cookstown 	11334	12:2	0:44	
+48720	Landes _Metropolitan	Sanliurfa 	36457	14:1	16:1	
+55718	Gävleborgs_län 	Osmaniye 	12675	16:34	18:10	
+17377	Tamil_Nadu 	Sunderland 	49484	2:39	9:20	
+20895	Yunnan 	Ballymoney 	16939	9:3	11:29	
+12464	Luxembourg_(WAL) 	Nebraska 	47551	10:32	16:27	
+25375	Yamanasi_[Yamanashi] 	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	14201	11:59	23:19	
+35825	Totigi_[Tochigi] 	Mato_Grosso 	4233	7:54	9:29	
+57254	Seine-Saint-Denis _Metropolitan	Kütahya 	22035	6:16	0:57	
+54890	Neuchâtel_(fr) 	Aksaray 	40706	19:58	16:54	
+40602	San_Juan 	Kingston_upon_Hull,_City_of 	21227	8:27	23:37	
+22366	Yozgat 	Hallands_län 	8482	7:13	5:18	
+43966	Zug_(de) 	Aargau_(de) 	11678	12:29	19:28	
+17815	Redcar_and_Cleveland 	Maule 	45313	18:4	22:47	
+2670	Sikkim 	Landes _Metropolitan	14985	15:45	1:18	
+13551	Adiyaman 	Viana_do_Castelo 	48126	8:26	14:0	
+12916	Kentucky 	Côte-d'Or _Metropolitan	2988	10:10	21:31	
+19227	Wirral 	Aveyron _Metropolitan	18299	2:31	4:23	
+6059	Akita 	Igdir 	2919	19:37	9:12	
+30005	Gloucestershire 	Gümüshane 	45910	0:0	4:16	
+14190	Gujarat 	Mugla 	27201	1:14	8:44	
+24388	Karaman 	Carrickfergus 	9202	20:15	20:7	
+35931	Tasmania 	Biombo 	30951	9:47	20:5	
+330	Cornwall 	Gloucestershire 	11251	8:54	13:52	
+40881	New_South_Wales 	Kentucky 	10458	5:43	2:37	
+45065	Mato_Grosso_do_Sul 	Hainaut_(WAL) 	20835	5:1	12:45	
+32928	Santarém 	Oxfordshire 	43956	15:21	10:5	
+46852	Vila_Real 	Northumberland 	34144	17:35	9:50	
+10628	Finistère _Metropolitan	Antwerpen_(VLG) 	28670	21:31	17:25	
+56982	Oaxaca 	Bissau _Autonomous	22064	23:32	18:35	
+6618	Yalova 	Cornwall 	18544	2:29	13:4	
+26998	Santa_Cruz 	Neuchâtel_(fr) 	918	20:14	4:16	
+50771	Mugla 	Sogn_og_Fjordane 	30460	5:29	21:24	
+15616	Mugla 	Tarn-et-Garonne _Metropolitan	29037	10:24	11:29	
+28959	Bihar 	Appenzell_Ausser-Rhoden_(de) 	37897	9:54	11:21	
+1401	Igdir 	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	48744	12:7	19:57	
+51336	Ida-Virumaa 	Bay_of_Plenty 	9995	4:15	11:35	
+53969	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	Shanxi 	9225	4:30	13:5	
+12124	Blackpool 	Fife 	1600	10:51	7:41	
+37185	Denizli 	Buenos_Aires 	25533	18:15	15:3	
+38497	Rajasthan 	Gujarat 	10009	0:43	9:38	
+18324	Osaka 	Nevsehir 	24515	10:45	19:42	
+11661	Xianggang _Special_Administrative	Calderdale 	36307	3:24	1:29	
+34818	Beijing 	London,_City_of 	13319	19:57	16:45	
+24270	Yukon_Territory 	Cumbria 	32625	22:18	19:18	
+10807	Kingston_upon_Hull,_City_of 	Brandenburg 	5152	1:13	15:53	
+2019	Daman_and_Diu _Union	Kent 	30664	20:19	3:57	
+7155	Rheinland-Pfalz 	Hampshire 	6546	20:52	14:34	
+59214	Oldham 	Manawatu-Wanganui 	12806	14:59	0:39	
+17578	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	Setúbal 	21040	20:1	12:24	
+3376	Rio_de_Janeiro 	Eskisehir 	31979	22:55	13:14	
+45141	Põlvamaa 	Banbridge 	30727	14:40	2:43	
+48606	Évora 	Aiti_[Aichi] 	35134	2:6	13:22	
+59354	Devon 	Victoria 	37046	21:36	9:9	
+16071	San_Luis 	Elazig 	35846	6:28	8:0	
+41	Uttar_Pradesh 	Amazonas 	379	21:23	2:42	
+22151	Tasman 	North_Carolina 	20062	20:14	9:18	
+7829	Waltham_Forest 	Crna_Gora 	30639	13:14	19:29	
+58145	Lincolnshire 	Salta 	31001	7:13	4:8	
+36703	Scottish_Borders,_The 	Heilongjiang 	28244	10:2	18:59	
+51642	Gisborne 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	6671	5:33	6:17	
+30313	Kirsehir 	Gabú 	31242	2:52	7:40	
+9242	Fife 	Izmir 	37981	14:7	17:6	
+40802	Salford 	London,_City_of 	37118	15:22	15:36	
+39247	Buskerud 	Pyrénées-Atlantiques _Metropolitan	16617	18:47	20:4	
+960	Rhondda,_Cynon,_Taff_[Rhondda,_Cynon,Taf] 	Nebraska 	1871	11:39	12:42	
+27056	Bournemouth 	Rochdale 	40672	2:41	5:26	
+28716	Redbridge 	Solihull 	9150	11:16	8:50	
+58751	Viseu 	Southampton 	43501	1:19	9:39	
+8567	Kansas 	Kensington_and_Chelsea 	7794	20:45	22:28	
+24072	Limavady 	Liverpool 	16728	12:35	1:36	
+50411	Portalegre 	Totigi_[Tochigi] 	13764	12:44	12:31	
+29862	Plymouth 	Guangdong 	44282	19:24	3:24	
+46044	Cantal _Metropolitan	Nunavut 	4142	21:24	9:13	
+46821	Grande_Comore 	Bury 	28856	11:1	19:36	
+33565	Pyrénées-Orientales _Metropolitan	Hauts-de-Seine _Metropolitan	40971	6:12	12:22	
+58018	North_Yorkshire 	Prince_Edward_Island 	10595	14:13	3:52	
+24815	Ankara 	Saga 	37867	12:3	1:43	
+59470	Chihuahua 	Kosovo-Metohija _Autonomous	36299	21:2	17:34	
+27494	Hessen 	Jiangsu 	31873	2:27	7:32	
+7243	Västerbottens_län 	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	34545	14:24	1:0	
+20938	Bahia 	Lewisham 	21580	12:18	22:19	
+10885	Oklahoma 	Misiones 	49825	11:59	23:10	
+36051	Malatya 	Iwate 	24311	23:52	5:25	
+11787	Aksaray 	Bradford 	24919	18:18	0:20	
+40533	Srbija 	Harrow 	11080	18:53	10:26	
+35975	Glarus_(de) 	Hordaland 	30876	20:8	5:14	
+25193	Omagh 	Fermanagh 	12085	22:17	1:12	
+16536	Yozgat 	Derbyshire 	42247	15:57	1:23	
+37938	Hukuoka_[Fukuoka] 	Karabuk 	38657	22:56	22:29	
+24810	Madhya_Pradesh 	Loir-et-Cher _Metropolitan	17130	13:1	20:22	
+39979	Thurgau_(de) 	Doncaster 	47730	22:55	20:36	
+35472	Northamptonshire 	West_Sussex 	35032	20:47	0:57	
+41999	West_Coast 	Atacama 	36692	18:11	12:36	
+26336	Gotlands_län 	Northern_Mariana_Islands_(see_also_separate_entry_MP) _Outlying	11557	6:56	0:4	
+12612	Mus 	Alaska 	8310	15:14	4:9	
+54795	Lancashire 	Vale_of_Glamorgan,_The_[Bro_Morgannwg_GB-BMG] 	19942	11:12	14:33	
+24580	Auckland 	Aberdeenshire 	1009	1:55	16:46	
+27031	Rogaland 	Banbridge 	48776	12:52	14:56	
+56074	Aberdeenshire 	Simane_[Shimane] 	14345	21:25	16:38	
+20795	Amazonas 	Hauts-de-Seine _Metropolitan	28940	16:48	13:0	
+15478	Schleswig-Holstein 	Ards 	16956	23:57	11:57	
+27703	Ballymena 	Samsun 	8080	16:39	6:48	
+48637	Tamaulipas 	Giresun 	36296	12:8	4:42	
+25966	Heilongjiang 	Rhode_Island 	48424	5:48	2:44	
+15856	Moyle 	Finistère _Metropolitan	14618	15:36	20:34	
+58497	Hubei 	Western_Australia 	25611	21:2	8:46	
+53510	Luzern_(de) 	Larne 	20176	12:34	21:42	
+2537	Hallands_län 	Aude _Metropolitan	3227	7:58	10:25	
+11017	Leiria 	Clackmannanshire 	22191	0:49	10:11	
+42672	Uri_(de) 	Kumamoto 	32396	0:8	20:56	
+34714	México 	Wellington 	32384	9:52	6:14	
+23180	Thüringen 	Corrèze _Metropolitan	5061	17:6	22:13	
+45506	Paris _Metropolitan	East_Renfrewshire 	694	19:43	21:31	
+30969	Hautes-Pyrénées _Metropolitan	Aube _Metropolitan	2180	10:23	17:42	
+32315	Van 	Chiapas 	17042	14:45	8:10	
+20044	Moray 	Rio_Grande_do_Norte 	38839	8:45	21:28	
+43032	Redcar_and_Cleveland 	Lot _Metropolitan	460	5:15	8:55	
+3738	Monmouthshire_[Sir_Fynwy_GB-FYN] 	Vlaams_Brabant_(VLG) 	42387	15:59	7:21	
+8787	Haringey 	Carmarthenshire_[Sir_Gaerfyrddin_GB-GFY] 	18591	5:37	11:45	
+56502	Guizhou 	Usak 	23115	19:52	6:35	
+9587	Vestfold 	Roraima 	26386	23:41	8:59	
+47652	Diyarbakir 	Aude _Metropolitan	1714	19:23	10:11	
+40095	New_Brunswick 	Chihuahua 	7602	9:29	12:24	
+12201	Rhode_Island 	Diyarbakir 	18286	2:39	1:45	
+28484	Colorado 	Mecklenburg-Vorpommern 	20670	5:11	3:3	
+15515	Harjumaa 	Porto 	41486	22:19	1:20	
+59605	Hukuoka_[Fukuoka] 	Gujarat 	18322	6:49	22:9	
+57426	Sarthe _Metropolitan	Knowsley 	18344	7:34	10:35	
+53485	Uttaranchal 	Devon 	29582	9:46	11:36	
+27291	South_Dakota 	Baja_California_Sur 	44558	20:37	16:7	
+59184	Shaanxi 	Põlvamaa 	4147	21:44	6:51	
+8522	Kilis 	Etelä-Suomen_lääni_(fi) _Province	24108	7:15	16:38	
+47311	Texas 	Campeche 	22121	1:11	7:53	
+13199	Kent 	Zacatecas 	34833	14:25	12:35	
+56042	Uppsala_län 	Henan 	47328	22:20	17:37	
+13474	Schleswig-Holstein 	Westminster 	13800	22:11	5:41	
+40400	Wallonne,_Région_(fr) 	Midlothian 	7441	11:46	2:20	
+32089	Rutland 	Ariège _Metropolitan	28098	20:57	4:28	
+57123	Baja_California_Sur 	Quinara 	29359	4:9	22:9	
+45080	Alabama 	Sergipe 	6705	8:1	19:2	
+18134	Zonguldak 	North_Dakota 	38992	11:3	21:30	
+46407	Veracruz 	Haringey 	20179	7:45	14:49	
+4546	Newfoundland_and_Labrador 	Yvelines _Metropolitan	18463	17:2	8:48	
+40665	Schaffhausen_(de) 	Braga 	43642	12:47	10:18	
+25756	Orissa 	New_Brunswick 	18046	9:51	8:38	
+26435	Nord _Metropolitan	Kent 	35820	6:54	10:6	
+20738	Ards 	Down 	24907	9:38	8:40	
+59755	Lääne-Virumaa 	Solihull 	29654	13:54	23:34	
+2708	Västmanlands_län 	Nièvre _Metropolitan	21859	22:6	23:6	
+25978	Finistère _Metropolitan	Totigi_[Tochigi] 	21122	21:1	20:19	
+47556	Neuchâtel_(fr) 	Akita 	48418	6:44	10:5	
+32970	Perth_and_Kinross 	Cookstown 	19319	7:17	2:29	
+58450	Bafatá 	New_Mexico 	32781	12:39	18:14	
+5770	Chongqing 	Lisburn 	32159	16:40	14:32	
+53221	Nevsehir 	Puebla 	5243	3:48	17:1	
+48519	Pernambuco 	Wiltshire 	762	15:56	9:7	
+44456	Flintshire_[Sir_y_Fflint_GB-FFL] 	Tekirdag 	34948	11:42	12:31	
+51101	Bissau _Autonomous	Kocaeli 	21596	7:39	6:0	
+7423	Tottori 	Ain _Metropolitan	26114	16:36	17:39	
+22266	Jönköpings_län 	Minas_Gerais 	9794	5:13	23:28	
+17093	Uri_(de) 	Nordland 	1572	9:38	13:53	
+34379	Artvin 	Colorado 	41490	0:24	2:39	
+52100	Anhui 	Montana 	10530	13:49	20:55	
+10182	Mato_Grosso 	Swindon 	3232	7:19	12:48	
+42223	Konya 	Allier _Metropolitan	21386	7:33	12:41	
+43827	Kars 	Jiangsu 	41341	18:10	17:28	
+43583	Isle_of_Anglesey_[Sir_Ynys_Môn_GB-YNM] 	Torbay 	29801	7:48	8:40	
+8375	St._Helens 	Ardennes _Metropolitan	48281	0:43	16:34	
+49769	Mugla 	Dudley 	8837	7:40	0:44	
+42174	Ibaraki 	Crna_Gora 	48729	2:4	7:26	
+13464	Blaenau_Gwent 	Oulun_lääni_(fi) _Province	7431	13:9	0:6	
+24964	Plymouth 	Monmouthshire_[Sir_Fynwy_GB-FYN] 	22644	23:42	19:10	
+29196	Solothurn_(de) 	Balikesir 	934	11:16	16:14	
+3233	Northamptonshire 	Massachusetts 	3111	15:59	17:36	
+12206	Hautes-Alpes _Metropolitan	Antrim 	6766	10:37	7:11	
+31439	Newham 	Jalisco 	3369	3:16	5:2	
+40686	Nayarit 	Redbridge 	27328	9:57	0:44	
+40840	Virgin_Islands_of_the_U.S._(see_also_separate_entry_VI) _Outlying	Cambridgeshire 	29148	9:43	4:50	
+23683	Västernorrlands_län 	Buenos_Aires 	24049	17:35	9:37	
+54210	Tarapacá 	Goa 	39936	18:54	17:59	
+58392	Cantal _Metropolitan	Havering 	41918	5:39	12:8	
+31904	Sirnak 	Yozgat 	17142	23:19	7:7	
+47499	Nord-Trøndelag 	Haringey 	43153	4:57	8:14	
+22381	Leiria 	Glasgow_City 	4505	1:56	23:14	
+21669	Gihu_[Gifu] 	Valais_(fr) 	27794	11:7	14:41	
+45620	Hukuoka_[Fukuoka] 	Essonne _Metropolitan	36315	5:11	4:24	
+1710	Neuquén 	Saskatchewan 	43932	15:21	22:4	
+12743	Ahvenanmaan_Maakunta_(fi) _Province	Dordogne _Metropolitan	1230	15:50	16:13	
+6752	California 	Chihuahua 	41089	5:16	20:26	
+39388	Zacatecas 	Chaco 	8594	6:18	18:38	
+59159	Saône-et-Loire _Metropolitan	Nottingham 	48427	0:10	4:33	
+17842	Pärnumaa 	Texas 	18332	13:15	0:41	
+9541	Kagawa 	Södermanlands_län 	15953	10:31	1:17	
+37649	Zürich_(de) 	Middlesbrough 	20207	1:5	18:10	
+57794	Ealing 	Haute-Marne _Metropolitan	16802	16:20	17:16	
+18639	Ticino_(it) 	Kansas 	35161	10:52	17:37	
+21024	South_Gloucestershire 	Hidalgo 	15505	16:46	11:0	
+50831	Kirklees 	Fujian 	13132	22:12	20:49	
+52284	Nevsehir 	Formosa 	44620	2:17	16:37	
+15876	Essex 	Tennessee 	34472	2:27	13:29	
+27313	Waikato 	Mie 	29707	23:0	19:41	
+29108	Essonne _Metropolitan	Erzincan 	47698	2:39	2:19	
+19558	Ille-et-Vilaine _Metropolitan	Brighton_and_Hove 	22066	10:24	5:57	
+15927	British_Columbia 	East_Dunbartonshire 	11795	14:20	1:18	
+27944	Puy-de-Dôme _Metropolitan	Thurrock 	29123	7:26	19:27	
+22271	Vojvodina _Autonomous	Bay_of_Plenty 	3920	11:0	17:54	
+12210	La_Pampa 	Buenos_Aires 	38707	0:43	19:19	
+28049	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	Iowa 	39681	23:37	14:43	
+1224	Braga 	Kumamoto 	17719	10:40	16:19	
+50033	Paraíba 	Shanxi 	31056	13:27	5:6	
+11684	Tasmania 	St._Helens 	11371	2:59	10:46	
+47452	Ida-Virumaa 	Norrbottens_län 	34895	10:34	20:13	
+15303	Tottori 	Nordland 	40638	0:29	6:55	
+6063	Hautes-Pyrénées _Metropolitan	Leicestershire 	102	17:0	5:18	
+34609	Grande_Comore 	Yvelines _Metropolitan	19326	12:4	6:45	
+3781	Kansas 	Taiwan 	43096	8:3	17:4	
+5836	Shandong 	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	39099	18:4	3:1	
+13757	Paraíba 	Brandenburg 	44754	9:8	8:26	
+7267	Halton 	Beijing 	9467	4:33	8:17	
+8026	Dadra_and_Nagar_Haveli _Union	Jõgevamaa 	43263	1:2	6:30	
+10768	Havering 	Kingston_upon_Thames 	17370	16:42	13:13	
+22371	Kanagawa 	Rondônia 	8075	5:45	6:45	
+3858	Mizoram 	Salford 	13451	0:43	4:46	
+12075	Pennsylvania 	West_Coast 	18546	8:27	14:26	
+17949	Rio_Grande_do_Norte 	Cumbria 	46847	7:33	19:27	
+35948	Southampton 	Scottish_Borders,_The 	29667	8:4	18:52	
+32652	Falkirk 	East_Renfrewshire 	30512	18:34	2:32	
+15148	Northumberland 	Suffolk 	32950	5:0	22:37	
+46673	Viseu 	Haute-Vienne _Metropolitan	15419	12:44	2:45	
+43170	Hessen 	Castlereagh 	47031	14:0	23:19	
+34509	Hordaland 	Castlereagh 	41608	16:23	6:47	
+55985	Itä-Suomen_lääni_(fi) _Province	North_Yorkshire 	48879	21:31	14:56	
+31291	Møre_og_Romsdal 	Kocaeli 	22696	6:58	6:57	
+57267	Alpes-de-Haute-Provence _Metropolitan	Walsall 	13646	9:56	22:13	
+33351	Istanbul 	Doubs _Metropolitan	42346	22:7	13:19	
+1713	Oise _Metropolitan	Kagawa 	42182	5:17	6:31	
+23197	Bracknell_Forest 	Região_Autónoma_da_Madeira _Autonomous	43817	13:37	1:43	
+18126	Alpes-Maritimes _Metropolitan	Bradford 	14151	18:8	10:4	
+49243	Ardahan 	Buskerud 	19814	3:24	23:8	
+19843	Neimenggu _Autonomous	Bruxelles-Capitale,_Région_de_(fr),_Brussels_Hoofdstedelijk_Gewest_(nl) 	34968	13:12	9:38	
+1373	Hérault _Metropolitan	Chubut 	12838	10:30	17:30	
+46381	Palmyra_Atoll _Islands/Groups_of	Rio_Grande_do_Norte 	25294	23:15	21:30	
+38951	Birmingham 	East_Riding_of_Yorkshire 	41172	5:9	13:4	
+8642	Saaremaa 	Catamarca 	34002	10:35	8:32	
+25227	Saaremaa 	Eilean_Siar 	24173	13:13	14:10	
+3092	Oslo 	Carrickfergus 	8917	16:23	4:40	
+22897	Ille-et-Vilaine _Metropolitan	Distrito_Federal _Federal	11551	4:6	4:43	
+30271	Seine-Maritime _Metropolitan	Alpes-Maritimes _Metropolitan	28754	4:25	10:53	
+30037	Buenos_Aires 	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	34842	20:50	0:16	
+22218	Tlaxcala 	México 	16936	7:51	6:35	
+3828	Lozère _Metropolitan	Eure _Metropolitan	24242	0:27	10:38	
+30076	Koti_[Kochi] 	Ohio 	43730	7:51	20:19	
+35191	Guam_(see_also_separate_entry_under_GU) _Outlying	Kalmar_län 	12787	8:46	16:26	
+17177	Oppland 	Michoacán 	48146	10:40	20:29	
+6521	Valgamaa 	Sachsen 	45519	23:49	5:19	
+16983	Aargau_(de) 	Tennessee 	21388	17:33	13:19	
+32854	Newtownabbey 	New_Brunswick 	40419	1:35	21:11	
+43361	Aveyron _Metropolitan	Luton 	24094	5:19	5:8	
+43633	Viana_do_Castelo 	Bern_(de) 	43912	18:0	11:31	
+54279	Islington 	Havering 	42446	4:14	4:26	
+15522	Bridgend_[Pen-y-bont_ar_Ogwr_GB-POG] 	Libertador_General_Bernardo_O'Higgins 	46965	12:9	4:16	
+58304	Wandsworth 	New_York 	29275	23:16	1:40	
+44507	New_Hampshire 	Vaud_(fr) 	34593	3:5	19:4	
+14749	Highland 	Denbighshire_[Sir_Ddinbych_GB-DDB] 	149	14:12	8:25	
+44534	Malatya 	East_Riding_of_Yorkshire 	19494	13:56	3:7	
+41643	York 	Hautes-Alpes _Metropolitan	13657	19:19	3:17	
+27293	Aberdeen_City 	Dudley 	2353	10:17	11:59	
+3013	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	Amapá 	2821	20:5	21:6	
+18101	Craigavon 	Gaziantep 	32550	3:37	13:20	
+33972	Bath_and_North_East_Somerset 	Guangdong 	29994	14:56	3:52	
+28455	Giresun 	Hertfordshire 	22017	9:17	17:42	
+25316	Campeche 	Madhya_Pradesh 	49582	7:48	17:46	
+40012	Bursa 	Marne _Metropolitan	33831	10:31	3:2	
+23140	Territoire_de_Belfort _Metropolitan	Tekirdag 	5393	22:55	11:35	
+14741	Igdir 	Guanajuato 	16571	13:55	4:43	
+56793	Otago 	Chongqing 	35112	8:34	8:32	
+26741	Rajasthan 	Tarn _Metropolitan	24204	10:4	15:34	
+36565	Icel 	Leiria 	45771	12:3	9:44	
+38443	North_East_Lincolnshire 	Chandigarh _Union	42958	2:41	13:54	
+1455	Gateshead 	Torfaen_[Tor-faen] 	6331	14:33	4:54	
+10084	Paris _Metropolitan	Halton 	3614	0:41	12:55	
+53144	Bas-Rhin _Metropolitan	Zürich_(de) 	49025	15:47	22:38	
+5285	Southend-on-Sea 	Tamaulipas 	42120	20:12	2:19	
+39560	Arkansas 	Guangdong 	49787	5:18	12:30	
+30284	Stoke-on-Trent 	Antwerpen_(VLG) 	30711	1:39	7:50	
+53717	Uttaranchal 	Burdur 	3789	7:3	20:7	
+15197	Kütahya 	Milton_Keynes 	49634	9:51	15:21	
+24437	Jharkhand 	Región_Metropolitana_de_Santiago 	17350	1:12	11:49	
+28201	East_Dunbartonshire 	Cookstown 	22186	17:46	19:31	
+24677	Beijing 	Assam 	12961	23:28	23:5	
+22636	Daman_and_Diu _Union	Kanagawa 	30885	0:58	20:19	
+2294	San_Luis_Potosí 	Chihuahua 	41623	9:32	5:17	
+12294	Itä-Suomen_lääni_(fi) _Province	Westminster 	2854	12:7	22:18	
+32021	Hubei 	Ningxia _Autonomous	48834	18:59	15:11	
+24340	Armagh 	Ordu 	27390	1:24	10:4	
+27797	Gotlands_län 	Guangxi _Autonomous	25485	23:0	16:0	
+1834	Powys 	Orkney_Islands 	14012	19:55	13:47	
+10138	Zacatecas 	Simane_[Shimane] 	25655	21:23	22:20	
+42800	Inverclyde 	Somme _Metropolitan	7152	7:25	23:7	
+37861	Tombali_ 	Tocantins 	42950	14:29	4:4	
+34454	Charente-Maritime _Metropolitan	Shanghai 	32669	4:30	0:17	
+17111	Creuse _Metropolitan	Sachsen 	21848	10:20	5:3	
+50165	Ardennes _Metropolitan	Redbridge 	34684	2:12	1:19	
+31988	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	Fribourg_(fr) 	48836	13:44	20:19	
+23709	Conwy 	Aude _Metropolitan	24294	11:53	7:27	
+56927	Santiago_del_Estero 	Yamaguti_[Yamaguchi] 	10467	0:59	0:26	
+10105	Gloucestershire 	Wolverhampton 	28667	10:17	14:17	
+12411	Xianggang _Special_Administrative	Jämtlands_län 	48040	23:8	17:45	
+21331	Paris _Metropolitan	Sunderland 	604	6:24	9:47	
+13466	Saskatchewan 	Haut-Rhin _Metropolitan	23252	10:57	19:26	
+29628	York 	Aisén_del_General_Carlos_Ibáñez_del_Campo 	36250	8:51	10:46	
+15504	Massachusetts 	Siga_[Shiga] 	30224	1:45	22:14	
+47494	Meghalaya 	Sichuan 	47303	21:21	21:59	
+29590	Chiapas 	Aisne _Metropolitan	17881	23:42	3:48	
+10640	Baja_California 	Surrey 	19167	21:48	4:57	
+21579	Northern_Mariana_Islands_(see_also_separate_entry_MP) _Outlying	Bremen_(Hansestadt) 	14709	16:11	9:58	
+51073	Karabuk 	Manisa 	15969	14:40	14:27	
+30709	Saitama 	Shanghai 	4626	21:16	16:45	
+2128	Oulun_lääni_(fi) _Province	Hukusima_[Fukushima] 	42333	3:41	4:20	
+47301	Isikawa_[Ishikawa] 	Évora 	27450	14:5	14:58	
+34335	Vale_of_Glamorgan,_The_[Bro_Morgannwg_GB-BMG] 	Warrington 	42508	6:10	22:44	
+7225	Loire-Atlantique _Metropolitan	New_York 	45348	9:58	17:12	
+39111	Dundee_City 	Coahuila 	35783	23:14	6:30	
+21818	Vila_Real 	Poole 	23337	13:28	1:39	
+33679	Neuchâtel_(fr) 	Dungannon 	23109	10:43	1:13	
+28710	Aust-Agder 	Chandigarh _Union	6561	5:35	22:18	
+42102	Amazonas 	North_Carolina 	9428	11:59	4:13	
+36200	Hawkes's_Bay 	Akershus 	13307	21:45	22:57	
+40419	North_Dakota 	Redcar_and_Cleveland 	33571	7:18	6:41	
+53654	Norrbottens_län 	Daman_and_Diu _Union	78	6:1	2:27	
+10825	Newfoundland_and_Labrador 	Trafford 	22574	19:6	5:18	
+19342	Vendée _Metropolitan	Lambeth 	1557	7:37	23:53	
+55110	Appenzell_Inner-Rhoden_(de) 	Wiltshire 	32857	16:12	2:26	
+31350	Oldham 	Bouches-du-Rhône _Metropolitan	8417	10:41	2:56	
+33829	Hordaland 	Oxfordshire 	36269	6:42	10:37	
+39246	Eilean_Siar 	Arunachal_Pradesh 	41715	4:52	3:17	
+21258	West_Dunbartonshire 	Croydon 	5906	10:29	21:8	
+40721	Nelson 	Entre_Ríos 	40069	9:48	3:20	
+2302	Lambeth 	Hackney 	45962	16:53	2:48	
+57358	Catamarca 	Canakkale 	10526	10:2	6:14	
+36563	Paraná 	Loire _Metropolitan	37290	14:24	4:37	
+19969	Tarn-et-Garonne _Metropolitan	Ballymoney 	11728	7:31	18:40	
+48054	Okayama 	North_Down 	24665	16:30	22:41	
+12366	Hyogo 	Wiltshire 	26399	18:8	11:26	
+15937	Jõgevamaa 	Guangxi _Autonomous	7257	7:42	17:5	
+21484	Jõgevamaa 	Angus 	41337	0:39	5:24	
+25907	Minnesota 	Dalarnes_län 	8756	17:33	16:38	
+41520	Sichuan 	Delhi _Union	5211	18:10	13:18	
+503	Lozère _Metropolitan	Van 	11190	16:49	12:43	
+25252	Norfolk 	Jalisco 	15006	3:11	15:49	
+8849	Derby 	Jura_(fr) 	32197	1:14	2:4	
+18581	West_Bengal 	Mayenne _Metropolitan	28638	14:5	13:55	
+21776	Darlington 	Arunachal_Pradesh 	27637	9:23	17:34	
+52132	Dumfries_and_Galloway 	México 	2861	4:7	13:54	
+5051	Wigan 	Bradford 	26532	2:32	23:6	
+53547	Aargau_(de) 	Swansea_[Abertawe_GB-ATA] 	32283	15:13	19:49	
+47575	Oulun_lääni_(fi) _Province	Nagasaki 	32958	21:36	5:2	
+37652	Västernorrlands_län 	North_Carolina 	3575	14:0	11:16	
+31437	Shetland	Coimbra 	14661	18:39	8:47	
+3093	Northamptonshire 	Okinawa 	11797	16:42	10:18	
+37111	Côte-d'Or _Metropolitan	North_Lanarkshire 	13759	12:20	0:38	
+28803	Jammu_and_Kashmir 	South_Ayrshire 	35502	0:31	23:30	
+48508	Värmlands_län 	Östergötlands_län 	49011	0:33	15:40	
+32883	Mississippi 	Hounslow 	49988	17:59	8:56	
+16134	Grande_Comore 	Distrito_Federal _Federal	43837	12:9	19:34	
+7758	Região_Autónoma_da_Madeira _Autonomous	Newtownabbey 	37651	20:53	22:0	
+23394	Sivas 	Poole 	38673	6:43	0:37	
+3248	Okinawa 	Shropshire 	20290	16:50	19:8	
+31315	Aberdeen_City 	Bouches-du-Rhône _Metropolitan	30108	19:29	13:24	
+15741	California 	North_Lincolnshire 	24713	4:39	23:14	
+40242	Gers _Metropolitan	Gisborne 	24774	15:43	13:51	
+28577	Hessen 	York 	11965	16:11	7:11	
+7463	Coquimbo 	Aude _Metropolitan	40883	19:36	21:4	
+11906	Agri 	Nottingham 	30775	9:43	22:53	
+31421	Bihar 	Banbridge 	23384	13:4	11:54	
+709	Dordogne _Metropolitan	Vermont 	23203	21:51	1:10	
+19013	East_Dunbartonshire 	Perth_and_Kinross 	20043	9:18	7:36	
+23321	North_Tyneside 	Guanajuato 	33075	3:9	21:21	
+32457	Zonguldak 	Niedersachsen 	9956	23:44	1:1	
+18756	North_Somerset 	Bouches-du-Rhône _Metropolitan	29827	4:56	23:24	
+11050	Falkirk 	Montana 	27824	18:21	22:34	
+10536	Vienne _Metropolitan	Magallanes 	35128	2:15	21:45	
+49145	Bath_and_North_East_Somerset 	Okayama 	34436	20:5	15:50	
+33873	Oklahoma 	Jiangsu 	43394	16:18	8:34	
+36879	Thüringen 	Pembrokeshire_[Sir_Benfro_GB-BNF] 	8334	9:4	5:13	
+49981	Jarvis_Island _Islands/Groups_of	Aiti_[Aichi] 	32529	3:11	23:9	
+35178	Querétaro 	Poole 	3190	18:14	22:44	
+47049	Massachusetts 	North_Tyneside 	31923	22:46	16:31	
+37828	Cantal _Metropolitan	Nigde 	46900	9:35	12:32	
+31147	Seine-et-Marne _Metropolitan	Pyrénées-Atlantiques _Metropolitan	19793	10:48	0:39	
+38668	Wake_Island_(ISO_reserved_code_=_WK) _Islands/Groups_of	Howland_Island _Islands/Groups_of	21283	5:4	17:2	
+46637	Sutton 	Taranaki 	1813	10:38	15:28	
+23444	Gansu 	Saaremaa 	13409	0:46	23:48	
+44310	North_Lincolnshire 	Minas_Gerais 	15967	19:40	5:50	
+3750	Oppland 	Enfield 	10911	11:13	10:56	
+3238	Somerset 	Kingman_Reef _Islands/Groups_of	37968	21:41	17:13	
+50783	Trabzon 	Diyarbakir 	9236	2:50	16:31	
+38751	Northern_Mariana_Islands_(see_also_separate_entry_MP) _Outlying	Yamagata 	46137	5:26	16:29	
+35113	Bern_(de) 	Hackney 	48225	19:7	5:51	
+58616	West_Berkshire 	Oio 	7230	17:59	19:18	
+30137	Troms 	Shandong 	45656	15:56	1:38	
+15604	Heilongjiang 	Tiba_[Chiba] 	9387	22:49	21:30	
+8566	Iwate 	Hedmark 	12610	22:40	11:37	
+59939	Newfoundland_and_Labrador 	Limavady 	38629	19:51	13:28	
+12063	Jura _Metropolitan	Yunnan 	39768	18:30	12:28	
+3965	Zonguldak 	Neath_Port_Talbot_[Castell-nedd_Port_Talbot_GB-CTL] 	18899	3:11	4:42	
+4371	Fujian 	Campeche 	44922	0:4	7:44	
+51804	New_York 	Derry 	49645	4:5	10:43	
+3659	Sachsen-Anhalt 	Pyrénées-Orientales _Metropolitan	6515	2:59	21:42	
+46365	Newham 	Johnston_Atoll_(ISO_reserved_code_=_JT) _Islands/Groups_of	6331	14:16	5:47	
+29898	Ain _Metropolitan	Ain _Metropolitan	32558	9:9	19:25	
+37363	Aberdeenshire 	Vendée _Metropolitan	22250	16:13	4:59	
+42236	Ballymena 	Bío-Bío 	36615	19:23	0:29	
+54703	Tokyo 	Minnesota 	13876	13:34	3:30	
+49346	Wokingham 	Colorado 	29666	22:3	9:26	
+54820	Ordu 	Rio_de_Janeiro 	12724	7:9	1:6	
+8646	Gümüshane 	Mizoram 	39254	0:34	7:31	
+27421	Puerto_Rico_(see_also_separate_entry_under_PR) _Outlying	Bayburt 	35917	11:29	18:1	
+55417	Sinop 	Quinara 	35914	1:53	23:43	
+31542	Connecticut 	Ohio 	15587	14:53	18:27	
+36598	Wigan 	Suffolk 	43523	19:15	12:20	
+46267	North_Yorkshire 	Durango 	40076	23:11	9:0	
+47630	Darlington 	Arizona 	40364	4:16	23:21	
+13779	Genève_(fr) 	Kerala 	17703	4:54	18:47	
+49752	Hidalgo 	Wyoming 	8190	5:28	21:40	
+20394	Kocaeli 	Var _Metropolitan	46313	12:49	15:51	
+42070	Wake_Island_(ISO_reserved_code_=_WK) _Islands/Groups_of	Koti_[Kochi] 	3659	3:27	20:32	
+2650	Bolu 	Saaremaa 	49170	12:24	14:51	
+742	Usak 	York 	33226	11:25	8:13	
+32981	Bath_and_North_East_Somerset 	Aveyron _Metropolitan	44718	1:35	20:58	
+25249	Southampton 	Jiangsu 	41980	19:20	20:27	
+34162	Doubs _Metropolitan	Tarn _Metropolitan	30168	8:35	13:54	
+17172	Gävleborgs_län 	Bingol 	9485	7:24	16:20	
+44753	Armagh 	North_Yorkshire 	18137	19:42	9:21	
+51160	Windsor_and_maidenhead 	Luxembourg_(WAL) 	12966	6:5	16:4	
+2604	Warwickshire 	Gisborne 	9902	8:40	3:18	
+50096	Hiiumaa 	Arunachal_Pradesh 	20207	22:10	5:31	
+29949	Devon 	Midway_Islands_(ISO_reserved_code_=_I) _Islands/Groups_of	17079	3:16	6:30	
+11326	Västmanlands_län 	Roraima 	48147	8:42	16:35	
+5478	Haute-Vienne _Metropolitan	Campeche 	49836	1:11	14:39	
+21219	Yukon_Territory 	Stockport 	6540	7:30	4:29	
+58977	Telemark 	West_Lothian 	14938	22:42	7:43	
+4658	Van 	Erzurum 	45644	10:48	12:57	
+676	American_Samoa_(see_also_separate_entry_under_AS) _Outlying	Guerrero 	4763	6:56	6:13	
+3215	Vendée _Metropolitan	Kars 	40893	6:31	15:40	
+57840	Gansu 	Tabasco 	15028	4:2	12:12	
+48873	Magallanes 	Aargau_(de) 	15537	8:48	12:22	
+51671	Mississippi 	Maryland 	13128	23:31	17:37	
+56944	Grande_Comore 	Hérault _Metropolitan	25667	7:32	2:55	
+26919	Tennessee 	Bury 	48297	10:32	17:20	
+1301	Corrientes 	Guam_(see_also_separate_entry_under_GU) _Outlying	10238	14:49	7:10	
+4599	Newfoundland_and_Labrador 	Diyarbakir 	8206	23:20	19:59	
+20222	Rajasthan 	Hukuoka_[Fukuoka] 	10476	12:34	21:0	
+17581	Enfield 	North_Lincolnshire 	27520	12:11	9:26	
+36930	Mohéli 	Miyagi 	44726	18:17	0:13	
+1418	Wakefield 	Rheinland-Pfalz 	43647	14:36	20:12	
+40807	Basel-Landschaft_(de) 	Caerphilly_[Caerffili_GB-CAF] 	21275	8:55	14:11	
+56723	Amazonas 	Drôme _Metropolitan	20146	10:0	2:31	
+8405	Antalya 	Taranaki 	29516	6:59	12:44	
+36061	Antrim 	Kingston_upon_Hull,_City_of 	28108	6:31	8:43	
+12470	Bilecik 	Perth_and_Kinross 	44708	0:17	18:51	
+26643	Niigata 	Tucumán 	35353	19:22	6:2	
+55469	Montana 	Saaremaa 	34500	2:54	14:14	
+49383	New_Jersey 	Moselle _Metropolitan	20279	9:53	22:10	
+34737	Louisiana 	Miyazaki 	6972	11:31	16:15	
+35539	Isparta 	Hedmark 	2882	23:54	2:34	
+47846	Oost-Vlaanderen_(VLG) 	West_Dunbartonshire 	22603	7:27	9:58	
+27768	Seine-et-Marne _Metropolitan	Waltham_Forest 	18084	16:45	5:48	
+31725	Ardahan 	Arkansas 	14801	1:50	22:25	
+18731	Landes _Metropolitan	Arunachal_Pradesh 	45341	22:12	22:59	
+18139	Cardiff_[Caerdydd_GB-CRD] 	Blackburn_with_Darwen 	43779	4:27	6:7	
+58437	Schwyz_(de) 	Tasmania 	2744	1:44	15:25	
+34015	Morbihan _Metropolitan	South_Australia 	25205	11:3	12:2	
+41541	Alaska 	Iwate 	21605	5:50	4:31	
+49501	Nagano 	Rajasthan 	21815	7:21	10:31	
+48727	Västmanlands_län 	Thüringen 	47552	14:14	15:22	
+11168	Rio_Grande_do_Norte 	Kayseri 	22740	20:22	13:1	
+46226	Chongqing 	Tekirdag 	36115	20:22	12:42	
+47755	Nord _Metropolitan	Highland 	39510	11:25	5:49	
+21979	Newfoundland_and_Labrador 	Saarland 	42056	18:47	7:42	
+29261	Sunderland 	New_York 	24696	7:30	4:43	
+9575	North_Down 	Allier _Metropolitan	9897	5:3	13:13	
+3314	Wakayama 	Santa_Catarina 	49370	7:46	19:3	
+19262	Shaanxi 	Darlington 	8406	18:54	2:37	
+35126	Bromley 	Highland 	29307	1:26	16:9	
+21051	South_Ayrshire 	La_Pampa 	34994	13:44	13:10	
+31380	Isle_of_Wight 	U.S._Minor_Outlying_Islands_(cf._separate_entry_UM) _Outlying	18790	16:43	8:27	
+46128	Vlaamse_Gewest_(nl) 	Aude _Metropolitan	20219	0:37	6:46	
+57757	Canterbury 	Tamil_Nadu 	13739	3:58	8:51	
+59046	Ontario 	Izmir 	33684	13:2	8:3	
+43589	Shropshire 	British_Columbia 	41288	6:36	20:41	
+28418	Vaucluse _Metropolitan	Misiones 	33344	2:15	2:4	
+9047	Eure _Metropolitan	Massachusetts 	37188	4:43	12:53	
+45379	Middlesbrough 	Ohio 	33341	10:47	23:44	
+37992	Södermanlands_län 	Calderdale 	5609	9:8	5:51	
+20455	Jammu_and_Kashmir 	Croydon 	9835	19:12	2:11	
+55593	Telemark 	Val-de-Marne _Metropolitan	5227	16:35	9:26	
+30093	Karnataka 	Landes _Metropolitan	34744	23:18	7:3	
+14518	Guerrero 	Beja 	9369	14:53	16:2	
+24406	Tocantins 	Nièvre _Metropolitan	41705	9:49	23:33	
+48971	Afyon 	Coahuila 	38415	22:28	14:57	
+36933	Puebla 	Jiangxi 	14071	16:7	12:50	
+36310	Nevsehir 	Gateshead 	38853	0:43	10:15	
+40453	Viana_do_Castelo 	Porto 	44707	4:40	15:51	
+59272	Nagaland 	Denizli 	14424	15:57	6:32	
+12586	Colima 	Oklahoma 	12247	14:55	17:38	
+40901	Iwate 	Nord _Metropolitan	29155	18:50	17:2	
+31759	Gotlands_län 	Devon 	29547	6:40	22:18	
+55996	La_Rioja 	Craigavon 	21178	10:13	1:20	
+11358	Quintana_Roo 	Loire _Metropolitan	29905	1:17	18:13	
+44944	Isles_of_Scilly 	West_Coast 	25778	0:2	1:49	
+14255	Hainaut_(WAL) 	Ceredigion_[Sir_Ceredigion] 	32254	7:57	7:5	
+58804	Oregon 	Oio 	49808	5:27	1:1	
+52040	Kanagawa 	Siga_[Shiga] 	40709	17:6	15:44	
+40469	Telemark 	Indre _Metropolitan	34013	11:25	7:19	
+15746	Vaud_(fr) 	Shaanxi 	20993	16:30	10:42	
+41425	Karabuk 	Taiwan 	31987	2:16	13:32	
+26284	Tamil_Nadu 	Beijing 	35934	12:42	23:10	
+3286	Coquimbo 	Jilin 	40105	2:21	8:10	
+7109	Ibaraki 	Isle_of_Wight 	46372	22:42	23:17	
+29812	Uri_(de) 	Dumfries_and_Galloway 	39682	19:15	1:50	
+32420	Calvados _Metropolitan	Halton 	2764	2:35	18:29	
+2532	Liverpool 	Manipur 	9684	9:44	6:32	
+1011	Haute-Vienne _Metropolitan	Eskisehir 	14856	16:44	15:5	
+58890	Antwerpen_(VLG) 	Knowsley 	34529	14:25	4:12	
+44839	Cumbria 	Warrington 	34439	13:45	2:18	
+49335	Middlesbrough 	Campeche 	40707	1:36	3:45	
+8786	North_Lincolnshire 	Bas-Rhin _Metropolitan	46075	0:59	5:26	
+23747	Torfaen_[Tor-faen] 	Staffordshire 	34724	11:11	19:22	
+19097	Oppland 	San_Juan 	48680	2:11	0:23	
+36720	Bern_(de) 	Jönköpings_län 	34378	8:49	18:59	
+51480	Finnmark 	Maryland 	31893	10:15	8:16	
+41516	Hamburg_(Hansestadt) 	Bern_(de) 	43589	10:23	10:36	
+42876	Vojvodina _Autonomous	Gansu 	5102	10:9	19:13	
+26292	Arunachal_Pradesh 	Aydin 	46198	10:20	18:23	
+27626	Cher _Metropolitan	Sivas 	32073	7:21	12:52	
+14810	Moyle 	Hiiumaa 	10517	2:7	7:22	
+33768	Hordaland 	Derry 	15027	7:6	8:5	
+30208	Isles_of_Scilly 	Neuquén 	36080	20:12	18:25	
+50371	Wakefield 	Kingston_upon_Thames 	14281	9:12	17:9	
+9970	West_Virginia 	Kensington_and_Chelsea 	13184	16:36	23:22	
+28027	Vosges _Metropolitan	São_Paulo 	7923	9:32	21:53	
+50561	York 	Xizang _Autonomous	2776	18:24	5:22	
+19599	Waikato 	Redcar_and_Cleveland 	20426	15:44	19:6	
+23448	Suffolk 	Kent 	2039	21:26	11:56	
+44256	Bromley 	Ards 	39402	17:12	3:25	
+54621	Haute-Marne _Metropolitan	Bihar 	44701	10:3	0:0	
+15333	Guarda 	Arunachal_Pradesh 	33795	11:14	16:56	
+53989	Enfield 	Belfast 	2633	2:41	3:6	
+3051	Istanbul 	Anjouan 	38201	15:2	6:46	
+37684	Highland 	Lakshadweep _Union	8241	12:46	18:57	
+30247	Mayenne _Metropolitan	Rochdale 	29372	6:36	23:55	
+57873	Buskerud 	Bay_of_Plenty 	14667	18:55	19:0	
+35513	Chubut 	San_Juan 	15858	16:17	8:14	
+42466	West_Sussex 	Western_Australia 	29784	17:1	18:29	
+13086	Clackmannanshire 	Poole 	34335	17:2	4:28	
+30760	Kars 	Valparaíso 	6353	15:7	17:11	
+16434	Wellington 	Uttaranchal 	48743	3:20	17:40	
+56153	Hebei 	Østfold 	27513	22:52	10:26	
+28544	Guangdong 	Pembrokeshire_[Sir_Benfro_GB-BNF] 	12746	6:58	12:20	
+21494	Oklahoma 	Kirklareli 	31170	3:44	18:2	
+52873	Neuquén 	Hebei 	8734	13:19	18:30	
+51785	Baden-Württemberg 	Delaware 	13067	4:30	9:39	
+20460	Saône-et-Loire _Metropolitan	Veracruz 	18315	18:12	1:20	
+58622	Nunavut 	Finnmark 	43623	6:50	10:36	
+55	Itä-Suomen_lääni_(fi) _Province	Nunavut 	25615	11:37	4:28	
+40218	Creuse _Metropolitan	Torbay 	49465	14:12	2:19	
+57227	Salford 	Herefordshire,_County_of 	33570	7:42	16:0	
+55164	Distrito_Federal _Federal	Solihull 	37739	9:47	4:13	
+16261	East_Dunbartonshire 	Yalova 	38899	9:30	1:6	
+334	Landes _Metropolitan	Essex 	782	22:55	13:43	
+51665	Maine-et-Loire _Metropolitan	Solothurn_(de) 	42327	13:19	14:52	
+31212	Bitlis 	Sachsen-Anhalt 	20257	5:53	4:56	
+39351	Saitama 	Southampton 	481	12:0	7:22	
+4532	Wallonne,_Région_(fr) 	Sinop 	33631	9:28	22:26	
+34195	Assam 	Walsall 	42936	0:40	5:27	
+13989	Cardiff_[Caerdydd_GB-CRD] 	Wallonne,_Région_(fr) 	32695	21:10	19:37	
+38218	Bío-Bío 	Haute-Marne _Metropolitan	16538	2:23	11:56	
+46434	Aksaray 	Xianggang _Special_Administrative	4160	8:6	21:15	
+36681	Hyogo 	Bihar 	33873	11:34	22:0	
+17365	Izmir 	Hertfordshire 	48435	11:58	12:8	
+23218	Derry 	Carrickfergus 	41754	16:54	7:11	
+15982	Zürich_(de) 	Canakkale 	9566	13:51	21:58	
+23865	Orissa 	Piauí 	25327	20:10	10:44	
+30604	Lincolnshire 	Liège_(WAL) 	6105	15:10	22:4	
+16918	Carmarthenshire_[Sir_Gaerfyrddin_GB-GFY] 	Alaska 	36311	16:49	11:44	
+29987	Hirosima_[Hiroshima] 	Bissau _Autonomous	10739	0:52	22:59	
+3430	Erzincan 	Angus 	10138	6:23	5:4	
+28199	Salta 	Sonora 	29485	12:12	21:48	
+56285	Jiangsu 	Manawatu-Wanganui 	22477	9:47	15:9	
+46561	Manche _Metropolitan	Vojvodina _Autonomous	47006	8:58	12:25	
+59145	Afyon 	Oregon 	37192	21:15	19:56	
+46829	Calvados _Metropolitan	Mecklenburg-Vorpommern 	3083	12:9	9:3	
+30487	Edinburgh,_City_of 	Tarn _Metropolitan	26410	1:2	12:10	
+38395	Leicestershire 	Inverclyde 	48887	2:43	5:3	
+11480	Yozgat 	Maryland 	28102	10:41	3:23	
+10113	Tripura 	Puebla 	18634	19:35	14:4	
+46869	Sør-Trøndelag 	Oost-Vlaanderen_(VLG) 	28973	12:59	23:37	
+54313	Kirsehir 	Navassa_Island_(ISO_reserved_code_=_NV) _Islands/Groups_of	26939	8:56	5:31	
+4928	Yukon_Territory 	Bay_of_Plenty 	3206	15:14	4:1	
+34821	Aveiro 	Kilis 	45660	3:0	11:6	
