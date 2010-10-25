@@ -6,8 +6,6 @@ public class RandomDB {
 
 	private static Random random;
 
-	
-
 	public RandomDB() {
 		random = new Random(System.currentTimeMillis());
 	}
@@ -56,13 +54,13 @@ public class RandomDB {
 		int random = (int) (Math.random() * range);
 		return start += random;
 	}
-	
+
 	public void randomGenerator(String schemas,int numtuple)
 	{
-		/*if (args.length != 2) {
-			System.out.println("Usage: java RandomDB <dbname> <numrecords> ");
-			System.exit(1);
-		}*/
+		/*
+		 * if (args.length != 2) { System.out.println("Usage: java RandomDB
+		 * <dbname> <numrecords> "); System.exit(1); }
+		 */
 		 boolean[] pk=null;
 
 		 boolean[] fk=null;
@@ -72,7 +70,7 @@ public class RandomDB {
 		String metafile = schemas + ".md";
 		String datafile = schemas + ".txt";
 		String statfile = schemas + ".stat";
-		//int numtuple = Integer.parseInt(args[1]);
+		// int numtuple = Integer.parseInt(args[1]);
 		
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(srcfile));
@@ -157,11 +155,18 @@ public class RandomDB {
 					fk = new boolean[range[i]];
 					typeofkey = Attribute.FK;
 					// =========================
-					String filename = schemas.substring(0, schemas.lastIndexOf("\\"));
-					filename += "\\"+ columnname[i].substring(0, columnname[i].indexOf(".")) + ".txt";
-					//System.out.println("filename=" + filename);
+					
+					String filename=columnname[i].substring(0, columnname[i].indexOf(".")) + ".txt";
+					// System.out.println("filename=" + filename);
 					String newline;
-					BufferedReader br = new BufferedReader(new FileReader(filename));
+					File f=new File(filename);
+					if(!f.exists())
+					{
+						System.out.println("Can not open file "+filename);
+						return;
+					}
+					
+					BufferedReader br = new BufferedReader(new FileReader(f));
 					Vector<String> currefer = new Vector<String>();
 					String fields[] = null;
 					while ((newline = br.readLine()) != null) {
@@ -169,6 +174,7 @@ public class RandomDB {
 						currefer.add(fields[0]);
 					}
 					br.close();
+					
 					reference.add(currefer);
 					// ===========================
 				} else {
@@ -177,8 +183,12 @@ public class RandomDB {
 				int numbytes = Integer.parseInt(tokenizer.nextToken());
 
 				if (typeofkey != -1) {
+					if(colname.contains("."))
+					colname=colname.substring(colname.indexOf(".")+1);
 					attr = new Attribute(tblname, colname, type);// ,typeofkey,numbytes);
 				} else {
+					if(colname.contains("."))
+					colname=colname.substring(colname.indexOf(".")+1);
 					attr = new Attribute(tblname, colname, type, typeofkey);
 				}
 				attr.setAttrSize(numbytes);
@@ -192,15 +202,15 @@ public class RandomDB {
 
 			Vector<String> instances = new Vector<String>();
 			for (i = 0; i < numtuple; i++) {
-				//System.out.println("in table "+schemas+" generation: "+i);
+				// System.out.println("in table "+schemas+" generation: "+i);
 
 				if (pk != null) {
 					int numb = random.nextInt(range[0]);
 					while (pk[numb] == true) {
 						numb = random.nextInt(range[0]);
-						//System.out.println("pk["+numb+"]");
+						// System.out.println("pk["+numb+"]");
 					}
-					//System.out.println("pk["+numb+"]");
+					// System.out.println("pk["+numb+"]");
 					pk[numb] = true;
 					outtbl.print(numb + "\t");
 					for (int j = 1; j < numCol; j++) {
@@ -341,7 +351,6 @@ public class RandomDB {
 
 	public static void main(String[] args) {
 
-		
 	}
 
 	private static int getIndex(String[] datatype, int cur) {
