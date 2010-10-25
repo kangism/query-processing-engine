@@ -83,7 +83,7 @@ public class ConvertTxtToTbl {
 		StringTokenizer tokenizer;
 		while ((line = in.readLine()) != null) {
 			linenum++;
-			tokenizer = new StringTokenizer(line);
+			tokenizer = new StringTokenizer(line,"\t");
 			// int tokencount = tokenizer.countTokens();
 			// System.out.println("numtokens=
 			// "+tokenizer.countTokens()+"numcols="+numCols);
@@ -97,10 +97,11 @@ public class ConvertTxtToTbl {
 
 			while (tokenizer.hasMoreElements()) {
 				String dataElement = tokenizer.nextToken();
+				//System.out.println("currentToken="+dataElement);
 				int datatype = schema.typeOf(attrIndex);
 				// System.out.print("Convert :"+ dataElement+" "+datatype);
 				if (datatype == Attribute.INT) {
-					// System.out.println("Integer data:"+dataElement);
+					//System.out.println("Integer data:"+dataElement);
 					data.add(Integer.valueOf(dataElement));
 				} else if (datatype == Attribute.REAL) {
 					data.add(Float.valueOf(dataElement));

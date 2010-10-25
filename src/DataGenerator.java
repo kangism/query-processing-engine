@@ -20,7 +20,7 @@ public class DataGenerator {
 	public void generator(String dir)
 	{
 		String table_schema[]={"Flights","Aircrafts","Employees","Certified","Schedule"};
-		int numtuples[]={1500,1500,1500,1500,1500};
+		int numtuples[]={2500,2500,2500,2500,2500};
 		int len=table_schema.length;
 		
 		RandomDB rand=new RandomDB();
