@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+
 import qp.utils.*;
 
 public class RandomDB {
@@ -55,23 +56,61 @@ public class RandomDB {
 		return start += random;
 	}
 
-	public void randomGenerator(String schemas,int numtuple)
-	{
+	public Vector<String> getEntityNameList(String file) {
+		//System.out.println(System.getProperty("user.dir"));
+		File f = new File(file);
+		if (!f.exists()) {
+			System.out.println("Can not open file " + file);
+			System.exit(-1);
+		}
+		Vector<String> namelist = new Vector<String>();
+
+		String line = null;
+		BufferedReader br = null;
+
+		try {
+			br = new BufferedReader(new FileReader(f));
+			while ((line = br.readLine()) != null) {
+				namelist.add(line);
+			}
+			br.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		return namelist;
+
+	}
+
+	public void randomGenerator(String schemas, int numtuple) {
 		/*
 		 * if (args.length != 2) { System.out.println("Usage: java RandomDB
 		 * <dbname> <numrecords> "); System.exit(1); }
 		 */
-		 boolean[] pk=null;
+		boolean[] pk = null;
 
-		 boolean[] fk=null;
-		
+		boolean[] fk = null;
+
 		String tblname = schemas;
 		String srcfile = schemas + ".det";
 		String metafile = schemas + ".md";
 		String datafile = schemas + ".txt";
 		String statfile = schemas + ".stat";
 		// int numtuple = Integer.parseInt(args[1]);
+
+		Vector<String> personName = new Vector<String>();
+		String perName = "Employee_NameList2.txt";
+		personName = getEntityNameList(perName);
 		
+		Vector<String> locationName = new Vector<String>();
+		String locName = "Location_NameList2.txt";
+		locationName = getEntityNameList(locName);
+		
+		Vector<String> organizationName = new Vector<String>();
+		String orgName = "Organization_NameList2.txt";
+		organizationName = getEntityNameList(orgName);
+
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(srcfile));
 			ObjectOutputStream outmd = new ObjectOutputStream(
@@ -127,7 +166,7 @@ public class RandomDB {
 				if (datatype[i].equals("INTEGER")) {
 					type = Attribute.INT;
 					// System.out.println("integer");
-				} else if (datatype[i].equals("STRING")) {
+				} else if (datatype[i].startsWith("STRING")) {
 					type = Attribute.STRING;
 					// System.out.println("String");
 				} else if (datatype[i].equals("REAL")) {
@@ -155,17 +194,18 @@ public class RandomDB {
 					fk = new boolean[range[i]];
 					typeofkey = Attribute.FK;
 					// =========================
-					
-					String filename=columnname[i].substring(0, columnname[i].indexOf(".")) + ".txt";
+
+					String filename = columnname[i].substring(0,
+							columnname[i].indexOf("."))
+							+ ".txt";
 					// System.out.println("filename=" + filename);
 					String newline;
-					File f=new File(filename);
-					if(!f.exists())
-					{
-						System.out.println("Can not open file "+filename);
+					File f = new File(filename);
+					if (!f.exists()) {
+						System.out.println("Can not open file " + filename);
 						return;
 					}
-					
+
 					BufferedReader br = new BufferedReader(new FileReader(f));
 					Vector<String> currefer = new Vector<String>();
 					String fields[] = null;
@@ -174,7 +214,7 @@ public class RandomDB {
 						currefer.add(fields[0]);
 					}
 					br.close();
-					
+
 					reference.add(currefer);
 					// ===========================
 				} else {
@@ -183,12 +223,12 @@ public class RandomDB {
 				int numbytes = Integer.parseInt(tokenizer.nextToken());
 
 				if (typeofkey != -1) {
-					if(colname.contains("."))
-					colname=colname.substring(colname.indexOf(".")+1);
+					if (colname.contains("."))
+						colname = colname.substring(colname.indexOf(".") + 1);
 					attr = new Attribute(tblname, colname, type);// ,typeofkey,numbytes);
 				} else {
-					if(colname.contains("."))
-					colname=colname.substring(colname.indexOf(".")+1);
+					if (colname.contains("."))
+						colname = colname.substring(colname.indexOf(".") + 1);
 					attr = new Attribute(tblname, colname, type, typeofkey);
 				}
 				attr.setAttrSize(numbytes);
@@ -214,8 +254,26 @@ public class RandomDB {
 					pk[numb] = true;
 					outtbl.print(numb + "\t");
 					for (int j = 1; j < numCol; j++) {
-						if (datatype[j].equals("STRING")) {
-							String temp = randString(range[j]);
+						if (datatype[j].startsWith("STRING")) {
+							//System.out.println(datatype[j]);
+							String temp="";
+							if(datatype[j].endsWith("Person"))
+							{
+								int sizePerson=personName.size();
+								int perIndex=(int)(Math.random()*sizePerson);
+								temp=personName.elementAt(perIndex);
+							}else if(datatype[j].endsWith("Location"))
+							{
+								int sizeLocation=locationName.size();
+								int locIndex=(int)(Math.random()*sizeLocation);
+								temp=locationName.elementAt(locIndex);
+							}else if(datatype[j].endsWith("Organization"))
+							{
+								int sizeOrganization=organizationName.size();
+								int orgIndex=(int)(Math.random()*sizeOrganization);
+								temp=organizationName.elementAt(orgIndex);
+							}
+							//String temp = randString(range[j]);
 							outtbl.print(temp + "\t");
 						} else if (datatype[j].equals("FLOAT")) {
 							float value = range[j] * random.nextFloat();
@@ -226,15 +284,17 @@ public class RandomDB {
 							int value = 0;
 							if (keytype[j].equals("FK")) {
 								int index = getIndex(keytype, j);
-								Vector<String> temp = reference.elementAt(index);
+								Vector<String> temp = reference
+										.elementAt(index);
 								int siz = temp.size();
 								int randint = (int) (Math.random() * siz);
-								value = Integer.parseInt(temp.elementAt(randint));
+								value = Integer.parseInt(temp
+										.elementAt(randint));
 								fk[value] = true;
 							} else {
 								value = random.nextInt(range[j]);
 							}
-							
+
 							outtbl.print(value + "\t");
 						} else if (datatype[j].equals("TIME")) {
 							int hour = (int) (Math.random() * 24);
@@ -256,8 +316,23 @@ public class RandomDB {
 						tup = "";
 						for (int j = 0; j < numCol; j++) {
 							if (datatype[j].equals("STRING")) {
-								String temp = randString(range[j]);
-								// outtbl.print(temp + "\t");
+								String temp="";
+								if(datatype[j].endsWith("Person"))
+								{
+									int sizePerson=personName.size();
+									int perIndex=(int)(Math.random()*sizePerson);
+									temp=personName.elementAt(perIndex);
+								}else if(datatype[j].endsWith("Location"))
+								{
+									int sizeLocation=locationName.size();
+									int locIndex=(int)(Math.random()*sizeLocation);
+									temp=locationName.elementAt(locIndex);
+								}else if(datatype[j].endsWith("Organization"))
+								{
+									int sizeOrganization=organizationName.size();
+									int orgIndex=(int)(Math.random()*sizeOrganization);
+									temp=organizationName.elementAt(orgIndex);
+								}
 								tup += temp + "\t";
 							} else if (datatype[j].equals("FLOAT")) {
 								float fvalue = range[j] * random.nextFloat();
@@ -274,10 +349,12 @@ public class RandomDB {
 								// int value=0;
 								if (keytype[j].equals("FK")) {
 									int index = getIndex(keytype, j);
-									Vector<String> temp = reference.elementAt(index);
+									Vector<String> temp = reference
+											.elementAt(index);
 									int siz = temp.size();
 									int randint = (int) (Math.random() * siz);
-									value = Integer.parseInt(temp.elementAt(randint));
+									value = Integer.parseInt(temp
+											.elementAt(randint));
 									containFK = true;
 								} else {
 									value = random.nextInt(range[j]);
@@ -295,12 +372,12 @@ public class RandomDB {
 							}
 
 						}
-						
+
 					} while (instances.contains(tup.trim()));
 					if (containFK)
 						fk[value] = true;
 					instances.add(tup.trim());
-					
+
 					outtbl.print(tup.trim());
 				}
 
@@ -317,7 +394,7 @@ public class RandomDB {
 			 */
 
 			for (i = 0; i < numCol; i++) {
-				if (datatype[i].equals("STRING")) {
+				if (datatype[i].startsWith("STRING")) {
 					outstat.print(numtuple + "\t");
 				} else if (datatype[i].equals("FLOAT")) {
 					outstat.print(numtuple + "\t");
