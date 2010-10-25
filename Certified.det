@@ -1,4 +1,4 @@
 2
 8
-Employees.eid INTEGER 2000 FK 4
-Aircrafts.aid INTEGER 2000 FK 4
+Employees.eid INTEGER 60000 FK 4
+Aircrafts.aid INTEGER 60000 FK 4
