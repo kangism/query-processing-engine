@@ -1,0 +1,3 @@
+SELECT Employees.eid,Employees.ename,Employees.salary,Certified.aid 
+FROM Employees,Certified 
+WHERE Employees.eid=Certified.eid
