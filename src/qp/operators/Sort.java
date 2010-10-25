@@ -4,6 +4,7 @@
 package qp.operators;
 
 import java.io.EOFException;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -74,6 +75,7 @@ public class Sort extends Operator {
      * The current temp file name.
      */
     String tempFile = "";
+    String prefix ="SortTemp-";
 
     boolean isDistinct;
 
@@ -240,7 +242,7 @@ public class Sort extends Operator {
 			break;
 		    } else {
 			filenum++;
-			tempFile = "SortTemp-" + String.valueOf(filenum);
+			tempFile = prefix + String.valueOf(filenum);
 			try {
 			    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
 			    int i = 0;
@@ -266,7 +268,7 @@ public class Sort extends Operator {
 		Collections.sort(tuplesInMem, tupleComparator);
 
 		filenum++;
-		tempFile = "SortTemp-" + String.valueOf(filenum);
+		tempFile = prefix + String.valueOf(filenum);
 		try {
 		    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
 
@@ -313,7 +315,16 @@ public class Sort extends Operator {
 
     /** Close the operator */
     public boolean close() {
-	return base.close();
+
+		
+		File dirr = new File("."); 
+		File[] files = dirr.listFiles();
+		for(int i = 0; i<files.length; i++)
+		{
+			if(files[i].getName().startsWith(prefix))
+				files[i].delete();
+		}
+		return base.close();
     }
 
     public Object clone() {
