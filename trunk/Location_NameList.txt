@@ -1,0 +1,874 @@
+Aberdeenshire  
+Aberdeen City  
+Argyll and Bute  
+Isle of Anglesey [Sir Ynys Môn GB-YNM]  
+Angus  
+Antrim  
+Ards  
+Armagh  
+Bath and North East Somerset  
+Blackburn with Darwen  
+Bedfordshire  
+Barking and Dagenham  
+Brent  
+Bexley  
+Belfast  
+Bridgend [Pen-y-bont ar Ogwr GB-POG]  
+Blaenau Gwent  
+Birmingham  
+Buckinghamshire  
+Ballymena  
+Ballymoney  
+Bournemouth  
+Banbridge  
+Barnet  
+Brighton and Hove  
+Barnsley  
+Bolton  
+Blackpool  
+Bracknell Forest  
+Bradford  
+Bromley  
+Bristol, City of  
+Bury  
+Cambridgeshire  
+Caerphilly [Caerffili GB-CAF]  
+Ceredigion [Sir Ceredigion]  
+Craigavon  
+Cheshire  
+Carrickfergus  
+Cookstown  
+Calderdale  
+Clackmannanshire  
+Coleraine  
+Cumbria  
+Camden  
+Carmarthenshire [Sir Gaerfyrddin GB-GFY]  
+Cornwall  
+Coventry  
+Cardiff [Caerdydd GB-CRD]  
+Croydon  
+Castlereagh  
+Conwy  
+Darlington  
+Derbyshire  
+Denbighshire [Sir Ddinbych GB-DDB]  
+Derby  
+Devon  
+Dungannon  
+Dumfries and Galloway  
+Doncaster  
+Dundee City  
+Dorset  
+Down  
+Derry  
+Dudley  
+Durham  
+Devon  
+Ealing  
+East Ayrshire  
+Edinburgh, City of  
+East Dunbartonshire  
+East Lothian  
+Eilean Siar  
+Enfield  
+East Renfrewshire  
+East Riding of Yorkshire  
+Essex  
+East Sussex  
+Falkirk  
+Fermanagh  
+Fife  
+Flintshire [Sir y Fflint GB-FFL]  
+Gateshead  
+Glasgow City  
+Gloucestershire  
+Greenwich  
+Gwynedd  
+Halton  
+Hampshire  
+Havering  
+Hackney  
+Herefordshire, County of  
+Hillingdon  
+Highland  
+Hammersmith and Fulham  
+Hounslow  
+Hartlepool  
+Hertfordshire  
+Harrow  
+Haringey  
+Isles of Scilly  
+Isle of Wight  
+Islington  
+Inverclyde  
+Kensington and Chelsea  
+Kent  
+Kingston upon Hull, City of  
+Kirklees  
+Kingston upon Thames  
+Knowsley  
+Lancashire  
+Lambeth  
+Leicester  
+Leeds  
+Leicestershire  
+Lewisham  
+Lincolnshire  
+Liverpool  
+Limavady  
+London, City of  
+Larne  
+Lisburn  
+Luton  
+Manchester  
+Middlesbrough  
+Medway  
+Magherafelt  
+Milton Keynes  
+Midlothian  
+Monmouthshire [Sir Fynwy GB-FYN]  
+Merton  
+Moray  
+Merthyr Tydfil [Merthyr Tudful GB-MTU]  
+Moyle  
+North Ayrshire  
+Northumberland  
+North Down  
+North East Lincolnshire  
+Newcastle upon Tyne  
+Norfolk  
+Nottingham  
+North Lanarkshire  
+North Lincolnshire  
+North Somerset  
+Newtownabbey  
+Northamptonshire  
+Neath Port Talbot [Castell-nedd Port Talbot GB-CTL]  
+Nottinghamshire  
+North Tyneside  
+Newham  
+Newport [Casnewydd GB-CNW]  
+North Yorkshire  
+Newry and Mourne  
+Oldham  
+Omagh  
+Orkney Islands  
+Oxfordshire  
+Pembrokeshire [Sir Benfro GB-BNF]  
+Perth and Kinross  
+Plymouth  
+Poole  
+Portsmouth  
+Powys  
+Peterborough  
+Redcar and Cleveland  
+Rochdale  
+Rhondda, Cynon, Taff [Rhondda, Cynon,Taf]  
+Redbridge  
+Reading  
+Renfrewshire  
+Richmond upon Thames  
+Rotherham  
+Rutland  
+Sandwell  
+South Ayrshire  
+Scottish Borders, The  
+Suffolk  
+Sefton  
+South Gloucestershire  
+Sheffield  
+St. Helens  
+Shropshire  
+Stockport  
+Salford  
+Slough  
+South Lanarkshire  
+Sunderland  
+Solihull  
+Somerset  
+Southend-on-Sea  
+Surrey  
+Strabane  
+Stoke-on-Trent  
+Stirling  
+Southampton  
+Sutton  
+Staffordshire  
+Stockton-on-Tees  
+South Tyneside  
+Swansea [Abertawe GB-ATA]  
+Swindon  
+Southwark  
+Tameside  
+Telford and Wrekin  
+Thurrock  
+Torbay  
+Torfaen [Tor-faen]  
+Trafford  
+Tower Hamlets  
+Vale of Glamorgan, The [Bro Morgannwg GB-BMG]  
+Warwickshire  
+West Berkshire  
+West Dunbartonshire  
+Waltham Forest  
+Wigan  
+Wiltshire  
+Wakefield  
+Walsall  
+West Lothian  
+Wolverhampton  
+Wandsworth  
+Windsor and maidenhead  
+Wokingham  
+Worcestershire  
+Wirral  
+Warrington  
+Wrexham [Wrecsam GB-WRC]  
+Westminster  
+West Sussex  
+York  
+Shetland 
+Alaska  
+Alabama  
+Arkansas  
+American Samoa (see also separate entry under AS)  Outlying 
+Arizona  
+California  
+Colorado  
+Connecticut  
+District of Columbia  
+Delaware  
+Florida  
+Georgia  
+Guam (see also separate entry under GU)  Outlying 
+Hawaii  
+Iowa  
+Idaho  
+Illinois  
+Indiana  
+Kansas  
+Kentucky  
+Louisiana  
+Massachusetts  
+Maryland  
+Maine  
+Michigan  
+Minnesota  
+Missouri  
+Northern Mariana Islands (see also separate entry MP)  Outlying 
+Mississippi  
+Montana  
+North Carolina  
+North Dakota  
+Nebraska  
+New Hampshire  
+New Jersey  
+New Mexico  
+Nevada  
+New York  
+Ohio  
+Oklahoma  
+Oregon  
+Pennsylvania  
+Puerto Rico (see also separate entry under PR)  Outlying 
+Rhode Island  
+South Carolina  
+South Dakota  
+Tennessee  
+Texas  
+U.S. Minor Outlying Islands (cf. separate entry UM)  Outlying 
+Utah  
+Virginia  
+Virgin Islands of the U.S. (see also separate entry VI)  Outlying 
+Vermont  
+Washington  
+Wisconsin  
+West Virginia  
+Wyoming  
+Johnston Atoll (ISO reserved code = JT)  Islands/Groups of 
+Midway Islands (ISO reserved code = I)  Islands/Groups of 
+Navassa Island (ISO reserved code = NV)  Islands/Groups of 
+Wake Island (ISO reserved code = WK)  Islands/Groups of 
+Baker Island  Islands/Groups of 
+Howland Island  Islands/Groups of 
+Jarvis Island  Islands/Groups of 
+Kingman Reef  Islands/Groups of 
+Palmyra Atoll  Islands/Groups of 
+Adana  
+Adiyaman  
+Afyon  
+Agri  
+Amasya  
+Ankara  
+Antalya  
+Artvin  
+Aydin  
+Balikesir  
+Bilecik  
+Bingol  
+Bitlis  
+Bolu  
+Burdur  
+Bursa  
+Canakkale  
+Cankiri  
+Corum  
+Denizli  
+Diyarbakir  
+Edirne  
+Elazig  
+Erzincan  
+Erzurum  
+Eskisehir  
+Gaziantep  
+Giresun  
+Gümüshane  
+Hakkari  
+Hatay  
+Isparta  
+Icel  
+Istanbul  
+Izmir  
+Kars  
+Kastamonu  
+Kayseri  
+Kirklareli  
+Kirsehir  
+Kocaeli  
+Konya  
+Kütahya  
+Malatya  
+Manisa  
+Kahramanmaras  
+Mardin  
+Mugla  
+Mus  
+Nevsehir  
+Nigde  
+Ordu  
+Rize  
+Sakarya  
+Samsun  
+Siirt  
+Sinop  
+Sivas  
+Tekirdag  
+Tokat  
+Trabzon  
+Tunceli  
+Sanliurfa  
+Usak  
+Van  
+Yozgat  
+Zonguldak  
+Aksaray  
+Bayburt  
+Karaman  
+Kirkkale  
+Batman  
+Sirnak  
+Bartin  
+Ardahan  
+Igdir  
+Yalova  
+Karabuk  
+Kilis  
+Osmaniye  
+Aargau (de)  
+Appenzell Inner-Rhoden (de)  
+Appenzell Ausser-Rhoden (de)  
+Bern (de)  
+Basel-Landschaft (de)  
+Basel-Stadt (de)  
+Fribourg (fr)  
+Genève (fr)  
+Glarus (de)  
+Graubünden (de)  
+Jura (fr)  
+Luzern (de)  
+Neuchâtel (fr)  
+Nidwalden (de)  
+Obwalden (de)  
+Sankt Gallen (de)  
+Schaffhausen (de)  
+Solothurn (de)  
+Schwyz (de)  
+Thurgau (de)  
+Ticino (it)  
+Uri (de)  
+Vaud (fr)  
+Valais (fr)  
+Zug (de)  
+Zürich (de)  
+Stockholms län  
+Västerbottens län  
+Norrbottens län  
+Uppsala län  
+Södermanlands län  
+Östergötlands län  
+Jönköpings län  
+Kronoborgs län  
+Kalmar län  
+Gotlands län  
+Blekinge län  
+Skåne län  
+Hallands län  
+Västra Götalands län  
+Värmlands län  
+Örebro län  
+Västmanlands län  
+Dalarnes län  
+Gävleborgs län  
+Västernorrlands län  
+Jämtlands län  
+Crna Gora  
+Kosovo-Metohija  Autonomous 
+Srbija  
+Vojvodina  Autonomous 
+Aveiro  
+Beja  
+Braga  
+Bragança  
+Castelo Branco  
+Coimbra  
+Évora  
+Faro  
+Guarda  
+Leiria  
+Lisboa  
+Portalegre  
+Porto  
+Santarém  
+Setúbal  
+Viana do Castelo  
+Vila Real  
+Viseu  
+Região Autónoma dos Açores  Autonomous 
+Região Autónoma da Madeira  Autonomous 
+Østfold  
+Akershus  
+Oslo  
+Hedmark  
+Oppland  
+Buskerud  
+Vestfold  
+Telemark  
+Aust-Agder  
+Vest-Agder  
+Rogaland  
+Hordaland  
+Sogn og Fjordane  
+Møre og Romsdal  
+Sør-Trøndelag  
+Nord-Trøndelag  
+Nordland  
+Troms  
+Finnmark  
+Auckland  
+Bay of Plenty  
+Canterbury  
+Gisborne  
+Hawkes's Bay  
+Marlborough  
+Manawatu-Wanganui  
+Nelson  
+Northland  
+Otago  
+Southland  
+Tasman  
+Taranaki  
+Wellington  
+Waikato  
+West Coast  
+Aguascalientes  
+Baja California  
+Baja California Sur  
+Campeche  
+Chihuahua  
+Chiapas  
+Coahuila  
+Colima  
+Distrito Federal  Federal 
+Durango  
+Guerrero  
+Guanajuato  
+Hidalgo  
+Jalisco  
+México  
+Michoacán  
+Morelos  
+Nayarit  
+Nuevo León  
+Oaxaca  
+Puebla  
+Querétaro  
+Quintana Roo  
+Sinaloa  
+San Luis Potosí  
+Sonora  
+Tabasco  
+Tamaulipas  
+Tlaxcala  
+Veracruz  
+Yucatán  
+Zacatecas  
+Salta  
+Buenos Aires  
+Distrito Federal  Federal 
+San Luis  
+Entre Ríos  
+La Rioja  
+Santiago del Estero  
+Chaco  
+San Juan  
+Catamarca  
+La Pampa  
+Mendoza  
+Misiones  
+Formosa  
+Neuquén  
+Río Negro  
+Santa Fe  
+Tucumán  
+Chubut  
+Tierra del Fuego  
+Corrientes  
+Córdoba  
+Jujuy  
+Santa Cruz  
+Australian Capital Territory  
+New South Wales  
+Northern Territory  
+Queensland  
+South Australia  
+Tasmania  
+Victoria  
+Western Australia  
+Bruxelles-Capitale, Région de (fr), Brussels Hoofdstedelijk Gewest (nl)  
+Antwerpen (VLG)  
+Vlaams Brabant (VLG)  
+Vlaamse Gewest (nl)  
+Limburg (VLG)  
+Oost-Vlaanderen (VLG)  
+West-Vlaanderen (VLG)  
+Wallonne, Région (fr)  
+Brabant Wallon (WAL)  
+Hainaut (WAL)  
+Liège (WAL)  
+Luxembourg (WAL)  
+Namur (WAL)  
+Acre  
+Alagoas  
+Amazonas  
+Amapá  
+Bahia  
+Ceará  
+Distrito Federal  Federal 
+Espírito Santo  
+Goiás  
+Maranhão  
+Minas Gerais  
+Mato Grosso do Sul  
+Mato Grosso  
+Pará  
+Paraíba  
+Pernambuco  
+Piauí  
+Paraná  
+Rio de Janeiro  
+Rio Grande do Norte  
+Rondônia  
+Roraima  
+Rio Grande do Sul  
+Santa Catarina  
+Sergipe  
+São Paulo  
+Tocantins  
+Alberta  
+British Columbia  
+Manitoba  
+New Brunswick  
+Newfoundland and Labrador  
+Nova Scotia  
+Northwest Territories  
+Nunavut  
+Ontario  
+Prince Edward Island  
+Quebec  
+Saskatchewan  
+Yukon Territory  
+Aisén del General Carlos Ibáñez del Campo  
+Antofagasta  
+Araucanía  
+Atacama  
+Bío-Bío  
+Coquimbo  
+Libertador General Bernardo O'Higgins  
+Los Lagos  
+Magallanes  
+Maule  
+Región Metropolitana de Santiago  
+Tarapacá  
+Valparaíso  
+Beijing  
+Tianjin  
+Hebei  
+Shanxi  
+Neimenggu  Autonomous 
+Liaoning  
+Jilin  
+Heilongjiang  
+Shanghai  
+Jiangsu  
+Zhejiang  
+Anhui  
+Fujian  
+Jiangxi  
+Shandong  
+Henan  
+Hubei  
+Hunan  
+Guangdong  
+Guangxi  Autonomous 
+Hainan  
+Chongqing  
+Sichuan  
+Guizhou  
+Yunnan  
+Xizang  Autonomous 
+Shaanxi  
+Gansu  
+Qinghai  
+Ningxia  Autonomous 
+Xinjiang  Autonomous 
+Taiwan  
+Xianggang  Special Administrative 
+Aomen  Special Administrative 
+Anjouan  
+Grande Comore  
+Mohéli  
+Harjumaa  
+Hiiumaa  
+Ida-Virumaa  
+Jõgevamaa  
+Järvamaa  
+Läänemaa  
+Lääne-Virumaa  
+Põlvamaa  
+Pärnumaa  
+Raplamaa  
+Saaremaa  
+Tartumaa  
+Valgamaa  
+Viljandimaa  
+Võrumaa  
+Ahvenanmaan Maakunta (fi)  Province 
+Etelä-Suomen lääni (fi)  Province 
+Itä-Suomen lääni (fi)  Province 
+Lapin lääni (fi)  Province 
+Länsi-Suomen lääni (fi)  Province 
+Oulun lääni (fi)  Province 
+Ain  Metropolitan 
+Aisne  Metropolitan 
+Allier  Metropolitan 
+Alpes-de-Haute-Provence  Metropolitan 
+Hautes-Alpes  Metropolitan 
+Alpes-Maritimes  Metropolitan 
+Ardèche  Metropolitan 
+Ardennes  Metropolitan 
+Ariège  Metropolitan 
+Aube  Metropolitan 
+Aude  Metropolitan 
+Aveyron  Metropolitan 
+Bouches-du-Rhône  Metropolitan 
+Calvados  Metropolitan 
+Cantal  Metropolitan 
+Charente  Metropolitan 
+Charente-Maritime  Metropolitan 
+Cher  Metropolitan 
+Corrèze  Metropolitan 
+Côte-d'Or  Metropolitan 
+Côtes-d'Armor  Metropolitan 
+Creuse  Metropolitan 
+Dordogne  Metropolitan 
+Doubs  Metropolitan 
+Drôme  Metropolitan 
+Eure  Metropolitan 
+Eure-et-Loir  Metropolitan 
+Finistère  Metropolitan 
+Corse-du-Sud  Metropolitan 
+Haute-Corse  Metropolitan 
+Gard  Metropolitan 
+Haute-Garonne  Metropolitan 
+Gers  Metropolitan 
+Gironde  Metropolitan 
+Hérault  Metropolitan 
+Ille-et-Vilaine  Metropolitan 
+Indre  Metropolitan 
+Indre-et-Loire  Metropolitan 
+Isère  Metropolitan 
+Jura  Metropolitan 
+Landes  Metropolitan 
+Loir-et-Cher  Metropolitan 
+Loire  Metropolitan 
+Haute-Loire  Metropolitan 
+Loire-Atlantique  Metropolitan 
+Loiret  Metropolitan 
+Lot  Metropolitan 
+Lot-et-Garonne  Metropolitan 
+Lozère  Metropolitan 
+Maine-et-Loire  Metropolitan 
+Manche  Metropolitan 
+Marne  Metropolitan 
+Haute-Marne  Metropolitan 
+Mayenne  Metropolitan 
+Meurthe-et-Moselle  Metropolitan 
+Meuse  Metropolitan 
+Morbihan  Metropolitan 
+Moselle  Metropolitan 
+Nièvre  Metropolitan 
+Nord  Metropolitan 
+Oise  Metropolitan 
+Orne  Metropolitan 
+Pas-de-Calais  Metropolitan 
+Puy-de-Dôme  Metropolitan 
+Pyrénées-Atlantiques  Metropolitan 
+Hautes-Pyrénées  Metropolitan 
+Pyrénées-Orientales  Metropolitan 
+Bas-Rhin  Metropolitan 
+Haut-Rhin  Metropolitan 
+Rhône  Metropolitan 
+Haute-Saône  Metropolitan 
+Saône-et-Loire  Metropolitan 
+Sarthe  Metropolitan 
+Savoie  Metropolitan 
+Haute-Savoie  Metropolitan 
+Paris  Metropolitan 
+Seine-Maritime  Metropolitan 
+Seine-et-Marne  Metropolitan 
+Yvelines  Metropolitan 
+Deux-Sèvres  Metropolitan 
+Somme  Metropolitan 
+Tarn  Metropolitan 
+Tarn-et-Garonne  Metropolitan 
+Var  Metropolitan 
+Vaucluse  Metropolitan 
+Vendée  Metropolitan 
+Vienne  Metropolitan 
+Haute-Vienne  Metropolitan 
+Vosges  Metropolitan 
+Yonne  Metropolitan 
+Territoire de Belfort  Metropolitan 
+Essonne  Metropolitan 
+Hauts-de-Seine  Metropolitan 
+Seine-Saint-Denis  Metropolitan 
+Val-de-Marne  Metropolitan 
+Val-d'Oise  Metropolitan 
+Berlin  
+Brandenburg  
+Baden-Württemberg  
+Bayern  
+Bremen (Hansestadt)  
+Hessen  
+Hamburg (Hansestadt)  
+Mecklenburg-Vorpommern  
+Niedersachsen  
+Nordrhein-Westfalen  
+Rheinland-Pfalz  
+Schleswig-Holstein  
+Saarland  
+Sachsen  
+Sachsen-Anhalt  
+Thüringen  
+Bafatá  
+Bolama  
+Biombo  
+Bissau  Autonomous 
+Cacheu  
+Gabú  
+Oio  
+Quinara  
+Tombali   
+Andaman and Nicobar Islands  Union 
+Andhra Pradesh  
+Arunachal Pradesh  
+Assam  
+Bihar  
+Chandigarh  Union 
+Chhattisgarh  
+Daman and Diu  Union 
+Delhi  Union 
+Dadra and Nagar Haveli  Union 
+Goa  
+Gujarat  
+Himachal Pradesh  
+Haryana  
+Jharkhand  
+Jammu and Kashmir  
+Karnataka  
+Kerala  
+Lakshadweep  Union 
+Maharashtra  
+Meghalaya  
+Manipur  
+Madhya Pradesh  
+Mizoram  
+Nagaland  
+Orissa  
+Punjab  
+Pondicherry  Union 
+Rajasthan  
+Sikkim  
+Tamil Nadu  
+Tripura  
+Uttaranchal  
+Uttar Pradesh  
+West Bengal  
+Hokkaido  
+Aomori  
+Iwate  
+Miyagi  
+Akita  
+Yamagata  
+Hukusima [Fukushima]  
+Ibaraki  
+Totigi [Tochigi]  
+Gunma  
+Saitama  
+Tiba [Chiba]  
+Tokyo  
+Kanagawa  
+Niigata  
+Toyama  
+Isikawa [Ishikawa]  
+Hukui [Fukui]  
+Yamanasi [Yamanashi]  
+Nagano  
+Gihu [Gifu]  
+Sizuoka [Shizuoka]  
+Aiti [Aichi]  
+Mie  
+Siga [Shiga]  
+Kyoto  
+Osaka  
+Hyogo  
+Nara  
+Wakayama  
+Tottori  
+Simane [Shimane]  
+Okayama  
+Hirosima [Hiroshima]  
+Yamaguti [Yamaguchi]  
+Tokusima [Tokushima]  
+Kagawa  
+Ehime  
+Koti [Kochi]  
+Hukuoka [Fukuoka]  
+Saga  
+Nagasaki  
+Kumamoto  
+Oita  
+Miyazaki  
+Kagosima [Kagoshima]  
+Okinawa  
