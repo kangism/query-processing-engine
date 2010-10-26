@@ -13,7 +13,6 @@ public enum JoinType {
     // If you change this list DO NOT forget to maintain getJoinTypeById(int id)
     // and numJoinTypes().
     NESTEDJOIN(0), BLOCKNESTED(1),
-    /* SORTMERGE(2), HASHJOIN(3), */
     HASHJOIN(2), SORTMERGE(3), INDEXNESTED(4);
 
     /**
@@ -62,7 +61,7 @@ public enum JoinType {
      * @return
      */
     public static int numJoinTypes() {
-	return 3;
+	return 4;
 
 	// return k for k joins
     }
