@@ -67,6 +67,11 @@ public class Sort extends Operator {
      */
     int filenum = 0;
 
+    /**
+     * to make the difference between the difference Sort Operation.
+     */
+    static int sortNum = 0;
+
     Queue<String> tempFiles = new LinkedList<String>();
 
     TupleComparator tupleComparator;
@@ -75,7 +80,7 @@ public class Sort extends Operator {
      * The current temp file name.
      */
     String tempFile = "";
-    String prefix ="SortTemp-";
+    String prefix;
 
     boolean isDistinct;
 
@@ -86,6 +91,7 @@ public class Sort extends Operator {
 	this.attrSet = as;
 	this.base = base;
 	this.isDistinct = isDistinct;
+	prefix = "SortTemp-" + (sortNum++) + "-";
     }
 
     public void setBase(Operator base) {
@@ -130,7 +136,7 @@ public class Sort extends Operator {
 	tupleComparator = new TupleComparator(attrSet);
 
 	base.open();
-	
+
 	returned = null;
 	while (true) {
 
@@ -149,13 +155,13 @@ public class Sort extends Operator {
 
 	    if (tuplesInMem.isEmpty()) { // ///////PHASE TWO \\\\\\\\\\\\
 		if (tempFiles.isEmpty()) {
-		    //System.out.println("tuplesInMem and tempFiles are Empty => returned=null");
+		    // System.out.println("tuplesInMem and tempFiles are Empty => returned=null");
 		    returned = null;
 		} else {
 		    pagesInMem = new HashMap<String, Batch>(numBuff - 1);
 		    Map<String, ObjectInputStream> ins = new HashMap<String, ObjectInputStream>(numBuff - 1);
 
-		    //System.out.println(tempFiles.size() + " " + ins.size()); // XXX
+		    // System.out.println(tempFiles.size() + " " + ins.size()); // XXX
 
 		    while (!tempFiles.isEmpty() && ins.size() < numBuff - 1) {
 			tempFile = tempFiles.poll();
@@ -175,12 +181,12 @@ public class Sort extends Operator {
 			}
 		    }
 
-		    //System.out.println(tempFiles.size() + " " + ins.size()); // XXX
+		    // System.out.println(tempFiles.size() + " " + ins.size()); // XXX
 
 		    Tuple minTuple = null;
 		    String minTupleFromBatch = null;
 		    while (!pagesInMem.isEmpty()) {
-			//System.out.println("P2: used buffer to sort ->" + pagesInMem.size());
+			// System.out.println("P2: used buffer to sort ->" + pagesInMem.size());
 			// //XXX
 			minTuple = null;
 			minTupleFromBatch = null;
@@ -202,7 +208,7 @@ public class Sort extends Operator {
 			if (!isDistinct || (sorted.isEmpty() || tupleComparator.compare(minTuple, sorted.get(sorted.size() - 1)) != 0)) {
 			    sorted.add(minTuple);
 			    // System.out.println(sorted.size());
-		    	}
+			}
 
 			// and removing in from the pile
 			pagesInMem.get(minTupleFromBatch).remove(0);
@@ -233,12 +239,13 @@ public class Sort extends Operator {
 
 		    // System.out.println(tempFiles.size() + " " + ins.size()); // XXX
 		    if (ins.isEmpty() && tempFiles.isEmpty()) {
-			//System.out.println("RETURN"); // XXX
+			// System.out.println("RETURN"); // XXX
 			outbatch = new Batch(batchsize);
 			for (int i = 0; i < sorted.size(); i++) {
 			    outbatch.add(sorted.get(i));
 			}
-			returned = outbatch; // XXX THIS BATCH IS OVER SIZED..
+			returned = outbatch; // THIS BATCH IS OVER SIZED but we will deal with it in
+					     // next()..
 			break;
 		    } else {
 			filenum++;
@@ -256,7 +263,7 @@ public class Sort extends Operator {
 			    }
 			    out.close();
 			    tempFiles.add(tempFile);
-			    ///System.out.println("P2 :" + tempFile); // XXX
+			    // /System.out.println("P2 :" + tempFile); // XXX
 			} catch (IOException io) {
 			    System.out.println("Sort: writing the temporay file error");
 			}
@@ -273,7 +280,7 @@ public class Sort extends Operator {
 		    ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(tempFile));
 
 		    tempFiles.add(tempFile);
-		    ///System.out.println("P1: " + tempFile); // XXX
+		    // /System.out.println("P1: " + tempFile); // XXX
 
 		    int i = 0;
 		    while (i < tuplesInMem.size()) {
@@ -302,12 +309,13 @@ public class Sort extends Operator {
 
 	outbatch = new Batch(batchsize);
 	for (int i = 0; i < batchsize; i++) {
-	    if(!returned.isEmpty()){
+	    if (!returned.isEmpty()) {
+		// System.out.println(" "+returned.elementAt(0).dataAt(0)+"-"+returned.elementAt(0).dataAt(1));
 		outbatch.add(returned.elementAt(0));
 		returned.remove(0);
 	    }
-	}	
-	if(outbatch.isEmpty()){
+	}
+	if (outbatch.isEmpty()) {
 	    return null;
 	}
 	return outbatch;
@@ -316,15 +324,13 @@ public class Sort extends Operator {
     /** Close the operator */
     public boolean close() {
 
-		
-		File dirr = new File("."); 
-		File[] files = dirr.listFiles();
-		for(int i = 0; i<files.length; i++)
-		{
-			if(files[i].getName().startsWith(prefix))
-				files[i].delete();
-		}
-		return base.close();
+	File dirr = new File(".");
+	File[] files = dirr.listFiles();
+	for (int i = 0; i < files.length; i++) {
+	    if (files[i].getName().startsWith(prefix))
+		files[i].delete();
+	}
+	return base.close();
     }
 
     public Object clone() {
