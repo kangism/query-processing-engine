@@ -159,10 +159,10 @@ public class PlanCost {
 	    case SORTMERGE:
 		// 2 *(N1 * K1 + N2 * K2) + N1 + N2
 		// K = 1 + Log(N/B)/log(B-1)
-		int numPassesLeft= (int) ((Math.log(leftpages/numbuff) / Math.log(numbuff-1)) + 1);
-		int numPassesRight= (int) ((Math.log(rightpages/numbuff) / Math.log(numbuff-1)) + 1);
-		int presortcost = 2 * (numPassesLeft*leftpages+numPassesRight*rightpages);
-		joincost = leftpages+rightpages + presortcost; //XXX maybe presortcost has been already counted!
+//		int numPassesLeft= (int) ((Math.log(leftpages/numbuff) / Math.log(numbuff-1)) + 1);
+//		int numPassesRight= (int) ((Math.log(rightpages/numbuff) / Math.log(numbuff-1)) + 1);
+//		int presortcost = 2 * (numPassesLeft*leftpages+numPassesRight*rightpages);
+		joincost = leftpages+rightpages ;//+ presortcost; //XXX maybe presortcost has been already counted!
 		break;
 	    case HASHJOIN:
 		joincost = 3 * (leftpages + rightpages);
