@@ -118,24 +118,35 @@ public class QueryMain{
 	System.out.print("   "+initCost);
 	System.out.println();
 		 **/
-
-
-		/** Use random Optimization algorithm to get a random optimized
-	    execution plan
-		 **/
-
-		RandomOptimizer ro = new RandomOptimizer(sqlquery);
-		Operator logicalroot = ro.getOptimizedPlan();
-		if(logicalroot==null){
+		
+		
+		//DynamicProgrammingOptimizer
+		DynamicProgrammingOptimizer dynamicOptimizer = new DynamicProgrammingOptimizer(sqlquery);
+		Operator logicalroot = dynamicOptimizer.getOptimalPlan();
+		if (logicalroot == null) {
 			System.out.println("root is null");
 			System.exit(1);
 		}
+		Operator root = DynamicProgrammingOptimizer.makeExecPlan(logicalroot);
+		
 
 
-
-		/** preparing the execution plan **/
-
-		Operator root = RandomOptimizer.makeExecPlan(logicalroot);
+//		/** Use random Optimization algorithm to get a random optimized
+//	    execution plan
+//		 **/
+//
+//		RandomOptimizer ro = new RandomOptimizer(sqlquery);
+//		Operator logicalroot = ro.getOptimizedPlan();
+//		if(logicalroot==null){
+//			System.out.println("root is null");
+//			System.exit(1);
+//		}
+//
+//
+//
+//		/** preparing the execution plan **/
+//
+//		Operator root = RandomOptimizer.makeExecPlan(logicalroot);
 
 		/** Print final Plan **/
 		System.out.println("----------------------Execution Plan----------------");
