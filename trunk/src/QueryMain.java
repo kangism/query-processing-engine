@@ -13,6 +13,7 @@ public class QueryMain{
 
 	static PrintWriter out;
 	static int numAtts;
+	static int numJoinThreshold = 10;
 
 	public static void main(String[] args){
 
@@ -120,33 +121,26 @@ public class QueryMain{
 		 **/
 		
 		
-		//DynamicProgrammingOptimizer
-		DynamicProgrammingOptimizer dynamicOptimizer = new DynamicProgrammingOptimizer(sqlquery);
-		Operator logicalroot = dynamicOptimizer.getOptimalPlan();
-		if (logicalroot == null) {
-			System.out.println("root is null");
-			System.exit(1);
+		Operator root = null;
+		if (numJoin < numJoinThreshold) {// DynamicProgrammingOptimizer			
+			DynamicProgrammingOptimizer dynamicOptimizer = new DynamicProgrammingOptimizer(
+					sqlquery);
+			Operator logicalroot = dynamicOptimizer.getOptimalPlan();
+			if (logicalroot == null) {
+				System.out.println("root is null");
+				System.exit(1);
+			}
+			root = DynamicProgrammingOptimizer.makeExecPlan(logicalroot);
+		} else {// Use random Optimization algorithm to get a random optimized
+				// execution plan
+			RandomOptimizer ro = new RandomOptimizer(sqlquery);
+			Operator logicalroot = ro.getOptimizedPlan();
+			if (logicalroot == null) {
+				System.out.println("root is null");
+				System.exit(1);
+			}
+			root = RandomOptimizer.makeExecPlan(logicalroot);
 		}
-		Operator root = DynamicProgrammingOptimizer.makeExecPlan(logicalroot);
-		
-
-
-//		/** Use random Optimization algorithm to get a random optimized
-//	    execution plan
-//		 **/
-//
-//		RandomOptimizer ro = new RandomOptimizer(sqlquery);
-//		Operator logicalroot = ro.getOptimizedPlan();
-//		if(logicalroot==null){
-//			System.out.println("root is null");
-//			System.exit(1);
-//		}
-//
-//
-//
-//		/** preparing the execution plan **/
-//
-//		Operator root = RandomOptimizer.makeExecPlan(logicalroot);
 
 		/** Print final Plan **/
 		System.out.println("----------------------Execution Plan----------------");
