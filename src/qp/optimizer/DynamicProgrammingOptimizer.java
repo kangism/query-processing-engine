@@ -274,13 +274,16 @@ public class DynamicProgrammingOptimizer {
 				JoinType joinType = getJoinType(jn);
 				jn.setJoinType(joinType);
 				plancost = pc.getCost(jn);
-				System.out.println("plan cost = " + plancost);
 				if (plancost < bestPlanCost) {
 					bestPlanCost = plancost;
 					newRoot = jn;
 				}
 			}
 		}
+		System.out.print("level "+ level +": best plan cost = " + bestPlanCost + "\t\tfor set { ");
+		for(String s : subset)
+			System.out.print(s + " ");
+		System.out.println("}");
 		return newRoot;
 	}
 
