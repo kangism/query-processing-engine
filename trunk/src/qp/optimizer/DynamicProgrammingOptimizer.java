@@ -20,6 +20,7 @@ import qp.operators.Project;
 import qp.operators.Scan;
 import qp.operators.Select;
 import qp.operators.Sort;
+import qp.operators.SortMergeJoin;
 import qp.utils.Attribute;
 import qp.utils.AttributeOption;
 import qp.utils.Batch;
@@ -29,7 +30,7 @@ import qp.utils.SQLQuery;
 import qp.utils.Schema;
 
 public class DynamicProgrammingOptimizer {
-	SQLQuery sqlquery;
+	static SQLQuery sqlquery;
 	int numJoin;
 	int numTable;
 	Vector<Map<Set<String>, Operator>> levelSpace;
@@ -158,19 +159,23 @@ public class DynamicProgrammingOptimizer {
 
 			case BLOCKNESTED:
 
-				BlockNestedJoin bj = new BlockNestedJoin((Join) node);
-				bj.setLeft(left);
-				bj.setRight(right);
-				bj.setNumBuff(numbuff);
-				return bj;
+			    // NestedJoin bj2 = new NestedJoin((Join) node);
+			    BlockNestedJoin bj = new BlockNestedJoin((Join) node);
+			    bj.setLeft(left);
+			    bj.setRight(right);
+			    bj.setNumBuff(numbuff);
+			    /* + other code */
+			    bj.setBlockSize(numbuff - 2);
+			    return bj;
 
 			case SORTMERGE:
-
-				NestedJoin sm = new NestedJoin((Join) node);
-				sm.setLeft(left);
-				sm.setRight(right);
-				sm.setNumBuff(numbuff);
-				return sm;
+			    SortMergeJoin sm = new SortMergeJoin((Join) node);
+			    // We add a ASC pre sorting
+			    sm.setOrderByOption(OrderByOption.ASC);
+			    sm.setLeft(addPreSortingForSortMergeJoin(left,OrderByOption.ASC));
+			    sm.setRight(addPreSortingForSortMergeJoin(right,OrderByOption.ASC));
+			    sm.setNumBuff(numbuff);			    
+			    return sm;
 
 			case HASHJOIN:
 
@@ -202,7 +207,43 @@ public class DynamicProgrammingOptimizer {
 			return node;
 		}
 	}
+	
+	
+	private static Operator addPreSortingForSortMergeJoin(Operator node,
+			OrderByOption orderByOption) {
+		String tabName = null;
+		if (node.getOperatorType() == OperatorType.PROJECT) {
+			tabName = ((Scan) ((Project) node).getBase()).getTabName();
+		} else if (node.getOperatorType() == OperatorType.SCAN) {
+			tabName = ((Scan) node).getTabName();
+		}
+		// XXX maybe there are other case and I should read the whole tree
+		// of Operator to get the name of the table
 
+		if (tabName != null) {
+			Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
+			for (Condition condition : sqlquery.getJoinList()) {
+				if (condition.getLhs().getTabName().equals(tabName)) {
+					orderbylist.add(new AttributeOption(condition.getLhs(),
+							orderByOption));
+				} else if (((Attribute) condition.getRhs()).getTabName()
+						.equals(tabName)) {
+					// here we assume that the right part of the Condition is a
+					// Attribute
+					// i.e. we consider only basic join condition
+					// but this assumption is made by the framework in
+					// RandomInitalPlan
+					orderbylist.add(new AttributeOption((Attribute) condition
+							.getRhs(), orderByOption));
+				}
+			}
+			Sort presort = new Sort(node, orderbylist, false, OperatorType.SORT);
+			presort.setSchema(node.getSchema());
+			return presort;
+		} else {
+			return node;
+		}
+	}
 
 
 	public Operator createInitOperator(String tabName) {
