@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.Vector;
 
 import qp.operators.BlockNestedJoin;
+import qp.operators.Debug;
 import qp.operators.Distinct;
 import qp.operators.HashJoin;
 import qp.operators.Join;
@@ -90,6 +91,8 @@ public class DynamicProgrammingOptimizer {
 		
 		///create Sort Op , if isDistinct is true, add attr in projectlist to facilitate Distinct Op
 		Vector<AttributeOption> orderbylist = sqlquery.getOrderByList();
+		if(orderbylist == null)
+			orderbylist = new Vector<AttributeOption>();
 		Vector<Attribute> projectlist = (Vector<Attribute>) sqlquery.getProjectList();
 		if (sqlquery.isDistinct() && projectlist != null && !projectlist.isEmpty()) {
 			for (Attribute att : projectlist) {
@@ -127,9 +130,18 @@ public class DynamicProgrammingOptimizer {
 			newRoot = new Distinct(base, OperatorType.DISTINCT);
 			newRoot.setSchema(base.getSchema());
 		}
+		PlanCost pc = new PlanCost();
 		if (newRoot != null) {
+			System.out.println("\n");
+			System.out.println("---------------------------Final Plan----------------");
+			Debug.PPrint(newRoot);
+			System.out.println("  " + pc.getCost(newRoot));
 			return newRoot;
 		} else {
+			System.out.println("\n");
+			System.out.println("---------------------------Final Plan----------------");
+			Debug.PPrint(root);
+			System.out.println("  " + pc.getCost(root));
 			return root;
 		}
 	}
@@ -321,7 +333,7 @@ public class DynamicProgrammingOptimizer {
 				}
 			}
 		}
-		System.out.print("level "+ level +": best plan cost = " + bestPlanCost + "\t\tfor set { ");
+		System.out.print("level "+ level +": best join plan cost = " + bestPlanCost + "\t\tfor set { ");
 		for(String s : subset)
 			System.out.print(s + " ");
 		System.out.println("}");
@@ -345,10 +357,17 @@ public class DynamicProgrammingOptimizer {
 		int leftpages = (int) Math.ceil(((double) leftTupleNum) / leftBatchSize);
 		int rightpages = (int) Math.ceil(((double) rightTupleNum) / rightBatchSize);
 		int numbuff = BufferManager.getBuffersPerJoin();
+		
+		// 2 *(N1 * K1 + N2 * K2) + N1 + N2
+		// K = 1 + Log(N/B)/log(B-1)
+		int numPassesLeft= (int) ((Math.log(leftpages/numbuff) / Math.log(numbuff-1)) + 1);
+		int numPassesRight= (int) ((Math.log(rightpages/numbuff) / Math.log(numbuff-1)) + 1);
+		int presortcost = 2 * (numPassesLeft*leftpages+numPassesRight*rightpages);
+		
 		int joincost_NJ = leftpages * rightpages;
 		int joincost_BNJ = leftpages + leftpages * rightpages / (numbuff - 2);
 		int joincost_HJ = 3 * (leftpages + rightpages);
-		int joincost_SM = leftpages+rightpages;
+		int joincost_SM = leftpages+rightpages + presortcost;
 		
 		int minCost = joincost_NJ;
 		joinType = JoinType.NESTEDJOIN;
