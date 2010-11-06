@@ -72,16 +72,30 @@ public class Sort extends Operator {
      */
     static int sortNum = 0;
 
+    /**
+     * The queue that manage the file. FIFO
+     */
     Queue<String> tempFiles = new LinkedList<String>();
 
+    /**
+     * To use the quick sort of Java.Collection.sort
+     */
     TupleComparator tupleComparator;
 
     /**
      * The current temp file name.
      */
     String tempFile = "";
+    
+    /**
+     * To find the files used and deleted them easily in the close() function.
+     */
     String prefix;
 
+    /**
+     * True if the duplication elimination (for free) is activated (assume that the sort is done on
+     * every attribute of the project operator.
+     */
     boolean isDistinct;
 
     Batch returned;
@@ -245,7 +259,7 @@ public class Sort extends Operator {
 			    outbatch.add(sorted.get(i));
 			}
 			returned = outbatch; // THIS BATCH IS OVER SIZED but we will deal with it in
-					     // next()..
+			// next()..
 			break;
 		    } else {
 			filenum++;

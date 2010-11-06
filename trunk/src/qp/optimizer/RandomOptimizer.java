@@ -14,7 +14,6 @@ import qp.operators.NestedJoin;
 import qp.operators.Operator;
 import qp.operators.OperatorType;
 import qp.operators.Project;
-import qp.operators.Scan;
 import qp.operators.Select;
 import qp.operators.Sort;
 import qp.operators.SortMergeJoin;
@@ -445,8 +444,8 @@ public class RandomOptimizer {
 		    SortMergeJoin sm = new SortMergeJoin((Join) node);
 		    // We add a ASC pre sorting
 		    sm.setOrderByOption(OrderByOption.ASC);
-		    sm.setLeft(addPreSortingForSortMergeJoin(left,OrderByOption.ASC));
-		    sm.setRight(addPreSortingForSortMergeJoin(right,OrderByOption.ASC));
+		    sm.setLeft(addPreSortingLeftForSortMergeJoin(node,left,OrderByOption.ASC));
+		    sm.setRight(addPreSortingRightForSortMergeJoin(node,right,OrderByOption.ASC));
 		    sm.setNumBuff(numbuff);
 		    
 		    return sm;
@@ -484,6 +483,28 @@ public class RandomOptimizer {
 	}
     }
 
+    
+    private static Operator addPreSortingRightForSortMergeJoin(Operator join, Operator right, OrderByOption orderByOption) {
+	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
+	Condition condition = ((Join) join).getCondition();
+	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
+	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
+	Sort presort = new Sort(right, orderbylist, false, OperatorType.SORT);
+	presort.setSchema(right.getSchema());
+	return presort;
+    }
+    private static Operator addPreSortingLeftForSortMergeJoin(Operator join, Operator left, OrderByOption orderByOption) {
+	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
+	Condition condition = ((Join) join).getCondition();
+	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
+	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
+	Sort presort = new Sort(left, orderbylist, false, OperatorType.SORT);
+	presort.setSchema(left.getSchema());
+	return presort;
+    }
+    
+    
+/*    
     private static Operator addPreSortingForSortMergeJoin(Operator node, OrderByOption orderByOption) {
 	String tabName = null;
 	if (node.getOperatorType() == OperatorType.PROJECT) {
@@ -513,7 +534,7 @@ public class RandomOptimizer {
 	    return node;
 	}
     }
-
+*/
     public static void setSqlquery(SQLQuery sqlquery) {
 	RandomOptimizer.sqlquery = sqlquery;
     }
