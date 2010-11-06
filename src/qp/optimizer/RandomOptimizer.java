@@ -486,8 +486,7 @@ public class RandomOptimizer {
     
     private static Operator addPreSortingRightForSortMergeJoin(Operator join, Operator right, OrderByOption orderByOption) {
 	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
-	Condition condition = ((Join) join).getCondition();
-	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
+	Condition condition = ((Join) join).getCondition();	
 	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
 	Sort presort = new Sort(right, orderbylist, false, OperatorType.SORT);
 	presort.setSchema(right.getSchema());
@@ -497,7 +496,6 @@ public class RandomOptimizer {
 	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
 	Condition condition = ((Join) join).getCondition();
 	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
-	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
 	Sort presort = new Sort(left, orderbylist, false, OperatorType.SORT);
 	presort.setSchema(left.getSchema());
 	return presort;

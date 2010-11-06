@@ -218,8 +218,7 @@ public class DynamicProgrammingOptimizer {
 
     private static Operator addPreSortingRightForSortMergeJoin(Operator join, Operator right, OrderByOption orderByOption) {
 	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
-	Condition condition = ((Join) join).getCondition();
-	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
+	Condition condition = ((Join) join).getCondition();	
 	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
 	Sort presort = new Sort(right, orderbylist, false, OperatorType.SORT);
 	presort.setSchema(right.getSchema());
@@ -229,7 +228,6 @@ public class DynamicProgrammingOptimizer {
 	Vector<AttributeOption> orderbylist = new Vector<AttributeOption>();
 	Condition condition = ((Join) join).getCondition();
 	orderbylist.add(new AttributeOption(condition.getLhs(), orderByOption));	
-	orderbylist.add(new AttributeOption((Attribute) condition.getRhs(), orderByOption));
 	Sort presort = new Sort(left, orderbylist, false, OperatorType.SORT);
 	presort.setSchema(left.getSchema());
 	return presort;
@@ -375,6 +373,7 @@ public class DynamicProgrammingOptimizer {
 	int joincost_BNJ = leftpages + leftpages * rightpages / (numbuff - 2);
 	int joincost_HJ = 3 * (leftpages + rightpages);
 	int joincost_SM = leftpages + rightpages + presortcost;
+	 joincost_SM=-1;
 	
 	int minCost = joincost_NJ;
 	joinType = JoinType.NESTEDJOIN;
