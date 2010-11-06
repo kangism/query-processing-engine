@@ -298,7 +298,6 @@ public class DynamicProgrammingOptimizer {
 
 	/// find the best plan for one subset
 	public Operator getBestPlan(String[] subset, int level) {
-		PlanCost pc = new PlanCost();
 		int bestPlanCost = Integer.MAX_VALUE;
 		Operator newRoot = null;
 		/// test each table with last level subset to get the optimized plan
@@ -320,6 +319,7 @@ public class DynamicProgrammingOptimizer {
 			
 			condition = getJoinCondition(lastRoot, singleTable, level);
 			int plancost = 0;
+			PlanCost pc = new PlanCost();
 			if (condition != null) {
 				Join jn = new Join(lastRoot, levelSpace.elementAt(0).get(singleTable), condition, OperatorType.JOIN);
 				Schema newSchema = lastRoot.getSchema().joinWith(levelSpace.elementAt(0).get(singleTable).getSchema());
