@@ -373,7 +373,7 @@ public class DynamicProgrammingOptimizer {
 	int joincost_BNJ = leftpages + leftpages * rightpages / (numbuff - 2);
 	int joincost_HJ = 3 * (leftpages + rightpages);
 	int joincost_SM = leftpages + rightpages + presortcost;
-	 joincost_SM=-1;
+	
 	
 	int minCost = joincost_NJ;
 	joinType = JoinType.NESTEDJOIN;
