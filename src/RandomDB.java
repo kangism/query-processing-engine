@@ -100,15 +100,15 @@ public class RandomDB {
 		// int numtuple = Integer.parseInt(args[1]);
 
 		Vector<String> personName = new Vector<String>();
-		String perName = "Employee_NameList2.txt";
+		String perName = "Employee_NameList3.txt";
 		personName = getEntityNameList(perName);
 		
 		Vector<String> locationName = new Vector<String>();
-		String locName = "Location_NameList2.txt";
+		String locName = "Location_NameList3.txt";
 		locationName = getEntityNameList(locName);
 		
 		Vector<String> organizationName = new Vector<String>();
-		String orgName = "Organization_NameList2.txt";
+		String orgName = "Organization_NameList3.txt";
 		organizationName = getEntityNameList(orgName);
 
 		try {
