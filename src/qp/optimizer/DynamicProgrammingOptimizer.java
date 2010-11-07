@@ -329,9 +329,40 @@ public class DynamicProgrammingOptimizer {
 		Join jn = new Join(lastRoot, levelSpace.elementAt(0).get(singleTable), condition, OperatorType.JOIN);
 		Schema newSchema = lastRoot.getSchema().joinWith(levelSpace.elementAt(0).get(singleTable).getSchema());
 		jn.setSchema(newSchema);
-		JoinType joinType = getJoinType(jn);
-		jn.setJoinType(joinType);
-		plancost = pc.getCost(jn);
+		
+		
+//		JoinType joinType = getJoinType(jn);
+//		jn.setJoinType(joinType);
+//		plancost = pc.getCost(jn);
+		
+		int p=0;
+		plancost=Integer.MAX_VALUE;
+		JoinType type=null;
+		
+		jn.setJoinType(JoinType.BLOCKNESTED);
+		pc = new PlanCost();
+		p=pc.getCost(jn);
+		if(p<plancost) {plancost=p; type = JoinType.BLOCKNESTED;}
+		
+		jn.setJoinType(JoinType.NESTEDJOIN);
+		pc = new PlanCost();
+		p=pc.getCost(jn);
+		if(p<plancost) {plancost=p; type = JoinType.NESTEDJOIN;}
+		
+		jn.setJoinType(JoinType.HASHJOIN);
+		pc = new PlanCost();
+		p=pc.getCost(jn);
+		if(p<plancost) {plancost=p; type = JoinType.HASHJOIN;}
+		
+		jn.setJoinType(JoinType.SORTMERGE);
+		pc = new PlanCost();
+		p=pc.getCost(jn);
+		if(p<plancost) {plancost=p; type = JoinType.SORTMERGE;}
+		
+		jn.setJoinType(type);
+		
+		
+		
 		if (plancost < bestPlanCost) {
 		    bestPlanCost = plancost;
 		    newRoot = jn;
